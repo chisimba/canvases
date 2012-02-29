@@ -1,0 +1,183 @@
+/*
+    An eLearning skin for the Sangari eLearning system
+
+    It uses the skin engine version 2 for Chisimba.
+
+    Author: Derek Keats
+    License: GPL V2
+
+*/
+
+
+@import "../canvas/stylesheet.css";
+
+body {
+        background: #CCC url('images/Header.jpg') no-repeat top center;
+	font-family: "Lucida Grande", Verdana, Arial, "Bitstream Vera Sans",
+		sans-serif;
+	font-size: 12px;
+	font-size-adjust: none;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: normal;
+	line-height: normal;
+	background-color: #CCC;
+}
+
+html {
+    margin: 0px;
+    padding: 0px;
+}
+
+.Canvas_AfterAll {
+    background: #CCC url('images/Footer.jpg') no-repeat bottom center;
+    height: 118px;
+    text-align: center;
+}
+
+#Canvas_Content_Body_Region1,
+#Canvas_Content_Body_Region2,
+#Canvas_Content_Body_Region3 {
+    min-height:700px;
+}
+
+#Canvas_Content_Body_Region1 {
+    width:200px;
+    background-image: none;
+}
+
+#Canvas_Content_Body_Region3 {
+    width:200px;
+    margin-left: 0px;
+    background-image: none;
+}
+
+.ChisimbaCanvas {
+    display: block;
+    background: white;
+    width: 970px;
+    padding: 0px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#container {
+    margin-bottom: 0px;
+}
+
+.Canvas_AfterContainer {
+    height:0px;
+}
+
+#Canvas_Content {
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+}
+
+#container {
+    background: transparent;
+    -webkit-border-radius: 0px;
+    -moz-border-radius: 0px;
+    border-radius: 0px;
+    border: none;
+}
+
+.featurebox {
+    border: 1px solid #CCC;
+}
+
+.toggleIt {
+    margin-left: 5px;
+}
+
+.middleblocks {
+    border: 1px solid red;
+}
+
+/* Locate the search box correctly */
+ div#header div#search {
+    margin: 10px;
+    padding: 10px;
+    color: gray;
+    width: 360px;
+    position: relative;
+    margin-top:  -55px;
+    margin-left: 680px;
+}
+
+#menuList{
+    background-color: #D3E7F5;
+    height: 25px;
+}
+
+/* The top logo */
+#header {
+    height: 40px;
+    margin-top: 2px;
+}
+h1#sitename {
+    display: inline-block;
+    margin-top: -10px;  
+}
+
+/* The footer */
+#footer {
+    background: white url('images/mainmenu.png') repeat-x left;
+    color: white;
+    height: 30px;
+}
+
+#footer a:link, #footer a:visited {
+    color: skyblue;
+    text-decoration: none;
+}
+#footer a:hover, #footer a.visited:hover {
+    color: cyan;
+    text-decoration: none;
+}
+
+/* eLearning button styles */
+
+ul .glossytabs {
+    color: #4a5ca8;
+}
+
+.glossytabs li{
+    margin-left: 4px;
+    padding-left: 10px;
+}
+
+.glossytabs li a{
+    color: #4a5ca8;
+    font-size: 110%;
+    font-weight: bold;
+}
+
+.glossytabs li a strong {
+    background: transparent url(images/nav-bg.gif) repeat-x scroll 0;
+    float: left;
+    display: block;
+    padding: 0px 16px 0px 16px; /*Padding of menu items*/
+    font-weight: bold;
+}
+
+.glossytabs li.current a strong {
+    color: #000;
+    background: transparent url(images/current-bg.gif) repeat-x scroll 0;
+    font-weight: bold;
+}
+
+.glossytabs li a:hover strong {
+    background: transparent url(images/hover-bg.gif) repeat-x scroll 0;
+    font-weight: bold;
+}
+
+#sitename a:link, #sitename a:visited {
+    color: rgb(4, 151, 223);
+}
+
+#sitename a:link:hover, #sitename a:visited:hover {
+    color: navy;
+}
