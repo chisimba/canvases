@@ -29,10 +29,19 @@ html {
     padding: 0px;
 }
 
+.Canvas_Content_Head_Breadcrumbs{
+    margin-top: -10px;
+}
+
+#Canvas_Content_Body {
+    margin-top: 22px;
+}
+
 .Canvas_AfterAll {
     background: #CCC url('images/Footer.jpg') no-repeat bottom center;
     height: 118px;
     text-align: center;
+    margin-bottom:60px;
 }
 
 #Canvas_Content_Body_Region1,
@@ -107,9 +116,10 @@ html {
     margin-left: 680px;
 }
 
-#menuList{
+#navigation{
     background-color: #D3E7F5;
-    height: 25px;
+    height: 29px;
+    padding-left: 10px;
 }
 
 /* The top logo */
@@ -180,4 +190,124 @@ ul .glossytabs {
 
 #sitename a:link:hover, #sitename a:visited:hover {
     color: navy;
+}
+
+
+/** Styles for the page annotations **/
+.annotated{
+    position: relative;
+    background-color:#FFEFD8;
+}
+
+.annotated[annotateLevel="0"] {
+    background-color:#FFEFD8;
+}
+
+.annotated[annotateLevel="1"] {
+    background-color:#F0D6BF;
+}
+
+.annotated[annotateLevel="2"] {
+    background-color:#DCC2AB;
+}
+
+.beingAnnotated {
+    background-color:#F90;
+}
+
+.annotationFocus, .annotationFocus[annotatelevel='0']{
+    background-color:#9F0;
+}
+
+.annotationFocus[annotatelevel='1']{
+    background-color:#C2DCAB;
+}
+
+.annotationFocus[annotatelevel='2']{
+    background-color:#D6F0BF;
+}
+
+.jQueryTextAnnotaterDialog{
+    opacity:0.9;
+    z-index: 999;
+    position:absolute;
+    display:none;
+    width: 200px;
+    height: 150px;
+    border: 1px solid black;
+    background-color: #eee;
+    padding: 5px;
+    font-family: Trebuchet, Arial;
+    font-size: 10pt
+}
+
+.jQueryTextAnnotaterDialogForm ul{
+    padding: 0;
+    margin: 0;
+}
+
+.jQueryTextAnnotaterDialogForm li{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+#content, #explanation, #annotations{
+    border: 1px dotted gray;
+    margin: 20px;
+    padding: 20px;
+    font-family: Trebuchet, Arial;
+}
+
+#controls {
+    border: 1px dotted gray;
+    text-align: center;
+    margin: 10px;
+    padding: 10px;
+    font-family: Trebuchet, Arial;
+}
+
+#saveAnnotations, #toggleAnnotations {
+    width: 100px;
+    font-family: Trebuchet, Arial;
+}
+
+#explanation, #controls{
+    background-color: #eee;
+}
+
+.annotated img{
+    border: 1px solid #FFEFD8;
+}
+
+.annotationFocus img{
+    border: 1px solid #9F0;
+}
+
+.annotator_comment {
+    line-height: 14px;
+    position: absolute; 
+    margin-right: 10px;
+    background-color: #ffaaaa; 
+    border: 1px solid red; 
+    font-size: 8pt; 
+    width: 200px
+}
+
+.comment_line {
+    position: absolute; 
+    border-top: 1px dashed red; 
+    height: 1px;
+}
+
+.pagenote_note {
+    background: #eee;
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+/**   end of pagenotes styles ***/
+
+#Canvas_Content_Body_Region2 .featurebox {
+    border: 1px solid #CCC;
 }
