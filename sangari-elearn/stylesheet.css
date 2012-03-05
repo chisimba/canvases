@@ -106,3 +106,24 @@ ul .glossytabs {
 #input_filequery{
     width: 130px;
 }
+
+/** Wide calendar **/
+#widecalendar {
+    width: 98%;
+}
+div#widecalendar table.calendarTable td {
+    padding-left: 0px;
+    font-size: small;
+}
+div#widecalendar table.calendarTable td ul {
+    padding: 0px;
+    margin-left: 0px;
+}
+li.event_site {
+    padding-left: 23px;
+    padding-right: 3px;
+}
+
+.dayNamesText {
+    font-size: smaller;
+}
