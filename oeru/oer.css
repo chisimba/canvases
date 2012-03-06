@@ -782,7 +782,7 @@ width:950px;
     font-size: 11px;
 }
 
-
+/* Start template_thoughtcorp_edit 05 march 2012 */
 /* $Id: example.css,v 1.5 2006/03/27 02:44:36 pat Exp $ */
 
 /*--------------------------------------------------
@@ -811,7 +811,7 @@ ul.tabbernav
 {
     margin:0;
     padding: 3px 0;
-    border-bottom: 1px solid #778;
+    border-bottom: 1px solid #6a86ae;
     font: bold 12px Verdana, sans-serif;
 }
 
@@ -822,8 +822,7 @@ ul.tabbernav li
     display: inline;
 }
 
-ul.tabbernav li a
-{/* template_thoughtcorp_edit */
+ul.tabbernav li a {
     padding: 3px 0.5em;
     font-size: 10.5px;
     margin-right: 1px;
@@ -831,36 +830,36 @@ ul.tabbernav li a
     border-bottom: none;
     background: #ffffff;
     text-decoration: none;
-    -webkit-border-top-right-radius: 4px 7px;
-    -webkit-border-top-left-radius: 4px 7px;
+	
+	-webkit-border-top-right-radius: 4px 7px;
+	-webkit-border-top-left-radius: 4px 7px;
 
-    -khtml-border-radius-topright: 4px 7px;
-    -khtml-border-radius-topleft: 4px 7px;
+	-khtml-border-radius-topright: 4px 7px;
+	-khtml-border-radius-topleft: 4px 7px;
 
-    -moz-border-radius-topright: 4px 7px;
-    -moz-border-radius-topleft: 4px 7px;
+	-moz-border-radius-topright: 4px 7px;
+	-moz-border-radius-topleft: 4px 7px;
 
-    border-top-right-radius: 4px 7px;
-    border-top-left-radius: 4px 7px;
+	border-top-right-radius: 4px 7px;
+	border-top-left-radius: 4px 7px;
 }
 
-ul.tabbernav li a:link { color: #448; }
+ul.tabbernav li a:link { color: #666565; }
 ul.tabbernav li a:visited { color: #667; }
 
 ul.tabbernav li a:hover
 {
-    color: #000;
-    background: #AAE;
-    border-color: #227;
+    color: #171d26;
+	background-image: url(images/template_recources/unesco_tabs_bg.jpg);
 }
 
 ul.tabbernav li.tabberactive a
 {
     border-bottom: 1px solid #fff;
+	background-image: url(images/template_recources/unesco_tabs_bg.jpg);
+	color:#171d26;
 }
 .tabberactive {
-    background-image:url(images/template_recources/unesco_tabs_bg.jpg);
-    background-position:bottom left;
 }
 ul.tabbernav li.tabberactive a:hover
 {
@@ -874,9 +873,9 @@ ul.tabbernav li.tabberactive a:hover
   Add style only after the tabber interface is set up (.tabberlive)
   --------------------------------------------------*/
 .tabberlive .tabbertab {
-    padding:6px;
-    border:1px solid #aaa;
-    border-top:0;
+    padding:7px;
+    border:5px solid #bbc8da;
+	background-color:#ffffff;
 
     /* If you don't want the tab size changing whenever a tab is changed
        you can set a fixed height */
@@ -906,6 +905,12 @@ ul.tabbernav li.tabberactive a:hover
     height:200px;
     overflow:auto;
 }
+.tab_container {
+	padding-top:10px;
+}
+/* End template_thoughtcorp_edit */
+
+
 
 .deleted{
     text-decoration: line-through;
@@ -922,194 +927,8 @@ ul.tabbernav li.tabberactive a:hover
 }
 
 #randomadaptations{
-    clear: both;
+clear: both;
 }
 #filteradaptations{
     clear: both;
-}
-
-
-
-
-#randomadaptation img{
-    margin: 10px;   
-}
-
-#randomadaptations{
-    clear: both;
-}
-
-#original_product_languages{
-    font-size: 11px;
-    text-decoration: underline;
-}
-
-.original_product_listing_adaptation_count{
-    font-size: 11px;
-}
-
-.expand a {
-    display:block;
-    font-size: 11px;
-    color: #777777;
-
-}
-.expand a:link, .expand a:visited {
-    border-width:1px;
-    background-image:url(images/arrow-down.gif);
-    background-repeat:no-repeat;
-    background-position:75% 50%;
-}
-.expand a:hover, .expand a:active, .expand a:focus {
-    text-decoration:underline
-}
-.expand a.open:link, .expand a.open:visited {
-    border-style:solid;
-    background:#eee url(images/arrow-up.gif) no-repeat 98% 50%
-}
-
-.collapse p {padding:0 10px 1em}
-
-.featurebox{
-    border: 1px solid #98acc7;   
-}
-h7{
-    font-size: 11px;
-    font-weight: bold;
-}
-
-#institutionva{
-    font-style:  italic;
-}
-
-#institutionva img{
-    margin-right: 10px;
-}
-
-h1{
-    font-size: 14px;
-}
-
-
-#breadcrumbband{
-    bottom: 0px;
-    clear: both;
-    float: left;
-    margin: 0;
-    padding: 0;
-    position: relative;
-    margin-left: 5px;
-}
-
-#navigationband{
-    clear: both;
-}
-
-
-#controlpanel{
-    text-align: right;
-    margin-right: 30px;
-}
-
-
-
-#modernbricksmenu a {
-    background: url("images/overlay-sm.png") repeat scroll left top transparent;
-    border: medium none;
-    color: black;
-    display: block;
-    float: left;
-    letter-spacing: 1px;
-    margin: 0 1px 0 0;
-    padding: 5px 10px;
-    text-decoration: none;
-}
-
-
-#modernbricksmenu #current a {
-    background-color: #ffffff;
-    background-image: none;
-    border-color: #CC0000;
-}
-fieldset{
-    background: transparent;
-    background-image: none;
-}
-
-.WCHhider{
-    background: transparent;
-    background-image: none;
-}
-
-
-
-#featuredadaptation_prodtitle a{
-    font-size: 16px;
-    font-weight: bold;
-}
-
-
-td.view_group{
-    padding-bottom: 15px;
-    border: 1px solid #cccccc;
-    font-size: 11px;
-    clear: both;
-}
-
-
-.group_listing_title{
-    font-size: 14px;
-    font-weight: bold;
-    margin-top: 0px;
-    clear: both;
-}
-
-.groupedit{
-
-}
-
-td.view_group{
-    padding-bottom: 15px;
-
-    -webkit-border-radius: 4px;
-    -khtml-border-radius: 4px;
-    -moz-border-radius: 4px;
-    border-radius: 4px;
-
-    -webkit-box-shadow: 0px 0px 7px 2px #b3b3b3;
-    -moz-box-shadow: 0px 0px 7px 2px #b3b3b3;
-    box-shadow: 0px 0px 7px 2px #b3b3b3;
-
-    border:solid 1px #b3b3b3;/* ie 7&8 fallback */
-}
-
-.group_listing_thumbail{
-    clear: both;
-}
-
-
-.featuredadaptation{
-    margin: 10px;
-}
-
-#featuredadaptation_seeall a{
-    font-size: 11px;
-    text-decoration: underline;
-}
-
-
-#featuredadaptation_insttitle a{
-    font-size: 11px;
-    text-decoration: underline;
-}
-
-
-#featuredadaptation_text{
-    font-weight: bold;
-}
-
-
-#nav-secondary{
-    background-image: none;
-    background: transparent;
 }

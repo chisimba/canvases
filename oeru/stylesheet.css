@@ -626,7 +626,7 @@ img.storyimage {
 /** Wiki specific styles **/
 #ratingDiv {
     background: url("images/overlay25.png") top left repeat;
-    padding: 5px;       
+    padding: 5px;
 }
 
 #ratingTabnav1 {
@@ -1345,9 +1345,9 @@ hr {
 }
 
 /* Forced over write section on shared styling */
-/* template_thoughtcorp_edit  (everything below) */
+/* template_thoughtcorp_edit 05 march 2012 (everything below) */
 body {
-    background-color: #ffffff;/* template_thoughtcorp_edit */
+    background-color: #ffffff;
     color: #333333;
     font-family: Verdana, sans-serif;
     font-size: 10pt;
@@ -1359,139 +1359,139 @@ body {
     padding:0px;
     margin-right: 25px;
     margin-left: 25px;
-    background-image:url(images/template_recources/unesco_header_bg.jpg);
-    background-position:top left;
-    background-repeat:no-repeat;
-    background-color:#e5eaf1;
-    width: 970px;
-    margin-bottom:35px;
-    margin-top:45px;
-    padding-bottom:15px;
+	background-image:url(images/template_recources/unesco_header_bg.jpg);
+	background-position:top left;
+	background-repeat:no-repeat;
+	background-color:#e5eaf1;
+	width: 970px;
+	margin-bottom:35px;
+	margin-top:45px;
+	padding-bottom:15px;
 }
 #Canvas_Content {
     padding:0px;
-    margin:0px;
+	margin:0px;
     margin-top: 25px;
-    margin-top:0px;/* ie7 only hack fix header alignment */
-    margin-left:15px;
-    margin-right:15px;
-
+	*margin-top:0px;/* ie7 only hack fix header alignment */
+	margin-left:15px;
+	margin-right:15px;
+	
 }
 .Canvas_Content_Head {
-    height:235px;
-    position:relative;
+	height:235px;
+	position:relative;
 }
 .Canvas_Content_Head img {
-    margin-top:22px;
-    margin-right:15px;
-    margin-bottom:3px;
+	margin-top:22px;
+	margin-right:15px;
+	margin-bottom:3px;
 }
 .Canvas_Content_Head h1 {
-    padding-top:40px;
-    font-size:30px;
-    color:#214b87;
+	padding-top:40px;
+	font-size:30px;
+	color:#214b87;
 }
 .Canvas_Content_Head h2 {
-    padding-top:0px;
-    font-size:18px;
-    color:#214b87;
+	padding-top:0px;
+	font-size:18px;
+	color:#214b87;
 }
 .Canvas_Content_Head_After {
-    position:absolute;
-    height:0px;
-    width:970px;
-    top:18px;
+	position:absolute;
+	height:0px;
+	width:970px;
+	top:18px;
 }
 #controlpanel{
 }
 #controlpanel a.user_id {
-    display:block;
-    float:right;
-    line-height:25px;
-    height:100%;
-    margin-right:15px;
-    padding-right:10px;
-    padding-left:30px;
-    background-image:url(images/template_recources/unesco_user_id.jpg);
-    background-position:0px 5px;
-    background-repeat:no-repeat;
+	display:block;
+	float:right;
+	line-height:25px;
+	height:100%;
+	margin-right:15px;
+	padding-right:10px;
+	padding-left:30px;
+	background-image:url(images/template_recources/unesco_user_id.jpg);
+	background-position:0px 5px;
+	background-repeat:no-repeat;
 }
 #controlpanel a.user_id:hover {
-    background:none;
-    background-image:url(images/template_recources/unesco_user_id.jpg);
-    background-position:0px 5px;
-    background-repeat:no-repeat;
-    text-decoration:underline;
+	background:none;
+	background-image:url(images/template_recources/unesco_user_id.jpg);
+	background-position:0px 5px;
+	background-repeat:no-repeat;
+	text-decoration:underline;
 }
 #controlpanel a.my_bookmark {
-    display:block;
-    float:right;
-    line-height:25px;
-    height:100%;
-    margin-right:15px;
-    padding-right:10px;
-    padding-left:30px;
-    background-image:url(images/template_recources/unesco_bookmark.jpg);
-    background-position:0px 5px;
-    background-repeat:no-repeat;
+	display:block;
+	float:right;
+	line-height:25px;
+	height:100%;
+	margin-right:15px;
+	padding-right:10px;
+	padding-left:30px;
+	background-image:url(images/template_recources/unesco_bookmark.jpg);
+	background-position:0px 5px;
+	background-repeat:no-repeat;
 }
 #controlpanel a.my_bookmark:hover {
-    background:none;
-    background-image:url(images/template_recources/unesco_bookmark.jpg);
-    background-position:0px 5px;
-    background-repeat:no-repeat;
-    text-decoration:underline;
+	background:none;
+	background-image:url(images/template_recources/unesco_bookmark.jpg);
+	background-position:0px 5px;
+	background-repeat:no-repeat;
+	text-decoration:underline;
 }
 #controlpanel a.log_reg {
-    font-weight:bold;
-    display:block;
-    float:right;
-    line-height:25px;
-    height:100%;
-    margin-right:15px;
-    padding-right:10px;
-    /* padding-left:30px;  IF image used uncomment this  */
-    background-image:url();
-    background-position:0px 5px;
-    background-repeat:no-repeat;
+	font-weight:bold;
+	display:block;
+	float:right;
+	line-height:25px;
+	height:100%;
+	margin-right:15px;
+	padding-right:10px;
+	/* padding-left:30px;  IF image used uncomment this  */
+	background-image:url();
+	background-position:0px 5px;
+	background-repeat:no-repeat;
 }
 #controlpanel a.log_reg:hover {
-    background:none;
-    background-image:url();
-    background-position:0px 5px;
-    background-repeat:no-repeat;
-    text-decoration:underline;
+	background:none;
+	background-image:url();
+	background-position:0px 5px;
+	background-repeat:no-repeat;
+	text-decoration:underline;
 }
 /*
     The site search box that appears in the headder
 */
 div#header div#search {
-    height:30px;
-    margin:0px;
-    padding:0px;
+	height:30px;
+	margin:0px;
+	padding:0px;
     position: relative;
     color: grey;
-    margin-left:-15px;
-    margin-right:-15px;
-    width:968px;
-    clear:both;
-    background-color:#98abc7;
+	margin-left:-15px;
+	margin-right:-15px;
+	width:968px;
+	clear:both;
+	background-color:#98abc7;
     -webkit-border-radius: 12px;
     -khtml-border-radius: 12px;
     -moz-border-radius: 12px;
     border-radius: 12px;
-    border:solid 1px #6a86ae;
-
+	border:solid 1px #6a86ae;
+	
 }
 div#header div#search select {
-    position:relative;
-    background-color:#ffffff;
-    margin:0px;
-    top:-2px;
-    padding:0px;
-    height:21px;
-    border:solid 1px #214b87;
-    margin-left:10px;
+	position:relative;
+	background-color:#ffffff;
+	margin:0px;
+	top:-2px;
+	padding:0px;
+	height:21px;
+	border:solid 1px #214b87;
+	margin-left:10px;
 }
 div#header div#search input#input_search {
     width: 347px;
@@ -1501,16 +1501,16 @@ div#header div#search input#input_search {
     border: 0px;
     background: url(images/template_recources/unesco_search_bg.jpg) left top no-repeat;
     padding-top:-3px;
-    padding-left: 25px;
-    line-height:21px;
+	padding-left: 25px;
+	line-height:21px;
 }
 
 div#header div#search label {
-    position:relative;
-    color:#000000;
-    font-weight:normal;
-    padding-left:10px;
-    top:-3px;
+	position:relative;
+	color:#000000;
+	font-weight:normal;
+	padding-left:10px;
+	top:-3px;
 }
 input#input_search.text {
     border: none;
@@ -1521,23 +1521,23 @@ input#input_search.text {
     padding-left: 10px;
 }
 div#header div#search button {
-    position:relative;
-    top:-3px;
+	position:relative;
+	top:-3px;
     margin-left:5px;
 }
 #Canvas_Content_Body {
-    background-image:url(images/template_recources/unesco_content_bg.jpg);
-    background-position:top left;
-    background-repeat:repeat-x;
-    background-color:#ffffff;
-    width:100%;
-    display:table;
-    border-left:solid 1px #ffffff;
-    border-right:solid 1px #ffffff;
+	background-image:url(images/template_recources/unesco_content_bg.jpg);
+	background-position:top left;
+	background-repeat:repeat-x;
+	background-color:#ffffff;
+	width:100%;
+	display:table;
+	border-left:solid 1px #ffffff;
+	border-right:solid 1px #ffffff;
 }
 #threecolumn {
-    padding-left:5px;
-    padding-right:5px;
+	padding-left:5px;
+	padding-right:5px;
 }
 #Canvas_Content_Body_Region1 {
     float:left;
@@ -1566,123 +1566,224 @@ div#header div#search button {
     padding-right: 4px;
 }
 .featurebox {
-    padding:0px;
-    text-align:center;
-    background-color:#98abc7;
+	padding:0px;
+	text-align:center;
+	background-color:#98abc7;
     -webkit-border-radius: 9px;
     -khtml-border-radius: 9px;
     -moz-border-radius: 9px;
     border-radius: 9px;
-    border:solid 1px #6a86ae;
+	border:solid 1px #6a86ae;
 }
 h5.featureboxheader {
-    color:#ffffff;
-    background:none;
+	color:#ffffff;
+	background:none;
 }
 .featureboxcontent {
-    text-align:left;
-    margin:4px;
+	text-align:left;
+	margin:4px;
     padding: 10px;
     line-height: 130%;
-    background-color:#ffffff;
-    -webkit-border-radius: 7px;
-    -khtml-border-radius: 7px;
-    -moz-border-radius: 7px;
-    border-radius: 7px;
+	background-color:#ffffff;
+	-webkit-border-radius: 7px;
+	-khtml-border-radius: 7px;
+	-moz-border-radius: 7px;
+	border-radius: 7px;
 }
 .toggleIt {
-    float:left;
-    margin-left:8px;
-    margin-right:-18px;
+	float:left;
+	margin-left:8px;
+	margin-right:-18px;
 }
 #Canvas_Content_Body_Region2 .featurebox {
-    padding:0px;
-    text-align:center;
-    background:none;
+	padding:0px;
+	text-align:center;
+	background:none;
     -webkit-border-radius: 0px;
     -khtml-border-radius: 0px;
     -moz-border-radius: 0px;
     border-radius: 0px;
-    border:none;
+	border:none;
 }
 #Canvas_Content_Body_Region2 .featureboxcontent {
-    background:none;
+	background:none;
     -webkit-border-radius: 0px;
     -khtml-border-radius: 0px;
     -moz-border-radius: 0px;
     border-radius: 0px;
-    border:none;
-    padding:0px;
+	border:none;
+	padding:0px;
 }
 td.view_original_product{
     padding-bottom: 15px;
-
-    -webkit-border-radius: 4px;
+	
+	-webkit-border-radius: 4px;
     -khtml-border-radius: 4px;
     -moz-border-radius: 4px;
     border-radius: 4px;
-
-    -webkit-box-shadow: 0px 0px 7px 2px #b3b3b3;
-    -moz-box-shadow: 0px 0px 7px 2px #b3b3b3;
-    box-shadow: 0px 0px 7px 2px #b3b3b3;
-
-    border:solid 1px #b3b3b3;/* ie 7&8 fallback */
+	
+	-webkit-box-shadow: 0px 0px 7px 2px #b3b3b3;
+ 	-moz-box-shadow: 0px 0px 7px 2px #b3b3b3;
+	 box-shadow: 0px 0px 7px 2px #b3b3b3;
+	 
+	 border:solid 1px #b3b3b3;/* ie 7&8 fallback */
 }
 .tabberlive {
-    position:relative;
-    top:-16px;
-    margin-bottom:-16px;
+	position:relative;
+	top:-16px;
+	margin-bottom:-16px;
 }
 .tabbernav li a {
-    font-size:11px;
-    font-weight:normal;
+	font-size:11px;
+	font-weight:normal;
+}
+#Canvas_Content_Body_Region1 {
+    float:left;
+    width:210px;
+	margin:0px;
+	margin-top:10px;
+	padding:0px;
+}
+#Canvas_Content_Body_Region1 select {
+	width:165px;
+}
+#Canvas_Content_Body_Region2 {
+	margin:0px;
+	padding:0px;
+    padding-left: 8px;
+    overflow: hidden;
+    width:auto;
+}
+#Canvas_Content_Body_Region3 {
+    float:right;
+    width:210px;
+	margin:0px;
+	margin-top:10px;
+	padding:0px;
+}
+.product_block {
+	position:relative;
+	float:left;
+	padding:5px;
+	margin:5px;
+	margin-bottom:8px;
+	-webkit-border-radius: 4px;
+    -khtml-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+	-webkit-box-shadow: 0px 0px 5px 1px #b3b3b3;
+ 	-moz-box-shadow: 0px 0px 5px 1px #b3b3b3;
+	 box-shadow: 0px 0px 5px 1px #b3b3b3;	 
+	 border:solid 1px #b3b3b3;/* ie 7&8 fallback */
+}
+.product_block p {
+	margin:0px;
+	padding:0px;
+	margin-top:8px;
+}
+.table_view {
+	width:463px;
+	height:105px;
+}
+.grid_view {
+	width:140px;
+	height:220px;
+}
+.item_img {
+	position:relative;
+	float:left;
+	margin-right:15px;
+}
+.item_fave {
+	position:relative;
+	float:right;
+	display:block;
+	overflow:hidden;
+	text-indent:-99999px;
+	width:17px;
+	height:18px;
+	background-image:url(images/template_recources/itembloc_favor_star.jpg);
+}
+.item_prnt {
+	position:relative;
+	float:right;
+	display:block;
+	overflow:hidden;
+	text-indent:-99999px;
+	width:14px;
+	height:18px;
+	background-image:url(images/template_recources/itembloc_print.jpg);
 }
 /* menu rewrite */
+
 #navigationband {
-    padding:0px;
-    margin:0px;
-    position:relative;
-    float:left;
-    clear:both;
-    bottom:-56px;
-    *bottom:-98px;/* ie7 only hack fix menu positioning */
+	padding:0px;
+	margin:0px;
+	position:relative;
+	float:left;
+	clear:both;
+	bottom:-56px;
+	*bottom:-98px;/* ie7 only hack fix menu positioning */
 }
-#navigationband ul._nav_menu_ {
-    margin:0px;
-    padding:0px;
-    list-style:none;
+#modernbricksmenu ul{
+	margin:0px;
+	padding:0px;
+	background:none;
+	background-image:none;
 }
-#navigationband ul._nav_menu_ li {
-    float:left;
-    height:46px;
-    line-height:46px;
-    margin-right:2px;
+#modernbricksmenu li {
+	margin:0px;
+	padding:0px;
+	background:none;
+	background-image:none;
+	float:left;
+	height:46px;
+	line-height:46px;
+	margin-right:2px;
 }
-#navigationband ._nav_menu_ a {width:; text-align:center;}/* if you want equal width menu items set width here */
-#navigationband ._nav_menu_ a {
-    display:block;
-    background-color:#ffffff;
-    height:100%;
-    padding-left:10px;
-    padding-right:10px;
+#modernbricksmenu li a {width:; text-align:center;}/* if you want equal width menu items set width here */
+#modernbricksmenu li a {
+	margin:0px;
+	padding:0px;
+	background:none;
+	background-image:none;
+	display:block;
+	background-color:#ffffff;
+	height:100%;
+	padding-left:10px;
+	padding-right:10px;
+	color:#000000;
+	
+	-webkit-border-top-right-radius: 10px 7px;
+	-webkit-border-top-left-radius: 10px 7px;
 
-    -webkit-border-top-right-radius: 10px 7px;
-    -webkit-border-top-left-radius: 10px 7px;
+	-khtml-border-radius-topright: 10px 7px;
+	-khtml-border-radius-topleft: 10px 7px;
 
-    -khtml-border-radius-topright: 10px 7px;
-    -khtml-border-radius-topleft: 10px 7px;
+	-moz-border-radius-topright: 10px 7px;
+	-moz-border-radius-topleft: 10px 7px;
 
-    -moz-border-radius-topright: 10px 7px;
-    -moz-border-radius-topleft: 10px 7px;
-
-    border-top-right-radius: 10px 7px;
-    border-top-left-radius: 10px 7px;
+	border-top-right-radius: 10px 7px;
+	border-top-left-radius: 10px 7px;
 }
-#navigationband ul._nav_menu_ li a:hover {
-    background-image:url(images/template_recources/unesco_menu_bg.jpg);
-    background-position:bottom left;
+#modernbricksmenu li a:hover {
+	background:none;
+	background-image:none;
+	background-image:url(images/template_recources/unesco_menu_bg.jpg);
+	background-position:bottom left;
 }
-#navigationband ul._nav_menu_ li a.currently_selected {
-    background-image:url(images/template_recources/unesco_menu_bg.jpg);
-    background-position:bottom left;
+#modernbricksmenu li#current a {
+	border:none;
+	margin:0px;
+	padding:0px;
+	background:none;
+	background-image:none;
+	background-image:url(images/template_recources/unesco_menu_bg.jpg);
+	background-position:bottom left;
+}
+#modernbricksmenu li#current a:hover {
+	margin:0px;
+	padding:0px;
+	color:#b3b3b3;
+	
 }
