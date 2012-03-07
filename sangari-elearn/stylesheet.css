@@ -119,7 +119,7 @@ div#widecalendar table.calendarTable td ul {
     padding: 0px;
     margin-left: 0px;
 }
-li.event_site {
+li.event_site, li.event_other, li.event_context, li.event_user, li.event_workgroup {
     padding-left: 23px;
     padding-right: 3px;
 }
@@ -130,4 +130,18 @@ li.event_site {
 
 .undercallinks_wrapper {
     margin-bottom: 20px;
+}
+
+.eventslist {
+    background: transparent;
+    width: 98%;
+}
+
+table.eventslist tr {
+    height: auto;
+    padding: 0px;
+}
+
+table.eventslist td {
+    padding-bottom: 10px;
 }
