@@ -932,3 +932,367 @@ clear: both;
 #filteradaptations{
     clear: both;
 }
+
+
+
+#controlpanel{
+    text-align: right;
+    margin-right: 30px;
+}
+
+.WCHhider{
+    background: transparent;
+    background-image: none;
+    font-size: 11px;
+}
+
+
+.deleted{
+    text-decoration: line-through;
+}
+
+
+#randomadaptation{
+    padding: 10px;
+    border-bottom:  1px solid #cccccc;
+}
+
+#randomadaptation img{
+    margin: 10px;   
+}
+
+#randomadaptations{
+    clear: both;
+}
+#filteradaptations{
+    clear: both;
+}
+
+
+
+
+#randomadaptation img{
+    margin: 10px;   
+}
+
+#randomadaptations{
+    clear: both;
+}
+
+#original_product_languages{
+    font-size: 11px;
+    text-decoration: underline;
+}
+
+.original_product_listing_adaptation_count{
+    font-size: 11px;
+}
+
+.expand a {
+    display:block;
+    text-decoration: underline;
+
+    font-size: 11px;
+    font-style: italic;
+    color: #777777;
+
+}
+.expand a:link, .expand a:visited {
+    border-width:1px;
+    background-image:url(images/arrow-down.gif);
+    background-repeat:no-repeat;
+    background-position:77% 50%;
+}
+.expand a:hover, .expand a:active, .expand a:focus {
+    text-decoration:underline
+}
+.expand a.open:link, .expand a.open:visited {
+    border-style:solid;
+    background:#eee url(images/arrow-up.gif) no-repeat 77% 50%
+}
+
+.collapse p {padding:0 10px 1em}
+
+.featurebox{
+    border: 1px solid #98acc7;   
+}
+h7{
+    font-size: 11px;
+    font-weight: bold;
+}
+
+#institutionva{
+    font-style:  italic;
+}
+
+#institutionva img{
+    margin-right: 10px;
+}
+
+h1{
+    font-size: 14px;
+}
+
+
+#breadcrumbband{
+    font-size: 12px;
+    bottom: 0px;
+    clear: both;
+    float: left;
+    margin: 30px 0 10px 5px;
+    padding: 0;
+    position: relative;
+    margin-left: 5px;
+}
+
+#navigationband{
+    clear: both;
+}
+
+
+#controlpanel{
+    text-align: right;
+    margin-right: 30px;
+}
+
+
+
+#modernbricksmenu a {
+    background: url("images/overlay-sm.png") repeat scroll left top transparent;
+    border: medium none;
+    color: black;
+    display: block;
+    float: left;
+    letter-spacing: 1px;
+    margin: 0 1px 0 0;
+    padding: 5px 10px;
+    text-decoration: none;
+}
+
+
+#modernbricksmenu #current a {
+    background-color: #ffffff;
+    background-image: none;
+    border-color: #CC0000;
+}
+fieldset{
+    background: transparent;
+    background-image: none;
+}
+
+.WCHhider{
+    background: transparent;
+    background-image: none;
+    font-size: 11px;
+}
+
+
+
+#featuredadaptation_prodtitle a{
+    font-size: 16px;
+    font-weight: bold;
+}
+
+
+td.view_group{
+    padding-bottom: 15px;
+    border: 1px solid #cccccc;
+    font-size: 11px;
+    clear: both;
+}
+
+
+.group_listing_title{
+    font-size: 14px;
+    font-weight: bold;
+    margin-top: 0px;
+    clear: both;
+}
+
+.groupedit{
+
+}
+
+td.view_group{
+    padding-bottom: 15px;
+
+    -webkit-border-radius: 4px;
+    -khtml-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+
+    -webkit-box-shadow: 0px 0px 7px 2px #b3b3b3;
+    -moz-box-shadow: 0px 0px 7px 2px #b3b3b3;
+    box-shadow: 0px 0px 7px 2px #b3b3b3;
+
+    border:solid 1px #b3b3b3;/* ie 7&8 fallback */
+}
+
+.group_listing_thumbail{
+    clear: both;
+}
+
+
+.featuredadaptation{
+    margin: 10px;
+}
+
+#featuredadaptation_seeall a{
+    font-size: 11px;
+    text-decoration: underline;
+}
+
+
+#featuredadaptation_insttitle a{
+    font-size: 11px;
+    text-decoration: underline;
+}
+
+
+#featuredadaptation_text{
+    font-weight: bold;
+}
+
+
+#nav-secondary{
+    background-image: none;
+    background: transparent;
+}
+.viewinstitutionlink{
+    font-size: 11px;
+    text-decoration: underline;
+    font-style: normal;
+
+}
+
+#producttitle{
+    font-size: 12px;
+    font-weight: bold;
+
+}
+
+#institutiontype{
+    font-size: 11px;
+    font-weight: bold;
+}
+
+.adaptationcount{
+    font-size: 11px;
+    text-decoration: underline;
+}
+
+.joingroup{
+    font-size: 11px;
+}
+
+.joingroup a{
+    text-decoration: underline;
+}
+
+#group_thumbnail img{
+    margin: 15px;
+}
+
+#group_about{
+    margin-bottom: 20px;
+}
+
+#group_plugins{
+    margin-top: 20px;
+}
+
+.institution_thumbnail{
+    clear: both;
+    float: left;
+}
+
+#institution_small_thumbnail{
+
+}
+
+#institution_small_title a{
+    clear: both;
+    float:left;
+}
+
+#group_institutions{
+    margin-top: 15px;   
+}
+#group_institution {
+
+    clear: both;
+    border-bottom:solid 1px #b3b3b3;
+}
+
+#group_institution img{
+margin-bottom: 10px;
+}
+
+
+.viewgroup_institution{
+    border-bottom:solid 1px #b3b3b3;
+}
+
+
+.highlight_grid{
+    background-color: #ffffff;
+    padding: 5px;
+    width: 60px;
+    border:solid 1px #000000;
+}
+
+.highlight_list{
+    background-color: #ffffff;
+    padding: 5px;
+    width: 60px;
+    border:solid 1px #000000;
+}
+
+
+#institution_controlband h1{
+    float: right;
+    height: 27px;
+     border:solid 1px #000000;
+     padding:  5px;
+}
+
+#forum_post{
+    margin-bottom: 5px;
+    border-bottom: solid 1px #cccccc;
+}
+
+
+td.institution_randomadaptation{
+     border-left:  solid 1px #cccccc;
+}
+
+
+#institution_sections{
+    margin-top: 20px;
+     border: solid 1px #cccccc;
+}
+
+
+#filteroriginalproduct{
+    font-size: 11px;
+}
+
+#groups_controlband{
+    float:right;
+    margin-right: 20px;
+}
+
+ #map_canvas { 
+     height: 100% ;
+    
+ }
+ 
+ #adaptationtitle{
+     font-size: 12px;
+     font-weight: bold;
+ }
+ 
+ .product_language_dd{
+     width:100px;
+     font-size: 11px;
+ }

@@ -1,3 +1,4 @@
+<meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
 <?php
 /*
  * OER
@@ -60,6 +61,12 @@ require($objConfig->getsiteRootPath() . 'skins/_common/templates/skinpageheader3
         ';
     }
 
+    $isLoggedIn = $this->objUser->isLoggedIn() ? "true" : "false";
+    $loggedInVar = '<script language="JavaScript" type="text/javascript">
+          
+         var loggedIn = ' . $isLoggedIn . ';
+        </script>';
+    echo $loggedInVar;
     // Render the javascript unless it is suppressed.
     if (!isset($pageSuppressJavascript)) {
         //Load cruvy corners
@@ -74,10 +81,11 @@ require($objConfig->getsiteRootPath() . 'skins/_common/templates/skinpageheader3
     if (!isset($pageSuppressSkin)) {
         echo '
        <link rel="stylesheet" type="text/css" href="skins/' . $skinName . '/stylesheet.css">
-      <link rel="stylesheet" type="text/css" href="skins/' . $skinName . '/oer.css">
+       <link rel="stylesheet" type="text/css" href="skins/' . $skinName . '/oer.css">
        <link rel="stylesheet" type="text/css" href="skins/' . $skinName . '/backwards.css">
        <link rel="stylesheet" type="text/css" href="skins/' . $skinName . '/crystal-stars.css">
        <link rel="stylesheet" type="text/css" href="skins/' . $skinName . '/jquery.ui.stars.css">
+       <link rel="stylesheet" type="text/css" href="skins/' . $skinName . '/jquery_notification.css">
        <link rel="stylesheet" type="text/css" href="' . $canvas . '/stylesheet.css">
        
         ';
@@ -116,6 +124,9 @@ if (!isset($pageSuppressBanner)) {
         <div class="Canvas_Content_Head" id="header">
 
             <?php
+            if ($objUser->isLoggedIn()) {
+                echo '<h5>' . $objLanguage->languageText('mod_oer_welcome', 'oer') . '&nbsp;' . $objUser->fullname() . '</h5>';
+            }
             echo '<a href="' . $objConfig->getSiteRoot() . '"><img align="left" src="skins/' . $skinName . '/images/logo-unesco.gif"></a>';
             echo '<h3>' . $objLanguage->languageText('mod_oer_maintitle1', 'oer') . '</h3>';
             echo '<h3>' . $objLanguage->languageText('mod_oer_maintitle2', 'oer') . '</h3>';
@@ -147,73 +158,72 @@ if (!isset($pageSuppressBanner)) {
         echo '<div id="controlpanel">';
         if ($objUser->isLoggedIn()) {
             echo '<a href="?module=security&action=logoff">'
-            . $objLanguage->languageText('mod_oer_logout', 'oer') . '</a>';
+            . $objLanguage->languageText('mod_oer_logout', 'oer') . '</a>' .
+            '</a>&nbsp;|&nbsp;<a href="?module=oeruserdata">' . $objLanguage->languageText('mod_userdetails_updateyourprofile', 'userdetails') . '</a>';
         } else {
-            echo '<a href="?module=security&action=login">'
-            . $objLanguage->languageText('mod_oer_login', 'oer') . '</a>';
+            echo '<a href="?module=oer&action=login">'
+            . $objLanguage->languageText('mod_oer_login', 'oer') .
+            '</a>&nbsp;|&nbsp;<a href="?module=oeruserdata&action=selfregister">' . $objLanguage->languageText('mod_oeruserdata_selfreg', 'oeruserdata') . '</a>';
         }
-
-
         echo '</div>';
         ?>
-
-
     </div>
-    <?php
-}
+        <?php
+    }
 
 
 
 // Render the layout content as supplied from the layout template
-echo "<div class='Canvas_Content_Body_Before'></div>\n"
- . "<div id='Canvas_Content_Body'>\n";
-$breadcrumbs = $this->getObject('breadcrumbs', 'toolbar');
-if ($objUser->isLoggedIn()) {
+    echo "<div class='Canvas_Content_Body_Before'>";
+    $breadcrumbs = $this->getObject('breadcrumbs', 'toolbar');
+    if ($objUser->isLoggedIn()) {
+        echo '<div id="breadcrumbband">' . $breadcrumbs->show() . '</div>';
+    }
 
-    echo '<div id="breadcrumbband">' . $breadcrumbs->show() . '</div>';
-}
+    echo "</div>\n";
 
-echo $this->getLayoutContent()
- . "</div>\n<div class='Canvas_Content_Body_After'></div>\n"
- . '<br id="footerbr" />';
+    echo "<div id='Canvas_Content_Body'>\n";
+    echo $this->getLayoutContent()
+    . "</div>\n<div class='Canvas_Content_Body_After'></div>\n"
+    . '<br id="footerbr" />';
 
 
 // If the footer is not suppressed, render it out.
-if (!isset($suppressFooter)) {
-    // Add the footer string if it is set
-    if (isset($footerStr)) {
-        $footerStr = $footerStr;
-    } else if ($objUser->isLoggedIn()) {
-        $this->loadClass('link', 'htmlelements');
-        $link = new link($this->URI(array('action' => 'logoff'), 'security'));
-        $link->link = $objLanguage->languageText("word_logout");
-        $str = $objLanguage->languageText("mod_context_loggedinas", 'context')
-                . ' <strong>' . $objUser->fullname() . '</strong>  (' . $link->show() . ')';
-        $footerStr = $str;
-    } else {
-        $footerStr = $objLanguage->languageText("mod_security_poweredby", 'security', 'Powered by Chisimba');
+    if (!isset($suppressFooter)) {
+        // Add the footer string if it is set
+        if (isset($footerStr)) {
+            $footerStr = $footerStr;
+        } else if ($objUser->isLoggedIn()) {
+            $this->loadClass('link', 'htmlelements');
+            $link = new link($this->URI(array('action' => 'logoff'), 'security'));
+            $link->link = $objLanguage->languageText("word_logout");
+            $str = $objLanguage->languageText("mod_context_loggedinas", 'context')
+                    . ' <strong>' . $objUser->fullname() . '</strong>  (' . $link->show() . ')';
+            $footerStr = $str;
+        } else {
+            $footerStr = $objLanguage->languageText("mod_security_poweredby", 'security', 'Powered by Chisimba');
+        }
+        // Do the rendering here.
+        echo "<div class='Canvas_Content_Footer_Before'></div>\n"
+        . "<div class='Canvas_Content_Footer'><div id='footer'>"
+        . $footerStr;
+        // Put in the link to the top of the page
+        if (!isset($pageSuppressBanner)) {
+            echo ' (' . GOTOTOP . ')';
+        }
+        echo "</div>\n<div class='Canvas_Content_Footer_After'></div>";
     }
-    // Do the rendering here.
-    echo "<div class='Canvas_Content_Footer_Before'></div>\n"
-    . "<div class='Canvas_Content_Footer'><div id='footer'>"
-    . $footerStr;
-    // Put in the link to the top of the page
-    if (!isset($pageSuppressBanner)) {
-        echo ' (' . GOTOTOP . ')';
-    }
-    echo "</div>\n<div class='Canvas_Content_Footer_After'></div>";
-}
 
 // Render the container's closing div if the container is not suppressed
-if (!isset($pageSuppressContainer)) {
-    echo "</div></div><div class='Canvas_AfterContainer'></div>\n</div>\n</div>";
-}
+    if (!isset($pageSuppressContainer)) {
+        echo "</div></div><div class='Canvas_AfterContainer'></div>\n</div>\n</div>";
+    }
 
 
 // Render any messages available.
-$this->putMessages();
+    $this->putMessages();
 
 // Close up the body and HTML and finish up.
-?>
+    ?>
 </body>
 </html>
