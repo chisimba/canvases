@@ -9,7 +9,7 @@
 */
 
 
-@import "../canvas/stylesheet.css";
+@import "../canvas/canvasbase.css";
 
 body {
         background: #CCC url('images/Header.jpg') no-repeat top center;
@@ -41,8 +41,16 @@ html {
     background: #CCC url('images/Footer.jpg') no-repeat bottom center;
     height: 118px;
     text-align: center;
-    margin-bottom:60px;
+    margin-bottom:60px;   
 }
+
+.Canvas_Content_Footer {
+    background: none;
+    text-align: center;
+    padding-top: 30px;
+}
+
+
 
 #Canvas_Content_Body_Region1,
 #Canvas_Content_Body_Region2,
@@ -93,6 +101,8 @@ html {
     border: none;
 }
 
+
+ 
 .featurebox {
     border: 1px solid #CCC;
 }
@@ -108,12 +118,15 @@ html {
 /* Locate the search box correctly */
  div#header div#search {
     margin: 10px;
+    margin-top: -56px;
     padding: 10px;
     color: gray;
     width: 360px;
     position: relative;
-    margin-top:  -55px;
-    margin-left: 680px;
+    margin-left: 640px;
+}
+#input_search {
+    margin-top:12px;
 }
 
 #navigation{
@@ -127,16 +140,20 @@ html {
     height: 40px;
     margin-top: 2px;
 }
+
 h1#sitename {
     display: inline-block;
     margin-top: -10px;  
+    padding: 0px;
 }
 
 /* The footer */
 #footer {
-    background: white url('images/mainmenu.png') repeat-x left;
-    color: white;
+    width: 970px;
+    color: navy;
     height: 30px;
+    background: none;
+    margin: 0 auto;
 }
 
 #footer a:link, #footer a:visited {
@@ -190,6 +207,15 @@ ul .glossytabs {
 
 #sitename a:link:hover, #sitename a:visited:hover {
     color: navy;
+}
+
+
+#Canvas_Content_Body_Region2 .featurebox {
+    border: 1px solid #CCC;
+}
+
+#input_username, #input_password {
+    width: 140px; 
 }
 
 
@@ -307,7 +333,3 @@ ul .glossytabs {
     margin-bottom: 10px;
 }
 /**   end of pagenotes styles ***/
-
-#Canvas_Content_Body_Region2 .featurebox {
-    border: 1px solid #CCC;
-}

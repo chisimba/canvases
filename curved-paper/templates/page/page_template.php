@@ -151,7 +151,21 @@ echo "<div class='Canvas_Content_Body_Before'></div>\n"
    . $this->getLayoutContent()
    . "</div>\n<div class='Canvas_Content_Body_After'></div>\n"
    .'<br id="footerbr" />';
-
+    /**
+     * 
+     * Here we are using a div that has to be the last one on the
+     * page in order to render the curved paper. However, placing the
+     * footer before this makes it look ugly, so we are moving the
+     * the footer AFTER all the other divs, and placing it inside 
+     * the div Canvas_AfterAll. This shows the flexibility of designing
+     * canvases, even with the assumed limitations that we have.
+     * 
+     */
+// Render the container's and all other closing divs if the container.
+if (!isset($pageSuppressContainer)) {
+    echo "</div><div class='Canvas_AfterContainer'>"
+      . "</div>\n</div>\n</div>\n\n";
+}
 // If the footer is not suppressed, render it out.
 if (!isset($suppressFooter)) {
     // Add the footer string if it is set
@@ -166,30 +180,25 @@ if (!isset($suppressFooter)) {
     } else {
         $footerStr = $objLanguage->languageText("mod_security_poweredby", 'security', 'Powered by Chisimba');
     }
+
     // Do the rendering here.
-    echo "<div class='Canvas_Content_Footer_Before'></div>\n"
+    echo "\n\n<div class='Canvas_AfterAll'>\n"
+      . "<div class='Canvas_Content_Footer_Before'></div>\n"
       . "<div class='Canvas_Content_Footer'><div id='footer'>"
       . $footerStr;
     // Put in the link to the top of the page
     if (!isset($pageSuppressBanner)) {
         echo ' (' . GOTOTOP . ')';
     }
-    echo "</div>\n</div>\n<div class='Canvas_Content_Footer_After'></div>";
+    echo "</div>\n</div>\n"
+      . "<div class='Canvas_Content_Footer_After'></div>"
+      . "\n</div>\n\n";;
 }
-// Render the container's closing div if the container is not suppressed
-if (!isset($pageSuppressContainer)) {
-    echo "</div><div class='Canvas_AfterContainer'></div>\n</div>\n</div>";
-}
-
-
 
 // Render any messages available.
 $this->putMessages();
 
 // Close up the body and HTML and finish up.
 ?>
-<div class='Canvas_AfterAll'>
-<br /><br />This skin is Free Software.    
-</div>
 </body>
 </html>
