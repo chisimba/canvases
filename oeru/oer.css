@@ -1296,3 +1296,68 @@ td.institution_randomadaptation{
      width:100px;
      font-size: 11px;
  }
+
+ 
+ .report_block{
+     font-size: 11px;
+     
+ }
+ 
+ .compareAdaptationsNav {
+    padding: 10px 10px 10px 10px !important;
+    width:190px;
+    float: left !important;
+    border:1px solid #888888;
+    height: 400px;
+}
+.compareProductNav {
+    padding: 10px 10px 10px 10px !important;
+    width:190px;
+    float: left;
+    border:1px solid #888888;
+    height: 400px;
+    float: left;
+}
+.compareAdaptationsNav {
+    padding: 10px 10px 10px 10px !important;
+    width:190px;
+    float: left !important;
+    border:1px solid #888888;
+    height: 400px;
+}
+.compareSelectedProductNav {
+    padding: 10px 10px 10px 10px !important;
+    width:190px;
+    float: left;
+    border:1px solid #888888;
+    height: 40px;
+    float: left;
+}
+.compareSelectedAdaptationNav {
+    padding: 5px 5px 5px 5px !important;
+    width:280px;
+    float: left !important;
+    border:1px solid #888888;
+    height: 80px;
+    font-size: 10px;
+}
+.searchCompare {
+    clear: both;
+    width:910px;
+    vertical-align: middle !important;
+}
+.adaptnodeselect {
+    color:#004e89;
+    border:1px solid #165879;
+    background-image:url(images/template_recources/unesco_tabs_bg.jpg);
+    background-position:bottom left;
+}
+
+/* Right top div holding search and facebook shere links */
+.logoutSearchDivRight {
+    width:485px;
+    float:left;
+    text-align:right;
+}
+
+ 
