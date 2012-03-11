@@ -333,3 +333,39 @@ ul .glossytabs {
     margin-bottom: 10px;
 }
 /**   end of pagenotes styles ***/
+
+/** General styles that can be used in formatting **/
+
+.floatleft {
+    float: left;
+    margin-right: 5px;
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+
+.floatright {
+    float: right;
+    margin-left: 5px;
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+
+.rawimage {
+    border: 0px;
+}
+
+h1.multiline {
+    line-height: 26px;
+}
+
+h2.multiline {
+    line-height: 20px;
+}
+
+h3.multiline {
+    line-height: 16px;
+}
+
+a.pseudobutton {
+    
+}
