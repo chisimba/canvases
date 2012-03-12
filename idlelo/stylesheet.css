@@ -405,3 +405,7 @@ a.pseudobutton {
 .editing_off {
     background-color: #56a25e;
 }
+
+#form_filesearch input {
+    width:110px;
+}
