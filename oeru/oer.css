@@ -1462,5 +1462,36 @@ td.institution_randomadaptation{
     float:left;
     text-align:right;
 }
-
- 
+.reportheader {
+    background-color: #C0C0C0;    
+}
+.reportheader.td {
+    border-color: #C0C0C0;
+}
+.reporttable {
+    padding: 2px;
+    vertical-align: middle;
+}
+.reportPropertyTitle {
+    font-size: 12px;
+    font-weight: bold;
+}
+.reportPropertyValue {
+    font-size: 11px;
+}
+.allreportstable legend {
+    font-size: 12px;
+}
+.reporttable table {
+border-top-color: gray;
+border-right-color: gray;
+border-bottom-color: gray;
+border-left-color: gray;
+table-layout:fixed;
+width: 315px;
+padding-bottom: 5px;
+padding-left: 5px;
+padding-right: 5px;
+padding-top: 5px;
+border: #C0C0C0;
+}
