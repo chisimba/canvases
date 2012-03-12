@@ -139,7 +139,7 @@ These are styles related to viewing a product details
 }
 
 #viewproduct_coverpage img{
-    margin:   10px;   
+    margin:   10px;
 }
 
 
@@ -411,6 +411,22 @@ float:left;
     padding-right: 15px;
 
 }
+.contentTableHolder {
+    border:1px solid #165879;
+    width:885px !important;
+    margin-top:1px;
+    float:left;
+    padding-bottom:10px;
+    padding-left: 5px;
+    padding-right: 15px;
+    overflow: auto;
+    clear:both;
+}
+.adaptationListViewTop{
+    clear:both;
+    padding-top: 10px;
+}
+
 /* Sub navigation
 width:958px;
 */
@@ -424,6 +440,21 @@ width:958px;
 .wideTopContentHolderDiv {
     width:890px;
     padding-left:0px;
+}
+.topContentHolder {
+    border:1px solid #165879;
+    width:900px;
+    margin-top:1px;
+    float:left;
+    padding-bottom:10px;
+    padding-left:5px;
+    clear:both;
+}
+.navPath {
+    color:#595959;
+    padding: 2px;
+    font-size: 14px;
+    clear: both;
 }
 /*
 width:958px;
@@ -460,20 +491,51 @@ width:958px;
 }
 /* 5b content style*/
 .productAdaptationViewLeftColumnTop {
+    position:relative;
     float:left;
-    width:230px;
+    width:230px !important;
     padding-right:10px;
+}
+.contentDivThreeWider {
+    clear: both;
+    text-align: justify;
+    padding-right: 5px;
+    float: left;
+}
+.adaptationNotesContent {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 10px;
+    padding-right: 5px;
+    clear: both;
+    background-color: #E9E0DB;
+    text-align: justify;
+}
+.abstractContent {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 15px;
+    padding-right: 15px;
+    clear: both;
+    text-align: justify;
+}
+#viewadaptation_leftcontent {
+    clear:both;
+    padding-right: 10px;
+    padding-top: 5px;
+    text-align: justify;
 }
 .leftTopImage {
     float:left;
     margin-right:10px;
 }
 .leftFloatDiv {
-    float:left;
-    width:170px;
+    position:absolute;
+    top:0;
+    right:0;
+    width:200px;
 }
 .adaptationListingLink {
-    float:left;
     color:#F04C3E;
     text-decoration:none;
 }
@@ -482,19 +544,31 @@ width:958px;
 }
 /* Small listing icocs 18X18*/
 .smallLisitngIcons {
-    width:18px;
+    width:13px;
     float:left;
-    padding-right:5px;
+    padding-right:1px;
+    font-family: 'Times New Roman',Times,serif;
 }
 .productsLink {
     text-decoration:underline;
     color:#3f95c3;
     font-size:10px;
 }
+.rightFloatDiv {
+    position:absolute;
+    top:0;
+    right:0;
+    width:170px;
+}
 /* Text next to the small listing icon div that holds and float the text to the left */
 .textNextToTheListingIconDiv {
     float:left;
     width:113px;
+}
+/* Text next to the small listing icon div that holds and float the text to the left */
+.leftTextNextToTheListingIconDiv {
+    float:left;
+    width:155px;
 }
 .middleAdaptedByIcon {
     /*width:24px;*/
@@ -503,8 +577,37 @@ width:958px;
     padding-left:5px;
     padding-right:15px;
 }
+.productAdaptationViewMiddleColumnTop {
+    position:relative;
+    float:left;
+    width:220px !important;
+}
+.productAdaptationViewRightColumnTop {
+    position:relative;
+    float:left;
+    width:270px;
+    padding-right:10px;
+}
+/* Text next to the small listing icon div that holds and float the text to the left */
+.middleTextNextToTheListingIconDiv {
+    float:left;
+    width:155px;
+}
+.middleFloatDiv {
+    position:absolute;
+    top:0;
+    right:0;
+    width:170px;
+}
 .pinkText {
     color:#F04C3E;
+}
+.rightAdaptedByIcon {
+    /*width:24px;*/
+    float:left;
+    text-align:center;
+    padding-left:5px;
+    padding-right:15px;
 }
 .productAdaptationListViewRightColumn {
     float:left;
@@ -513,7 +616,7 @@ width:958px;
 /* 5b content style*/
 .productAdaptationViewLeftColumnTop {
     float:left;
-    width:230px;
+    width:250px !important;
     padding-right:10px;
 }
 /* */
