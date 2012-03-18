@@ -19,6 +19,9 @@ $validCanvases = array_map('basename', glob('skins/canvas/canvases/*', GLOB_ONLY
 // Define the name of this skin.
 $skinName = "idlelo";
 
+// Banner style setting.
+$bannerStyle = "image";
+
 // Settings that are needed so that canvase-aware code can function.
 $this->setSession('skinName', $skinName);
 $_SESSION['skinName'] = $skinName;
@@ -115,23 +118,36 @@ if (!isset($pageSuppressBanner)) {
     }
     ?>
     <div class="Canvas_Content_Head_Before"></div>
+            <?php
+        if ($bannerStyle == "image") {
+            echo '<a href="'.$objConfig->getSiteRoot().'">';
+        }
+                ?>
     <div class="Canvas_Content_Head">
+        <?php
+        if ($bannerStyle == "image") {
+            echo '<a href="'.$objConfig->getSiteRoot().'">';
+        }
+        ?>
         <div class="Canvas_Content_Head_Header" id="header">
             <h1 id="sitename">
                 <span>
                     <?php
-                    echo '<a href="'.$objConfig->getSiteRoot().'">'.$objConfig->getsiteName().'</a>';
+                    if ($bannerStyle == "text") {
+                        echo '<a href="'.$objConfig->getSiteRoot().'">'.$objConfig->getsiteName().'</a>';
+                    }
                     ?>
                 </span>
             </h1>
-            <?php
-            if (!isset($pageSuppressSearch)) {
-                echo $objSkin->siteSearchBox();
-            }
-            ?>
-        </div>
 
+        </div>
         <?php
+        if ($bannerStyle == "image") {
+            echo "</a>";
+        }
+        if (!isset($pageSuppressSearch)) {
+            echo $objSkin->siteSearchBox();
+        }
 }
 
 if (!isset($pageSuppressToolbar)) {

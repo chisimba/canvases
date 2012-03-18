@@ -10,7 +10,7 @@
 @import "../canvas/canvasbase.css";
 
 body {
-        background: #CCC url('images/idlelo-banner.jpg') no-repeat top center;
+        background: #CCC;
 	font-family: "Lucida Grande", Verdana, Arial, "Bitstream Vera Sans",
 		sans-serif;
 	font-size: 12px;
@@ -47,10 +47,19 @@ html {
     padding-top: 8px;
 }
 
-/* The header aread */
+/* The header area */
 #header {
-    visibility: hidden;
-    height: 0px;
+    background: #D6F0BF url('images/idlelo-banner.jpg') no-repeat top center;
+    visibility: visible;
+    height: 160px;
+    width: 960px;
+    margin-top: 0px;
+    margin-left: -6px;
+    padding: 0px;
+    -moz-border-radius: 0px;  
+    -khtml-border-radius: 0px;  
+    -webkit-border-radius: 0px;  
+    border-radius: 0px; 
 }
 
 h1#sitename {
@@ -85,7 +94,7 @@ h1#sitename {
     background: white;
     width: 960px;
     padding: 0px;
-    margin-top: 154px;
+    margin-top: 0px;
     margin-bottom: 0px;
     margin-left: auto;
     margin-right: auto;
@@ -110,10 +119,10 @@ h1#sitename {
     border-radius: 0px;
     border: none;
     margin: 0px;
+    padding-top: 0px;
 }
 
 
- 
 .featurebox {
     border: 2px solid darkseagreen;
     background-color: #D6F0BF;
@@ -132,28 +141,26 @@ h1#sitename {
 
 
 /* Locate the search box correctly */
- div#header div#search {
-    margin: 10px;
-    margin-top: -56px;
+div#search {
+    visibility: hidden;
+    /*margin: 10px;
+    margin-top: 5px;
     padding: 10px;
     color: gray;
     width: 360px;
-    position: relative;
-    margin-left: 640px;
+    position: absolute;
+    margin-left: -300px;*/
 }
 #input_search {
     margin-top:12px;
 }
 
-#Canvas_Content_Head {
-    height: 29px;
-}
 
 #navigation{
     background-color: #FFEFD8;
     height: 29px;
     padding-left: 10px;
-    margin-top: -22px;
+    margin-top: 6px;
 }
 
 /* The footer */
