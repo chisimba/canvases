@@ -390,3 +390,12 @@ a.pseudobutton {
     padding-right: 66px;
     padding-top: 60px;
 }
+
+#modeswitch_wrapper {
+    height: 25px;
+    padding-top: 8px;
+}
+
+#editmodeswitchbutton {
+    
+}
