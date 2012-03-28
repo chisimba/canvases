@@ -339,3 +339,42 @@ option.by-sa_gnu-fdl {
     background-repeat: no-repeat;
 }
 /** End of CC License styles **/
+
+/** Fix up page navigation in course content **/
+table.pagenavigation {
+    border-spacing: 8px;
+}
+
+table.pagenavigation td:nth-child(odd) { 
+    background: url("images/bottom-content-nav-back.png") top left repeat-x;
+    -moz-border-radius: 10px;  
+    -khtml-border-radius: 10px;  
+    -webkit-border-radius: 10px;  
+    border-radius: 10px;
+    padding: 5px;
+}
+
+table.pagenavigation td:nth-child(even) { 
+    background: url("images/bottom-content-middle-nav-back.png") top left repeat;
+    -moz-border-radius: 10px;  
+    -khtml-border-radius: 10px;  
+    -webkit-border-radius: 10px;  
+    border-radius: 10px;
+}
+
+#tablenav hr {
+    visibility: hidden;
+}
+
+table.toppagenavigation {
+    border-spacing: 8px;
+}
+
+table.toppagenavigation td { 
+    background: url("images/top-content-nav-back.png") top left repeat-x;
+    -moz-border-radius: 10px;  
+    -khtml-border-radius: 10px;  
+    -webkit-border-radius: 10px;  
+    border-radius: 10px;
+    padding: 5px;
+}
