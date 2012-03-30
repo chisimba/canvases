@@ -23,14 +23,12 @@ body {
 .ChisimbaCanvas {
     width: auto;
     padding:0px;
-    /*margin-right: 25px;
-    margin-left: 25px;*/
 }
+
 #Canvas_Content {
     padding:0;
     margin-left: 0;
     margin-right: 0;
-    /*margin-top: 25px;*/
 }
 #Canvas_BeforeContainer {
     height: 0px;
@@ -116,6 +114,11 @@ h1, h2 {
 
 #container {
     background-color: #FFF;
+    box-shadow: 0px 0px 16px black;
+    -webkit-box-shadow: 0px 0px 16px black; 
+    -moz-box-shadow: 0px 1px 16px black;
+    filter: progid:DXImageTransform.Microsoft.dropShadow(color=black, offX=0, offY=0, positive=true);
+
 }
 
 #header {
@@ -448,7 +451,6 @@ li.active {
     margin-top:-25px;
 }
 #form_contextsearch #input_search {
-
     width: 130px;
 }
 
@@ -580,4 +582,26 @@ option.by-sa_gnu-fdl {
 .glossytabs li.current a strong, .glossytabs li a:hover strong{
     color: #fff;
     background: url(images/glossytabs/menub_hover_right.gif) no-repeat right top; /*right tab image path*/
+}
+
+/** General fixups **/
+#form_loginform input {
+    width: 170px;
+}
+
+#nav-secondary {
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, white), 
+                color-stop(65%, white), color-stop(100%, #f7f7f7)); 
+    background: -moz-linear-gradient(top, white 0%, white 55%, #D5E4F3 130%); 
+}
+
+#nav-secondary li {
+    margin-left:-2px;
+    
+}
+
+#nav-secondary li:before {
+    content: "\00BB \0020";
+    color: #ff0000;
+    font-size: 0.8em;
 }

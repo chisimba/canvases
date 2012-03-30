@@ -5,7 +5,8 @@
  * This is the page template in the Metallic elearning skin
  *
  */
-
+// Image banner
+$bannerStyle = 'image';
 // Add navigation back to top of page.
 define("PAGETOP", '<a name="pagetop"></a>');
 define("GOTOTOP", '<a href="#pagetop">Top</a>'); // @todo change this to an icon
@@ -57,7 +58,6 @@ require($objConfig->getsiteRootPath().'skins/_common/templates/skinpageheader3-0
     // Get the skin version 2 base CSS for all skins.
     if (!isset($pageSuppressSkin)) {
         echo '
-<link rel="stylesheet" type="text/css" href="skins/_common/base.css">
         <link rel="stylesheet" type="text/css" href="skins/_common2/base.css">
         ';
      }
@@ -114,6 +114,11 @@ if (!isset($pageSuppressBanner)) {
     ?>
     <div class="Canvas_Content_Head_Before"></div>
     <div class="Canvas_Content_Head">
+        <?php
+        if ($bannerStyle == "image") {
+            echo '<a href="'.$objConfig->getSiteRoot().'">';
+        }
+        ?>
         <div class="Canvas_Content_Head_Header" id="header">
             <h1 id="sitename">
                 <span>
@@ -130,6 +135,9 @@ if (!isset($pageSuppressBanner)) {
         </div>
 
         <?php
+        if ($bannerStyle == "image") {
+            echo "</a>";
+        }
 }
 
 if (!isset($pageSuppressToolbar)) {
