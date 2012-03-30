@@ -378,3 +378,8 @@ table.toppagenavigation td {
     border-radius: 10px;
     padding: 5px;
 }
+
+/** Fix for announcements **/
+.outerwrapper {
+    margin-right:10px;
+}
