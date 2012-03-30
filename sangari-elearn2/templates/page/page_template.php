@@ -123,7 +123,9 @@ if (!isset($pageSuppressBanner)) {
             <h1 id="sitename">
                 <span>
                     <?php
-                    echo '<a href="'.$objConfig->getSiteRoot().'">'.$objConfig->getsiteName().'</a>';
+                    if ($bannerStyle == "text") {
+                        echo '<a href="'.$objConfig->getSiteRoot().'">'.$objConfig->getsiteName().'</a>';
+                    }
                     ?>
                 </span>
             </h1>
