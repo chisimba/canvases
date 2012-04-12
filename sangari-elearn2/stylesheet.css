@@ -49,21 +49,12 @@ body {
     padding-right: 4px;
 }
 #Canvas_Content_Body_Region2 {
-    /*margin-top: 0px;
-    padding-left: 8px;
-    padding-top: 6px;*/
     overflow: auto;
     width:auto;
 }
 #Canvas_Content_Body_Region3 {
     float:right;
     width:220px;
-    /*margin-top: 3px;
-    margin-left: 6px;
-    padding-bottom:4px;
-    padding-top: 6px;
-    padding-left: 6px;
-    padding-right: 4px;*/
 }
 
 
@@ -206,13 +197,9 @@ h1#sitename span {
     padding: 10px;
 }
 
-
-
-
 .featurebox {
     margin-bottom: 10px;
 }
-
 
 .featureboxheader {
     padding: 5px;
