@@ -140,7 +140,7 @@ h1#sitename span {
 }
 
 #Canvas_Content_Body_Region1 .featureboxheader, #Canvas_Content_Body_Region3 .featureboxheader, #Canvas_Content_Body_Region2 .featureboxheader {
-    background: url('images/featureboxheader.gif') #045C97 top left repeat-x;
+    background: url('images/featureboxheader.gif') #b65900 top left repeat-x;
     border-left: 2px solid #f99118;
     border-right: 2px solid #f99118;
     font-size: 110%;
