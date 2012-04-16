@@ -170,10 +170,6 @@ h1#sitename span {
 }
 /* End of search box */
 
-#Canvas_Content_Body_Region1 {
-    
-}
-
 #Canvas_Content_Body_Region2 {
     border-right: 1px solid #CCCCCC;
     border-left: 1px solid #CCCCCC;
@@ -236,6 +232,28 @@ fieldset {
     background-color: #FFF;
     border: 1px solid #CCCCCC;
     padding: 5px;
+}
+
+/* For thumbnails in canvas manager */
+.canvasthumb {
+    width: 160px;
+    height: 160px;
+    padding: 5px;
+    margin: 5px;
+    vertical-align:top;
+    background: grey;
+    float: left;
+    border-radius: 5px;
+    border: 1px solid white;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -khtml-border-radius: 5px;
+}
+
+.canvasthumb img {
+    margin-left: 5px;
+    margin-top: 2px;
+    margin-bottom: 2px;
 }
 
 
