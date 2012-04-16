@@ -69,6 +69,13 @@ require($objConfig->getsiteRootPath().'skins/_common/templates/skinpageheader3-0
     if (!isset($pageSuppressJavascript)) {
     //Load cruvy corners
 ?>
+<!--[if gte IE 9]>
+  <style type="text/css">
+    .gradient {
+       filter: none;
+    }
+  </style>
+<![endif]-->
 <script type="text/javascript">
 var curvyCornersVerbose = false;
 </script>
