@@ -90,7 +90,7 @@ h1#sitename {
     width: 90%;
     top: 25px;
     left: 55px;
-    
+
 }
 h1#sitename a, h1#sitename a:visited {
     width: 324px;
@@ -138,10 +138,11 @@ h1#sitename a:hover, h1#sitename a:visited:hover {
 #navigation {
     background: black url('images/texture-tr75.png') repeat-x top left;
     height: 75px;
+    padding-left: 10px;
 }
 .Canvas_Content_Head_Breadcrumbs {
     padding-top: 10px;
-    padding-left: 10px;
+    padding-left: 0px;
 }
 /* The footer */
 .Canvas_Content_Footer {
@@ -174,14 +175,14 @@ h1#sitename a:hover, h1#sitename a:visited:hover {
 }
 
 /* eLearning button styles */
-
 ul .glossytabs {
     color: #4a5ca8;
 }
 
 .glossytabs li{
-    margin-left: 4px;
-    padding-left: 10px;
+    margin-left: 0px;
+    margin-right: 5px;
+    padding-left: 3px;
 }
 
 .glossytabs li a {
@@ -416,17 +417,17 @@ a.contexttitle {
 
 .annotator_comment {
     line-height: 14px;
-    position: absolute; 
+    position: absolute;
     margin-right: 10px;
-    background-color: #ffaaaa; 
-    border: 1px solid red; 
-    font-size: 8pt; 
+    background-color: #ffaaaa;
+    border: 1px solid red;
+    font-size: 8pt;
     width: 200px
 }
 
 .comment_line {
-    position: absolute; 
-    border-top: 1px dashed red; 
+    position: absolute;
+    border-top: 1px dashed red;
     height: 1px;
 }
 
@@ -444,7 +445,7 @@ a.contexttitle {
 option.copyright {
     padding-left:90px;
     background-image: url('../_common/icons/creativecommons_v3/copyright.gif');
-    background-repeat: no-repeat; 
+    background-repeat: no-repeat;
 }
 option.by {
     padding-left:90px;
@@ -493,20 +494,20 @@ table.pagenavigation {
     border-spacing: 8px;
 }
 
-table.pagenavigation td:nth-child(odd) { 
+table.pagenavigation td:nth-child(odd) {
     background: url("images/bottom-content-nav-back.png") top left repeat-x;
-    -moz-border-radius: 10px;  
-    -khtml-border-radius: 10px;  
-    -webkit-border-radius: 10px;  
+    -moz-border-radius: 10px;
+    -khtml-border-radius: 10px;
+    -webkit-border-radius: 10px;
     border-radius: 10px;
     padding: 5px;
 }
 
-table.pagenavigation td:nth-child(even) { 
+table.pagenavigation td:nth-child(even) {
     background: url("images/bottom-content-middle-nav-back.png") top left repeat;
-    -moz-border-radius: 10px;  
-    -khtml-border-radius: 10px;  
-    -webkit-border-radius: 10px;  
+    -moz-border-radius: 10px;
+    -khtml-border-radius: 10px;
+    -webkit-border-radius: 10px;
     border-radius: 10px;
 }
 
@@ -518,11 +519,11 @@ table.toppagenavigation {
     border-spacing: 8px;
 }
 
-table.toppagenavigation td { 
+table.toppagenavigation td {
     background: url("images/top-content-nav-back.png") top left repeat-x;
-    -moz-border-radius: 10px;  
-    -khtml-border-radius: 10px;  
-    -webkit-border-radius: 10px;  
+    -moz-border-radius: 10px;
+    -khtml-border-radius: 10px;
+    -webkit-border-radius: 10px;
     border-radius: 10px;
     padding: 5px;
 }
@@ -819,7 +820,7 @@ li.active {
 }
 
 #Canvas_Content_Body_Region1 .featureboxheader, #Canvas_Content_Body_Region3 .featureboxheader, #Canvas_Content_Body_Region2 .featureboxheader {
-    background:  #1c64d1 url('images/texture-tr50') top left repeat-x;
+    background:  #1c64d1 url('images/texture-tr50.png') top left repeat-x;
     color: white;
     border-top: 1px solid #1c64d1;
     border-radius: 12px;
@@ -829,11 +830,11 @@ li.active {
     font-size: 110%;
 }
 
-#Canvas_Content_Body_Region1 .featureboxheader, 
-#Canvas_Content_Body_Region1 .featureboxheader a, 
-#Canvas_Content_Body_Region3  .featureboxheader, 
-#Canvas_Content_Body_Region3  .featureboxheader a, 
-#Canvas_Content_Body_Region2 .featureboxheader, 
+#Canvas_Content_Body_Region1 .featureboxheader,
+#Canvas_Content_Body_Region1 .featureboxheader a,
+#Canvas_Content_Body_Region3  .featureboxheader,
+#Canvas_Content_Body_Region3  .featureboxheader a,
+#Canvas_Content_Body_Region2 .featureboxheader,
 #Canvas_Content_Body_Region2 .featureboxheader a {
     color: black;
 }
@@ -865,6 +866,7 @@ fieldset {
     float: left;
     border-radius: 5px;
     border: 1px solid white;
+    border-radius: 5px;
     -moz-border-radius: 5px;
     -webkit-border-radius: 5px;
     -khtml-border-radius: 5px;
@@ -884,14 +886,14 @@ fieldset {
     display: none;
 }
 #nav-secondary {
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, white), 
-                color-stop(65%, white), color-stop(100%, #f7f7f7)); 
-    background: -moz-linear-gradient(top, white 0%, white 55%, #D5E4F3 130%); 
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, white),
+                color-stop(65%, white), color-stop(100%, #f7f7f7));
+    background: -moz-linear-gradient(top, white 0%, white 55%, #D5E4F3 130%);
 }
 
 #nav-secondary li {
     margin-left:-2px;
-    
+
 }
 
 #nav-secondary li:before {
@@ -905,4 +907,25 @@ fieldset {
     padding-top: 15px;
     margin-top: 8px;
     border: 1px solid grey;
+}
+
+/** General fixups **/
+#form_loginform input {
+    width: 170px;
+}
+/*Fixup the fieldset in the login form */
+#form_loginform fieldset {
+    background:transparent;
+    padding: 4px;
+}
+#userdetails fieldset legend h1 {
+    background: white;
+    height: 30px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    padding-left: 5px;
+    padding-right: 5px;
+    margin: 0px;
+    vertical-align: middle;
+    border: 1px solid silver;
 }
