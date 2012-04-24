@@ -105,7 +105,7 @@ h1, h2 {
 #container {
     background-color: #FFF;
     box-shadow: 0px 0px 16px black;
-    -webkit-box-shadow: 0px 0px 16px black; 
+    -webkit-box-shadow: 0px 0px 16px black;
     -moz-box-shadow: 0px 1px 16px black;
     filter: progid:DXImageTransform.Microsoft.dropShadow(color=black, offX=0, offY=0, positive=true);
 
@@ -115,12 +115,13 @@ h1, h2 {
     background: url('images/bannerbkg.jpg') #FFF top right no-repeat;
     margin-top: 35px;
     border-bottom: 1px solid #CCCCCC;
-        padding-bottom: 4px;
+    padding-bottom: 4px;
+    margin-right: 10px;
 }
 
 h1#sitename {
     background: url('images/banner.jpg') top left no-repeat;
-    width: 324px;
+    width: 354px;
     height: 95px;
     margin: 0;
     padding: 0;
@@ -128,7 +129,7 @@ h1#sitename {
 
 
 h1#sitename a {
-    width: 324px;
+    width: 354px;
     height: 90px;
     display: block;
     text-decoration: none;
@@ -164,7 +165,7 @@ h1#sitename span {
     position: absolute;
     float: right;
     margin-top:  20px;
-    margin-right:  33px;
+    margin-right:  43px;
 }
 /* End of search box */
 
@@ -173,14 +174,14 @@ h1#sitename span {
     border-left: 1px solid #CCCCCC;
 }
 
-#Canvas_Content_Body_Region1, #contentcontent, 
-#Canvas_Content_Body_Region2, 
+#Canvas_Content_Body_Region1, #contentcontent,
+#Canvas_Content_Body_Region2,
 #Canvas_Content_Body_Region3 {
     padding: 10px;
 }
 
-#Canvas_Content_Body_Region1, #content, 
-#Canvas_Content_Body_Region2, 
+#Canvas_Content_Body_Region1, #content,
+#Canvas_Content_Body_Region2,
 #Canvas_Content_Body_Region3 {
     background-color: #FFF;
 }
@@ -487,7 +488,7 @@ a.contexttitle {
 option.copyright {
     padding-left:90px;
     background-image: url('../_common/icons/creativecommons_v3/copyright.gif');
-    background-repeat: no-repeat; 
+    background-repeat: no-repeat;
 }
 option.by {
     padding-left:90px;
@@ -561,7 +562,7 @@ option.by-sa_gnu-fdl {
     height: 46px;
     line-height: 46px;
     text-align: center;
-    cursor: pointer;	
+    cursor: pointer;
 }
 
 .glossytabs li a strong{
@@ -593,14 +594,14 @@ option.by-sa_gnu-fdl {
 }
 
 #nav-secondary {
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, white), 
-                color-stop(65%, white), color-stop(100%, #f7f7f7)); 
-    background: -moz-linear-gradient(top, white 0%, white 55%, #D5E4F3 130%); 
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, white),
+                color-stop(65%, white), color-stop(100%, #f7f7f7));
+    background: -moz-linear-gradient(top, white 0%, white 55%, #D5E4F3 130%);
 }
 
 #nav-secondary li {
     margin-left:-2px;
-    
+
 }
 
 #nav-secondary li:before {
