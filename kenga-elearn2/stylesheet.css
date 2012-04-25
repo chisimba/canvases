@@ -24,21 +24,21 @@ body {
     background-repeat: repeat-x repeat-y;
     background-attachment: fixed;
     margin: 0;
-    padding: 0;
+    padding:0;
 }
-
 
 /** Canvas styles **/
 .ChisimbaCanvas {
     width: 100%;
     margin: 0px;
     padding: 0px;
+    padding-right: 10px;
+    padding-right: 10px;
 }
-
 #Canvas_Content {
     width: 100%;
-    padding:0;
     margin: 0px;
+    padding: 0;
 }
 #Canvas_BeforeContainer {
     width: 0px;
@@ -120,6 +120,7 @@ h1#sitename a:hover, h1#sitename a:visited:hover {
     width: 360px;
     top:  128px;
     right: 0px;
+    display:none;
 }
 /* End of search box */
 
@@ -128,11 +129,16 @@ h1#sitename a:hover, h1#sitename a:visited:hover {
     position: absolute;
     float: right;
     width: 350px;
-    height: 140px;
+    height: 155px;
+    padding: 0px;
     background: black url('images/anims.gif') no-repeat;
-    right: 400px;
-    top: 20px;
-    z-index: 999;
+    right: 10px;
+    top: 10px;
+    z-index: 1;
+    border-radius: 12px;
+    -moz-border-radius: 12px;
+    -webkit-border-radius: 12px;
+    -khtml-border-radius: 12px;
 }
 
 #navigation {
@@ -189,6 +195,7 @@ ul .glossytabs {
     color: #4a5ca8;
     font-size: 150%;
     font-weight: bold;
+
 }
 
 .glossytabs li a strong {
@@ -201,7 +208,8 @@ ul .glossytabs {
     padding: 0px 16px 0px 16px; /*Padding of menu items*/
     font-weight: bold;
     height: 35px;
-    padding-top: 0px;
+    padding-top: 8px;
+    margin-top: -8px;
     color: white;
     border-radius: 12px;
     -moz-border-radius: 12px;
@@ -242,6 +250,21 @@ ul .glossytabs {
     font-size: small;
     font-weight: lighter;
     line-height: 15px;
+}
+
+.tabbertab {
+    background: #006699  url('images/overlay70.png');
+    -moz-border-radius-bottomright: 6px;
+    -webkit-border-bottom-right-radius: 6px;
+    -khtml-border-radius-bottomright: 6px;
+    border-bottom-left-radius: 6px;
+    -moz-border-radius-bottomleft: 6px;
+    -webkit-border-bottom-left-radius: 6px;
+    -khtml-border-radius-bottomleft: 6px;
+}
+
+.tabberlive {
+    margin-right: 22px;
 }
 
 .personalblock {
@@ -817,17 +840,34 @@ li.active {
 .featureboxcontent {
     padding: 5px 5px 0px 5px;
     margin: 0;
+    font-size: 110%;
+    border-bottom-right-radius: 6px;
+    -moz-border-radius-bottomright: 6px;
+    -webkit-border-bottom-right-radius: 6px;
+    -khtml-border-radius-bottomright: 6px;
+    border-bottom-left-radius: 6px;
+    -moz-border-radius-bottomleft: 6px;
+    -webkit-border-bottom-left-radius: 6px;
+    -khtml-border-radius-bottomleft: 6px;
+    -webkit-box-shadow: 3px 3px 6px rgba(50, 50, 50, 0.22);
+    -moz-box-shadow:    3px 3px 6px rgba(50, 50, 50, 0.22);
+    box-shadow:         3px 3px 6px rgba(50, 50, 50, 0.22);
+
 }
 
 #Canvas_Content_Body_Region1 .featureboxheader, #Canvas_Content_Body_Region3 .featureboxheader, #Canvas_Content_Body_Region2 .featureboxheader {
     background:  #1c64d1 url('images/texture-tr50.png') top left repeat-x;
     color: white;
     border-top: 1px solid #1c64d1;
-    border-radius: 12px;
-    -moz-border-radius: 12px;
-    -webkit-border-radius: 12px;
-    -khtml-border-radius: 12px;
+   border-top-right-radius: 12px;
+    -moz-border-radius-topright: 12px;
+    -webkit-border-top-right-radius: 12px;
+    -khtml-border-radius-topright: 12px;
     font-size: 110%;
+    border-top-left-radius: 12px;
+    -moz-border-radius-topleft: 12px;
+    -webkit-border-top-left-radius: 12px;
+    -khtml-border-radius-topleft: 12px;
 }
 
 #Canvas_Content_Body_Region1 .featureboxheader,
@@ -889,6 +929,27 @@ fieldset {
     background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, white),
                 color-stop(65%, white), color-stop(100%, #f7f7f7));
     background: -moz-linear-gradient(top, white 0%, white 55%, #D5E4F3 130%);
+    border-bottom-right-radius: 6px;
+    -moz-border-radius-bottomright: 6px;
+    -webkit-border-bottom-right-radius: 6px;
+    -khtml-border-radius-bottomright: 6px;
+    font-size: 110%;
+    border-bottom-left-radius: 6px;
+    -moz-border-radius-bottomleft: 6px;
+    -webkit-border-bottom-left-radius: 6px;
+    -khtml-border-radius-bottomleft: 6px;
+    border-top-right-radius: 12px;
+    -moz-border-radius-topright: 12px;
+    -webkit-border-top-right-radius: 12px;
+    -khtml-border-radius-topright: 12px;
+    font-size: 110%;
+    border-top-left-radius: 12px;
+    -moz-border-radius-topleft: 12px;
+    -webkit-border-top-left-radius: 12px;
+    -khtml-border-radius-topleft: 12px;
+    -webkit-box-shadow: 3px 3px 6px rgba(50, 50, 50, 0.22);
+    -moz-box-shadow:    3px 3px 6px rgba(50, 50, 50, 0.22);
+    box-shadow:         3px 3px 6px rgba(50, 50, 50, 0.22);
 }
 
 #nav-secondary li {
@@ -928,4 +989,208 @@ fieldset {
     margin: 0px;
     vertical-align: middle;
     border: 1px solid silver;
+}
+
+
+.context_recent_context {
+    -webkit-box-shadow: 4px 4px 5px rgba(50, 50, 50, 0.47);
+    -moz-box-shadow:    4px 4px 5px rgba(50, 50, 50, 0.47);
+    box-shadow:         4px 4px 5px rgba(50, 50, 50, 0.47);
+}
+
+
+/*
+
+    Styles specifically related to improving the display of
+    the blog
+
+*/
+
+.blog-head-date {
+    font-size: 70%;
+    color: gray;
+}
+
+/* The bottom part of each blog post with comments and tags, etc */
+.blog-item-base {
+    background: url('images/overlay25.png');
+    margin-top: 5px;
+    margin-left: -6px;
+    margin-right: -6px;
+    margin-bottom: -16px;
+    -moz-border-radius-bottomleft: 6px;
+    border-radius-bottomleft: 6px;
+    -webkit-border-radius-bottomleft: 6px;
+    -khtml-border-radius-bottomleft: 6px;
+    -moz-border-radius-bottomright: 6px;
+    border-radius-bottomright: 6px;
+    -webkit-border-radius-bottomright: 6px;
+    -khtml-border-radius-bottomright: 6px;
+    border: none;
+}
+.contentfeaturebox {
+    background: url("images/overlay50.png") top left repeat;
+    position: relative;
+    padding-top: 0.3em;
+    padding-right: 0.6em;
+    padding-bottom: 1.3em;
+    padding-left: 0.6em;
+    border-bottom-width: 1px;
+    border-bottom-style: dashed;
+    border-bottom-color: #d2dada;
+    line-height: 1.1em;
+    margin-left: 2px;
+    margin-right: 2px;
+    margin-top: 15px;
+    margin-bottom: 5px;
+    line-height: 130%;
+    -moz-border-radius-bottomleft: 6px;
+    border-radius-bottomleft: 6px;
+    -webkit-border-radius-bottomleft: 6px;
+    -khtml-border-radius-bottomleft: 6px;
+    -moz-border-radius-bottomright: 6px;
+    border-radius-bottomright: 6px;
+    -webkit-border-radius-bottomright: 6px;
+    -khtml-border-radius-bottomright: 6px;
+    border-radius-topleft: 12px;
+    -moz-border-radius-topleft: 12px;
+    -webkit-border-top-left-radius: 12px;
+    -khtml-border-radius-topleft: 12px;
+    border-radius-topright: 12px;
+    -moz-border-radius-topright: 12px;
+    -webkit-border-top-right-radius: 12px;
+    -khtml-border-radius-topright: 12px;
+}
+/*
+The blog and some other content uses H3 within a contentfeaturebox.
+It is styled here to produce the top part of each blog post so that
+it is offset from the text content.
+*/
+.contentfeaturebox h3 {
+    background: url("images/overlay25.png") top left repeat;
+    margin-top: -3px;
+    margin-left: -6px;
+    margin-right: -6px;
+    margin-bottom: 15px;
+    border: none;
+    padding-left: 8px;
+    padding-right: 8px;
+    padding-top:10px;
+    padding-bottom: 5px;
+    border-radius-topleft: 12px;
+    -moz-border-radius-topleft: 12px;
+    -webkit-border-top-left-radius: 12px;
+    -khtml-border-radius-topleft: 12px;
+    border-radius-topright: 12px;
+    -moz-border-radius-topright: 12px;
+    -webkit-border-top-right-radius: 12px;
+    -khtml-border-radius-topright: 12px;
+}
+
+/** Fix latest 10 blog block */
+
+#lastten p {
+  font-family: Arial, serif;
+  font-size: 90%;
+  margin-top: -7px;
+}
+
+#lastten p:before {
+    content:url(images/bullet.png);
+    margin-right: 3px;
+}
+
+#lastten p .minute {
+  font-family: Arial, serif;
+  font-size: 70%;
+  margin-left:10px;
+}
+/**
+For the blog blocks displayed as a middle block
+**/
+.blogpreview {
+    background: url("images/overlay25.png") top left repeat;
+    height: 250px;
+    border-radius: 15px;
+    -moz-border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -khtml-border-radius: 15px;
+    padding: 10px;
+    overflow: auto;
+}
+
+.blogpreviewtitle {
+    font-weight:bold;
+    margin-bottom: 6px;
+}
+
+.blogpreviewuser {
+    margin-top: 8px;
+    color:navy;
+    font-size: 80%;
+}
+
+.blogpreviewpostdate {
+    color:grey;
+    font-size: 90%;
+}
+/* Blog retweet button */
+a.retweet {
+    position: relative;
+    top: 5px;
+}
+
+/*
+    Styles for odd/even table rows.
+*/
+td.odd {
+     background: url("images/overlay25.png") top left repeat;
+}
+
+td.even {
+     background: url("images/overlay50.png") top left repeat;
+}
+
+th.heading {
+    background: black url("images/overlay50.png") top left repeat;
+}
+
+/**
+
+Internal email module
+
+**/
+
+.internalmail {
+    background: transparent url("images/overlay25.png") top left repeat;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 10px;
+    border-radius: 15px;
+    -moz-border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -khtml-border-radius: 15px;
+}
+
+.internalmail_send_heading {
+    margin-top: -15px;
+    background: transparent url("icons/intmail.png") left no-repeat;
+    padding-left: 25px;
+}
+
+div.internalmail fieldset.tabbox {
+    background: transparent url("images/overlay25.png") top left repeat;
+    margin-right: 33px !important;
+}
+
+div.internalmail fieldset.tabbox table {
+    background: transparent;
+}
+
+div.internalmail legend.tabbox img {
+    background: transparent;
+}
+
+.intmail_message {
+    background:red;
 }
