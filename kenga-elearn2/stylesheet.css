@@ -27,6 +27,23 @@ body {
     padding:0;
 }
 
+a {
+    color: deepskyblue;
+}
+
+a:visited {
+    color: slateblue;
+}
+
+a:hover, a:visited:hover {
+    color: #e5af0b;
+    text-decoration: none;
+}
+
+a:active, a:visited:active {
+    color: #CCCCCC;
+}
+
 /** Canvas styles **/
 .ChisimbaCanvas {
     width: 100%;
@@ -969,6 +986,11 @@ fieldset {
     margin-top: 8px;
     border: 1px solid grey;
 }
+#modeswitch_wrapper a {
+    color: #FFEFD8;
+    font-size: medium;
+}
+
 
 /** General fixups **/
 #form_loginform input {
@@ -1193,4 +1215,67 @@ div.internalmail legend.tabbox img {
 
 .intmail_message {
     background:red;
+}
+
+/** Fix up styles for Announcements module */
+.announcements .outerwrapper {
+    background: transparent url("images/overlay25.png") top left repeat;
+    padding: 8px;
+    margin-top: 10px;
+    border-radius: 15px;
+    -moz-border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -khtml-border-radius: 15px;
+    font-size: medium;
+}
+
+.announcements table {
+    margin-bottom: 5px;
+}
+
+.announcements th {
+
+}
+.announcements td {
+    vertical-align: middle;
+}
+.announcements tr.odd {
+    background: url("images/overlay25.png") top left repeat;
+    height: 20px;
+}
+.announcements tr.even {
+    background: url("images/overlay50.png") top left repeat;
+    height: 20px;
+}
+
+.announcements div.modulehome {
+    position: relative;
+    float: left;
+    height: 32px;
+    width: 32px;
+    background: transparent url("images/announcement-home.png") top left no-repeat;
+    margin-right: 4px;
+}
+
+.announcements div.adminadd {
+    position: relative;
+    float: left;
+    height: 32px;
+    width: 32px;
+    background: transparent url("images/announcement-add.png") top left no-repeat;
+    margin-right: 4px;
+}
+
+.announcements div.linkwrapper {
+    height: 32px;
+    margin-bottom: 4px;
+}
+.adminaddlink, .modulehomelink {
+    height: 32px;
+    padding-top: 5px;
+}
+
+.linkwrapper {
+    margin-top: 6px;
+    font-size: medium;
 }
