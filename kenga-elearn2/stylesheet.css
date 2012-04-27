@@ -72,11 +72,13 @@ a:active, a:visited:active {
 #Canvas_Content_Body_Region1 {
     float:left;
     width:220px;
-    margin-top: 3px;
+    margin-top: 0px;
+    margin-right: 8px;
     padding-bottom:4px;
     padding-top: 6px;
     padding-left: 6px;
     padding-right: 4px;
+    background: url('images/overlay25.png');
 }
 #Canvas_Content_Body_Region2 {
     overflow: auto;
@@ -85,7 +87,16 @@ a:active, a:visited:active {
 #Canvas_Content_Body_Region3 {
     float:right;
     width:220px;
+    padding-top: 6px;
+    margin-left: 8px;
+    background: url('images/overlay25.png');
 }
+#Canvas_Content_Body_Region1,
+#Canvas_Content_Body_Region2,
+#Canvas_Content_Body_Region3 {
+    min-height:900px;
+}
+
 #container {
     background: transparent;
     width: 100%;
@@ -889,8 +900,8 @@ li.active {
 
 #Canvas_Content_Body_Region1 .featureboxheader,
 #Canvas_Content_Body_Region1 .featureboxheader a,
-#Canvas_Content_Body_Region3  .featureboxheader,
-#Canvas_Content_Body_Region3  .featureboxheader a,
+#Canvas_Content_Body_Region3 .featureboxheader,
+#Canvas_Content_Body_Region3 .featureboxheader a,
 #Canvas_Content_Body_Region2 .featureboxheader,
 #Canvas_Content_Body_Region2 .featureboxheader a {
     color: black;
@@ -907,7 +918,7 @@ li.active {
 }
 
 fieldset {
-    background-color: #FFF;
+    background: transparent url("images/overlay50.png") top left repeat;
     border: 1px solid #CCCCCC;
     padding: 5px;
 }
@@ -1278,4 +1289,33 @@ div.internalmail legend.tabbox img {
 .linkwrapper {
     margin-top: 6px;
     font-size: medium;
+}
+
+/** Context (course) chapters and content **/
+#allchapters{
+    background: transparent url("images/overlay25.png") top left repeat;
+    padding: 8px;
+    border-radius: 15px;
+    -moz-border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -khtml-border-radius: 15px;
+    font-size: medium;
+}
+
+#allchapters h1 a {
+
+}
+.chapterlisting {
+    background: transparent url("images/overlay25.png") top left repeat;
+    padding: 8px;
+    border-radius: 8px;
+    -moz-border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -khtml-border-radius: 8px;
+}
+
+.chapterlisting ul.htmlliststyle li:before {
+        content: "\00BB \0020";
+        color: #e5af0b;
+        font-size: medium;
 }
