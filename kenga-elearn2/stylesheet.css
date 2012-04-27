@@ -36,7 +36,7 @@ a:visited {
 }
 
 a:hover, a:visited:hover {
-    color: #e5af0b;
+    color: brown;
     text-decoration: none;
 }
 
@@ -1264,7 +1264,7 @@ div.internalmail legend.tabbox img {
     float: left;
     height: 32px;
     width: 32px;
-    background: transparent url("images/announcement-home.png") top left no-repeat;
+    background: transparent url("icons/misc/announcement-home.png") top left no-repeat;
     margin-right: 4px;
 }
 
@@ -1273,7 +1273,7 @@ div.internalmail legend.tabbox img {
     float: left;
     height: 32px;
     width: 32px;
-    background: transparent url("images/announcement-add.png") top left no-repeat;
+    background: transparent url("icons/misc/announcement-add.png") top left no-repeat;
     margin-right: 4px;
 }
 
@@ -1292,7 +1292,7 @@ div.internalmail legend.tabbox img {
 }
 
 /** Context (course) chapters and content **/
-#allchapters{
+#allchapters, #context_content {
     background: transparent url("images/overlay25.png") top left repeat;
     padding: 8px;
     border-radius: 15px;
@@ -1300,10 +1300,11 @@ div.internalmail legend.tabbox img {
     -webkit-border-radius: 15px;
     -khtml-border-radius: 15px;
     font-size: medium;
+    margin-top: 8px;
 }
 
-#allchapters h1 a {
-
+#allchapters h1, #context_content h1 {
+    font-size: 18pt;
 }
 .chapterlisting {
     background: transparent url("images/overlay25.png") top left repeat;
@@ -1313,9 +1314,97 @@ div.internalmail legend.tabbox img {
     -webkit-border-radius: 8px;
     -khtml-border-radius: 8px;
 }
-
+.chapterlisting ul.htmlliststyle {
+    padding-left: 0px;
+}
+.chapterlisting ul.htmlliststyle ul {
+    padding-left: 0px;
+}
+.chapterlisting ul.htmlliststyle ul ul {
+    padding-left: 0px;
+}
+.chapterlisting ul.htmlliststyle ul ul ul {
+    padding-left: 0px;
+}
 .chapterlisting ul.htmlliststyle li:before {
         content: "\00BB \0020";
         color: #e5af0b;
         font-size: medium;
+}
+#context_left_nav {
+    background: transparent url("images/overlay25.png") top left repeat;
+    padding: 8px;
+    font-size: medium;
+    border-radius: 8px;
+    -moz-border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -khtml-border-radius: 8px;
+}
+#contentnav {
+    background: transparent;
+}
+
+#contentnav ul.htmlliststyle {
+    padding-left: 0px;
+}
+#contentnav ul.htmlliststyle ul {
+    padding-left: 0px;
+}
+#contentnav ul.htmlliststyle ul ul {
+    padding-left: 0px;
+}
+#contentnav ul.htmlliststyle ul ul ul {
+    padding-left: 0px;
+}
+#contentnav li {
+    padding-left: 8px;
+    font-size: medium;
+}
+#contentnav ul.htmlliststyle li:before {
+        content: "\00BB \0020";
+        color: #e5af0b;
+        font-size: medium;
+}
+#context_left_nav ol {
+    padding-left: 15px;
+}
+
+/**
+Errors and warnings
+**/
+.warning {
+    color: blue;
+    margin-bottom: 20px;
+    margin-top: 10px;
+    vertical-align: middle;
+}
+.warning:before {
+    content:url(icons/misc/warning-icon.png);
+    margin-right: 8px;
+    vertical-align: top;
+    float: left;
+}
+.error {
+    color: red;
+    margin-bottom: 20px;
+    margin-top: 10px;
+    vertical-align: middle;
+}
+.error:before {
+    content:url(icons/misc/error-icon.png);
+    margin-right: 8px;
+    vertical-align: top;
+    float: left;
+}
+.success {
+    color: green;
+    margin-bottom: 20px;
+    margin-top: 10px;
+    vertical-align: middle;
+}
+.success:before {
+    content:url(icons/misc/success-icon.png);
+    margin-right: 8px;
+    vertical-align: top;
+    float: left;
 }
