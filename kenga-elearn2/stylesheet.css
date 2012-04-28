@@ -868,7 +868,6 @@ li.active {
 .featureboxcontent {
     padding: 5px 5px 0px 5px;
     margin: 0;
-    font-size: medium;
     border-bottom-right-radius: 6px;
     -moz-border-radius-bottomright: 6px;
     -webkit-border-bottom-right-radius: 6px;
