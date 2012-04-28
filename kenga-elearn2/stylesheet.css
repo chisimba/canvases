@@ -369,11 +369,7 @@ table.eventslist td {
 }
 
 
-a.contexttitle {
-    color: #003366;
-    font-size: larger;
-    padding-left: 5px;
-}
+
 
 /** Styles for the page annotations **/
 .annotated{
@@ -785,10 +781,7 @@ li.active {
     width: 130px;
 }
 
-
-
-
-
+/** Chat in messaging module **/
 #chatDiv {
     height: 500px;
     border: none;
@@ -858,6 +851,14 @@ li.active {
 
 .featurebox {
     margin-bottom: 10px;
+    -moz-border-radius-bottomleft: 6px;
+    border-radius-bottomleft: 6px;
+    -webkit-border-radius-bottomleft: 6px;
+    -khtml-border-radius-bottomleft: 6px;
+    -moz-border-radius-bottomright: 6px;
+    border-radius-bottomright: 6px;
+    -webkit-border-radius-bottomright: 6px;
+    -khtml-border-radius-bottomright: 6px;
 }
 
 .featureboxheader {
@@ -1023,27 +1024,22 @@ fieldset {
     border: 1px solid silver;
 }
 
-
+/** The little boxes that show recent courses **/
 .context_recent_context {
+    font-size: 125%;
+    line-height: 135%;
     -webkit-box-shadow: 4px 4px 5px rgba(50, 50, 50, 0.47);
     -moz-box-shadow:    4px 4px 5px rgba(50, 50, 50, 0.47);
     box-shadow:         4px 4px 5px rgba(50, 50, 50, 0.47);
 }
 
 
-/*
-
-    Styles specifically related to improving the display of
-    the blog
-
-*/
+/** Styles specifically related to improving the blog **/
 
 .blog-head-date {
     font-size: 70%;
     color: gray;
 }
-
-/* The bottom part of each blog post with comments and tags, etc */
 .blog-item-base {
     background: url('images/overlay25.png');
     margin-top: 5px;
@@ -1075,7 +1071,8 @@ fieldset {
     margin-right: 2px;
     margin-top: 15px;
     margin-bottom: 5px;
-    line-height: 130%;
+    line-height: 140%;
+    font-size: 130%;
     -moz-border-radius-bottomleft: 6px;
     border-radius-bottomleft: 6px;
     -webkit-border-radius-bottomleft: 6px;
@@ -1452,4 +1449,157 @@ table.toppagenavigation td {
 }
 table.pagenavigation {
     margin-bottom: 35px;
+}
+
+/* Fixup stuff for the stories module and story display */
+
+
+.allstories {
+    background: none;
+    padding-top: 12px;
+}
+
+.storytitle h3 {
+    background: url("images/overlay25.png") top left repeat;
+    margin-top: -11px;
+    margin-left: -8px;
+    margin-right: 100px;
+    margin-bottom: 15px;
+    border: none;
+    border-bottom: solid white 1px;
+    padding-left: 8px;
+    padding-right: 8px;
+    padding-top:10px;
+    padding-bottom: 5px;
+    width: 100%;
+    font-size: 150%;
+    border-radius-topleft: 15px;
+    -moz-border-radius-topleft: 15px;
+    -webkit-border-top-left-radius: 15px;
+    -khtml-border-radius-topleft: 15px;
+    border-radius-topright: 15px;
+    -moz-border-radius-topright: 15px;
+    -webkit-border-top-right-radius: 15px;
+    -khtml-border-radius-topright: 15px;
+}
+
+.storytitle h3 img {
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+.storyauthor {
+    background: url("images/overlay25.png") top left repeat;
+    margin-bottom: 0px;
+    margin-left: -8px;
+    margin-right: -5px;
+    padding-left: 15px;
+    height: 30px;
+    width: 100%;
+    text-align: center;
+    -moz-border-radius-bottomleft: 6px;
+    border-radius-bottomleft: 6px;
+    -webkit-border-radius-bottomleft: 6px;
+    -khtml-border-radius-bottomleft: 6px;
+    -moz-border-radius-bottomright: 6px;
+    border-radius-bottomright: 6px;
+    -webkit-border-radius-bottomright: 6px;
+    -khtml-border-radius-bottomright: 6px;
+}
+
+.storyauthor p {
+    font-size: 130%;
+    color: #006699;
+}
+
+.currentstory {
+    background: url("images/overlay25.png") top left repeat;
+    width: auto;
+    margin-left: 8px;
+    margin-right: 8px;
+    margin-bottom: 15px;
+    padding-left: 8px;
+    padding-right: 8px;
+    padding-top:10px;
+    padding-bottom: 0px;
+    border-radius-topleft: 15px;
+    -moz-border-radius-topleft: 15px;
+    -webkit-border-top-left-radius: 15px;
+    -khtml-border-radius-topleft: 15px;
+    border-radius-topright: 15px;
+    -moz-border-radius-topright: 15px;
+    -webkit-border-top-right-radius: 15px;
+    -khtml-border-radius-topright: 15px;
+    -moz-border-radius-bottomleft: 6px;
+    border-radius-bottomleft: 6px;
+    -webkit-border-radius-bottomleft: 6px;
+    -khtml-border-radius-bottomleft: 6px;
+    -moz-border-radius-bottomright: 6px;
+    border-radius-bottomright: 6px;
+    -webkit-border-radius-bottomright: 6px;
+    -khtml-border-radius-bottomright: 6px;
+    font-size: 120%;
+}
+
+.currentstory p {
+    line-height: 160%;
+}
+
+.abstract p {
+    color: slategray;
+}
+
+/** Context admin styles **/
+.contextadmin_contextlist {
+    background: none;
+}
+.contextadmin_contextlist .featureboxcontent {
+    font-size: 130%;
+    padding-bottom: 8px;
+}
+.contextadmin_contextlist .featureboxcontent p {
+    margin-top: 0px;
+    margin-bottom: 5px;
+}
+.contextadmin_contextlist .featureboxheader a,
+.contextadmin_contextlist .featureboxheader a:visited {
+    color: navy !important;
+    font-size: larger;
+    padding-left: 5px;
+    background: none;
+}
+.contextadmin_contextlist .featureboxheader a:hover,
+.contextadmin_contextlist .featureboxheader a:visited:hover {
+    color: blue !important;
+    font-size: larger;
+    padding-left: 5px;
+    background: none;
+}
+
+/** Some of the context blocks **/
+.context_about_block {
+    font-size: 130%;
+}
+.context_sidebar {
+    background: url("images/overlay25.png") top left repeat;
+    padding-top: 2px;
+    padding-left: 4px;
+    padding-right: 4px;
+    padding-bottom: 8px;
+    -moz-border-radius-bottomleft: 6px;
+    border-radius-bottomleft: 6px;
+    -webkit-border-radius-bottomleft: 6px;
+    -khtml-border-radius-bottomleft: 6px;
+    -moz-border-radius-bottomright: 6px;
+    border-radius-bottomright: 6px;
+    -webkit-border-radius-bottomright: 6px;
+    -khtml-border-radius-bottomright: 6px;
+    border-radius-topleft: 12px;
+    -moz-border-radius-topleft: 12px;
+    -webkit-border-top-left-radius: 12px;
+    -khtml-border-radius-topleft: 12px;
+    border-radius-topright: 12px;
+    -moz-border-radius-topright: 12px;
+    -webkit-border-top-right-radius: 12px;
+    -khtml-border-radius-topright: 12px;
 }
