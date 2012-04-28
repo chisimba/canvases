@@ -76,6 +76,9 @@ var curvyCornersVerbose = false;
         $curvy = $this->getJavascriptFile('curvycorners-2.0.4/curvycorners.js', 'canvas');
         echo $curvy;
         echo $objSkin->putJavaScript($mime, $headerParams, $bodyOnLoad);
+        // Load the helper JS from the current skin
+        $helperJs = 'skins/' . $skinName . '/javascript/skinhelper.js';
+        echo "\n<script type='text/javascript' src='" . $helperJs . "'></script>\n\n";
     }
 
     // Render the CSS for the current skin unless it is suppressed.
@@ -134,9 +137,12 @@ if (!isset($pageSuppressBanner)) {
 
         <?php
 }
-
 if (!isset($pageSuppressToolbar)) {
     echo "\n\n<div id='navigation'>\n\n" . $toolbar . "\n</div>\n\n";
+}
+
+if (!$this->objUser->isLoggedIn()) {
+    echo "\n\n<div id='navigation'>\n\n" . "<p>We are working on the navigation content to be displayed in this area.</p> " . "\n</div>\n\n";
 }
 
 if (!isset($pageSuppressBanner)) {
@@ -146,7 +152,7 @@ if (!isset($pageSuppressBanner)) {
     <?php
 }
 
-// Render the laout content as supplied from the layout template
+// Render the layout content as supplied from the layout template
 echo "<div class='Canvas_Content_Body_Before'></div>\n"
    . "<div id='Canvas_Content_Body'>\n"
    . $this->getLayoutContent()

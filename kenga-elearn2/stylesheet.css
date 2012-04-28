@@ -16,19 +16,22 @@ html {
     width: 100%;
     margin: 0;
     padding: 0;
+    border: 0;
 }
 
 /* The body & background */
 body {
+    width: 100%;
     background: #006699  url('images/texture-tr50.png');
     background-repeat: repeat-x repeat-y;
     background-attachment: fixed;
     margin: 0;
     padding:0;
+    border: 0;
 }
 
 a {
-    color: deepskyblue;
+    color: #182536;
 }
 
 a:visited {
@@ -49,8 +52,8 @@ a:active, a:visited:active {
     width: 100%;
     margin: 0px;
     padding: 0px;
-    padding-right: 10px;
-    padding-right: 10px;
+    padding-right: 0px;
+    padding-right: 0px;
 }
 #Canvas_Content {
     width: 100%;
@@ -310,6 +313,16 @@ ul .glossytabs {
 /** Wide calendar **/
 #widecalendar {
     width: 98%;
+    padding: 4px;
+    background: url("images/light-blue-granular.jpg") top left repeat;
+    border-radius-topleft: 5px;
+    -moz-border-radius-topleft: 5px;
+    -webkit-border-top-left-radius: 5px;
+    -khtml-border-radius-topleft: 5px;
+    border-radius-topright: 5px;
+    -moz-border-radius-topright: 5px;
+    -webkit-border-top-right-radius: 5px;
+    -khtml-border-radius-topright: 5px;
 }
 div#widecalendar table.calendarTable td {
     padding-left: 0px;
@@ -1602,4 +1615,105 @@ table.pagenavigation {
     -moz-border-radius-topright: 12px;
     -webkit-border-top-right-radius: 12px;
     -khtml-border-radius-topright: 12px;
+}
+
+/** Assignment module styles **/
+.assignment_main {
+    background: url("images/overlay25.png") top left repeat;
+    width: 98%;
+    padding: 8px;
+    margin-top: 8px;
+    -moz-border-radius-bottomleft: 6px;
+    border-radius-bottomleft: 6px;
+    -webkit-border-radius-bottomleft: 6px;
+    -khtml-border-radius-bottomleft: 6px;
+    -moz-border-radius-bottomright: 6px;
+    border-radius-bottomright: 6px;
+    -webkit-border-radius-bottomright: 6px;
+    -khtml-border-radius-bottomright: 6px;
+    border-radius-topleft: 12px;
+    -moz-border-radius-topleft: 12px;
+    -webkit-border-top-left-radius: 12px;
+    -khtml-border-radius-topleft: 12px;
+    border-radius-topright: 12px;
+    -moz-border-radius-topright: 12px;
+    -webkit-border-top-right-radius: 12px;
+    -khtml-border-radius-topright: 12px;
+}
+
+#form_addeditassignment fieldset {
+    background: url("images/light-blue-granular.jpg") top left repeat;
+    margin-bottom: 8px;
+}
+
+#form_addeditassignment fieldset legend {
+    background: url("images/light-blue-granular.jpg") top left repeat;
+    border-radius-topleft: 5px;
+    -moz-border-radius-topleft: 5px;
+    -webkit-border-top-left-radius: 5px;
+    -khtml-border-radius-topleft: 5px;
+    border-radius-topright: 5px;
+    -moz-border-radius-topright: 5px;
+    -webkit-border-top-right-radius: 5px;
+    -khtml-border-radius-topright: 5px;
+}
+
+.assignment_main table {
+    font-size: medium;
+    margin-bottom: 10px;
+}
+
+.assignment_link_add, .assignment_link_submittedlist,
+.assignment_link_return, .assignment_link_filedn,
+.assignment_link_dnlall, .assignment_link_export,
+.calendar_addlink {
+    font-size: medium;
+    margin-bottom: 2px;
+    margin-top: 2px;
+}
+
+/** Essay module, FAQ module **/
+.essay_main, .faq_main {
+    margin-top: 8px;
+    width: 98%;
+    background: url("images/light-blue-granular.jpg") top left repeat;
+    -moz-border-radius-bottomleft: 6px;
+    border-radius-bottomleft: 6px;
+    -webkit-border-radius-bottomleft: 6px;
+    -khtml-border-radius-bottomleft: 6px;
+    -moz-border-radius-bottomright: 6px;
+    border-radius-bottomright: 6px;
+    -webkit-border-radius-bottomright: 6px;
+    -khtml-border-radius-bottomright: 6px;
+    border-radius-topleft: 12px;
+    -moz-border-radius-topleft: 12px;
+    -webkit-border-top-left-radius: 12px;
+    -khtml-border-radius-topleft: 12px;
+    border-radius-topright: 12px;
+    -moz-border-radius-topright: 12px;
+    -webkit-border-top-right-radius: 12px;
+    -khtml-border-radius-topright: 12px;
+    font-size: medium;
+    padding: 8px;
+    overflow: visible;
+}
+.essay_main table {
+    margin-bottom: 15px;
+}
+
+.faq_main .wrapperDarkBkg {
+    margin-bottom: 12px;
+}
+
+.tagcloud {
+    background: url("images/overlay50.png") top left repeat;
+    -moz-border-radius: 10px;
+    -khtml-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    margin-right: 30px;
+    margin-left: 30px;
+    -webkit-box-shadow: 4px 4px 5px rgba(50, 50, 50, 0.27);
+    -moz-box-shadow:    4px 4px 5px rgba(50, 50, 50, 0.27);
+    box-shadow:         4px 4px 5px rgba(50, 50, 50, 0.27);
 }
