@@ -1238,7 +1238,18 @@ div.internalmail legend.tabbox img {
     height: 32px;
     font-size: 120%
 }
-
+.context_cpanel {
+    margin-top: 8px;
+    margin-right: 8px;
+    padding: 8px;
+    font-size: 130%;
+}
+.context_cpanel label {
+    font-weight: normal;
+}
+#memberbrowser {
+    width: 370px !important;
+}
 /**
 Errors and warnings
 **/
@@ -1551,7 +1562,8 @@ table.pagenavigation {
 .essay_main, .faq_main, .rubric_main,
 .rubric_view, .filemanager_main, .modcat_main,
 .gradebook_main, .forum_main, .mcq_main,
-.sysconfig_main, .toolbar_main, .logger_main {
+.sysconfig_main, .toolbar_main, .logger_main,
+.context_cpanel {
     background: url("images/light-blue-granular.jpg") top left repeat;
     -moz-border-radius: 15px;
     -khtml-border-radius: 15px;
@@ -2074,4 +2086,10 @@ For the blog blocks displayed as a middle block
 .blogpreviewpostdate {
     color:grey;
     font-size: 90%;
+}
+
+/** Fix for menu floting off left - not sure why this is needed though **/
+.glossytabs {
+    padding-left: 40px;
+    margin-top: 5px;
 }
