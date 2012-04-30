@@ -870,7 +870,7 @@ li.active {
 }
 
 .featureboxcontent {
-    padding: 5px 5px 0px 5px;
+    padding: 5px 5px 5px 5px;
     margin: 0;
     border-bottom-right-radius: 6px;
     -moz-border-radius-bottomright: 6px;
@@ -1036,141 +1036,6 @@ fieldset {
     box-shadow:         4px 4px 5px rgba(50, 50, 50, 0.47);
 }
 
-
-/** Styles specifically related to improving the blog **/
-
-.blog-head-date {
-    font-size: 70%;
-    color: gray;
-}
-.blog-item-base {
-    background: url('images/overlay25.png');
-    margin-top: 5px;
-    margin-left: -6px;
-    margin-right: -6px;
-    margin-bottom: -16px;
-    -moz-border-radius-bottomleft: 6px;
-    border-radius-bottomleft: 6px;
-    -webkit-border-radius-bottomleft: 6px;
-    -khtml-border-radius-bottomleft: 6px;
-    -moz-border-radius-bottomright: 6px;
-    border-radius-bottomright: 6px;
-    -webkit-border-radius-bottomright: 6px;
-    -khtml-border-radius-bottomright: 6px;
-    border: none;
-}
-.contentfeaturebox {
-    background: url("images/overlay50.png") top left repeat;
-    position: relative;
-    padding-top: 0.3em;
-    padding-right: 0.6em;
-    padding-bottom: 1.3em;
-    padding-left: 0.6em;
-    border-bottom-width: 1px;
-    border-bottom-style: dashed;
-    border-bottom-color: #d2dada;
-    line-height: 1.1em;
-    margin-left: 2px;
-    margin-right: 2px;
-    margin-top: 15px;
-    margin-bottom: 5px;
-    line-height: 140%;
-    font-size: 130%;
-    -moz-border-radius-bottomleft: 6px;
-    border-radius-bottomleft: 6px;
-    -webkit-border-radius-bottomleft: 6px;
-    -khtml-border-radius-bottomleft: 6px;
-    -moz-border-radius-bottomright: 6px;
-    border-radius-bottomright: 6px;
-    -webkit-border-radius-bottomright: 6px;
-    -khtml-border-radius-bottomright: 6px;
-    border-radius-topleft: 12px;
-    -moz-border-radius-topleft: 12px;
-    -webkit-border-top-left-radius: 12px;
-    -khtml-border-radius-topleft: 12px;
-    border-radius-topright: 12px;
-    -moz-border-radius-topright: 12px;
-    -webkit-border-top-right-radius: 12px;
-    -khtml-border-radius-topright: 12px;
-}
-/*
-The blog and some other content uses H3 within a contentfeaturebox.
-It is styled here to produce the top part of each blog post so that
-it is offset from the text content.
-*/
-.contentfeaturebox h3 {
-    background: url("images/overlay25.png") top left repeat;
-    margin-top: -3px;
-    margin-left: -6px;
-    margin-right: -6px;
-    margin-bottom: 15px;
-    border: none;
-    padding-left: 8px;
-    padding-right: 8px;
-    padding-top:10px;
-    padding-bottom: 5px;
-    border-radius-topleft: 12px;
-    -moz-border-radius-topleft: 12px;
-    -webkit-border-top-left-radius: 12px;
-    -khtml-border-radius-topleft: 12px;
-    border-radius-topright: 12px;
-    -moz-border-radius-topright: 12px;
-    -webkit-border-top-right-radius: 12px;
-    -khtml-border-radius-topright: 12px;
-}
-
-/** Fix latest 10 blog block */
-
-#lastten p {
-  font-family: Arial, serif;
-  font-size: 90%;
-  margin-top: -7px;
-}
-
-#lastten p:before {
-    content:url(images/bullet.png);
-    margin-right: 3px;
-}
-
-#lastten p .minute {
-  font-family: Arial, serif;
-  font-size: 70%;
-  margin-left:10px;
-}
-/**
-For the blog blocks displayed as a middle block
-**/
-.blogpreview {
-    background: url("images/overlay25.png") top left repeat;
-    height: 250px;
-    border-radius: 15px;
-    -moz-border-radius: 15px;
-    -webkit-border-radius: 15px;
-    -khtml-border-radius: 15px;
-    padding: 10px;
-    overflow: auto;
-}
-
-.blogpreviewtitle {
-    font-weight:bold;
-    margin-bottom: 6px;
-}
-
-.blogpreviewuser {
-    margin-top: 8px;
-    color:navy;
-    font-size: 80%;
-}
-
-.blogpreviewpostdate {
-    color:grey;
-    font-size: 90%;
-}
-/* Blog retweet button */
-a.retweet {
-    position: relative;
-    top: 5px;
-}
 
 /*
     Styles for odd/even table rows.
@@ -1466,6 +1331,7 @@ table.pagenavigation {
 .allstories {
     background: none;
     padding-top: 12px;
+    margin: 0px;
 }
 
 .storytitle h3 {
@@ -1523,7 +1389,7 @@ table.pagenavigation {
 
 .currentstory {
     background: url("images/overlay25.png") top left repeat;
-    width: auto;
+    width: 98%;
     margin-left: 8px;
     margin-right: 8px;
     margin-bottom: 15px;
@@ -1684,7 +1550,8 @@ table.pagenavigation {
 }
 .essay_main, .faq_main, .rubric_main,
 .rubric_view, .filemanager_main, .modcat_main,
-.gradebook_main, .forum_main, .mcq_main {
+.gradebook_main, .forum_main, .mcq_main,
+.sysconfig_main, .toolbar_main, .logger_main {
     background: url("images/light-blue-granular.jpg") top left repeat;
     -moz-border-radius: 15px;
     -khtml-border-radius: 15px;
@@ -2010,4 +1877,201 @@ select#input_forum {
 }
 .wall_wrapper {
     width: 98%;
+    margin-top: 8px;
+    margin-bottom: 12px;
+}
+
+/** Canvas **/
+.canvas_main {
+    font-size: 130%;
+}
+
+.canvas_selectblock a {
+    font-size: 130%;
+}
+
+/** Sysconfig **/
+.sysconfig_main {
+    padding: 8px;
+    margin-right: 8px;
+    margin-top: 8px;
+}
+
+.sysconfig_main th {
+    font-size: 140%;
+}
+.sysconfig_left {
+    font-size: 120%;
+    margin: 6px;
+    background: url("images/overlay50.png") top left repeat;
+    -moz-border-radius: 10px;
+    -khtml-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    padding: 8px;
+    -webkit-box-shadow: 3px 3px 4px rgba(50, 50, 50, 0.20);
+    -moz-box-shadow:    3px 3px 4px rgba(50, 50, 50, 0.20);
+    box-shadow:         3px 3px 4px rgba(50, 50, 50, 0.20);
+}
+
+.sysconfig_configsite  {
+    background: url("images/light-green-granular.jpg") top left repeat;
+    font-size: large;
+}
+
+/** Toolbar **/
+.toolbar_main {
+    padding: 8px;
+    margin-top: 8px;
+    margin-right: 8px;
+}
+
+.toolbar_left {
+    font-size: 120%;
+    margin: 6px;
+    background: url("images/overlay50.png") top left repeat;
+    -moz-border-radius: 10px;
+    -khtml-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    padding: 8px;
+}
+
+/** Logger module **/
+.logger_main {
+    padding: 8px;
+    margin-top: 8px;
+    margin-right: 8px;
+    font-size: medium;
+}
+.logger_left a {
+    font-size: 130%;
+}
+
+/** Blog **/
+.tweet_button {
+    float: right;
+    margin-top: -15px;
+    margin-right: -54px;
+}
+.blog-head-date {
+    font-size: 120%;
+    color: gray;
+}
+/*
+The blog and some other content uses H3 within a contentfeaturebox.
+It is styled here to produce the top part of each blog post so that
+it is offset from the text content.
+*/
+.contentfeaturebox h3 {
+    background: url("images/overlay25.png") top left repeat;
+    margin-top: 3px;
+    margin-left: -6px;
+    margin-right: -6px;
+    margin-bottom: 15px;
+    border: none;
+    padding-left: 8px;
+    padding-right: 60px;
+    padding-top:10px;
+    padding-bottom: 5px;
+    border-radius-topleft: 12px;
+    -moz-border-radius-topleft: 12px;
+    -webkit-border-top-left-radius: 12px;
+    -khtml-border-radius-topleft: 12px;
+    border-radius-topright: 12px;
+    -moz-border-radius-topright: 12px;
+    -webkit-border-top-right-radius: 12px;
+    -khtml-border-radius-topright: 12px;
+}
+.contentfeaturebox {
+    background: url("images/light-blue-granular.jpg") top left repeat;
+    position: relative;
+    padding-top: 0.3em;
+    padding-right: 0.6em;
+    padding-bottom: 1.3em;
+    padding-left: 0.6em;
+    line-height: 1.1em;
+    margin-left: 2px;
+    margin-right: 2px;
+    margin-top: 15px;
+    margin-bottom: 5px;
+    line-height: 140%;
+    font-size: 130%;
+    border-radius: 15px;
+    -moz-border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -khtml-border-radius: 15px;
+}
+
+
+
+
+
+/** Styles specifically related to improving the blog **/
+
+
+.blog-item-base {
+    background: url('images/overlay25.png');
+    margin-top: 5px;
+    margin-left: -6px;
+    margin-right: -6px;
+    margin-bottom: -4px;
+    -moz-border-radius-bottomleft: 6px;
+    border-radius-bottomleft: 6px;
+    -webkit-border-radius-bottomleft: 6px;
+    -khtml-border-radius-bottomleft: 6px;
+    -moz-border-radius-bottomright: 6px;
+    border-radius-bottomright: 6px;
+    -webkit-border-radius-bottomright: 6px;
+    -khtml-border-radius-bottomright: 6px;
+}
+
+
+
+/** Fix latest 10 blog block */
+
+#lastten p {
+  font-family: Arial, serif;
+  font-size: 90%;
+  margin-top: -7px;
+}
+
+#lastten p:before {
+    content:url(images/bullet.png);
+    margin-right: 3px;
+}
+
+#lastten p .minute {
+  font-family: Arial, serif;
+  font-size: 70%;
+  margin-left:10px;
+}
+/**
+For the blog blocks displayed as a middle block
+**/
+.blogpreview {
+    background: url("images/overlay25.png") top left repeat;
+    height: 250px;
+    border-radius: 15px;
+    -moz-border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -khtml-border-radius: 15px;
+    padding: 10px;
+    overflow: auto;
+}
+
+.blogpreviewtitle {
+    font-weight:bold;
+    margin-bottom: 6px;
+}
+
+.blogpreviewuser {
+    margin-top: 8px;
+    color:navy;
+    font-size: 80%;
+}
+
+.blogpreviewpostdate {
+    color:grey;
+    font-size: 90%;
 }

@@ -154,7 +154,7 @@ appear on the front page.
 </center>
 ';
 if (!$this->objUser->isLoggedIn()) {
-    echo "\n\n<div id='navigation'>\n\n" . $nlimessage . "\n</div>\n\n";
+    //echo "\n\n<div id='navigation'>\n\n" . $nlimessage . "\n</div>\n\n";
 }
 
 if (!isset($pageSuppressBanner)) {
