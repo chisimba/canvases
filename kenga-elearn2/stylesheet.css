@@ -315,14 +315,14 @@ ul .glossytabs {
     width: 98%;
     padding: 4px;
     background: url("images/light-blue-granular.jpg") top left repeat;
-    border-radius-topleft: 5px;
-    -moz-border-radius-topleft: 5px;
-    -webkit-border-top-left-radius: 5px;
-    -khtml-border-radius-topleft: 5px;
-    border-radius-topright: 5px;
+    border-top-right-radius: 5px;
     -moz-border-radius-topright: 5px;
     -webkit-border-top-right-radius: 5px;
     -khtml-border-radius-topright: 5px;
+    border-top-left-radius: 5px;
+    -moz-border-radius-topleft: 5px;
+    -webkit-border-top-left-radius: 5px;
+    -khtml-border-radius-topleft: 5px;
 }
 div#widecalendar table.calendarTable td {
     padding-left: 0px;
@@ -890,11 +890,10 @@ li.active {
     background:  #1c64d1 url('images/texture-tr50.png') top left repeat-x;
     color: white;
     border-top: 1px solid #1c64d1;
-   border-top-right-radius: 12px;
+    border-top-right-radius: 12px;
     -moz-border-radius-topright: 12px;
     -webkit-border-top-right-radius: 12px;
     -khtml-border-radius-topright: 12px;
-    font-size: 110%;
     border-top-left-radius: 12px;
     -moz-border-radius-topleft: 12px;
     -webkit-border-top-left-radius: 12px;
@@ -1359,14 +1358,14 @@ table.pagenavigation {
     padding-bottom: 5px;
     width: 100%;
     font-size: 150%;
-    border-radius-topleft: 15px;
-    -moz-border-radius-topleft: 15px;
-    -webkit-border-top-left-radius: 15px;
-    -khtml-border-radius-topleft: 15px;
-    border-radius-topright: 15px;
+    border-top-right-radius: 15px;
     -moz-border-radius-topright: 15px;
     -webkit-border-top-right-radius: 15px;
     -khtml-border-radius-topright: 15px;
+    border-top-left-radius: 15px;
+    -moz-border-radius-topleft: 15px;
+    -webkit-border-top-left-radius: 15px;
+    -khtml-border-radius-topleft: 15px;
 }
 
 .storytitle h3 img {
@@ -1383,14 +1382,14 @@ table.pagenavigation {
     height: 30px;
     width: 100%;
     text-align: center;
-    -moz-border-radius-bottomleft: 6px;
-    border-radius-bottomleft: 6px;
-    -webkit-border-radius-bottomleft: 6px;
-    -khtml-border-radius-bottomleft: 6px;
+    border-bottom-right-radius: 6px;
     -moz-border-radius-bottomright: 6px;
-    border-radius-bottomright: 6px;
-    -webkit-border-radius-bottomright: 6px;
+    -webkit-border-bottom-right-radius: 6px;
     -khtml-border-radius-bottomright: 6px;
+    border-bottom-left-radius: 6px;
+    -moz-border-radius-bottomleft: 6px;
+    -webkit-border-bottom-left-radius: 6px;
+    -khtml-border-radius-bottomleft: 6px;
 }
 
 .storyauthor p {
@@ -1408,22 +1407,23 @@ table.pagenavigation {
     padding-right: 8px;
     padding-top:10px;
     padding-bottom: 0px;
-    border-radius-topleft: 15px;
-    -moz-border-radius-topleft: 15px;
-    -webkit-border-top-left-radius: 15px;
-    -khtml-border-radius-topleft: 15px;
-    border-radius-topright: 15px;
+    border-top-right-radius: 15px;
     -moz-border-radius-topright: 15px;
     -webkit-border-top-right-radius: 15px;
     -khtml-border-radius-topright: 15px;
-    -moz-border-radius-bottomleft: 6px;
-    border-radius-bottomleft: 6px;
-    -webkit-border-radius-bottomleft: 6px;
-    -khtml-border-radius-bottomleft: 6px;
+    border-top-left-radius: 15px;
+    -moz-border-radius-topleft: 15px;
+    -webkit-border-top-left-radius: 15px;
+    -khtml-border-radius-topleft: 15px;
+
+    border-bottom-right-radius: 6px;
     -moz-border-radius-bottomright: 6px;
-    border-radius-bottomright: 6px;
-    -webkit-border-radius-bottomright: 6px;
+    -webkit-border-bottom-right-radius: 6px;
     -khtml-border-radius-bottomright: 6px;
+    border-bottom-left-radius: 6px;
+    -moz-border-radius-bottomleft: 6px;
+    -webkit-border-bottom-left-radius: 6px;
+    -khtml-border-radius-bottomleft: 6px;
     font-size: 120%;
 }
 
@@ -1482,14 +1482,14 @@ table.pagenavigation {
     border-radius-bottomright: 6px;
     -webkit-border-radius-bottomright: 6px;
     -khtml-border-radius-bottomright: 6px;
-    border-radius-topleft: 12px;
-    -moz-border-radius-topleft: 12px;
-    -webkit-border-top-left-radius: 12px;
-    -khtml-border-radius-topleft: 12px;
-    border-radius-topright: 12px;
+    border-top-right-radius: 12px;
     -moz-border-radius-topright: 12px;
     -webkit-border-top-right-radius: 12px;
     -khtml-border-radius-topright: 12px;
+    border-top-left-radius: 12px;
+    -moz-border-radius-topleft: 12px;
+    -webkit-border-top-left-radius: 12px;
+    -khtml-border-radius-topleft: 12px;
 }
 
 
@@ -1508,14 +1508,14 @@ table.pagenavigation {
     border-radius-bottomright: 6px;
     -webkit-border-radius-bottomright: 6px;
     -khtml-border-radius-bottomright: 6px;
-    border-radius-topleft: 12px;
-    -moz-border-radius-topleft: 12px;
-    -webkit-border-top-left-radius: 12px;
-    -khtml-border-radius-topleft: 12px;
-    border-radius-topright: 12px;
+    border-top-right-radius: 12px;
     -moz-border-radius-topright: 12px;
     -webkit-border-top-right-radius: 12px;
     -khtml-border-radius-topright: 12px;
+    border-top-left-radius: 12px;
+    -moz-border-radius-topleft: 12px;
+    -webkit-border-top-left-radius: 12px;
+    -khtml-border-radius-topleft: 12px;
 }
 
 #form_addeditassignment fieldset {
@@ -1525,14 +1525,14 @@ table.pagenavigation {
 
 #form_addeditassignment fieldset legend {
     background: url("images/light-blue-granular.jpg") top left repeat;
-    border-radius-topleft: 5px;
-    -moz-border-radius-topleft: 5px;
-    -webkit-border-top-left-radius: 5px;
-    -khtml-border-radius-topleft: 5px;
-    border-radius-topright: 5px;
+    border-top-right-radius: 5px;
     -moz-border-radius-topright: 5px;
     -webkit-border-top-right-radius: 5px;
     -khtml-border-radius-topright: 5px;
+    border-top-left-radius: 5px;
+    -moz-border-radius-topleft: 5px;
+    -webkit-border-top-left-radius: 5px;
+    -khtml-border-radius-topleft: 5px;
 }
 
 .assignment_main table {
@@ -1658,14 +1658,14 @@ table.pagenavigation {
     border-radius-bottomright: 6px;
     -webkit-border-radius-bottomright: 6px;
     -khtml-border-radius-bottomright: 6px;
-    border-radius-topleft: 12px;
-    -moz-border-radius-topleft: 12px;
-    -webkit-border-top-left-radius: 12px;
-    -khtml-border-radius-topleft: 12px;
-    border-radius-topright: 12px;
+    border-top-right-radius: 12px;
     -moz-border-radius-topright: 12px;
     -webkit-border-top-right-radius: 12px;
     -khtml-border-radius-topright: 12px;
+    border-top-left-radius: 12px;
+    -moz-border-radius-topleft: 12px;
+    -webkit-border-top-left-radius: 12px;
+    -khtml-border-radius-topleft: 12px;
 }
 
 .filemanager_left nobr {
@@ -1986,14 +1986,14 @@ it is offset from the text content.
     padding-right: 60px;
     padding-top:10px;
     padding-bottom: 5px;
-    border-radius-topleft: 12px;
-    -moz-border-radius-topleft: 12px;
-    -webkit-border-top-left-radius: 12px;
-    -khtml-border-radius-topleft: 12px;
-    border-radius-topright: 12px;
+    border-top-right-radius: 12px;
     -moz-border-radius-topright: 12px;
     -webkit-border-top-right-radius: 12px;
     -khtml-border-radius-topright: 12px;
+    border-top-left-radius: 12px;
+    -moz-border-radius-topleft: 12px;
+    -webkit-border-top-left-radius: 12px;
+    -khtml-border-radius-topleft: 12px;
 }
 .contentfeaturebox {
     background: url("images/light-blue-granular.jpg") top left repeat;
