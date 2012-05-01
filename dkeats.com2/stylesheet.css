@@ -61,11 +61,11 @@ div#header {
     background-repeat: repeat-x;
     padding: 0;
     margin: 0;
-    border-radius-topleft: 25px;
+    border-top-left-radius: 25px;
     -moz-border-radius-topleft: 25px;
     -webkit-border-top-left-radius: 25px;
     -khtml-border-radius-topleft: 25px;
-    border-radius-topright: 25px;
+    border-top-right-radius: 25px;
     -moz-border-radius-topright: 25px;
     -webkit-border-top-right-radius: 25px;
     -khtml-border-radius-topright: 25px;
@@ -119,7 +119,7 @@ div#header h1 {
     padding: 0px;
     padding-left: 6px;
     padding-right: 6px;
-    
+
 }
 
 #Canvas_Content_Body_Region1 {
@@ -130,7 +130,7 @@ div#header h1 {
 #Canvas_Content_Body_Region3 {
     width:190px;
     margin-left: 0px;
-    
+
 }
 
 .submenu {
@@ -316,7 +316,7 @@ p.info a:hover, p.info a:active {
 option.copyright {
     padding-left:90px;
     background-image: url('../_common/icons/creativecommons_v3/copyright.gif');
-    background-repeat: no-repeat; 
+    background-repeat: no-repeat;
 }
 option.by {
     padding-left:90px;
