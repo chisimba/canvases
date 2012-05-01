@@ -137,16 +137,13 @@ if (!isset($pageSuppressBanner)) {
 
         <?php
 }
-if (!isset($pageSuppressToolbar)) {
-    echo "\n\n<div id='navigation'>\n\n" . $toolbar . "\n</div>\n\n";
-}
 
 $nlimessage = '
 <center>
 <p style="color: red; font-size: medium; margin-top: -2px;">
 <b>This site is under extensive development of the new skinning system
 for eLearning.</b></p>
-<p style="color: green; font-size: medium; margin-top: -12px;">At this stage it is mainly for developers and
+<p style="color: blue; font-size: medium; margin-top: -16px;">At this stage it is mainly for developers and
 partners, although you may wish to browse one of the<br /> sample
 public courses that we are working on at the point when they
 appear on the front page.
@@ -154,7 +151,11 @@ appear on the front page.
 </center>
 ';
 if (!$this->objUser->isLoggedIn()) {
-    //echo "\n\n<div id='navigation'>\n\n" . $nlimessage . "\n</div>\n\n";
+    echo "\n\n<div id='navigation'>\n\n" . $nlimessage . "\n</div>\n\n";
+} else {
+    if (!isset($pageSuppressToolbar)) {
+        echo "\n\n<div id='navigation'>\n\n" . $toolbar . "\n</div>\n\n";
+    }
 }
 
 if (!isset($pageSuppressBanner)) {
