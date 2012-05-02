@@ -150,6 +150,34 @@ appear on the front page.
 </p>
 </center>
 ';
+
+$footer1 = '
+    Kenga Solutions is based in Johannesburg, South Africa, and provides
+    commercial Chisimba development, installation, extension and support.
+    ';
+$footer2= '
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut commodo,
+    dui eget blandit cursus, nunc ante ultrices orci, quis iaculis justo
+    justo sit amet elit. Morbi tempor eros in lectus blandit in tristique
+    sem condimentum. Ut odio elit, consectetur a faucibus vitae, hendrerit
+    sit amet dui.
+    ';
+$footer3= '
+    Aliquam vulputate luctus arcu, nec convallis purus mollis id.
+    Phasellus sed odio dui. Phasellus eu facilisis sapien. Vestibulum
+    arcu purus, sodales non gravida id, ultricies iaculis leo.
+    Suspendisse ac nisi odio. Phasellus quis dui nec dui euismod accumsan.
+    ';
+$footerTable = '
+    <div class="footer_content">
+    <table><tr>
+    <td width="33.3%">' . $footer1 . '</td>
+    <td width="33.3%">' . $footer2 . '</td>
+    <td width="33.3%">' . $footer3 . '</td>
+    </tr></table>
+    </div>
+
+';
 if (!$this->objUser->isLoggedIn()) {
     echo "\n\n<div id='navigation'>\n\n" . $nlimessage . "\n</div>\n\n";
 } else {
@@ -186,6 +214,7 @@ if (!isset($suppressFooter)) {
     } else {
         $footerStr = $objLanguage->languageText("mod_security_poweredby", 'security', 'Powered by Chisimba');
     }
+    $footerStr .= $footerTable;
     // Do the rendering here.
     echo "<div class='Canvas_Content_Footer_Before'></div>\n"
       . "<div class='Canvas_Content_Footer'><div id='footer'>"
