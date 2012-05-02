@@ -775,3 +775,19 @@ a.delpost {
 .chat_buttons button {
     margin-bottom: 6px;
 }
+
+
+/*
+    Styles for odd/even table rows.
+*/
+td.odd {
+     background: url("images/even.png") top left repeat;
+}
+
+td.even {
+     background: url("images/odd.png") top left repeat;
+}
+
+th.heading {
+    background: #045C97 url("images/featureboxheader.gif")  top left repeat-x;
+}
