@@ -1034,6 +1034,9 @@ fieldset {
     -moz-box-shadow:    4px 4px 5px rgba(50, 50, 50, 0.47);
     box-shadow:         4px 4px 5px rgba(50, 50, 50, 0.47);
 }
+.context_recent_title{
+    color: dodgerblue;
+}
 
 
 /*
@@ -1163,7 +1166,7 @@ div.internalmail legend.tabbox img {
     -webkit-border-radius: 15px;
     -khtml-border-radius: 15px;
     font-size: medium;
-    margin-top: 8px;
+    margin: 8px;
 }
 
 #allchapters h1, #context_content h1 {
@@ -1305,7 +1308,7 @@ table.pagenavigation td:nth-child(odd) {
     box-shadow:         4px 4px 5px rgba(50, 50, 50, 0.27);
 }
 table.pagenavigation td:nth-child(even) {
-    background: url("images/light-blue-granular.jpg") top left repeat;
+    background: url("images/overlay25.png") top left repeat;
     -moz-border-radius: 10px;
     -khtml-border-radius: 10px;
     -webkit-border-radius: 10px;
@@ -1961,13 +1964,16 @@ select#input_forum {
 }
 
 /** Blog **/
+.blog_page_header {
+    font-size: 130%;
+}
 .tweet_button {
     float: right;
-    margin-top: -15px;
+    margin-top: -6px;
     margin-right: -54px;
 }
 .blog-head-date {
-    font-size: 120%;
+    font-size: 110%;
     color: gray;
 }
 /*
@@ -1976,10 +1982,10 @@ It is styled here to produce the top part of each blog post so that
 it is offset from the text content.
 */
 .contentfeaturebox h3 {
-    background: url("images/overlay25.png") top left repeat;
-    margin-top: 3px;
-    margin-left: -6px;
-    margin-right: -6px;
+    background: transparent url("images/overlay25.png") top left repeat;
+    margin-top: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
     margin-bottom: 15px;
     border: none;
     padding-left: 8px;
@@ -1996,12 +2002,12 @@ it is offset from the text content.
     -khtml-border-radius-topleft: 12px;
 }
 .contentfeaturebox {
-    background: url("images/light-blue-granular.jpg") top left repeat;
+    background: transparent url("images/light-blue-granular.jpg") top left repeat;
     position: relative;
-    padding-top: 0.3em;
-    padding-right: 0.6em;
-    padding-bottom: 1.3em;
-    padding-left: 0.6em;
+    padding-top: 0px;
+    padding-right: 0px;
+    padding-bottom: 0px;
+    padding-left: 0px;
     line-height: 1.1em;
     margin-left: 2px;
     margin-right: 2px;
@@ -2009,50 +2015,52 @@ it is offset from the text content.
     margin-bottom: 5px;
     line-height: 140%;
     font-size: 130%;
-    border-radius: 15px;
-    -moz-border-radius: 15px;
-    -webkit-border-radius: 15px;
-    -khtml-border-radius: 15px;
-}
-
-
-
-
-
-/** Styles specifically related to improving the blog **/
-
-
-.blog-item-base {
-    background: url('images/overlay25.png');
-    margin-top: 5px;
-    margin-left: -6px;
-    margin-right: -6px;
-    margin-bottom: -4px;
+    border-top-right-radius: 12px;
+    -moz-border-radius-topright: 12px;
+    -webkit-border-top-right-radius: 12px;
+    -khtml-border-radius-topright: 12px;
+    border-top-left-radius: 12px;
+    -moz-border-radius-topleft: 12px;
+    -webkit-border-top-left-radius: 12px;
+    -khtml-border-radius-topleft: 12px;
     -moz-border-radius-bottomleft: 6px;
-    border-radius-bottomleft: 6px;
+    border-bottom-left-radius: 6px;
     -webkit-border-radius-bottomleft: 6px;
     -khtml-border-radius-bottomleft: 6px;
     -moz-border-radius-bottomright: 6px;
-    border-radius-bottomright: 6px;
+    border-bottom-right-radius: 6px;
     -webkit-border-radius-bottomright: 6px;
     -khtml-border-radius-bottomright: 6px;
 }
-
-
-
+.blog_content {
+    margin-left: 8px;
+    margin-right: 8px;
+}
+.blog-item-base {
+    background: url('images/overlay25.png');
+    margin-top: 5px;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-bottom: 0px;
+    -moz-border-radius-bottomleft: 6px;
+    border-bottom-left-radius: 6px;
+    -webkit-border-radius-bottomleft: 6px;
+    -khtml-border-radius-bottomleft: 6px;
+    -moz-border-radius-bottomright: 6px;
+    border-bottom-right-radius: 6px;
+    -webkit-border-radius-bottomright: 6px;
+    -khtml-border-radius-bottomright: 6px;
+}
 /** Fix latest 10 blog block */
-
 #lastten p {
   font-family: Arial, serif;
   font-size: 90%;
   margin-top: -7px;
 }
-
 #lastten p:before {
     content:url(images/bullet.png);
     margin-right: 3px;
 }
-
 #lastten p .minute {
   font-family: Arial, serif;
   font-size: 70%;
@@ -2071,7 +2079,6 @@ For the blog blocks displayed as a middle block
     padding: 10px;
     overflow: auto;
 }
-
 .blogpreviewtitle {
     font-weight:bold;
     margin-bottom: 6px;
@@ -2082,11 +2089,17 @@ For the blog blocks displayed as a middle block
     color:navy;
     font-size: 80%;
 }
-
 .blogpreviewpostdate {
     color:grey;
     font-size: 90%;
 }
+
+/** Group admin **/
+.groupadmin_main {
+    margin: 12px;
+    background: transparent;
+}
+
 
 /** Fix for menu floting off left - not sure why this is needed though **/
 .glossytabs {
