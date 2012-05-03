@@ -2099,20 +2099,24 @@ For the blog blocks displayed as a middle block
     margin: 12px;
     background: transparent;
 }
-
 /** Marketing widgets (style used in text) **/
 .coolwidget_wide {
-    width: 100%
-}
-.coolwidget {
-    width: 220px;
-}
-.coolwidget, .coolwidget_wide {
     position: relative;
     float: left;
-    height: 190px;
-    overflow: hidden;
+    width: 464px;
+    margin-left: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.coolwidget {
+    position: relative;
+    width: 220px;
+    float: left;
     margin: 8px;
+    overflow: hidden;
+}
+.coolwidget, .coolwidget_wide {
+    height: 190px;
     padding: 5px;
     border-radius: 12px;
     -moz-border-radius: 12px;
