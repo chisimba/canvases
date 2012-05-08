@@ -1566,7 +1566,7 @@ table.pagenavigation {
 .rubric_view, .filemanager_main, .modcat_main,
 .gradebook_main, .forum_main, .mcq_main,
 .sysconfig_main, .toolbar_main, .logger_main,
-.context_cpanel {
+.context_cpanel, .prelogin_main {
     background: url("images/light-blue-granular.jpg") top left repeat;
     -moz-border-radius: 15px;
     -khtml-border-radius: 15px;
@@ -2099,6 +2099,12 @@ For the blog blocks displayed as a middle block
     margin: 12px;
     background: transparent;
 }
+
+/** Prelogin admin **/
+.prelogin_main {
+    margin: 12px;
+    padding: 12px;
+}
 /** Marketing widgets (style used in text) **/
 .coolwidget_wide {
     position: relative;
@@ -2179,3 +2185,12 @@ For the blog blocks displayed as a middle block
     padding-left: 40px;
     margin-top: 5px;
 }
+
+.conditional_add {
+    font-size: 130%;
+}
+.conditional_add img {
+    vertical-align: middle;
+    margin-left: 12px;
+}
+
