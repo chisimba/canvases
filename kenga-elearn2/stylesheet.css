@@ -2033,8 +2033,8 @@ it is offset from the text content.
     -khtml-border-radius-bottomright: 6px;
 }
 .blog_content {
-    margin-left: 8px;
-    margin-right: 8px;
+    margin-left: 12px;
+    margin-right: 12px;
 }
 .blog-item-base {
     background: url('images/overlay25.png');
