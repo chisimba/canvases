@@ -122,7 +122,7 @@ if (!isset($pageSuppressBanner)) {
     <div class="Canvas_Content_Head_Before"></div>
     <div class="Canvas_Content_Head">
         <div class="Canvas_Content_Head" id="header">
-
+            <div id='banner_overlay'></div>
             <?php
             if ($objUser->isLoggedIn()) {
                 echo '<h5>' . $objLanguage->languageText('mod_oer_welcome', 'oer') . '&nbsp;' . $objUser->fullname() . '</h5>';
