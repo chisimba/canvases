@@ -188,9 +188,9 @@ h1#sitename {
     height: auto;
 }
 #footer {
-    background: transparent url('images/dark-blue-granular.jpg') repeat-x top left;
+    background: transparent url('img/texture-purple.jpg') repeat-x top left;
     width: 100%;
-    color: white;
+    color: purple;
     height: 170px;
     margin: 0px;
     padding:0px;
