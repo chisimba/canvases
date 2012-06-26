@@ -120,8 +120,10 @@ if (!isset($pageSuppressBanner)) {
     <div class="Canvas_Content_Head_Before"></div>
     <div class="Canvas_Content_Head">
         <div class="Canvas_Content_Head_Header" id="header">
+            <?php echo '<a href="'.$objConfig->getSiteRoot().'">'; ?>
             <div class='floathead_left' id='floathead_content2'></div>
             <div class='floathead' id='floathead_content1'></div>
+            </a>
             <?php
             if (!isset($pageSuppressSearch)) {
                 echo $objSkin->siteSearchBox();
