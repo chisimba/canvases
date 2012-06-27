@@ -2218,6 +2218,6 @@ For the blog blocks displayed as a middle block
     -khtml-border-radius: 6px;
 }
 
-img {
+img, object, embed {
         max-width: 100% !important;
 }
