@@ -2221,3 +2221,7 @@ For the blog blocks displayed as a middle block
 img, object, embed {
         max-width: 100% !important;
 }
+
+.groupadmin_main {
+    background:  transparent url("images/overlay25.png") top left repeat;
+}
