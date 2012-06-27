@@ -2217,3 +2217,7 @@ For the blog blocks displayed as a middle block
     -webkit-border-radius: 6px;
     -khtml-border-radius: 6px;
 }
+
+img {
+        max-width: 100% !important;
+}
