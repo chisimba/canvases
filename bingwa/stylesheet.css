@@ -12,11 +12,14 @@
 */
 /*@import "../canvas/stylesheet.css";*/
 
+/* Google Web Fonts*/
+@import url(http://fonts.googleapis.com/css?family=Yanone+Kaffeesatz);
+
 html {
     width: 100%;
     margin: 0;
     padding: 0;
-    border: 0;
+    border: 0;   
 }
 
 /* The body & background */
@@ -28,6 +31,7 @@ body {
     margin: 0;
     padding:0;
     border: 0;
+    font-family: ‘Yanone Kaffeesatz’, sans-serif;
 }
 
 a {
@@ -81,23 +85,24 @@ a:active, a:visited:active {
     padding-top: 6px;
     padding-left: 6px;
     padding-right: 4px;
-    background: url('images/overlay25.png');
+    background: transparent;
 }
 #Canvas_Content_Body_Region2 {
     overflow: auto;
     width:auto;
+    padding-top: 6px;
 }
 #Canvas_Content_Body_Region3 {
     float:right;
     width:220px;
     padding-top: 6px;
     margin-left: 8px;
-    background: url('images/overlay25.png');
+    background: transparent;
 }
 #Canvas_Content_Body_Region1,
 #Canvas_Content_Body_Region2,
 #Canvas_Content_Body_Region3 {
-    /*min-height:900px;*/
+
 }
 
 #container {
@@ -286,7 +291,7 @@ ul .glossytabs {
 }
 
 .tabbertab {
-    background: #006699  url('images/overlay70.png');
+    background: #d93c89  url('images/overlay70.png');
     -moz-border-radius-bottomright: 6px;
     -webkit-border-bottom-right-radius: 6px;
     -khtml-border-radius-bottomright: 6px;
@@ -316,7 +321,7 @@ ul .glossytabs {
 #widecalendar {
     width: 98%;
     padding: 4px;
-    background: url("images/light-blue-granular.jpg") top left repeat;
+    background: url("img/light-granular.jpg") top left repeat;
     border-top-right-radius: 5px;
     -moz-border-radius-topright: 5px;
     -webkit-border-top-right-radius: 5px;
@@ -1030,8 +1035,8 @@ fieldset {
 
 /** The little boxes that show recent courses **/
 .context_recent_context {
-    font-size: 125%;
-    line-height: 135%;
+    font-size: 115%;
+    line-height: 130%;
     -webkit-box-shadow: 4px 4px 5px rgba(50, 50, 50, 0.47);
     -moz-box-shadow:    4px 4px 5px rgba(50, 50, 50, 0.47);
     box-shadow:         4px 4px 5px rgba(50, 50, 50, 0.47);
@@ -1326,7 +1331,7 @@ table.toppagenavigation {
     border-spacing: 8px;
 }
 table.toppagenavigation td {
-    background: url("images/light-blue-granular.jpg") top left repeat-x;
+    background: url("img/light-granular.jpg") top left repeat-x;
     -moz-border-radius: 10px;
     -khtml-border-radius: 10px;
     -webkit-border-radius: 10px;
@@ -1524,12 +1529,12 @@ table.pagenavigation {
 }
 
 #form_addeditassignment fieldset {
-    background: url("images/light-blue-granular.jpg") top left repeat;
+    background: url("img/light-granular.jpg") top left repeat;
     margin-bottom: 8px;
 }
 
 #form_addeditassignment fieldset legend {
-    background: url("images/light-blue-granular.jpg") top left repeat;
+    background: url("img/light-granular.jpg") top left repeat;
     border-top-right-radius: 5px;
     -moz-border-radius-topright: 5px;
     -webkit-border-top-right-radius: 5px;
@@ -1569,7 +1574,7 @@ table.pagenavigation {
 .gradebook_main, .forum_main, .mcq_main,
 .sysconfig_main, .toolbar_main, .logger_main,
 .context_cpanel, .prelogin_main {
-    background: url("images/light-blue-granular.jpg") top left repeat;
+    background: url("img/light-granular.jpg") top left repeat;
     -moz-border-radius: 15px;
     -khtml-border-radius: 15px;
     -webkit-border-radius: 15px;
@@ -1866,7 +1871,7 @@ select#input_forum {
 
 /**  Wall module **/
 .wallpostrow {
-    background: url("images/light-blue-granular.jpg") top left repeat;
+    background: url("img/light-granular.jpg") top left repeat;
     padding: 6px;
     -moz-border-radius: 6px;
     -khtml-border-radius: 6px;
@@ -2004,7 +2009,7 @@ it is offset from the text content.
     -khtml-border-radius-topleft: 12px;
 }
 .contentfeaturebox {
-    background: transparent url("images/light-blue-granular.jpg") top left repeat;
+    background: transparent url("img/light-granular.jpg") top left repeat;
     position: relative;
     padding-top: 0px;
     padding-right: 0px;
@@ -2108,6 +2113,12 @@ For the blog blocks displayed as a middle block
     padding: 12px;
 }
 /** Marketing widgets (style used in text) **/
+.coolwidget_100 {
+    width: 96%;
+    margin-left: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
 .coolwidget_wide {
     position: relative;
     float: left;
@@ -2123,7 +2134,7 @@ For the blog blocks displayed as a middle block
     margin: 8px;
     overflow: hidden;
 }
-.coolwidget, .coolwidget_wide {
+.coolwidget, .coolwidget_wide, .coolwidget_100 {
     height: 190px;
     padding: 5px;
     border-radius: 12px;
