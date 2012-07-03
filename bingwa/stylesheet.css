@@ -2124,19 +2124,20 @@ For the blog blocks displayed as a middle block
     position: relative;
     float: left;
     width: 464px;
+    height: 190px;
     margin-left: 10px;
     margin-top: 10px;
     margin-bottom: 10px;
 }
 .coolwidget {
     position: relative;
+    height: 190px;
     width: 220px;
     float: left;
     margin: 8px;
     overflow: hidden;
 }
 .coolwidget, .coolwidget_wide, .coolwidget_100 {
-    height: 190px;
     padding: 5px;
     border-radius: 12px;
     -moz-border-radius: 12px;
