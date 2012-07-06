@@ -873,6 +873,129 @@ a.delpost {
 }
 
 
+/** MCQ - Multiple Choice Quiz **/
+.mcq_main {
+    background: url("images/overlay50.png") top left repeat;
+    margin-left: 8px;
+    margin-right: 8px;
+    margin-top: 8px;
+    padding-left: 8px;
+    padding-right: 8px;
+    padding-bottom: 20px;
+    padding-top: 6px;
+    font-size: 130%;
+    border-radius: 12px;
+    -moz-border-radius: 12px;
+    -webkit-border-radius: 12px;
+    -khtml-border-radius: 12px;
+    -webkit-box-shadow: 4px 4px 5px rgba(50, 50, 50, 0.47);
+    -moz-box-shadow:    4px 4px 5px rgba(50, 50, 50, 0.47);
+    box-shadow:         4px 4px 5px rgba(50, 50, 50, 0.47);
+}
+
+.mcq_main table.mcq_overview {
+    margin-bottom: 40px;
+    padding: 10px;
+    border-radius: 12px;
+    -moz-border-radius: 12px;
+    -webkit-border-radius: 12px;
+    -khtml-border-radius: 12px;
+}
+
+.mcq_main table.mcq_overview tr:nth-child(odd) {
+    background:  transparent url("images/odd.png") top left repeat;
+    margin-bottom: 40px;
+}
+.mcq_main table.mcq_overview tr:nth-child(even) {
+    background:  transparent url("images/even.png") top left repeat;
+    margin-bottom: 40px;
+}
+
+.mcq_main table.mcq_questions {
+    margin-bottom: 5px;
+}
+
+.mcq_main tr {
+   
+}
+
+.mcq_main table.mcq_questions td {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-bottom: 1px solid white;
+}
+
+
+.mcq_main td p {
+    background: transparent;
+    margin: 0px;
+    padding: 0px;
+
+}
+
+/** Marketing widgets (style used in text) **/
+.coolwidget_100 {
+    width: 96%;
+    margin-left: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.coolwidget_wide {
+    position: relative;
+    float: left;
+    width: 464px;
+    height: 190px;
+    margin-left: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.coolwidget {
+    position: relative;
+    height: 190px;
+    width: 220px;
+    float: left;
+    margin: 8px;
+    overflow: hidden;
+}
+.coolwidget, .coolwidget_wide, .coolwidget_100 {
+    padding: 5px;
+    border-radius: 12px;
+    -moz-border-radius: 12px;
+    -webkit-border-radius: 12px;
+    -khtml-border-radius: 12px;
+    background: -webkit-gradient(linear, left top, left bottom,
+        color-stop(0%, white), color-stop(65%, white),
+        color-stop(100%, #f7f7f7));
+    background: -moz-linear-gradient(top, white 0%, white 55%, #D5E4F3 130%);
+    -moz-box-shadow: 3px 3px 4px #000;
+	-webkit-box-shadow: 3px 3px 4px #000;
+	box-shadow: 3px 3px 4px #000;
+	/* For IE 8 */
+	-ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=135, Color='#000000')";
+	/* For IE 5.5 - 7 */
+	filter: progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=135, Color='#000000');
+    font-size: 125%;
+    line-height: 135%;
+    -webkit-box-shadow: 4px 4px 5px rgba(50, 50, 50, 0.47);
+    -moz-box-shadow:    4px 4px 5px rgba(50, 50, 50, 0.47);
+    box-shadow:         4px 4px 5px rgba(50, 50, 50, 0.47);
+}
+.coolwidget_title {
+    display: block;
+    color: dodgerblue;
+}
+.coolwidget img, .coolwidget_wide img {
+    font-size: 150%;
+    position: relative;
+    margin-right: 5px;
+    float: left;
+}
+.coolwidget .author {
+    font-size: 90%;
+    font-weight: 200;
+    color: #1c64d1;
+}
+
 /*
     Styles for odd/even table rows.
 */
@@ -887,4 +1010,5 @@ td.even {
 th.heading {
     background: #045C97 url("images/featureboxheader.gif")  top left repeat-x;
 }
+
 
