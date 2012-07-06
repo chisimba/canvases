@@ -816,6 +816,62 @@ a.delpost {
     margin-bottom: 6px;
 }
 
+/** Module catalogue **/
+.modcat_left {
+    padding: 4px;
+}
+.modcat_left .tagcloud {
+    background: url("images/overlay50.png") top left repeat;
+    -moz-border-radius: 10px;
+    -khtml-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    padding: 2px;
+    -webkit-box-shadow: 3px 3px 4px rgba(50, 50, 50, 0.20);
+    -moz-box-shadow:    3px 3px 4px rgba(50, 50, 50, 0.20);
+    box-shadow:         3px 3px 4px rgba(50, 50, 50, 0.20);
+}
+.moduleupdate {
+    background: url("images/overlay50.png") top left repeat;
+    margin-top: 20px;
+    margin-bottom: 12px;
+    margin-left: 30px;
+    margin-right: 15px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    -moz-border-radius: 10px;
+    -khtml-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    -webkit-box-shadow: 3px 3px 4px rgba(50, 50, 50, 0.20);
+    -moz-box-shadow:    3px 3px 4px rgba(50, 50, 50, 0.20);
+    box-shadow:         3px 3px 4px rgba(50, 50, 50, 0.20);
+}
+.moduleupdate .floatright {
+    position: relative;
+    float: right;
+}
+.modcat_main td span.floatright {
+    background:transparent;
+}
+.moduleupdate .floatright img {
+    vertical-align: middle;
+    margin-right: 10px;
+}
+.moduleupdate b img {
+    vertical-align: middle;
+    margin-right: 10px;
+}
+.modcatdesc {
+    margin-left: 42px;
+    color: darkslategray;
+}
+.modcatdesc b {
+    color: #003366;
+}
+
 
 /*
     Styles for odd/even table rows.
