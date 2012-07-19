@@ -2127,7 +2127,7 @@ For the blog blocks displayed as a middle block
     margin: 8px;
     overflow: hidden;
 }
-.coolwidget, .coolwidget_wide, .coolwidget_100, .middleblock  {
+.coolwidget, .coolwidget_wide, .coolwidget_100 {
     height: 190px;
     padding: 5px;
     border-radius: 12px;
