@@ -957,7 +957,7 @@ a.delpost {
     margin: 8px;
     overflow: hidden;
 }
-.coolwidget, .coolwidget_wide, .coolwidget_100 {
+.coolwidget, .coolwidget_wide, .coolwidget_100, .middleblock {
     padding: 5px;
     border-radius: 12px;
     -moz-border-radius: 12px;
@@ -994,6 +994,11 @@ a.delpost {
     font-size: 90%;
     font-weight: 200;
     color: #1c64d1;
+}
+.middleblock {
+    margin-right: 10px;
+    margin-left: 10px;
+    padding: 10px;
 }
 
 /*

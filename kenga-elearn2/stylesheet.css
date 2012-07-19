@@ -2106,6 +2106,12 @@ For the blog blocks displayed as a middle block
     padding: 12px;
 }
 /** Marketing widgets (style used in text) **/
+.coolwidget_100 {
+    width: 96%;
+    margin-left: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
 .coolwidget_wide {
     position: relative;
     float: left;
@@ -2121,7 +2127,7 @@ For the blog blocks displayed as a middle block
     margin: 8px;
     overflow: hidden;
 }
-.coolwidget, .coolwidget_wide {
+.coolwidget, .coolwidget_wide, .coolwidget_100, .middleblock  {
     height: 190px;
     padding: 5px;
     border-radius: 12px;
@@ -2159,6 +2165,11 @@ For the blog blocks displayed as a middle block
     font-size: 90%;
     font-weight: 200;
     color: #1c64d1;
+}
+.middleblock {
+    margin-right: 10px;
+    margin-left: 10px;
+    padding: 10px;
 }
 
 /** Footer content **/
