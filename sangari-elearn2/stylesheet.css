@@ -995,6 +995,14 @@ a.delpost {
     font-weight: 200;
     color: #1c64d1;
 }
+.userpresence {
+    background: transparent;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+.userpresence img {
+    vertical-align:middle;
+}
 
 /*
     Styles for odd/even table rows.
