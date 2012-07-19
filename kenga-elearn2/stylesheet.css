@@ -2170,6 +2170,8 @@ For the blog blocks displayed as a middle block
     margin-right: 10px;
     margin-left: 10px;
     padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 /** Footer content **/
