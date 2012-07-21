@@ -1019,4 +1019,8 @@ th.heading {
     background: #045C97 url("images/featureboxheader.gif")  top left repeat-x;
 }
 
-
+.announcement_hider {
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, white),
+                color-stop(65%, white), color-stop(100%, #f7f7f7));
+    background: -moz-linear-gradient(top, white 0%, white 55%, #D5E4F3 130%);
+}
