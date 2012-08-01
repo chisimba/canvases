@@ -1024,3 +1024,12 @@ th.heading {
                 color-stop(65%, white), color-stop(100%, #f7f7f7));
     background: -moz-linear-gradient(top, white 0%, white 55%, #D5E4F3 130%);
 }
+
+/** Discussion forum search form ***/
+#form_searchforums #input_term {
+    width: 240px;
+}
+
+#form_searchforums #input_forum {
+    width: 240px;
+}
