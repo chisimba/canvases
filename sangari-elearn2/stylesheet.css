@@ -1033,3 +1033,11 @@ th.heading {
 #form_searchforums #input_forum {
     width: 240px;
 }
+
+/** Context improvements **/
+.context_sidebar p img {
+    border-radius: 12px;
+    -moz-border-radius: 12px;
+    -webkit-border-radius: 12px;
+    -khtml-border-radius: 12px;
+}
