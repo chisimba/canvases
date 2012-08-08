@@ -459,3 +459,11 @@ option.by-sa_gnu-fdl {
     background-repeat: no-repeat;
 }
 /** End of CC License styles **/
+
+/** Switchboard **/
+#switchboardlinks table {
+    border-collapse: collapse;
+}
+#switchboardlinks tr > td {
+    padding-bottom: 20px;
+}
