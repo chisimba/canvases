@@ -15,13 +15,14 @@
 
 body {
         background: #CCC url('images/Header.jpg') no-repeat top center;
-	font-family: 'Yanone Kaffeesatz', sans-serif;
-	font-size: 140%;
+	font-family: "Lucida Grande", Verdana, Arial, "Bitstream Vera Sans",
+		sans-serif;
+	font-size: 12px;
 	font-size-adjust: none;
 	font-style: normal;
 	font-variant: normal;
 	font-weight: normal;
-	line-height: 140%;
+	line-height: normal;
 	background-color: #CCC;
 }
 
@@ -92,6 +93,11 @@ html {
 #Canvas_Content {
     padding-bottom: 0px;
     margin-bottom: 0px;
+}
+#Canvas_Content_Body_Region2 {
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    font-size: 140%;
+    line-height: 140%;
 }
 
 #container {
