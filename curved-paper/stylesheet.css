@@ -10,17 +10,18 @@
 
 
 @import "../canvas/canvasbase.css";
+/* Google Web Fonts*/
+@import url(http://fonts.googleapis.com/css?family=Yanone+Kaffeesatz);
 
 body {
         background: #CCC url('images/Header.jpg') no-repeat top center;
-	font-family: "Lucida Grande", Verdana, Arial, "Bitstream Vera Sans",
-		sans-serif;
-	font-size: 12px;
+	font-family: 'Yanone Kaffeesatz', sans-serif;
+	font-size: 140%;
 	font-size-adjust: none;
 	font-style: normal;
 	font-variant: normal;
 	font-weight: normal;
-	line-height: normal;
+	line-height: 140%;
 	background-color: #CCC;
 }
 
