@@ -2194,7 +2194,7 @@ For the blog blocks displayed as a middle block
 
 }
 
-/** Fix for menu floting off left - not sure why this is needed though **/
+/** Fix for menu floating off left - not sure why this is needed though **/
 .glossytabs {
     padding-left: 40px;
     margin-top: 5px;
@@ -2223,3 +2223,4 @@ For the blog blocks displayed as a middle block
                 color-stop(65%, white), color-stop(100%, #f7f7f7));
     background: -moz-linear-gradient(top, white 0%, white 55%, #D5E4F3 130%);
 }
+
