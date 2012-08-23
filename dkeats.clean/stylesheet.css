@@ -1,0 +1,637 @@
+/* 
+
+    A clean style for dkeats.com based on contemporary
+    designs commonly found on the WWW. It aims to be fixed
+    width, with a light theme and large font size. It also
+    has a top black social bar, a links bar, and an image
+    banner rotator. The layout is two column rather than 3
+    column, similar to dkeats.com2, but with the narrow column
+    on the right. Light and airy is the principle.
+
+*/
+   
+html {
+    margin: 0px;
+    padding: 0px;
+    -webkit-text-size-adjust: none;
+}
+body {
+    margin: 0px; 
+    padding: 0px; 
+    overflow-x: hidden; 
+    font-size: 14px; 
+    line-height: 1.4em; 
+    font-family: "Helvetica Neue", Helvetica, Helvetica, Arial, sans-serif;
+    background: white;
+    color: #111;
+}
+
+/* ----------- BEGIN GENERAL RESETS --------------*/
+a, a:visited, a:active {
+    color: dodgerblue;
+}
+a:hover, a:visited:hover {
+    color: #1958b7;
+    text-decoration: none;
+}
+li {
+    line-height: 1.4em;
+    padding-left: 10px;
+}
+ul
+{
+    list-style-type: square;
+    margin:0;
+    padding:0 20px;
+    z-index: -3;
+}
+ul ul, ul ul ul, ul ul ul ul
+{
+    list-style-type: circle;
+    margin:0;
+    padding:0 10px;
+    z-index: -3;
+}
+/* ------------ END GENERAL RESETS ---------------*/
+
+
+/* Fixed width canvas */
+.ChisimbaCanvas {
+    background: transparent;
+    width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    padding:0px;
+}
+#onecolumn, #twocolumn, #threecolumn {
+    float:left;
+    width:100%;
+}
+#OutermostWrapper {
+    background: transparent;
+}
+#_default {
+    background: transparent;
+}
+
+#Canvas_Content {
+    background:  #F6F1ED;
+    padding:0;
+    margin: 0px;
+}
+.Canvas_Content_Head_Before {
+    background-image: #e1e1e1;
+    background-image: -webkit-linear-gradient(right, #d2d2d2 0%, #efefef 100%);
+    background-image: -moz-linear-gradient(right, #d2d2d2 0%, #efefef 100%);
+    background-image: -o-linear-gradient(right, #d2d2d2 0%, #efefef 100%);
+    background-image: -ms-linear-gradient(right, #d2d2d2 0%, #efefef 100%);
+    background-image: linear-gradient(right, #d2d2d2 0%, #efefef 100%);
+    text-align: right;
+    padding: 0px;
+    margin: 0px;
+    height: 40px;
+    border-bottom: 2px solid #C7C7C7;
+}
+
+/* The social icons in the very topmost bar */
+.social_icon {
+    margin: 0px;
+}
+.social_icon_container {
+    padding: 0px;
+    margin: 0px;
+    margin-bottom: -4px;
+    margin-right: 6px;
+}
+
+/* The header stuff */
+.Canvas_Content_Head {
+    background-image: #cbcbcb;
+    background-image: -webkit-linear-gradient(top, #d2d2d2 0%, #adadad 23%, #e1e1e1 100%);
+    background-image: -moz-linear-gradient(top, #d2d2d2 0%, #adadad 23%, #e1e1e1 100%);
+    background-image: -o-linear-gradient(top, #d2d2d2 0%, #adadad 23%, #e1e1e1 100%);
+    background-image: -ms-linear-gradient(top, #d2d2d2 0%, #adadad 23%, #e1e1e1 100%);
+    background-image: linear-gradient(top, #d2d2d2 0%, #adadad 23%, #e1e1e1 100%);
+    height: 60px;
+    margin: 0px;
+    margin-top: 0px;
+    padding-top: 8px;
+    border-bottom: 1px solid #C7C7C7;
+}
+.Canvas_Content_Head_Header {
+    background: transparent;
+    position: relative;
+    padding: 20px;
+    height: 40px;
+    width: 500px;
+}
+h1#sitename {
+    margin: 0px;
+    padding-left: 4px;
+    padding-top: 14px;
+}
+.sitename_link {
+    color: #577F9B;
+}
+.sitename_link:hover, .sitename_link:visited:hover {
+    color: #0066cc;
+    text-decoration: none;
+}
+/* Search box in the header */
+div.Canvas_Content_Head_Before div#search {
+    position: relative;
+    width: 360px;
+    float: left;
+    margin-top: -37px;
+    margin-left: 10px;
+    padding: 0px;
+    text-align: left;
+    vertical-align: middle;
+}
+ div.Canvas_Content_Head_Before div#search #input_search {
+    border-radius: 4px;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -khtml-border-radius: 4px;
+    width: 120px;
+    
+}
+div.Canvas_Content_Head_Before div#search label {
+    color: lightgray;
+}
+/* End of search box */
+
+/* Floating header boxes */
+.floathead {
+    margin: 0px;
+    padding: 0px;
+}
+
+#floathead_content0, #floathead_content1, 
+#floathead_content2, #floathead_content3 {
+    width: 150px;
+    height: 60px;
+    position: relative;
+    float: right;
+    margin-top: -45px;
+    margin-right: 8px;
+}
+#floathead_content3 {
+    background:rgba(255,255,255,0.2);
+}
+#floathead_content2 {
+    background:rgba(255,255,255,0.2);
+}
+#floathead_content1 {
+    background:rgba(255,255,255,0.2);
+}
+#floathead_content0 {
+    background:rgba(255,255,255,0.2);
+}
+/* END of header stuff */
+
+/* The navigation bar */
+#navigation {
+    background: transparent;
+    width: 990px;
+    height: 60px;
+    padding-left: 10px;
+    margin: 0px;
+    margin-top: 0px;
+}
+/* End of navigation bar */
+#Canvas_BeforeContainer {
+    height: 0px;
+    margin: 0px;
+    border:none;
+    padding: 0px;
+}
+#Canvas_Content_Body, #container {
+    background: transparent;
+    border: none;
+    margin: 0px;
+    padding: 0px;
+}
+.Canvas_Content_Body_Before {
+    clear:both;
+}
+#Canvas_Content_Body_Region1,
+#Canvas_Content_Body_Region2,
+#Canvas_Content_Body_Region3 {
+    min-height:700px;
+}
+#Canvas_Content_Body_Region2 {
+    padding: 0px;
+    margin: 0px;
+    padding-left: 8px;
+    padding-right: 8px;
+    margin-top: 0px;
+    padding-top: 6px;
+    overflow: auto;
+    width:auto;
+}
+#Canvas_Content_Body_Region1 {
+    background: transparent;
+    width:300px;
+    float:right;
+}
+#Canvas_Content_Body_Region3 {
+    background: transparent;
+    width:300px;
+    margin-left: 0px;
+    padding-left: 8px;
+    padding-right: 8px;
+    float:right;
+}
+
+#threecolumn #Canvas_Content_Body_Region2 {
+    padding-left: 8px;
+    padding-right: 8px;
+    width:auto;
+}
+
+#twocolumn #Canvas_Content_Body_Region2 {
+    padding-left: 8px;
+    padding-right: 8px;
+    width:auto;
+}
+
+
+
+/** Menu settings **/
+#menu {
+    padding-bottom: 10px;
+}
+ul#menuList  li {
+    background-color: #EAEAEA;
+    padding: 2px;
+    padding-left: 6px;
+    background-image: none;
+    border-right: 2px solid    #8E8C8C;
+    border-bottom: 2px solid    #C7C7C7;
+    font-weight: bold;
+}
+ul#menuList  li:hover {
+    background-color: #fff;
+}
+/* Top Row*/
+ul#menuList  li a {
+    color: #577F9B;
+    text-decoration: none;
+    padding-right: 30px;
+}
+
+/* Items on menu*/
+ul#menuList  li li a {
+    color: #000;
+    text-decoration: none;
+    padding: 3px;
+    font-size: 10px;
+}
+ul#menuList  li li a img{
+    border-style: none;
+    padding: 0;
+    margin: 0;
+    margin-right: 4px;
+}
+
+ul#menuList  li li a span {
+    margin-left: 27px;
+    margin-right: 0px;
+    display: block;
+}
+ul#menuList  li  li{
+    border-style: none;
+    width: 100%;
+    background: transparent;
+    color: #000;
+    font-weight: normal;
+    padding: 0;
+}
+ul#menuList  li  li:hover{
+    border-style: none;
+    background-color: #99A777;
+}
+ul#menuList  li  ul{
+    background-color: #fff;
+    border-left: 1px solid #666666;
+    border-right: 1px solid #666666;
+    border-bottom: 1px solid #666666;
+    margin-top: 4px;
+    width: 180px;
+    -moz-border-radius-bottomleft: 6px;
+    border-bottom-left-radius: 6px;
+    -webkit-border-radius-bottomleft: 6px;
+    -khtml-border-radius-bottomleft: 6px;
+    -moz-border-radius-bottomright: 6px;
+    border-bottom-right-radius: 6px;
+    -webkit-border-radius-bottomright: 6px;
+    -khtml-border-radius-bottomright: 6px;
+}
+/* Increase padding on the last right item*/
+ul#menuList  li  li.last a{
+    padding-right: 8px;
+}
+
+/* The footer stuff */
+.Canvas_Content_Footer_Before {
+    height: 0px;
+}
+.Canvas_Content_Footer {
+    height: auto;
+}
+#footer {
+    background: whitesmoke;
+    width: 990px;
+    color: slategray;
+    height: 170px;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-top: 32px;
+    margin-bottom: 32px;
+    padding:6px;
+    padding-top: 12px;
+    border: none;
+    border-top: 1px solid #C7C7C7;
+    border-bottom-right-radius: 6px;
+    -moz-border-radius-bottomright: 6px;
+    -webkit-border-bottom-right-radius: 6px;
+    -khtml-border-radius-bottomright: 6px;
+    border-bottom-left-radius: 6px;
+    -moz-border-radius-bottomleft: 6px;
+    -webkit-border-bottom-left-radius: 6px;
+    -khtml-border-radius-bottomleft: 6px;
+
+}
+#footerbr {
+    clear: both;
+    height: 0px;
+}
+#footer a:link, #footer a:visited {
+    color: skyblue;
+    text-decoration: none;
+}
+#footer a:hover, #footer a.visited:hover {
+    color: cyan;
+    text-decoration: none;
+}
+.Canvas_Content_Footer_After {
+    height: 0px;
+    width: 0px
+}
+
+/* All the content blocks */
+.featurebox, .contentfeaturebox {
+    background: #ebe7e4;
+    margin-bottom: 20px;
+    padding: 0px;
+    border-top-right-radius: 8px;
+    -moz-border-radius-topright: 8px;
+    -webkit-border-top-right-radius: 8px;
+    -khtml-border-radius-topright: 8px;
+    border-top-left-radius: 8px;
+    -moz-border-radius-topleft: 8px;
+    -webkit-border-top-left-radius: 8px;
+    -khtml-border-radius-topleft: 8px;
+    border-bottom-right-radius: 6px;
+    -moz-border-radius-bottomright: 6px;
+    -webkit-border-bottom-right-radius: 6px;
+    -khtml-border-radius-bottomright: 6px;
+    border-bottom-left-radius: 6px;
+    -moz-border-radius-bottomleft: 6px;
+    -webkit-border-bottom-left-radius: 6px;
+    -khtml-border-radius-bottomleft: 6px;
+    -webkit-box-shadow: 4px 4px 5px rgba(50, 50, 50, 0.47);
+    -moz-box-shadow:    4px 4px 5px rgba(50, 50, 50, 0.47);
+    box-shadow:         4px 4px 5px rgba(50, 50, 50, 0.47);
+}
+
+.featureboxheader, .contentfeaturebox h3  {
+    padding: 5px;
+    margin: 0;
+}
+
+.featureboxcontent {
+    color: #5C5C5C;
+    background: transparent;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 5px;
+    padding-bottom: 12px;
+    margin: 0;
+}
+
+#Canvas_Content_Body_Region1 .featureboxheader, 
+#Canvas_Content_Body_Region3 .featureboxheader, 
+#Canvas_Content_Body_Region2 .featureboxheader,
+.contentfeaturebox h3 {
+    background: lightgrey;
+    color: #5C5C5C;
+    border: none;
+    border-top-right-radius: 8px;
+    -moz-border-radius-topright: 8px;
+    -webkit-border-top-right-radius: 8px;
+    -khtml-border-radius-topright: 8px;
+    border-top-left-radius: 8px;
+    -moz-border-radius-topleft: 8px;
+    -webkit-border-top-left-radius: 8px;
+    -khtml-border-radius-topleft: 8px;
+}
+
+#Canvas_Content_Body_Region1 .featureboxheader,
+#Canvas_Content_Body_Region1 .featureboxheader a,
+#Canvas_Content_Body_Region3 .featureboxheader,
+#Canvas_Content_Body_Region3 .featureboxheader a,
+#Canvas_Content_Body_Region2 .featureboxheader,
+#Canvas_Content_Body_Region2 .featureboxheader a {
+    color: #5C5C5C;
+}
+
+#Canvas_Content_Body_Region2 h5.featureboxheader {
+    font-size: 150%;
+}
+
+
+#Canvas_Content_Body_Region1 .featureboxcontent , 
+#Canvas_Content_Body_Region3 .featureboxcontent, 
+#Canvas_Content_Body_Region2 .featureboxcontent {
+
+}
+
+
+/** ----------------- BEGIN BLOG SETTINGS ---------------*/
+.blog_page_header {
+    font-size: 130%;
+}
+.tweet_button {
+    float: right;
+    margin-top: 2px;
+}
+.blog-head-date {
+    font-size: 110%;
+    color: gray;
+}
+.blog_content {
+    margin-left: 12px;
+    margin-right: 12px;
+}
+.blog-item-base {
+    background: transparent;
+    margin-top: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-bottom: 0px;
+    -moz-border-radius-bottomleft: 6px;
+    border-bottom-left-radius: 6px;
+    -webkit-border-radius-bottomleft: 6px;
+    -khtml-border-radius-bottomleft: 6px;
+    -moz-border-radius-bottomright: 6px;
+    border-bottom-right-radius: 6px;
+    -webkit-border-radius-bottomright: 6px;
+    -khtml-border-radius-bottomright: 6px;
+}
+/** Fix latest 10 blog block */
+#lastten p {
+  font-family: Arial, serif;
+  font-size: 90%;
+  margin-top: -7px;
+}
+#lastten p:before {
+    content: "&raquo;";
+    margin-right: 3px;
+}
+#lastten p .minute {
+  font-family: Arial, serif;
+  font-size: 70%;
+  margin-left:10px;
+}
+/** ----------------- END BLOG SETTINGS ---------------*/
+
+/* ---------- BEGIN MODULE CATALOGUE SETTINGS ---------*/
+.modcat_main {
+    background: transparent;
+}
+.modcat_left {
+    padding: 4px;
+}
+.modcat_left .tagcloud {
+    background: #e1e1e1;
+    -moz-border-radius: 10px;
+    -khtml-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    padding: 2px;
+    -webkit-box-shadow: 3px 3px 4px rgba(50, 50, 50, 0.20);
+    -moz-box-shadow:    3px 3px 4px rgba(50, 50, 50, 0.20);
+    box-shadow:         3px 3px 4px rgba(50, 50, 50, 0.20);
+}
+.moduleupdate {
+    background: #e1e1e1;
+    margin-top: 20px;
+    margin-bottom: 12px;
+    margin-left: 30px;
+    margin-right: 15px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    -moz-border-radius: 10px;
+    -khtml-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    -webkit-box-shadow: 3px 3px 4px rgba(50, 50, 50, 0.20);
+    -moz-box-shadow:    3px 3px 4px rgba(50, 50, 50, 0.20);
+    box-shadow:         3px 3px 4px rgba(50, 50, 50, 0.20);
+}
+.moduleupdate .floatright {
+    position: relative;
+    float: right;
+}
+.modcat_main td span.floatright {
+    background:transparent;
+}
+.moduleupdate .floatright img {
+    vertical-align: middle;
+    margin-right: 10px;
+}
+.moduleupdate b img {
+    vertical-align: middle;
+    margin-right: 10px;
+}
+.modcatdesc {
+    margin-left: 42px;
+    color: darkslategray;
+}
+.modcatdesc b {
+    color: #003366;
+}
+/* ----------- END MODULE CATALOGUE SETTINGS ----------*/
+
+
+/* ------------ BEGIN GENERAL TABLE SETTINGS ----------*/
+td.odd {
+     background: #EAEAEA;
+}
+
+td.even {
+     background: #d2d2d2;
+}
+
+th.heading {
+    background: #5C5C5C;
+    color: white;
+}
+/* ------------ END GENERAL TABLE SETTINGS ------------*/
+
+/** Creative commons license dropdowns - keep near the end **/
+option.copyright {
+    padding-left:90px;
+    background-image: url('../_common/icons/creativecommons_v3/copyright.gif');
+    background-repeat: no-repeat;
+}
+option.by {
+    padding-left:90px;
+    background-image: url('../_common/icons/creativecommons_v3/by.gif');
+    background-repeat: no-repeat;
+}
+option.by-sa {
+    padding-left:90px;
+    background-image: url('../_common/icons/creativecommons_v3/by-sa.gif');
+    background-repeat: no-repeat;
+}
+option.by-nd {
+    padding-left:90px;
+    background-image: url('../_common/icons/creativecommons_v3/by-nd.gif');
+    background-repeat: no-repeat;
+}
+option.by-nc {
+    padding-left:90px;
+    background-image: url('../_common/icons/creativecommons_v3/by-nc.gif');
+    background-repeat: no-repeat;
+}
+option.by-nc-sa {
+    padding-left:90px;
+    background-image: url('../_common/icons/creativecommons_v3/by-nc-sa.gif');
+    background-repeat: no-repeat;
+}
+option.by-nc-nd {
+    padding-left:90px;
+    background-image: url('../_common/icons/creativecommons_v3/by-nc-nd.gif');
+    background-repeat: no-repeat;
+}
+option.gnu-fdl {
+    padding-left:90px;
+    background-image: url('../_common/icons/creativecommons_v3/gnu-fdl.gif');
+    background-repeat: no-repeat;
+}
+option.by-sa_gnu-fdl {
+    padding-left:90px;
+    background-image: url('../_common/icons/creativecommons_v3/by-sa_gnu-fdl.gif');
+    background-repeat: no-repeat;
+}
+/** End of CC License styles **/
+
+
+
+
