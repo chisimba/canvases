@@ -21,11 +21,13 @@ if ($isInstalled) {
     $banner1 = $objBl->readContents("banner1");
     $banner2 = $objBl->readContents("banner2");
     $banner3 = $objBl->readContents("banner3");
+    $plMenu = $objBl->readContents("plmenu");
 } else {
     $banner0 = NULL;
     $banner1 = NULL;
     $banner2 = NULL;
     $banner3 = NULL;
+    $plMenu = NULL;
 }
 
 // Initialise the variable holding preferred canvas
@@ -161,7 +163,12 @@ if (!isset($pageSuppressBanner)) {
 if (!isset($pageSuppressBanner)) {
     echo "</div>";
     if (!isset($pageSuppressToolbar)) {
-        echo "\n\n<div id='navigation'>\n\n" . $toolbar . "\n</div>\n\n";
+        if ($this->objUser->isLoggedIn()) {
+            echo "\n\n<div id='navigation'>\n\n" . $toolbar . "\n</div>\n\n";
+        } else {
+            echo "\n\n<div id='prelogin_nav'>$plMenu</div>\n\n";
+        }
+        
     }
     echo '<div class="Canvas_Content_Head_After"></div>';
 }
