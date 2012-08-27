@@ -2224,3 +2224,40 @@ For the blog blocks displayed as a middle block
     background: -moz-linear-gradient(top, white 0%, white 55%, #D5E4F3 130%);
 }
 
+/** For the species (bird) module */
+.species_speciesrecord {
+    background: whitesmoke;
+    padding: 8px;
+    border: 1px dashed silver;
+    border-radius: 6px;
+    -moz-border-radius: 6px;
+    -webkit-border-radius: 6px;
+    -khtml-border-radius: 6px;
+}
+
+.speciesrecord_common {
+    position: relative;
+    float: left;
+    font-size: 170%;
+}
+
+.speciesrecord_latin {
+    position: relative;
+    float: right;
+    font-size: 170%;
+    font-style: italic;
+}
+
+.speciesrecord_wikitxt {
+    display: inline-block;
+    margin-top: 15px;
+}
+
+.speciesrecord_wikipicon {
+    position: relative;
+    float: right;
+}
+
+.species_speciesrecord p {
+    font-size: 130%;
+}

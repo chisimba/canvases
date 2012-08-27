@@ -126,6 +126,12 @@ ul ul, ul ul ul, ul ul ul ul
     height: 40px;
     width: 500px;
 }
+h1#sitename:before {
+    content: url("images/avatar.png");
+    float: left;
+    margin-top: -15px;
+    margin-right: 10px;
+}
 h1#sitename {
     margin: 0px;
     padding-left: 4px;
@@ -170,24 +176,20 @@ div.Canvas_Content_Head_Before div#search label {
 
 #floathead_content0, #floathead_content1, 
 #floathead_content2, #floathead_content3 {
-    width: 150px;
+    width: 180px;
     height: 60px;
     position: relative;
     float: right;
     margin-top: -45px;
     margin-right: 8px;
+    background: transparent;
 }
-#floathead_content3 {
-    background:rgba(255,255,255,0.2);
+
+.bannerflickr a, .bannerflickr a:visited {
+    color: #77021d;
 }
-#floathead_content2 {
-    background:rgba(255,255,255,0.2);
-}
-#floathead_content1 {
-    background:rgba(255,255,255,0.2);
-}
-#floathead_content0 {
-    background:rgba(255,255,255,0.2);
+.bannerflickr a:hover, .bannerflickr a:visited:hover {
+    color: #b65900; 
 }
 /* END of header stuff */
 
@@ -264,31 +266,74 @@ div.Canvas_Content_Head_Before div#search label {
     padding-bottom: 10px;
 }
 ul#menuList  li {
-    background-color: #EAEAEA;
-    padding: 2px;
-    padding-left: 6px;
-    background-image: none;
-    border-right: 2px solid    #8E8C8C;
-    border-bottom: 2px solid    #C7C7C7;
-    font-weight: bold;
+    display:block;
+    padding:5px;
+    border:1px solid #26759e; 
+    -webkit-border-radius: 3px; 
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    font-family:arial, helvetica, sans-serif; 
+    padding: 10px 10px 10px 10px; 
+    text-shadow: -1px -1px 0 rgba(0,0,0,0.3);
+    font-weight:bold; 
+    text-align: center; 
+    color: #FFFFFF; 
+    background-color: #3093c7;
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #3093c7), color-stop(100%, #1c5a85));
+    background-image: -webkit-linear-gradient(top, #3093c7, #1c5a85);
+    background-image: -moz-linear-gradient(top, #3093c7, #1c5a85);
+    background-image: -ms-linear-gradient(top, #3093c7, #1c5a85);
+    background-image: -o-linear-gradient(top, #3093c7, #1c5a85);
+    background-image: linear-gradient(top, #3093c7, #1c5a85);
+    filter:progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr=#3093c7, endColorstr=#1c5a85);
+    text-decoration:none;
+    width: 100px;
 }
-ul#menuList  li:hover {
-    background-color: #fff;
+ul#menuList li:hover {
+    border:1px solid #4b546a; 
+    -webkit-border-radius: 3px; 
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    font-family:arial, helvetica, sans-serif; 
+    padding: 10px 10px 10px 10px; 
+    text-shadow: -1px -1px 0 rgba(0,0,0,0.3);
+    font-weight:bold; 
+    text-align: center; 
+    color: #FFFFFF; 
+    background-color: #606c88;
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #606c88), color-stop(100%, #3f4c6b));
+    background-image: -webkit-linear-gradient(top, #606c88, #3f4c6b);
+    background-image: -moz-linear-gradient(top, #606c88, #3f4c6b);
+    background-image: -ms-linear-gradient(top, #606c88, #3f4c6b);
+    background-image: -o-linear-gradient(top, #606c88, #3f4c6b);
+    background-image: linear-gradient(top, #606c88, #3f4c6b);
+    filter:progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr=#606c88, endColorstr=#3f4c6b);
+    text-decoration:none;
+    width: 100px;
 }
 /* Top Row*/
 ul#menuList  li a {
-    color: #577F9B;
+    color:#fff;;
     text-decoration: none;
-    padding-right: 30px;
 }
 
 /* Items on menu*/
-ul#menuList  li li a {
-    color: #000;
-    text-decoration: none;
-    padding: 3px;
-    font-size: 10px;
+ul#menuList li ul {
+    margin-top: 10px;
+    margin-left: -11px;
 }
+
+ul#menuList li ul li a {
+    color: #fff;
+    text-decoration: none;
+    white-space:nowrap;
+}
+ul#menuList li li a:hover {
+
+}
+
+
+
 ul#menuList  li li a img{
     border-style: none;
     padding: 0;
@@ -301,7 +346,7 @@ ul#menuList  li li a span {
     margin-right: 0px;
     display: block;
 }
-ul#menuList  li  li{
+ul#menuList  li li {
     border-style: none;
     width: 100%;
     background: transparent;
@@ -309,25 +354,53 @@ ul#menuList  li  li{
     font-weight: normal;
     padding: 0;
 }
-ul#menuList  li  li:hover{
+ul#menuList li li:hover{
     border-style: none;
-    background-color: #99A777;
+    background: transparent;
 }
-ul#menuList  li  ul{
-    background-color: #fff;
-    border-left: 1px solid #666666;
-    border-right: 1px solid #666666;
-    border-bottom: 1px solid #666666;
-    margin-top: 4px;
-    width: 180px;
-    -moz-border-radius-bottomleft: 6px;
-    border-bottom-left-radius: 6px;
-    -webkit-border-radius-bottomleft: 6px;
-    -khtml-border-radius-bottomleft: 6px;
-    -moz-border-radius-bottomright: 6px;
-    border-bottom-right-radius: 6px;
-    -webkit-border-radius-bottomright: 6px;
-    -khtml-border-radius-bottomright: 6px;
+ul#menuList  li  ul li {
+    border:1px solid #4b546a; 
+    -webkit-border-radius: 3px; 
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    font-family:arial, helvetica, sans-serif; 
+    padding: 10px 10px 10px 10px; 
+    text-shadow: -1px -1px 0 rgba(0,0,0,0.3);
+    font-weight:bold; 
+    text-align: left; 
+    color: #FFFFFF; 
+    background-color: #606c88;
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #606c88), color-stop(100%, #3f4c6b));
+    background-image: -webkit-linear-gradient(top, #606c88, #3f4c6b);
+    background-image: -moz-linear-gradient(top, #606c88, #3f4c6b);
+    background-image: -ms-linear-gradient(top, #606c88, #3f4c6b);
+    background-image: -o-linear-gradient(top, #606c88, #3f4c6b);
+    background-image: linear-gradient(top, #606c88, #3f4c6b);
+    filter:progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr=#606c88, endColorstr=#3f4c6b);
+    text-decoration:none;
+    width: 250px;
+}
+
+
+ul#menuList  li  ul li:hover {
+    border:1px solid #77021d; 
+    -webkit-border-radius: 3px; 
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    font-family:arial, helvetica, sans-serif; 
+    padding: 10px 10px 10px 10px; 
+    text-shadow: -1px -1px 0 rgba(0,0,0,0.3);
+    font-weight:bold; 
+    text-align: left; 
+    color: #FFFFFF; 
+    background-color: #a90329;
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #a90329), color-stop(100%, #6d0019));
+    background-image: -webkit-linear-gradient(top, #a90329, #6d0019);
+    background-image: -moz-linear-gradient(top, #a90329, #6d0019);
+    background-image: -ms-linear-gradient(top, #a90329, #6d0019);
+    background-image: -o-linear-gradient(top, #a90329, #6d0019);
+    background-image: linear-gradient(top, #a90329, #6d0019);filter:progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr=#a90329, endColorstr=#6d0019);
+    width: 250px;
 }
 /* Increase padding on the last right item*/
 ul#menuList  li  li.last a{
