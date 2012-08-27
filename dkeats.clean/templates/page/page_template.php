@@ -98,6 +98,9 @@ require($objConfig->getsiteRootPath().'skins/_common/templates/skinpageheader3-0
     // Render the javascript unless it is suppressed.
     if (!isset($pageSuppressJavascript)) {
         echo $objSkin->putJavaScript($mime, $headerParams);
+        // Load the helper JS from the current skin
+        $helperJs = 'skins/' . $skinName . '/javascript/skinhelper.js';
+        echo "\n<script type='text/javascript' src='" . $helperJs . "'></script>\n\n";
     }
 
     // Render the CSS for the current skin unless it is suppressed.

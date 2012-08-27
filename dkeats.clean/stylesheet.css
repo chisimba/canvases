@@ -9,7 +9,6 @@
     on the right. Light and airy is the principle.
 
 */
-   
 html {
     margin: 0px;
     padding: 0px;
@@ -221,7 +220,6 @@ div.Canvas_Content_Head_Before div#search label {
 #Canvas_Content_Body_Region1,
 #Canvas_Content_Body_Region2,
 #Canvas_Content_Body_Region3 {
-    min-height:700px;
 }
 #Canvas_Content_Body_Region2 {
     padding: 0px;
@@ -245,6 +243,11 @@ div.Canvas_Content_Head_Before div#search label {
     padding-left: 8px;
     padding-right: 8px;
     float:right;
+}
+
+#threecolumn #Canvas_Content_Body_Region3,
+#threecolumn #Canvas_Content_Body_Region1 {
+    float: right;
 }
 
 #threecolumn #Canvas_Content_Body_Region2 {
@@ -328,17 +331,18 @@ ul#menuList li ul li a {
     text-decoration: none;
     white-space:nowrap;
 }
-ul#menuList li li a:hover {
-
+.menulinktext {
+    padding-top: 8px;
 }
-
-
 
 ul#menuList  li li a img{
     border-style: none;
     padding: 0;
     margin: 0;
     margin-right: 4px;
+    width: 32px;
+    height: 32px;
+    vertical-align: middle;
 }
 
 ul#menuList  li li a span {
@@ -579,6 +583,10 @@ ul#menuList  li  li.last a{
   font-size: 70%;
   margin-left:10px;
 }
+
+ul#nav-secondary li {
+    background: red;
+}
 /** ----------------- END BLOG SETTINGS ---------------*/
 
 /* ---------- BEGIN MODULE CATALOGUE SETTINGS ---------*/
@@ -652,6 +660,11 @@ td.even {
 }
 
 th.heading {
+    background: #5C5C5C;
+    color: white;
+}
+
+#Canvas_Content_Body_Region2 th {
     background: #5C5C5C;
     color: white;
 }
@@ -744,7 +757,6 @@ option.by-sa_gnu-fdl {
     background-image: linear-gradient(top, #3093c7, #1c5a85);filter:progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr=#3093c7, endColorstr=#1c5a85);
     text-decoration:none;
 }
-
 /*--- DROPDOWN ---*/
 .plmenu ul {
     background: #fff;
@@ -763,7 +775,6 @@ option.by-sa_gnu-fdl {
 .plmenu li:hover ul{
     left:0;
 }
-
 /* Persistent all menu item hovers */
 .plmenu li:hover a{
     border:1px solid #4b546a; -webkit-border-radius: 3px; -moz-border-radius: 3px;border-radius: 3px;font-family:arial, helvetica, sans-serif; padding: 10px 10px 10px 10px; text-shadow: -1px -1px 0 rgba(0,0,0,0.3);font-weight:bold; text-align: center; color: #FFFFFF; background-color: #606c88;
@@ -797,5 +808,75 @@ option.by-sa_gnu-fdl {
     background-image: -o-linear-gradient(top, #a90329, #6d0019);
     background-image: linear-gradient(top, #a90329, #6d0019);filter:progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr=#a90329, endColorstr=#6d0019);
 }
-
 /* ----------------- END PRELOGIN MENU ------------------ */
+
+/* ----------------- BEGIN WALL MODULE -------------------*/
+/**  Wall module **/
+.wallpostrow {
+    background-image: #dadada;
+    background-image: -webkit-linear-gradient(top, #d2d2d2 0%, #e1e1e1 100%);
+    background-image: -moz-linear-gradient(top, #d2d2d2 0%, #e1e1e1 100%);
+    background-image: -o-linear-gradient(top, #d2d2d2 0%, #e1e1e1 100%);
+    background-image: -ms-linear-gradient(top, #d2d2d2 0%, #e1e1e1 100%);
+    background-image: linear-gradient(top, #d2d2d2 0%, #e1e1e1 100%);
+    padding: 6px;
+    -moz-border-radius: 6px;
+    -khtml-border-radius: 6px;
+    -webkit-border-radius: 6px;
+    border-radius: 6px;
+    -webkit-box-shadow: 3px 3px 4px rgba(50, 50, 50, 0.10);
+    -moz-box-shadow:    3px 3px 4px rgba(50, 50, 50, 0.10);
+    box-shadow:         3px 3px 4px rgba(50, 50, 50, 0.10);
+}
+.wallpostrow img.full_user_image {
+    vertical-align: middle;
+    margin-right: 10px;
+    -moz-border-radius: 3px;
+    -khtml-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+}
+
+.wall_more_posts .wallpostrow {
+    background-image: #d4d6d0;
+    background-image: -webkit-linear-gradient(bottom, #eeeeec 0%, #d3d7cf 50%, #babdb6 100%);
+    background-image: -moz-linear-gradient(bottom, #eeeeec 0%, #d3d7cf 50%, #babdb6 100%);
+    background-image: -o-linear-gradient(bottom, #eeeeec 0%, #d3d7cf 50%, #babdb6 100%);
+    background-image: -ms-linear-gradient(bottom, #eeeeec 0%, #d3d7cf 50%, #babdb6 100%);
+background-image: linear-gradient(bottom, #eeeeec 0%, #d3d7cf 50%, #babdb6 100%);
+}
+
+.wall_post_append {
+    background: none;
+}
+.wall_wrapper {
+    width: 98%;
+    margin-top: 8px;
+    margin-bottom: 12px;
+}
+/* ------------------ END WALL MODULE --------------------*/
+
+/* -------------- BEGIN FILEMANAGER MODULE ---------------*/
+.outerquota {
+    width: 190px;
+}
+
+.filemanager_left {
+    background-image: #d4d6d1;
+    background-image: -webkit-linear-gradient(bottom, #eeeeec 0%, #babdb6 100%);
+    background-image: -moz-linear-gradient(bottom, #eeeeec 0%, #babdb6 100%);
+    background-image: -o-linear-gradient(bottom, #eeeeec 0%, #babdb6 100%);
+    background-image: -ms-linear-gradient(bottom, #eeeeec 0%, #babdb6 100%);
+    background-image: linear-gradient(bottom, #eeeeec 0%, #babdb6 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#babdb6", endColorstr="#eeeeec",GradientType=0);
+    padding: 6px;
+    margin: 6px;
+    -moz-border-radius: 6px;
+    -khtml-border-radius: 6px;
+    -webkit-border-radius: 6px;
+    border-radius: 6px;
+    -webkit-box-shadow: 3px 3px 4px rgba(50, 50, 50, 0.10);
+    -moz-box-shadow:    3px 3px 4px rgba(50, 50, 50, 0.10);
+    box-shadow:         3px 3px 4px rgba(50, 50, 50, 0.10);
+}
+/* --------------- END FILEMANAGER MODULE ----------------*/
