@@ -140,12 +140,12 @@ if (!isset($pageSuppressBanner)) {
     if (!isset($suppressFooter)) {
         echo PAGETOP;
     }
-    echo "\n\n<div class='Canvas_Content_Head_Before'>" 
+    /*echo "\n\n<div class='Canvas_Content_Head_Before'>" 
       . getIcons($skinName, $canvas);
     if (!isset($pageSuppressSearch)) {
         echo $objSkin->siteSearchBox();
     }
-    echo "</div>\n\n"
+    echo "</div>\n\n"*/
     ?>
     <div class="Canvas_Content_Head">
         <div class="Canvas_Content_Head_Header" id="header">
@@ -168,7 +168,7 @@ if (!isset($pageSuppressBanner)) {
         if ($this->objUser->isLoggedIn()) {
             echo "\n\n<div id='navigation'>\n\n" . $toolbar . "\n</div>\n\n";
         } else {
-            echo "\n\n<div id='prelogin_nav'>$plMenu</div>\n\n";
+            //echo "\n\n<div id='prelogin_nav'>$plMenu</div>\n\n";
         }
         
     }
