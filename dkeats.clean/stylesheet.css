@@ -926,3 +926,9 @@ background-image: linear-gradient(bottom, #eeeeec 0%, #d3d7cf 50%, #babdb6 100%)
     font-size: large;
 }
 /* --------------- END SYSCONFIG MODULE ----------------*/
+
+/* -------------- BEGIN TURN EDITING ON ---------------*/
+#ddleftblocks, #ddrightblocks {
+    width: 220px;
+}
+/* --------------- END TURN EDITING ON -----------------*/

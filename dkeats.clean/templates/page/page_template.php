@@ -90,7 +90,8 @@ require($objConfig->getsiteRootPath().'skins/_common/templates/skinpageheader3-0
         echo '
 
         <link rel="stylesheet" type="text/css" href="skins/_common2/css/basecss.php">
-
+        <link rel="icon" type="image/png" href="skins/' . $skinName . '/favicon.png" />
+            
         ';
      }
 
