@@ -454,6 +454,12 @@ ul#menuList  li  li.last a{
     color: cyan;
     text-decoration: none;
 }
+.footerinfo {
+    font-size: 140%;
+    padding-left: 140px;
+    padding-right: 140px;
+    color: #babdb6;
+}
 .Canvas_Content_Footer_After {
     height: 0px;
     width: 0px

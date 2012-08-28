@@ -186,6 +186,12 @@ echo "<div class='Canvas_Content_Body_Before'></div>\n"
 
 // If the footer is not suppressed, render it out.
 if (!isset($suppressFooter)) {
+    $footerInfo = '<br /><br /><div class="footerinfo">This site is 
+        made available by Kenga Solutions Pty Ltd
+        to support the promotion of Free Software in South Africa and other 
+        parts of Africa. If you are interested in using it for this purpose,
+        then please contact derek@kenga.co.za for access.</div>';
+        
     // Add the footer string if it is set
     if (isset($footerStr)) {
        $footerStr = $footerStr;
@@ -194,9 +200,9 @@ if (!isset($suppressFooter)) {
         $link = new link ($this->URI(array('action'=>'logoff'),'security'));
         $link->link=$objLanguage->languageText("word_logout");
         $str=$objLanguage->languageText("mod_context_loggedinas", 'context').' <strong>'.$objUser->fullname().'</strong>  ('.$link->show().')';
-        $footerStr= $str;
+        $footerStr = $str;
     } else {
-        $footerStr = $objLanguage->languageText("mod_security_poweredby", 'security', 'Powered by Chisimba');
+        $footerStr = $objLanguage->languageText("mod_security_poweredby", 'security', 'Powered by') . ' Chisimba';
     }
     // Do the rendering here.
     echo "<div class='Canvas_Content_Footer_Before'></div>"
@@ -206,7 +212,7 @@ if (!isset($suppressFooter)) {
     if (!isset($pageSuppressBanner)) {
         echo ' (' . GOTOTOP . ')';
     }
-    echo "</div>\n</div>\n<div class='Canvas_Content_Footer_After'></div>";
+    echo $footerInfo . "</div>\n</div>\n<div class='Canvas_Content_Footer_After'></div>";
 }
 // Render the container's closing div if the container is not suppressed
 if (!isset($pageSuppressContainer)) {
