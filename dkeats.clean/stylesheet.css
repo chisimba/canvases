@@ -575,7 +575,7 @@ ul#menuList  li  li.last a{
   margin-top: -7px;
 }
 #lastten p:before {
-    content: "&raquo;";
+    content: url(images/arrow.gif);
     margin-right: 3px;
 }
 #lastten p .minute {
@@ -583,9 +583,17 @@ ul#menuList  li  li.last a{
   font-size: 70%;
   margin-left:10px;
 }
+div#blogroll .featureboxlink:before,
+div#bloglinks .featureboxlink:before {
+    content: url(images/arrow.gif);
+    margin-right: 8px;
+}
 
 ul#nav-secondary li {
-    background: red;
+    background: transparent;
+    list-style-image: url(images/arrow.gif);
+    margin-left: 12px;
+    padding-left: 0px;
 }
 /** ----------------- END BLOG SETTINGS ---------------*/
 
@@ -880,3 +888,41 @@ background-image: linear-gradient(bottom, #eeeeec 0%, #d3d7cf 50%, #babdb6 100%)
     box-shadow:         3px 3px 4px rgba(50, 50, 50, 0.10);
 }
 /* --------------- END FILEMANAGER MODULE ----------------*/
+
+
+/* -------------- BEGIN SYSCONFIG MODULE ---------------*/
+.sysconfig_main {
+    width: 98%;
+    padding: 8px;
+    margin-right: 8px;
+    margin-top: 8px;
+}
+
+.sysconfig_main #input_pvalue {
+    width: 450px;
+}
+
+.sysconfig_main th {
+    font-size: 140%;
+}
+.sysconfig_main td {
+    font-size: 90%;
+}
+.sysconfig_left {
+    font-size: 120%;
+    margin: 6px;
+    margin-right: 10px;
+    -moz-border-radius: 10px;
+    -khtml-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    padding: 8px;
+    -webkit-box-shadow: 3px 3px 4px rgba(50, 50, 50, 0.20);
+    -moz-box-shadow:    3px 3px 4px rgba(50, 50, 50, 0.20);
+    box-shadow:         3px 3px 4px rgba(50, 50, 50, 0.20);
+}
+
+.sysconfig_configsite  {
+    font-size: large;
+}
+/* --------------- END SYSCONFIG MODULE ----------------*/
