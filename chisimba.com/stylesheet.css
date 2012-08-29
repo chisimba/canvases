@@ -197,10 +197,11 @@ div.Canvas_Content_Head_Before div#search label {
 #navigation {
     background: transparent;
     width: 990px;
-    height: 60px;
+    height: 80px;
     padding-left: 10px;
     margin: 0px;
     margin-top: 0px;
+    border-bottom: 2px solid #C7C7C7;
 }
 /* End of navigation bar */
 #Canvas_BeforeContainer {
@@ -948,3 +949,9 @@ background-image: linear-gradient(bottom, #eeeeec 0%, #d3d7cf 50%, #babdb6 100%)
     width: 220px;
 }
 /* --------------- END TURN EDITING ON -----------------*/
+
+/* ---------------- BEGIN MISC TWEAKS ------------------*/
+.openidlogin fieldset {
+    width: 254px;
+}
+/* ----------------- END  MISC TWEAKS ------------------*/
