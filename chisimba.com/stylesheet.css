@@ -80,13 +80,13 @@ ul ul, ul ul ul, ul ul ul ul
     margin: 0px;
 }
 .Canvas_Content_Head_Before {
-background-image: #9bc0db;
-background-image: -webkit-linear-gradient(left, #5191c2 0%, #e5eef3 72%);
-background-image: -moz-linear-gradient(left, #5191c2 0%, #e5eef3 72%);
-background-image: -o-linear-gradient(left, #5191c2 0%, #e5eef3 72%);
-background-image: -ms-linear-gradient(left, #5191c2 0%, #e5eef3 72%);
-background-image: linear-gradient(left, #5191c2 0%, #e5eef3 72%);
-filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#5191c2", endColorstr="#e5eef3",GradientType=1);
+    background-image: #9bc0db;
+    background-image: -webkit-linear-gradient(left, #5191c2 0%, #e5eef3 72%);
+    background-image: -moz-linear-gradient(left, #5191c2 0%, #e5eef3 72%);
+    background-image: -o-linear-gradient(left, #5191c2 0%, #e5eef3 72%);
+    background-image: -ms-linear-gradient(left, #5191c2 0%, #e5eef3 72%);
+    background-image: linear-gradient(left, #5191c2 0%, #e5eef3 72%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#5191c2", endColorstr="#e5eef3",GradientType=1);
     text-align: right;
     padding: 0px;
     margin: 0px;
@@ -235,7 +235,7 @@ div.Canvas_Content_Head_Before div#search label {
 #Canvas_Content_Body_Region1 {
     background: transparent;
     width:300px;
-    float:right;
+    float:left;
 }
 #Canvas_Content_Body_Region3 {
     background: transparent;
@@ -243,7 +243,7 @@ div.Canvas_Content_Head_Before div#search label {
     margin-left: 0px;
     padding-left: 8px;
     padding-right: 8px;
-    float:right;
+    float:left;
 }
 
 #container {
