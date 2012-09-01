@@ -239,7 +239,7 @@ echo '
 function getIcons($skinName, $canvas)
 {
     $available=array(
-        'facebook' => 'http://www.facebook.com/groups/14068945606/'
+        'facebook' => 'http://www.facebook.com/simudzai'
     );
 
     $ret ="";
