@@ -102,6 +102,8 @@ require($objConfig->getsiteRootPath().'skins/_common/templates/skinpageheader3-0
         // Load the helper JS from the current skin
         $helperJs = 'skins/' . $skinName . '/javascript/skinhelper.js';
         echo "\n<script type='text/javascript' src='" . $helperJs . "'></script>\n\n";
+        //$modernizrJs = 'skins/' . $skinName . '/resources/modernizr/modernizr-2.6.1.min.js';
+        //echo "\n<script type='text/javascript' src='" . $modernizrJs . "'></script>\n\n";
     }
 
     // Render the CSS for the current skin unless it is suppressed.

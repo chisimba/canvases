@@ -21,6 +21,10 @@ jQuery(function() {
                 jQuery('#Canvas_Content_Body_Region1').remove();
                 keepit2=null;
             }
+            // Move turn editing on to the top
+            if (jQuery("#modeswitch_wrapper").length > 0) {
+                jQuery('#modeswitch_wrapper').detach().prependTo('#Canvas_Content_Body_Region3');
+            }
         }
     });
 });
