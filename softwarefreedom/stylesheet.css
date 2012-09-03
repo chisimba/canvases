@@ -941,6 +941,100 @@ background-image: linear-gradient(bottom, #eeeeec 0%, #d3d7cf 50%, #babdb6 100%)
 }
 /* --------------- END TURN EDITING ON -----------------*/
 
+/* ------------- BEGIN SIMPLE BLOG MODULE --------------*/
+.simpleblog_view_wall, a.togglewall_link {
+    background:#3b5998;
+    color:#ffffff;
+    font-weight:bold;
+    border:0;
+    padding:4px;
+    padding-left: 12px;
+    padding-right: 12px;
+    margin-top:2px;
+
+}
+.simpleblog_wall_comments {
+    color: #3b5998;
+    text-decoration: none;
+    margin-left: 40px;
+}
+.simpleblog_post_footer {
+    padding-top: 6px;
+    border-top: 1px dashed #b65900;
+    margin-bottom: 10px;
+}
+.simpleblog_post_title {
+    background:transparent;
+    font-weight: bold;
+    font-size: 140%;
+    padding-bottom: 6px;
+    border-bottom: 1px dashed #b65900;
+}
+.simpleblog_edel {
+    position: relative;
+    float: right;
+}
+.simpleblog_post_wrapper {
+    background-image: #e3f4ff;
+    background-image: -webkit-linear-gradient(top, #daefff 0%, #ecf8ff 72%);
+    background-image: -moz-linear-gradient(top, #daefff 0%, #ecf8ff 72%);
+    background-image: -o-linear-gradient(top, #daefff 0%, #ecf8ff 72%);
+    background-image: -ms-linear-gradient(top, #daefff 0%, #ecf8ff 72%);
+    background-image: linear-gradient(top, #daefff 0%, #ecf8ff 72%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#daefff", endColorstr="#ecf8ff",GradientType=0);
+    margin-bottom: 20px;
+    padding: 8px;
+    border-top-right-radius: 8px;
+    -moz-border-radius-topright: 8px;
+    -webkit-border-top-right-radius: 8px;
+    -khtml-border-radius-topright: 8px;
+    border-top-left-radius: 8px;
+    -moz-border-radius-topleft: 8px;
+    -webkit-border-top-left-radius: 8px;
+    -khtml-border-radius-topleft: 8px;
+    border-bottom-right-radius: 6px;
+    -moz-border-radius-bottomright: 6px;
+    -webkit-border-bottom-right-radius: 6px;
+    -khtml-border-radius-bottomright: 6px;
+    border-bottom-left-radius: 6px;
+    -moz-border-radius-bottomleft: 6px;
+    -webkit-border-bottom-left-radius: 6px;
+    -khtml-border-radius-bottomleft: 6px;
+}
+.content_form_element {
+    width: 950px;
+}
+#form_simpleblog_editor {
+    padding: 20px;
+}
+#form_simpleblog_editor #input_post_title, #input_blog_name {
+    width: 550px;
+}
+
+#form_simpleblog_editor .title_form_element, .blogname_form_element {
+    background: #eeeeec;
+    padding: 4px;
+    margin-bottom: 6px;
+}
+#form_simpleblog_editor .status_form_element {
+    background: #ebe7e4;
+    padding: 4px;
+    height: 35px;
+    padding-top: 12px;
+    margin-bottom: 6px;
+}
+#form_simpleblog_editor .type_form_element {
+    background: #eeeeec;
+    padding: 4px;
+    height: 35px;
+    padding-top: 12px;
+    margin-bottom: 6px;
+}
+.savebutton_form_element {
+    margin-top: 8px;
+}
+/* -------------- END SIMPLE BLOG MODULE ---------------*/
+
 /* ---------------- BEGIN MISC TWEAKS ------------------*/
 .openidlogin fieldset {
     width: 254px;
