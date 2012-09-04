@@ -1030,6 +1030,57 @@ background-image: linear-gradient(bottom, #eeeeec 0%, #d3d7cf 50%, #babdb6 100%)
 }
 /* -------------- END SIMPLE BLOG MODULE ---------------*/
 
+/* ------------ BEGIN TWITTER MODULE BLOCKS ------------*/
+.query {
+    font-family: Arial, serif;
+    font-size: 80%;
+    color: #085258;
+    margin-left: 0px;
+}
+.query .tweet_list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+.query .tweet_list li {
+    overflow: auto;
+    padding: .5em;
+}
+.query .tweet_list li a {
+    color: dodgerblue;
+}
+.query .tweet_list .tweet_even {
+    background: azure;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -khtml-border-radius: 5px;
+    margin-top:2px;
+    margin-bottom:2px;
+}
+.query .tweet_list .tweet_odd {
+    background: #e3f4ff;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -khtml-border-radius: 5px;
+    margin-bottom:2px;
+    margin-top:2px;
+}
+.query .tweet_list .tweet_avatar {
+    padding-right: .5em;
+    float: left;
+}
+.query .tweet_list .tweet_avatar img {
+    vertical-align: middle;
+}
+#myLastTweet {
+    font-family: Arial, serif;
+    font-size: 80%;
+    color: #085258;
+}
+/* ------------- END TWITTER MODULE BLOCKS -------------*/
+
 /* ---------------- BEGIN MISC TWEAKS ------------------*/
 .openidlogin fieldset {
     width: 254px;
