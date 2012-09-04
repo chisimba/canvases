@@ -1028,6 +1028,12 @@ background-image: linear-gradient(bottom, #eeeeec 0%, #d3d7cf 50%, #babdb6 100%)
 .savebutton_form_element {
     margin-top: 8px;
 }
+.simpleblog_prev {
+    float: left;
+}
+.simpleblog_next {
+    float: right;
+}
 /* -------------- END SIMPLE BLOG MODULE ---------------*/
 
 /* ------------ BEGIN TWITTER MODULE BLOCKS ------------*/
