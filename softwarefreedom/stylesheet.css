@@ -1033,11 +1033,17 @@ background-image: linear-gradient(bottom, #eeeeec 0%, #d3d7cf 50%, #babdb6 100%)
 .savebutton_form_element {
     margin-top: 8px;
 }
+.simpleblog_pagenav {
+    width: 100%;
+}
+.simpleblog_allpages {
+    text-align: center;
+}
 .simpleblog_prev {
-    float: left;
+    text-align: left;
 }
 .simpleblog_next {
-    float: right;
+    text-align: right;
 }
 /* -------------- END SIMPLE BLOG MODULE ---------------*/
 
