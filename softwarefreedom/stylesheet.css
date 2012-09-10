@@ -1188,6 +1188,11 @@ div.simpleblog_post_tags a.tag_active:visited:hover {
 .hilite {
     background: #FFCC00;
 }
+.sb_searchresult {
+    border: 1px dotted silver;
+    margin-bottom: 5px;
+    padding: 5px;
+}
 /* -------------- END SIMPLE BLOG MODULE ---------------*/
 
 /* ------------ BEGIN TWITTER MODULE BLOCKS ------------*/
