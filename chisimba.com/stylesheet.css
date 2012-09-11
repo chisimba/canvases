@@ -8,6 +8,8 @@
     column, based on dkeats.clean, but with the narrow column
     on the left. Light and airy is the principle.
 
+    Chisimba colours: Light - #be792f; Dark - #5a3f1e; Grey - #4c4d4f;
+
 */
 html {
     margin: 0px;
@@ -27,10 +29,10 @@ body {
 
 /* ----------- BEGIN GENERAL RESETS --------------*/
 a, a:visited, a:active {
-    color: dodgerblue;
+    color: #5a3f1e;
 }
 a:hover, a:visited:hover {
-    color: #1958b7;
+    color: #be792f;
     text-decoration: none;
 }
 li {
@@ -80,12 +82,14 @@ ul ul, ul ul ul, ul ul ul ul
     margin: 0px;
 }
 .Canvas_Content_Head_Before {
-    background-image: #9bc0db;
-    background-image: -webkit-linear-gradient(left, #5191c2 0%, #e5eef3 72%);
-    background-image: -moz-linear-gradient(left, #5191c2 0%, #e5eef3 72%);
-    background-image: -o-linear-gradient(left, #5191c2 0%, #e5eef3 72%);
-    background-image: -ms-linear-gradient(left, #5191c2 0%, #e5eef3 72%);
-    background-image: linear-gradient(left, #5191c2 0%, #e5eef3 72%);
+background-image: #90785e;
+background-image: -webkit-linear-gradient(left, #be792f 6%, #5a3f1e 28%, #4c4d4f 57%, #dcdcdc 90%);
+background-image: -moz-linear-gradient(left, #be792f 6%, #5a3f1e 28%, #4c4d4f 57%, #dcdcdc 90%);
+background-image: -o-linear-gradient(left, #be792f 6%, #5a3f1e 28%, #4c4d4f 57%, #dcdcdc 90%);
+background-image: -ms-linear-gradient(left, #be792f 6%, #5a3f1e 28%, #4c4d4f 57%, #dcdcdc 90%);
+background-image: linear-gradient(left, #be792f 6%, #5a3f1e 28%, #4c4d4f 57%, #dcdcdc 90%);
+filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#be792f", endColorstr="#dcdcdc",GradientType=1);
+filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#be792f", endColorstr="#4c4d4f",GradientType=1);
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#5191c2", endColorstr="#e5eef3",GradientType=1);
     text-align: right;
     padding: 0px;
@@ -952,7 +956,7 @@ background-image: linear-gradient(bottom, #eeeeec 0%, #d3d7cf 50%, #babdb6 100%)
 
 /* ------------- BEGIN SIMPLE BLOG MODULE --------------*/
 .simpleblog_view_wall, a.togglewall_link {
-    background:#3b5998;
+    background:#5a3f1e;
     color:#ffffff;
     font-weight:bold;
     border:0;
@@ -969,7 +973,7 @@ background-image: linear-gradient(bottom, #eeeeec 0%, #d3d7cf 50%, #babdb6 100%)
 }
 .simpleblog_post_footer {
     padding-top: 6px;
-    border-top: 1px dashed #b65900;
+    border-top: 1px dashed #be792f;
     margin-bottom: 10px;
 }
 .simpleblog_post_title {
@@ -979,7 +983,7 @@ background-image: linear-gradient(bottom, #eeeeec 0%, #d3d7cf 50%, #babdb6 100%)
     font-weight: bold;
     font-size: 140%;
     padding-bottom: 6px;
-    border-bottom: 1px dashed #b65900;
+    border-bottom: 1px dashed #be792f;
     height: auto;
     clear: both;
     margin-bottom: 10px;
@@ -993,12 +997,13 @@ background-image: linear-gradient(bottom, #eeeeec 0%, #d3d7cf 50%, #babdb6 100%)
     float: left;
 }
 .simpleblog_post_wrapper {
-    background-image: #e3f4ff;
-    background-image: -webkit-linear-gradient(top, #daefff 0%, #ecf8ff 72%);
-    background-image: -moz-linear-gradient(top, #daefff 0%, #ecf8ff 72%);
-    background-image: -o-linear-gradient(top, #daefff 0%, #ecf8ff 72%);
-    background-image: -ms-linear-gradient(top, #daefff 0%, #ecf8ff 72%);
-    background-image: linear-gradient(top, #daefff 0%, #ecf8ff 72%);
+    background-image: #f9f7e6;
+    background-image: -webkit-linear-gradient(top, #fffbd9 0%, #f3f3f3 100%);
+    background-image: -moz-linear-gradient(top, #fffbd9 0%, #f3f3f3 100%);
+    background-image: -o-linear-gradient(top, #fffbd9 0%, #f3f3f3 100%);
+    background-image: -ms-linear-gradient(top, #fffbd9 0%, #f3f3f3 100%);
+    background-image: linear-gradient(top, #fffbd9 0%, #f3f3f3 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#fffbd9", endColorstr="#f3f3f3",GradientType=0);
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#daefff", endColorstr="#ecf8ff",GradientType=0);
     margin-bottom: 20px;
     padding: 8px;
@@ -1018,6 +1023,7 @@ background-image: linear-gradient(bottom, #eeeeec 0%, #d3d7cf 50%, #babdb6 100%)
     -moz-border-radius-bottomleft: 6px;
     -webkit-border-bottom-left-radius: 6px;
     -khtml-border-radius-bottomleft: 6px;
+    border: 1px dotted #4c4d4f;
 }
 .content_form_element {
     width: 950px;
@@ -1230,7 +1236,7 @@ div.simpleblog_post_tags a.tag_active:visited:hover {
     padding: .5em;
 }
 .query .tweet_list li a {
-    color: dodgerblue;
+    color: #5a3f1e;
 }
 .query .tweet_list .tweet_even {
     background: azure;
