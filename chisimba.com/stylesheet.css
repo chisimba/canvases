@@ -274,19 +274,21 @@ div.Canvas_Content_Head_Before div#search label {
 
 /** ----------- Menu settings ----------- **/
 #menu {
-    padding-bottom: 10px;
+    padding-bottom: 0px;
 }
 ul#menuList  li {
     /* The top row of buttons after login */
     display:block;
-    padding:5px;
+    padding-top: 12px;
+    padding-bottom: 0px;
+    height: 30px;
+    width: 100px;
     border: none;
     margin-right: 2px;
     -webkit-border-radius: 3px; 
     -moz-border-radius: 3px;
     border-radius: 3px;
     font-family:arial, helvetica, sans-serif; 
-    padding: 10px 10px 10px 10px; 
     text-shadow: -1px -1px 0 rgba(0,0,0,0.3);
     font-weight:bold; 
     text-align: center; 
@@ -300,17 +302,19 @@ ul#menuList  li {
     background-image: linear-gradient(top, #5a3f1e, #be792f);
     filter:progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr=#5a3f1e, endColorstr=#be792f);
     text-decoration:none;
-    width: 100px;
 }
 ul#menuList li:hover {
     /* The top row of buttons after login, on hover and the dropdown  */
     border:none; 
+    padding-top: 12px;
+    padding-bottom: 0px;
+    height: 30px;
+    width: 100px;
     margin-right: 2px;
     -webkit-border-radius: 3px; 
     -moz-border-radius: 3px;
     border-radius: 3px;
     font-family:arial, helvetica, sans-serif; 
-    padding: 10px 10px 10px 10px; 
     text-shadow: -1px -1px 0 rgba(0,0,0,0.3);
     font-weight:bold; 
     text-align: center; 
@@ -324,7 +328,6 @@ ul#menuList li:hover {
     background-image: linear-gradient(top, #000, #4c4d4f);
     filter:progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr=#000, endColorstr=#4c4d4f);
     text-decoration:none;
-    width: 100px;
 }
 /* Top Row*/
 ul#menuList  li a {
@@ -377,12 +380,14 @@ ul#menuList li li:hover{
 ul#menuList  li  ul li {
     /* The dropdown buttons after login */
     border: none;
-    margin-bottom: 1px;
+    height: 38px;
+    width: 250px;
+    padding-left: 5px;
+    padding-top: 3px;
     -webkit-border-radius: 3px; 
     -moz-border-radius: 3px;
     border-radius: 3px;
     font-family:arial, helvetica, sans-serif; 
-    padding: 10px 10px 10px 10px; 
     text-shadow: -1px -1px 0 rgba(0,0,0,0.3);
     font-weight:bold; 
     text-align: left; 
@@ -396,15 +401,20 @@ ul#menuList  li  ul li {
     background-image: linear-gradient(top, #000, #4c4d4f);
     filter:progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr=#000, endColorstr=#4c4d4f);
     text-decoration:none;
-    width: 250px;
+
 }
 ul#menuList  li  ul li:hover {
-    border: none; 
-    -webkit-border-radius: 3px; 
+    /* The mouse over on the dropdown buttons */
+    border: none;
+    padding: 0px;
+    padding-left: 5px;
+    padding-top: 3px;
+    height: 38px;
+    width: 250px;
+    webkit-border-radius: 3px; 
     -moz-border-radius: 3px;
     border-radius: 3px;
     font-family:arial, helvetica, sans-serif; 
-    padding: 10px 10px 10px 10px; 
     text-shadow: -1px -1px 0 rgba(0,0,0,0.3);
     font-weight:bold; 
     text-align: left; 
@@ -416,7 +426,6 @@ ul#menuList  li  ul li:hover {
     background-image: -ms-linear-gradient(top, #a90329, #6d0019);
     background-image: -o-linear-gradient(top, #a90329, #6d0019);
     background-image: linear-gradient(top, #a90329, #6d0019);filter:progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr=#a90329, endColorstr=#6d0019);
-    width: 250px;
 }
 /* Increase padding on the last right item*/
 ul#menuList  li  li.last a{
