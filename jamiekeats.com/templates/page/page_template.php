@@ -167,12 +167,12 @@ if (!isset($pageSuppressBanner)) {
 if (!isset($pageSuppressBanner)) {
     echo "</div>";
     if (!isset($pageSuppressToolbar)) {
-        if ($this->objUser->isLoggedIn()) {
-            echo "\n\n<div id='navigation'>\n\n" . $toolbar . "\n</div>\n\n";
-        } else {
+        $simulate = $this->getParam('simulate', NULL);
+        if (!$this->objUser->isLoggedIn() || ($simulate == 'prelogintoolbar')) {
             echo "\n\n<div id='prelogin_nav'>$plMenu</div>\n\n";
+        } else {
+            echo "\n\n<div id='navigation'>\n\n" . $toolbar . "\n</div>\n\n";
         }
-        
     }
     echo '<div class="Canvas_Content_Head_After"></div>';
 }
