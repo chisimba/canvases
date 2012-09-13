@@ -110,7 +110,7 @@ require($objConfig->getsiteRootPath().'skins/_common/templates/skinpageheader3-0
 
                 <div id="header">
                     <div id="banner">
-                       <img src="skins/chisimba_present/images/webPresent_banner.png" width="100%" height="125"  alt="HOME"/>
+                       <img src="skins/presentations/images/webPresent_banner.png" width="100%" height="125"  alt="HOME"/>
                     </div>
                     
                 </div>
