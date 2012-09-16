@@ -1306,3 +1306,15 @@ div.simpleblog_post_tags a.tag_active:visited:hover {
     text-align: center;
 }
 /* ----------------- END  MISC TWEAKS ------------------*/
+
+/** Social buttons from the socialweb module **/
+.social_buttons {
+    float: right;
+    vertical-align: bottom;
+}
+
+.social_button {
+    float: right;
+    margin-left: 8px;
+    margin-right: 8px;
+}
