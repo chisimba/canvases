@@ -1017,8 +1017,9 @@ background-image: linear-gradient(bottom, #eeeeec 0%, #d3d7cf 50%, #babdb6 100%)
     float: right;
 }
 .simpleblog_post_title .titletxt {
-    max-width: 510px;
+    max-width: 500px;
     float: left;
+    line-height: 120%;
 }
 .simpleblog_post_wrapper {
     background-image: #f9f7e6;
