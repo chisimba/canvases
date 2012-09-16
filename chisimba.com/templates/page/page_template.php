@@ -75,12 +75,39 @@ if (!isset($pageSuppressSkin)) {
 }
 
 // Get Header that goes into every skin.
-require($objConfig->getsiteRootPath().'skins/_common/templates/skinpageheader3-0.php');
+$siteRootPath = $objConfig->getsiteRootPath();
+require($siteRootPath . 'skins/_common/templates/skinpageheader3-0.php');
+
+
+// Set up the open graph stuff
+if (!isset($og_title)) {
+    $og_title = $pageTitle;
+}
+if (!isset($og_image)) {
+    $og_image = $helperJs = 'skins/' . $skinName . '/default.png';
+}
+if (!isset($og_content)) {
+    $og_content = 'Chisimba is a PHP framework for building web applications 
+        and applications that need a web API. It implements a 
+        model-view-controller (MVC) design pattern, implemented 
+        on a modular architecture. There is a core framework, 
+        and numerous modules that implement functionality ranging 
+        from blogs through CMS to a eLearning system. The interface 
+        design is flexible and implemented via canvases (skins, or 
+        themes). There is an online package management system, and 
+        developers can build modules rapidly by generating a working 
+        module from which to code.';
+}
+
+
 
 // Render the head section of the page. Note that there can be no space or
 // blank lines between the PHP closing tag and the HTML head tag. It must be
 // exactly as below.
 ?><head>
+    <meta property="og:title" content="<?php echo $og_title; ?>" />
+    <meta property="og:image" content="<?php echo $og_image; ?>" />
+    <meta property="og:description" content="<?php echo $og_content; ?>" />
     <title>
         <?php echo $pageTitle; ?>
     </title>
