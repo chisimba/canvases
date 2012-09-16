@@ -97,6 +97,8 @@ if (!isset($og_content)) {
         themes). There is an online package management system, and 
         developers can build modules rapidly by generating a working 
         module from which to code.';
+} else {
+    $og_content = strip_tags($og_content);
 }
 
 
