@@ -975,8 +975,9 @@ background-image: linear-gradient(bottom, #eeeeec 0%, #d3d7cf 50%, #babdb6 100%)
     float: right;
 }
 .simpleblog_post_title .titletxt {
-    max-width: 530px;
+    max-width: 500px;
     float: left;
+    line-height: 120%;
 }
 .simpleblog_post_wrapper {
     background-image: #e3f4ff;
@@ -1188,14 +1189,25 @@ div.simpleblog_post_tags a.tag_active:visited:hover {
     filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#9e9e9e', endColorstr='#454545'); /* ie7 */
     -ms-filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#9e9e9e', endColorstr='#454545'); /* ie8 */
 }
-
 .hilite {
+    /*Search results */
     background: #FFCC00;
 }
 .sb_searchresult {
     border: 1px dotted silver;
     margin-bottom: 5px;
     padding: 5px;
+}
+.social_buttons {
+    /** Social buttons from the socialweb module **/
+    float: right;
+    vertical-align: bottom;
+}
+.social_button {
+    /** Social buttons from the socialweb module **/
+    float: right;
+    margin-left: 8px;
+    margin-right: 8px;
 }
 /* -------------- END SIMPLE BLOG MODULE ---------------*/
 

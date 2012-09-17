@@ -75,7 +75,22 @@ if (!isset($pageSuppressSkin)) {
 }
 
 // Get Header that goes into every skin.
-require($objConfig->getsiteRootPath().'skins/_common/templates/skinpageheader3-0.php');
+$siteRootPath = $objConfig->getsiteRootPath();
+require($siteRootPath . 'skins/_common/templates/skinpageheader3-0.php');
+
+
+// Set up the open graph stuff
+if (!isset($og_title)) {
+    $og_title = $pageTitle;
+}
+if (!isset($og_image)) {
+    $og_image = $helperJs = 'skins/' . $skinName . '/default.png';
+}
+if (!isset($og_content)) {
+    $og_content = 'The blog site for Jamie Keats.';
+} else {
+    $og_content = strip_tags($og_content);
+}
 
 // Render the head section of the page. Note that there can be no space or
 // blank lines between the PHP closing tag and the HTML head tag. It must be
@@ -169,7 +184,9 @@ if (!isset($pageSuppressBanner)) {
     if (!isset($pageSuppressToolbar)) {
         $simulate = $this->getParam('simulate', NULL);
         if (!$this->objUser->isLoggedIn() || ($simulate == 'prelogintoolbar')) {
-            echo "\n\n<div id='prelogin_nav'>$plMenu</div>\n\n";
+            if ($isInstalled) {
+                echo "\n\n<div id='prelogin_nav'>$plMenu</div>\n\n";
+            }
         } else {
             echo "\n\n<div id='navigation'>\n\n" . $toolbar . "\n</div>\n\n";
         }
