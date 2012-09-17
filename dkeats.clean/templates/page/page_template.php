@@ -100,6 +100,9 @@ if (!isset($og_content)) {
 // blank lines between the PHP closing tag and the HTML head tag. It must be
 // exactly as below.
 ?><head>
+    <meta property="og:title" content="<?php echo $og_title; ?>" />
+    <meta property="og:image" content="<?php echo $og_image; ?>" />
+    <meta property="og:description" content="<?php echo $og_content; ?>" />
     <title>
         <?php echo $pageTitle; ?>
     </title>
