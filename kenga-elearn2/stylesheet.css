@@ -2261,3 +2261,8 @@ For the blog blocks displayed as a middle block
 .species_speciesrecord p {
     font-size: 130%;
 }
+.flickr_img_wrapper {
+    width: 640px!important;
+    height: 480px!important;
+    background-size: contain;
+}

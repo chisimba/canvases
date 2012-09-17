@@ -1317,4 +1317,9 @@ div.simpleblog_post_tags a.tag_active:visited:hover {
     width: 90%;
     text-align: center;
 }
+.flickr_img_wrapper {
+    width: 640px!important;
+    height: 480px!important;
+    background-size: contain;
+}
 /* ----------------- END  MISC TWEAKS ------------------*/
