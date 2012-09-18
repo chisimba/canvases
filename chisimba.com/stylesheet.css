@@ -1308,6 +1308,24 @@ div.simpleblog_post_tags a.tag_active:visited:hover {
 }
 /* ------------- END TWITTER MODULE BLOCKS -------------*/
 
+/* ------------- BEGIN SIMPLEFEEDBACK MODULE ------------*/
+#sffeedback {
+    padding: 12px;
+}
+.fb_info {
+    border: 1px dotted silver;
+    padding: 6px;
+    margin-bottom: 12px;
+}
+.fb_title {
+    font-weight: bold;
+    margin-bottom: 6px;
+}
+.fb_description {
+    color: #004E89;
+}
+/* -------------- END SIMPLEFEEDBACK MODULE -------------*/
+
 /* ---------------- BEGIN MISC TWEAKS ------------------*/
 .openidlogin fieldset {
     width: 254px;
@@ -1323,5 +1341,9 @@ div.simpleblog_post_tags a.tag_active:visited:hover {
     width: 640px!important;
     height: 480px!important;
     background-size: contain;
+}
+#ddmiddleblocks {
+    /* Dropdown for selecting middle blocks */
+    width: 500px;
 }
 /* ----------------- END  MISC TWEAKS ------------------*/
