@@ -247,10 +247,10 @@ if (!isset($pageSuppressContainer)) {
 $this->putMessages();
 
 // Close up the body and HTML and finish up.
-echo '
+/*echo '
 <script type="text/javascript" src="' . $canvas . '/js/jquery.imageScale.js"></script>
 <script type="text/javascript" src="' . $canvas . '/js/helper.js"></script>
-';
+';*/
 
 /**
  *

@@ -1306,3 +1306,18 @@ div.simpleblog_post_tags a.tag_active:visited:hover {
     width: 500px;
 }
 /* ----------------- END  MISC TWEAKS ------------------*/
+
+
+#speciesimages {
+    text-align: center;
+}
+#wikioverviewcontents {
+    margin-left: 12px;
+}
+#speciesimages img {
+    margin-bottom: 5px;
+    width: 190px;
+}
+.species_list_table {
+    width: 550px;
+}
