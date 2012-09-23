@@ -1321,3 +1321,6 @@ div.simpleblog_post_tags a.tag_active:visited:hover {
 .species_list_table {
     width: 550px;
 }
+.speciesrecord_wikipicon {
+    float: right;
+}
