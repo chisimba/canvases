@@ -87,11 +87,10 @@ if (!isset($og_image)) {
     $og_image = $helperJs = 'skins/' . $skinName . '/default.png';
 }
 if (!isset($og_content)) {
-    $og_content = 'The Software Freedom South Africa site is made available 
-        by Kenga Solutions Pty Ltd to support the promotion of Free 
-        Software in South Africa and other parts of Africa. If you 
-        are interested in using it for this purpose, then please 
-        ontact derek [at] kenga DOT co DOT za for author access.';
+    $og_content = 'The blogging site of Dr Derek Keats, covering things 
+        that are of interest to me, mainly Free and Open Source Software (FOSS),
+        "Open" Educational Resources (OER), "Open" data, technology,
+        photography and SCUBA diving.';
 } else {
     $og_content = strip_tags($og_content);
 }
