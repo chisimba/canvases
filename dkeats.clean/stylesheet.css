@@ -1331,3 +1331,6 @@ div.simpleblog_post_tags a.tag_active:visited:hover {
     margin-right: 15px;
     margin-left: 15px;
 }
+#wikioverview img {
+    max-width: 250px;;
+}
