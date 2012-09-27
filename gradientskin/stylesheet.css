@@ -9,7 +9,7 @@
 /*@import "../metallic/stylesheet.css";*/
 html, body{
     margin-top: 2pc;
-    background: #gegege;
+    font-size: inherit;
 }
 .ChisimbaCanvas{
     width: 100%;
@@ -17,10 +17,9 @@ html, body{
 }
 div#header{
     position: fixed;
-    margin-top: -9pc;
+    margin-top: -4.6pc;
     width: 95.3%;
-    line-height: 4;
-    opacity: 0.98;
+    min-height: 8pc;
     box-shadow: 0 3px 4px #666;
 }
 div#navigation{
@@ -31,6 +30,7 @@ div#navigation{
 }
 h1#sitename{
     text-align: center;
+    margin-top: -1.5pc;
     font-size: 30px;
 }
 #menu ul li{
@@ -43,53 +43,55 @@ h1#sitename{
 div#menu a, a:link{
     text-shadow: 0 0 2px #fff;
 }
+div#breadcrumbs{
+    font-size: 1pc;
+}
 div#Canvas_Content_Body_Region3{
     float:right;
     width:17%;
-    font-size: 15px;
     padding-top: 1pc;
-    background: #f6f6f6;
-    border-left: 1pc solid #fff;
+    border: 0.5pc solid #FFFFFF;
+    box-shadow: 0 0 0.3pc #7c7c7c;
 }
 div#Canvas_Content_Body_Region1{
     float:left;
     width:17%;
     padding-top: 1pc;
-    border-right: 1pc solid #fff;
-    font-size: 15px;
-    background: #f6f6f6;
+    border: 0.5pc solid #FFFFFF;
+    box-shadow: 0 0 0.3pc #7c7c7c;
 }
 div#Canvas_Content_Body_Region2 {
-    padding: 1pc;
-    font-size: 15px;
     width: available;
+    padding: 1pc;
     overflow: hidden;
-    background: #f6f6f6;
+    box-shadow: 0 0 0.3pc #7c7c7c;
 }
 div#Canvas_Content_Body{
     margin-top:5pc;
-    background: #f6f6f6;
 }
 h5.featureboxheader{
     background-color: #fff;
     border-radius: 2px;
 }
-div.menulinktext {
-    text-align: center;
-}
 ul#menuList li{
     text-align: center;
 }
 #menu li:hover, #nav-secondary li:hover{
-    background-color: #92ADD3;
+    background-color: #21aaf7;
+    color: #fff;
 }
 form#form_loginform{
     background-color: transparent; 
     margin-left: 0;
     text-align: center;
 }
+div.menulinktext {
+    text-align: center;
+    font-size: medium;
+}
 div.menulinktext:hover{
-    background-color: #92ADD3;
+    background-color: #21aaf7;
+    color: #fff;
 }
 /*input elements*/
 form#form_loginform input[type='password'], form#form_loginform input[type='search'], form#form_loginform input[type='text']{
@@ -142,7 +144,6 @@ div#search{
 }
 div#footer{
     background-color: #fff;
-    font-size: 12px;
     box-shadow: 0 3px 4px #666;
 }
 div#footer a{
