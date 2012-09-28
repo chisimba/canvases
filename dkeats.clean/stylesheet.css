@@ -1316,7 +1316,7 @@ div.simpleblog_post_tags a.tag_active:visited:hover {
 }
 /* ----------------- END  MISC TWEAKS ------------------*/
 
-
+/* --------------- BEGIN SPECIES MODULE -----------------*/
 #speciesimages {
     text-align: center;
 }
@@ -1372,3 +1372,4 @@ div.simpleblog_post_tags a.tag_active:visited:hover {
     -webkit-border-radius: 12px;
     -khtml-border-radius: 12px;
 }
+/* ---------------- END SPECIES MODULE ------------------*/
