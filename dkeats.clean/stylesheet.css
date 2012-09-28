@@ -27,6 +27,7 @@ body {
     color: #111;
 }
 
+
 /* ----------- BEGIN GENERAL RESETS --------------*/
 a, a:visited, a:active {
     color: dodgerblue;
@@ -1304,6 +1305,14 @@ div.simpleblog_post_tags a.tag_active:visited:hover {
 #ddmiddleblocks {
     /* Dropdown for selecting middle blocks */
     width: 500px;
+}
+#Canvas_Content_Body_Region2 img {
+    /* Fix images overflowing main content area */
+    max-width: 100%;
+}
+#Canvas_Content_Body_Region2 img {
+    /* Fix images overflowing main content area */
+    max-width: 100%;
 }
 /* ----------------- END  MISC TWEAKS ------------------*/
 
