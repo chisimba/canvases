@@ -43,10 +43,10 @@ $skinName = "dkeats.clean";
 $validCanvases = array_map('basename', glob('skins/' . $skinName . '/canvases/*', GLOB_ONLYDIR));
 
 // Get mobile device detection going.
-$objDetector = $this->newObject('detectmobile', 'utilities');
-if  ($objDetector->device->isMobile()) {
-    die("Sorry, I am testing iPad detection. Will be back up in 1 minute");
-}
+//$objDetector = $this->newObject('detectmobile', 'utilities');
+//if  ($objDetector->device->isMobile()) {
+//    die("Sorry, I am testing iPad detection. Will be back up in 1 minute");
+//}
 
 // Settings that are needed so that canvase-aware code can function.
 $this->setSession('skinName', $skinName);
