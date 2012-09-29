@@ -16,17 +16,16 @@ html, body{
     font-family: Ubuntu light, Century gothic, Arial;
 }
 div#header{
-    position: fixed;
     margin-top: -4.6pc;
-    width: 95.3%;
+    width: 100%;
     min-height: 8pc;
     box-shadow: 0 3px 4px #666;
 }
 div#navigation{
-    position: fixed;
-    width: 94.5%;
+    width:100%;
     background: transparent;
-    margin-left: 0.6pc;
+    margin-top: -4pc;
+    margin-left: 0.5pc;
 }
 h1#sitename{
     text-align: center;
@@ -40,23 +39,19 @@ h1#sitename{
 .menulinktext{
     font-size: 15px;
 }
-div#menu a, a:link{
-    text-shadow: 0 0 2px #fff;
-}
+
 div#breadcrumbs{
     font-size: 1pc;
 }
 div#Canvas_Content_Body_Region3{
     float:right;
     width:17%;
-    padding-top: 1pc;
     border: 0.5pc solid #FFFFFF;
     box-shadow: 0 0 0.3pc #7c7c7c;
 }
 div#Canvas_Content_Body_Region1{
     float:left;
     width:17%;
-    padding-top: 1pc;
     border: 0.5pc solid #FFFFFF;
     box-shadow: 0 0 0.3pc #7c7c7c;
 }
@@ -67,7 +62,7 @@ div#Canvas_Content_Body_Region2 {
     box-shadow: 0 0 0.3pc #7c7c7c;
 }
 div#Canvas_Content_Body{
-    margin-top:5pc;
+    margin-top:1pc;
 }
 h5.featureboxheader{
     background-color: #fff;
