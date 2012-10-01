@@ -1333,7 +1333,7 @@ div.simpleblog_post_tags a.tag_active:visited:hover {
     -khtml-border-radius: 12px;
 }
 .species_contrimages img {
-    width: 610px;
+    max-width: 610px;
     margin: 2px;
     border:none;
     border-radius: 12px;
