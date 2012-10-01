@@ -1332,6 +1332,27 @@ div.simpleblog_post_tags a.tag_active:visited:hover {
     -webkit-border-radius: 12px;
     -khtml-border-radius: 12px;
 }
+.species_contrimages img {
+    width: 610px;
+    margin: 2px;
+    border:none;
+    border-radius: 12px;
+    -moz-border-radius: 12px;
+    -webkit-border-radius: 12px;
+    -khtml-border-radius: 12px;
+}
+.species_contrimages {
+    margin-bottom: 10px;
+    text-align: center;
+    background: black;
+    width: 630px;
+    padding: 10px;
+    border-radius: 12px;
+    -moz-border-radius: 12px;
+    -webkit-border-radius: 12px;
+    -khtml-border-radius: 12px;
+}
+
 .species_list_table {
     width: 550px;
 }
@@ -1365,7 +1386,7 @@ div.simpleblog_post_tags a.tag_active:visited:hover {
     background: black;
 }
 
-.species_thumb a img {
+.species_thumb img {
     max-width: 160px;
     border-radius: 12px;
     -moz-border-radius: 12px;
