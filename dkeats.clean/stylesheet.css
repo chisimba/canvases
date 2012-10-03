@@ -1393,4 +1393,21 @@ div.simpleblog_post_tags a.tag_active:visited:hover {
     -webkit-border-radius: 12px;
     -khtml-border-radius: 12px;
 }
+.species_sounds {
+    background: white;
+    width: 300px;
+    float: left;
+    padding: 8px;
+    margin: 4px;
+    border-radius: 8px;
+    -moz-border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -khtml-border-radius: 8px;
+}
+.species_sounds img {
+    float: right;
+    margin-top: 6px;
+    margin-left: 6px;
+}
+
 /* ---------------- END SPECIES MODULE ------------------*/
