@@ -147,7 +147,7 @@ h1#sitename {
     color: #577F9B;
 }
 .sitename_link:hover, .sitename_link:visited:hover {
-    color: #0066cc;
+    color: #333C63;
     text-decoration: none;
 }
 /* Search box in the header */
