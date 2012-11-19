@@ -488,9 +488,9 @@ ul#menuList  li  li.last a{
     -moz-border-radius-bottomleft: 6px;
     -webkit-border-bottom-left-radius: 6px;
     -khtml-border-radius-bottomleft: 6px;
-    -webkit-box-shadow: 4px 4px 5px rgba(50, 50, 50, 0.47);
-    -moz-box-shadow:    4px 4px 5px rgba(50, 50, 50, 0.47);
-    box-shadow:         4px 4px 5px rgba(50, 50, 50, 0.47);
+    -webkit-box-shadow: 2px 2px 3px rgba(50, 50, 50, 0.17);
+    -moz-box-shadow:    2px 2px 3px rgba(50, 50, 50, 0.17);
+    box-shadow:         2px 2px 3px rgba(50, 50, 50, 0.17);
 }
 
 .featureboxheader, .contentfeaturebox h3  {
