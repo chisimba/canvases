@@ -269,14 +269,8 @@ $this->putMessages();
 function getIcons($skinName, $canvas)
 {
     $available=array(
-        'delicious' => '#',
         'facebook' => '#',
         'flickr' => '#',
-        'friendfeed' => '#',
-        'google' => '#',
-        'lastfm' => '#',
-        'linkedin' => '#',
-        'picasa' => '#',
         'twitter' => '#',
         'youtube' => '#'
     );
