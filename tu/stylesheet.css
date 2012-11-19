@@ -135,12 +135,13 @@ ul ul, ul ul ul, ul ul ul ul
     position: relative;
     left: 10px;
     height: 120px;
-    width: 500px;
+    width: 988px;
 }
 h1#sitename {
+    float: right;
     width: 200px;
     margin: 0px;
-    padding-left: 740px;
+    margin-top: 16px;
     padding-top: 0px;
     line-height: 110%;
 }
