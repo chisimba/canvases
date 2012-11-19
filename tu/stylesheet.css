@@ -145,8 +145,8 @@ h1#sitename {
     padding-top: 0px;
     line-height: 110%;
 }
-.sitename_link {
-    color: #577F9B;
+.sitename_link, .sitename_link:visited {
+    color: #F15A29;
 }
 .sitename_link:hover, .sitename_link:visited:hover {
     color: #333C63;
