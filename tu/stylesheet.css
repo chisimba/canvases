@@ -33,7 +33,7 @@ body {
     background-image: -ms-linear-gradient(top, #d2d2d2 0%, #adadad 23%, #e1e1e1 100%);
     background-image: linear-gradient(top, #d2d2d2 0%, #adadad 23%, #e1e1e1 100%);
     background-attachment: fixed;
-    color: #333C63;
+    color: #323232;
 }
 
 
@@ -514,7 +514,7 @@ ul#menuList  li  li.last a{
 #Canvas_Content_Body_Region2 .featureboxheader,
 .contentfeaturebox h3 {
     background: lightgrey;
-    color: #5C5C5C;
+    color: #333C63;
     border: none;
     border-top-right-radius: 8px;
     -moz-border-radius-topright: 8px;
@@ -532,13 +532,13 @@ ul#menuList  li  li.last a{
 #Canvas_Content_Body_Region3 .featureboxheader a,
 #Canvas_Content_Body_Region2 .featureboxheader,
 #Canvas_Content_Body_Region2 .featureboxheader a {
-    color: #5C5C5C;
+    color: #333C63;
 }
 
 #Canvas_Content_Body_Region2 h5.featureboxheader {
     font-size: 150%;
 }
-
+        
 
 #Canvas_Content_Body_Region1 .featureboxcontent , 
 #Canvas_Content_Body_Region3 .featureboxcontent, 
