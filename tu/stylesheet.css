@@ -147,6 +147,7 @@ h1#sitename {
 }
 .sitename_link, .sitename_link:visited {
     color: #F15A29;
+    font-family: "Helvetica Neue", Helvetica, Helvetica, Arial, sans-serif;
 }
 .sitename_link:hover, .sitename_link:visited:hover {
     color: #333C63;
