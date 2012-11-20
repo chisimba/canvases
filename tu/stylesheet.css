@@ -954,6 +954,10 @@ background-image: linear-gradient(bottom, #eeeeec 0%, #d3d7cf 50%, #babdb6 100%)
     padding-left: 12px;
     padding-right: 12px;
     margin-top:2px;
+    border-radius: 6px;
+    -moz-border-radius: 6px;
+    -webkit-border-radius: 6px;
+    -khtml-border-radius: 6px;
 
 }
 .simpleblog_wall_comments {
@@ -988,15 +992,10 @@ background-image: linear-gradient(bottom, #eeeeec 0%, #d3d7cf 50%, #babdb6 100%)
     line-height: 120%;
 }
 .simpleblog_post_wrapper {
-    background-image: #e3f4ff;
-    background-image: -webkit-linear-gradient(top, #daefff 0%, #ecf8ff 72%);
-    background-image: -moz-linear-gradient(top, #daefff 0%, #ecf8ff 72%);
-    background-image: -o-linear-gradient(top, #daefff 0%, #ecf8ff 72%);
-    background-image: -ms-linear-gradient(top, #daefff 0%, #ecf8ff 72%);
-    background-image: linear-gradient(top, #daefff 0%, #ecf8ff 72%);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#daefff", endColorstr="#ecf8ff",GradientType=0);
+    background: url("images/overlay50.png") top left repeat;
     margin-bottom: 20px;
     padding: 8px;
+    padding-bottom: 14px;
     border-top-right-radius: 8px;
     -moz-border-radius-topright: 8px;
     -webkit-border-top-right-radius: 8px;
