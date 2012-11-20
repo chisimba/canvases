@@ -269,7 +269,7 @@ $this->putMessages();
 function getIcons($skinName, $canvas)
 {
     $available=array(
-        'tu' => 'http://thumbzip.com',
+        'tu' => 'http://thumbzup.com',
         'facebook' => '#',
         'flickr' => '#',
         'twitter' => '#',
