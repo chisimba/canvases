@@ -1142,27 +1142,9 @@ div.simpleblog_post_tags a.tag_active:visited:hover {
 }
 .sb_searchform {
     margin-left: 12px;
-    display: inline-block;
-    zoom: 1; /* ie7 hack for display:inline-block */
-    display: inline;
-    border: solid 1px #d2d2d2;
-    padding-top: 3px;
-    padding-left: 3px;
-    padding-right: 3px;
-
-    -webkit-border-radius: 2em;
-    -moz-border-radius: 2em;
-    border-radius: 2em;
-
-    -webkit-box-shadow: 0 1px 0px rgba(0,0,0,.1);
-    -moz-box-shadow: 0 1px 0px rgba(0,0,0,.1);
-    box-shadow: 0 1px 0px rgba(0,0,0,.1);
-
-    background: #f1f1f1;
-    background: -webkit-gradient(linear, left top, left bottom, from(#fff), to(#ededed));
-    background: -moz-linear-gradient(top,  #fff,  #ededed);
-    filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#ededed'); /* ie7 */
-    -ms-filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#ededed'); /* ie8 */
+    margin-top: 12px;
+    background: transparent;
+    border: none;
 }
 .sb_searchform input {
     font: normal 12px/100% Arial, Helvetica, sans-serif;
