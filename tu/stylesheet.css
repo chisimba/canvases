@@ -497,7 +497,7 @@ ul#menuList  li  li.last a{
 
 .featureboxheader, .contentfeaturebox h3  {
     padding: 5px;
-    margin: 0;
+    margin: 0px;
 }
 
 .featureboxcontent {
@@ -878,6 +878,10 @@ background-image: linear-gradient(bottom, #eeeeec 0%, #d3d7cf 50%, #babdb6 100%)
 /* -------------- BEGIN FILEMANAGER MODULE ---------------*/
 .outerquota {
     width: 190px;
+}
+
+.filemanager_main fieldset legend {
+    background: red;
 }
 
 .filemanager_left {
