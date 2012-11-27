@@ -212,7 +212,7 @@ echo "<div class='Canvas_Content_Body_Before'></div>\n"
 
 // If the footer is not suppressed, render it out.
 if (!isset($suppressFooter)) {
-    $footerInfo = '<br /><br /><div class="footerinfo">AdoraBella is based in 
+    $footerInfo = '<br /><br /><div class="footerinfo">AdoraBelle is based in 
         Johannesburg, South Africa, and delivers products to customers in 
         the broader Gauteng area.</div>';
         
@@ -268,9 +268,9 @@ function getIcons($skinName, $canvas)
 {
     $available=array(
         'facebook' => 'http://www.facebook.com/dkeats',
-        'flkr' => 'http://www.flickr.com/photos/dkeats/',
-        'google' => 'https://profiles.google.com/derekkeats',
-        'linkedin' => 'http://www.linkedin.com/in/dkeats',
+        //'flkr' => 'http://www.flickr.com/photos/dkeats/',
+        //'google' => 'https://profiles.google.com/derekkeats',
+        //'linkedin' => 'http://www.linkedin.com/in/dkeats',
         'twitter' => 'http://twitter.com/dkeats',
     );
 
