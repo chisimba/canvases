@@ -240,7 +240,7 @@ if (!isset($suppressFooter)) {
         $str=$objLanguage->languageText("mod_context_loggedinas", 'context').' <strong>'.$objUser->fullname().'</strong>  ('.$link->show().')';
         $footerStr= $str;
     } else {
-        $footerStr = $objLanguage->languageText("mod_security_poweredby", 'security', 'Powered by ') . ' Chisimba';
+        $footerStr = "<br /><h3>Now you can make things easy too!</h3>";
     }
 
     // Do the rendering here.
