@@ -207,6 +207,18 @@ if (!isset($pageSuppressBanner)) {
     echo '<div class="Canvas_Content_Head_After"></div>';
 }
 
+$license = '
+<div class="small"><br /><a rel="license" href="http://creativecommons.org/licenses/by-nd/3.0/deed.en_GB">
+<img alt="Creative Commons Licence" style="border-width:0" 
+src="http://i.creativecommons.org/l/by-nd/3.0/88x31.png" /></a>
+<br /><span xmlns:dct="http://purl.org/dc/terms/" property="dct:title">
+Web content</span> by <a xmlns:cc="http://creativecommons.org/ns#" 
+href="http://thumbzup.com" property="cc:attributionName" rel="cc:attributionURL">
+thumbzup.com</a><br />is licensed under a <a rel="license" 
+href="http://creativecommons.org/licenses/by-nd/3.0/deed.en_GB">
+Creative Commons<br />Attribution-NoDerivs 3.0 Unported License</a><br /></div>
+';
+
 
 // Render the layout content as supplied from the layout template
 echo "<div class='Canvas_Content_Body_Before'></div>\n"
@@ -230,6 +242,7 @@ if (!isset($suppressFooter)) {
     } else {
         $footerStr = $objLanguage->languageText("mod_security_poweredby", 'security', 'Powered by ') . ' Chisimba';
     }
+
     // Do the rendering here.
     echo "<div class='Canvas_Content_Footer_Before'></div>"
       . "<div class='Canvas_Content_Footer'><div id='footer'>"
@@ -238,7 +251,7 @@ if (!isset($suppressFooter)) {
     if (!isset($pageSuppressBanner)) {
         echo ' (' . GOTOTOP . ')';
     }
-    echo "</div>\n</div>\n<div class='Canvas_Content_Footer_After'></div>";
+    echo "</div>\n</div>\n<div class='Canvas_Content_Footer_After'>$license</div>";
 }
 // Render the container's closing div if the container is not suppressed
 if (!isset($pageSuppressContainer)) {
@@ -269,11 +282,11 @@ $this->putMessages();
 function getIcons($skinName, $canvas)
 {
     $available=array(
-        'tu' => 'http://thumbzup.com',
-        'facebook' => '#',
-        'flickr' => '#',
-        'twitter' => '#',
-        'youtube' => '#'
+        'tu' => 'http://thumbzup.com'//,
+        //'facebook' => '#',
+        //'flickr' => '#',
+        //'twitter' => '#',
+        //'youtube' => '#'
     );
 
     $ret ="";
