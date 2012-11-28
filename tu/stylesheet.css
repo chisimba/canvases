@@ -1444,3 +1444,14 @@ div.simpleblog_post_tags a.tag_active:visited:hover {
     width: 410px!important;
 }
 /* ----------------- END NEWS MODULE -------------------*/
+
+/* -------------- BEGIN REGISTERINTEREST MODULE ----------------*/
+.registerinterest_form {
+    border: 1px dotted silver;
+    padding: 8px;
+    margin-left: 20px;
+    width: 80%;
+}
+/* ---------------- END REGISTERINTEREST MODULE ----------------*/
+
+
