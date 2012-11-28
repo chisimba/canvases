@@ -240,7 +240,7 @@ if (!isset($suppressFooter)) {
         $str=$objLanguage->languageText("mod_context_loggedinas", 'context').' <strong>'.$objUser->fullname().'</strong>  ('.$link->show().')';
         $footerStr= $str;
     } else {
-        $footerStr = "<br /><h3>Now you can make things easy too!</h3>";
+        $footerStr = "<h3>With the Payment Pebble API, <br />now you can make things easy too!</h3>";
     }
 
     // Do the rendering here.
