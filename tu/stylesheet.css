@@ -1452,6 +1452,13 @@ div.simpleblog_post_tags a.tag_active:visited:hover {
     margin-left: 20px;
     width: 80%;
 }
+.ri_viewall {
+    margin-left: 30px;
+}
+.ri_viewall td {
+    padding-left: 5px;
+    padding-right: 5px;
+}
 /* ---------------- END REGISTERINTEREST MODULE ----------------*/
 
 
