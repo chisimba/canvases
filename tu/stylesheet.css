@@ -1445,6 +1445,51 @@ div.simpleblog_post_tags a.tag_active:visited:hover {
 }
 /* ----------------- END NEWS MODULE -------------------*/
 
+
+
+
+/* ----------------- BEGIN FAQ MODULE ------------------*/
+.faq_main {
+    padding: 8px;
+}
+.faq_main p {
+    
+}
+#input_tag {
+    font-size: 12pt;
+    margin-top: 22px;
+    width: 250px;
+    height: 22px;
+}
+#form_edit #input_question,
+#form_edit #input_faqtags,
+#form_add #input_question,
+#form_add #input_faqtags {
+    width: 600px;
+}
+#form_edit #cke_answer, 
+#form_add #cke_answer {
+    width: 600px!important;
+    margin-bottom: 15px;
+}
+.faq_alltags {
+    text-align: center;
+    font-size: 80%;
+    padding: 4px;
+    border: 1px dotted silver;
+    
+}
+.faq_blocklink {
+    margin-bottom: 8px;
+}
+.faq_blocklink strong {
+    font-weight: normal;
+}
+/* ----------------- END FAQ MODULE --------------------*/
+
+
+
+
 /* -------------- BEGIN REGISTERINTEREST MODULE ----------------*/
 .registerinterest_form {
     border: 1px dotted silver;
@@ -1459,6 +1504,26 @@ div.simpleblog_post_tags a.tag_active:visited:hover {
     padding-left: 5px;
     padding-right: 5px;
 }
+.ri_msgpopper {
+    background:transparent;
+    width: 180px;
+    height: 60px;
+    float:right;
+    margin-top: 30px;
+    font-size: 150%;
+}
 /* ---------------- END REGISTERINTEREST MODULE ----------------*/
 
 
+
+/* --------------- BEGIN CONTEXTADMIN MODULE ------------------*/
+#form_createcontext {
+    width: 600px;
+
+}
+#form_createcontext table {
+    width: 600px;
+    margin-bottom: 8px;
+}
+
+/* ----------------- END CONTEXTADMIN MODULE ------------------*/
