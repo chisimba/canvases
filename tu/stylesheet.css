@@ -1518,11 +1518,11 @@ div.simpleblog_post_tags a.tag_active:visited:hover {
 
 /* --------------- BEGIN CONTEXTADMIN MODULE ------------------*/
 #form_createcontext {
-    width: 600px;
+    width: 500px;
 
 }
 #form_createcontext table {
-    width: 600px;
+    width: 500px!important;
     margin-bottom: 8px;
 }
 
