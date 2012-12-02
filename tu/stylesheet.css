@@ -1527,3 +1527,12 @@ div.simpleblog_post_tags a.tag_active:visited:hover {
 }
 
 /* ----------------- END CONTEXTADMIN MODULE ------------------*/
+
+
+
+/* ----------------- BEGIN FORUM MODULE --------------------*/
+.forum_main h1 {
+    line-height: 115%;
+    margin-bottom: 20px;
+}
+/* ------------------- END FORUM MODULE --------------------*/
