@@ -1532,15 +1532,14 @@ div.simpleblog_post_tags a.tag_active:visited:hover {
 
 
 /* --------------- BEGIN CONTEXTADMIN MODULE ------------------*/
-#form_createcontext {
-    width: 500px;
-
+#form_createcontext, #form_addchapter, #form_addpage  {
+    width: 830px;
+    padding: 12px;
 }
-#form_createcontext table {
-    width: 500px!important;
+#form_createcontext table, #form_addchapter table, #form_addpage table {
+    width: 830px!important;
     margin-bottom: 8px;
 }
-
 /* ----------------- END CONTEXTADMIN MODULE ------------------*/
 
 
@@ -1567,4 +1566,74 @@ div.simpleblog_post_tags a.tag_active:visited:hover {
 #input_wikiContent {
     width: 610px!important;
 }
-/* ------------------- END WIKI MODULE ---------------------*/
+/* -------------------- END WIKI MODULE ---------------------*/
+
+
+
+/* ------------- BEGIN MESSAGING (CHAT) MODULE ---------------*/
+#chatDiv {
+    height: 500px;
+    border: none;
+    background: #efefef;
+}
+#sendDiv {
+    padding-left: 5px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    background: #a9e4f7; /* Old browsers */
+    background: -moz-linear-gradient(top,  #a9e4f7 0%, #0fb4e7 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#a9e4f7), color-stop(100%,#0fb4e7)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top,  #a9e4f7 0%,#0fb4e7 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top,  #a9e4f7 0%,#0fb4e7 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top,  #a9e4f7 0%,#0fb4e7 100%); /* IE10+ */
+    background: linear-gradient(top,  #a9e4f7 0%,#0fb4e7 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a9e4f7', endColorstr='#0fb4e7',GradientType=0 ); /* IE6-9 */
+}
+.chatbubble {
+    margin-top: 0px;
+    margin-bottom: 5px;
+    padding-top: 5px;
+    padding-bottom: 2px;
+    padding-left: 6px;
+    padding-right: 6px;
+    background: rgb(229,229,229); /* Old browsers */
+    background: -moz-linear-gradient(top,  rgba(229,229,229,1) 0%, rgba(255,255,255,1) 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(229,229,229,1)), color-stop(100%,rgba(255,255,255,1))); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top,  rgba(229,229,229,1) 0%,rgba(255,255,255,1) 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top,  rgba(229,229,229,1) 0%,rgba(255,255,255,1) 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top,  rgba(229,229,229,1) 0%,rgba(255,255,255,1) 100%); /* IE10+ */
+    background: linear-gradient(top,  rgba(229,229,229,1) 0%,rgba(255,255,255,1) 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e5e5e5', endColorstr='#ffffff',GradientType=0 ); /* IE6-9 */
+    -moz-border-radius: 8px;
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -khtml-border-radius: 8px;
+}
+.chat_user {
+    color: #003366;
+    font-weight: bolder;
+}
+.chat_user .full_user_image {
+    margin-left: 6px;
+    margin-right: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -khtml-border-radius: 3px;
+}
+.chat_date {
+    color: #056EB5;
+    margin-top: 4px;
+}
+.chat_input {
+    width: 100%;
+}
+
+.chat_buttons {
+    padding-left: 20px;
+}
+
+.chat_buttons button {
+
+}
+/* ------------------- END MESSAGING (CHAT) MODULE ---------------------*/
