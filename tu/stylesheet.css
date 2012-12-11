@@ -663,11 +663,11 @@ ul#nav-secondary li {
 
 
 /* ------------ BEGIN GENERAL TABLE SETTINGS ----------*/
-td.odd {
+td.odd, tr.odd {
      background: #EAEAEA;
 }
 
-td.even {
+td.even, tr.even {
      background: #d2d2d2;
 }
 
