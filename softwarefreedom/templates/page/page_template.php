@@ -80,11 +80,17 @@ require($siteRootPath . 'skins/_common/templates/skinpageheader3-0.php');
 
 
 // Set up the open graph stuff
+if (!isset($fb_admins)) {
+    $fb_admins = 'unknown';
+}
+if (!isset($fb_app_id)) {
+    $fb_app_id = 'unknown';
+}
 if (!isset($og_title)) {
     $og_title = $pageTitle;
 }
 if (!isset($og_image)) {
-    $og_image = $helperJs = 'http://softwarefreedom.co.za/skins/' . $skinName . '/images/avatar.png';
+    $og_image = 'http://softwarefreedom.co.za/skins/' . $skinName . '/images/avatar.png';
 }
 if (!isset($og_content)) {
     $og_content = 'The Software Freedom South Africa site is made available 
@@ -102,6 +108,8 @@ if (!isset($og_content)) {
 // blank lines between the PHP closing tag and the HTML head tag. It must be
 // exactly as below.
 ?><head>
+    <meta property="fb:admins" content="<?php echo $fb_admins; ?>" />
+    <meta property="fb:app_id" content="<?php echo $fb_app_id; ?>" />
     <meta property="og:title" content="<?php echo $og_title; ?>" />
     <meta property="og:image" content="<?php echo $og_image; ?>" />
     <meta property="og:description" content="<?php echo $og_content; ?>" />
@@ -146,9 +154,12 @@ if (isset($bodyParams)) {
 } else {
     echo '<body>';
 }
-
+if (isset($bodyInit)) {
+    echo $bodyInit;
+}
 // Render the container & canvas elements unless it is suppressed.
 if (!isset($pageSuppressContainer)) { ?>
+    <div id="fb-root"></div>
     <div id='OutermostWrapper'>
         <div class='ChisimbaCanvas' id='_default'>
             <div id='Canvas_Content'>
