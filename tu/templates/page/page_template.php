@@ -90,13 +90,10 @@ if (!isset($og_title)) {
     $og_title = $pageTitle;
 }
 if (!isset($og_image)) {
-    $og_image = $helperJs = 'skins/' . $skinName . '/default.png';
+    $og_image = 'http://developer.thumbzup.com/skins/' . $skinName . 'images/default.png';
 }
 if (!isset($og_content)) {
-    $og_content = 'The blogging site of Dr Derek Keats, covering things 
-        that are of interest to me, mainly Free and Open Source Software (FOSS),
-        "Open" Educational Resources (OER), "Open" data, technology,
-        photography and SCUBA diving.';
+    $og_content = 'Thumbzup API developers.';
 } else {
     $og_content = strip_tags($og_content);
 }
@@ -155,6 +152,7 @@ if (isset($bodyParams)) {
 
 // Render the container & canvas elements unless it is suppressed.
 if (!isset($pageSuppressContainer)) { ?>
+    <div id="fb-root"></div>
     <div id='OutermostWrapper'>
         <div class='ChisimbaCanvas' id='_default'>
             <div id='Canvas_Content'>

@@ -872,7 +872,22 @@ background-image: linear-gradient(bottom, #eeeeec 0%, #d3d7cf 50%, #babdb6 100%)
 .outerquota {
     width: 190px;
 }
-
+.filemanager_main table {
+    font-size: 90%;
+}
+#input_searchType {
+    padding-left: 3px;
+    width: 68px;
+}
+#input_searchField_user {
+    width: 82px;
+}
+#input_searchfor {
+    width: 65px;
+}
+#input_orderBy_user {
+    width: 78px;
+}
 .filemanager_main fieldset legend {
    background: #efefef;
    font-size: 130%;
@@ -1637,3 +1652,12 @@ div.simpleblog_post_tags a.tag_active:visited:hover {
 
 }
 /* ------------------- END MESSAGING (CHAT) MODULE ---------------------*/
+
+/* -------------- BEGIN PODCAST MODULE ----------------*/
+#form_addpodcast {
+    
+}
+#form_addpodcast button {
+    margin-top: 4px;
+}
+/* ---------------- END PODCAST MODULE ----------------*/
