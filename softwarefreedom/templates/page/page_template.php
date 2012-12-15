@@ -84,7 +84,7 @@ if (!isset($og_title)) {
     $og_title = $pageTitle;
 }
 if (!isset($og_image)) {
-    $og_image = $helperJs = 'http://softwarefreedom.co.za/skins/' . $skinName . '/default.png';
+    $og_image = $helperJs = 'http://softwarefreedom.co.za/skins/' . $skinName . '/images/avatar.png';
 }
 if (!isset($og_content)) {
     $og_content = 'The Software Freedom South Africa site is made available 
