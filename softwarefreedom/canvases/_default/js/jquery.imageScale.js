@@ -48,7 +48,7 @@
                             var tmpWidth = jQuery(this).attr('width');
                             if (settings.maxWidth != null) {
                                 if (settings.maxWidth < tmpWidth) {
-                                    //alert('Width: ' + tmpWidth+", should be: "+settings.maxWidth);
+                                    alert('Width: ' + tmpWidth+", should be: "+settings.maxWidth);
                                     jQuery(this).removeAttr('width');
                                     jQuery(this).removeAttr('height');
                                     jQuery(this).css("width",null);

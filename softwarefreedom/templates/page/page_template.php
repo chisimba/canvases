@@ -84,7 +84,7 @@ if (!isset($og_title)) {
     $og_title = $pageTitle;
 }
 if (!isset($og_image)) {
-    $og_image = $helperJs = 'skins/' . $skinName . '/default.png';
+    $og_image = $helperJs = 'http://softwarefreedom.co.za/skins/' . $skinName . '/default.png';
 }
 if (!isset($og_content)) {
     $og_content = 'The Software Freedom South Africa site is made available 
@@ -250,11 +250,6 @@ if (!isset($pageSuppressContainer)) {
 // Render any messages available.
 $this->putMessages();
 
-// Close up the body and HTML and finish up.
-echo '
-<script type="text/javascript" src="' . $canvas . '/js/jquery.imageScale.js"></script>
-<script type="text/javascript" src="' . $canvas . '/js/helper.js"></script>
-';
 
 /**
  *

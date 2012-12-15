@@ -257,13 +257,13 @@ div.Canvas_Content_Head_Before div#search label {
 #threecolumn #Canvas_Content_Body_Region2 {
     padding-left: 8px;
     padding-right: 8px;
-    width:auto;
 }
 
 #twocolumn #Canvas_Content_Body_Region2 {
     padding-left: 8px;
     padding-right: 8px;
     width:auto;
+    float: left;
 }
 
 /* --------------- BEGIN MAIN POSTLOGIN MENU -----------------*/
@@ -1346,3 +1346,18 @@ div.simpleblog_post_tags a.tag_active:visited:hover {
 }
 /* ----------------- END  MISC TWEAKS ------------------*/
 
+
+
+#speciesimages {
+    text-align: center;
+}
+#wikioverviewcontents {
+    margin-left: 12px;
+}
+#speciesimages img {
+    margin-bottom: 5px;
+    width: 190px;
+}
+.species_list_table {
+    width: 550px;
+}

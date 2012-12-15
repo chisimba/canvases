@@ -6,10 +6,13 @@
  *
  *
  */
+
 jQuery(function() {
     jQuery(document).ready(function() {
+
         // Fix up some of the layout that gets broken because of the 2 column design.
         if (jQuery("#threecolumn").length > 0) {
+            
             var keepit = jQuery('#threecolumn').contents();
             jQuery('#threecolumn').replaceWith(keepit);
             keepit=null;
