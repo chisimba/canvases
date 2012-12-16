@@ -1175,7 +1175,7 @@ div.simpleblog_post_tags a.tag_active:visited:hover {
     margin-left: 12px;
     display: inline-block;
     zoom: 1; /* ie7 hack for display:inline-block */
-    *display: inline;
+    display: inline;
     border: solid 1px #d2d2d2;
     padding-top: 3px;
     padding-left: 3px;
@@ -1252,6 +1252,10 @@ div.simpleblog_post_tags a.tag_active:visited:hover {
     /* For flickr shows and oembeds */
     width:580px!important;
     height: 340px!important; 
+}
+.fblikebutton {
+    float: right;
+    width: 360px;
 }
 /* -------------- END SIMPLE BLOG MODULE ---------------*/
 
