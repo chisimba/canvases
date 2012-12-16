@@ -86,6 +86,12 @@ require($siteRootPath . 'skins/_common/templates/skinpageheader3-0.php');
 
 
 // Set up the open graph stuff
+if (!isset($fb_admins)) {
+    $fb_admins = 'unknown';
+}
+if (!isset($fb_app_id)) {
+    $fb_app_id = 'unknown';
+}
 if (!isset($og_title)) {
     $og_title = $pageTitle;
 }
@@ -102,6 +108,8 @@ if (!isset($og_content)) {
 // blank lines between the PHP closing tag and the HTML head tag. It must be
 // exactly as below.
 ?><head>
+    <meta property="fb:admins" content="<?php echo $fb_admins; ?>" />
+    <meta property="fb:app_id" content="<?php echo $fb_app_id; ?>" />
     <meta property="og:title" content="<?php echo $og_title; ?>" />
     <meta property="og:image" content="<?php echo $og_image; ?>" />
     <meta property="og:description" content="<?php echo $og_content; ?>" />

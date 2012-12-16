@@ -1230,6 +1230,10 @@ div.simpleblog_post_tags a.tag_active:visited:hover {
     width:580px!important;
     height: 340px!important; 
 }
+.fblikebutton {
+    float: right;
+    width: 360px;
+}
 /* -------------- END SIMPLE BLOG MODULE ---------------*/
 
 /* ------------ BEGIN TWITTER MODULE BLOCKS ------------*/
