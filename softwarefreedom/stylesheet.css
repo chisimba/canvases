@@ -1020,6 +1020,8 @@ background-image: linear-gradient(bottom, #eeeeec 0%, #d3d7cf 50%, #babdb6 100%)
     max-width: 430px;
     float: left;
     line-height: 120%;
+    margin-bottom: 6px;
+    margin-right: 10px;
 }
 .simpleblog_post_wrapper {
     background-image: #e3f4ff;
@@ -1256,6 +1258,7 @@ div.simpleblog_post_tags a.tag_active:visited:hover {
 .fblikebutton {
     float: left;
     width: 360px;
+    margin-left: 8px;
 }
 /* -------------- END SIMPLE BLOG MODULE ---------------*/
 
