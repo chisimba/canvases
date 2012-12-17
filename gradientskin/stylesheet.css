@@ -9,12 +9,12 @@
 /*@import "../metallic/stylesheet.css";*/
 html, body{
     margin-top: 2pc;
-    font-size: 1.1pc;
+    height: 100%;
 }
 .ChisimbaCanvas{
     width: 100%;
     font-family: Ubuntu light, Century gothic, Arial;
-    font-size: 1.1pc;
+    font-size: 1pc;
 }
 div#header{
     margin-top: -4.5pc;
@@ -61,7 +61,7 @@ div.Canvas_Content_Head_Breadcrumbs_After{
 }
 div#Canvas_Content_Body_Region3{
     float:right;
-    width:18%;
+    width:19%;
     border: 0.5pc solid #FFFFFF;
     box-shadow: 0 0 0.3pc #7c7c7c;
 }
@@ -133,6 +133,7 @@ input[type=text]:focus, input[type=password]:focus, input[type=search]:focus, in
     background-image: -moz-linear-gradient(-10% 90% 90deg,#eee, #fff);
     border: 1px solid #eee;
     border-radius: 2px;
+    font-weight: normal;
     color: #000;
     box-shadow: 0 0 2px #000;
     text-shadow: 0 0 3px #fff;
@@ -169,6 +170,10 @@ div#footer{
 }
 div#footer a{
     color: #ff2121;
+}
+/*the register form*/
+div.content{
+        font-size: 0.8pc;
 }
 
 /*the block highlighter*/
