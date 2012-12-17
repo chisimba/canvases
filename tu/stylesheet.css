@@ -1555,12 +1555,27 @@ div.simpleblog_post_tags a.tag_active:visited:hover {
 
 /* --------------- BEGIN CONTEXTADMIN MODULE ------------------*/
 #form_createcontext, #form_addchapter, #form_addpage  {
-    width: 830px;
+    width: 630px;
     padding: 12px;
 }
 #form_createcontext table, #form_addchapter table, #form_addpage table {
-    width: 830px!important;
+    width: 630px!important;
     margin-bottom: 8px;
+}
+#form_createcontext table td table {
+    width: 500px!important;
+}
+#form_createcontext .sexybutton {
+    margin-bottom: 3px;
+}
+#form_updateplugins {
+    width: 630px!important;
+}
+#form_updateplugins table td:nth-child(3n-2) {
+    padding-top: 7px;
+}
+#form_updateplugins table td:nth-child(3n) {
+    width: 160px!important; 
 }
 /* ----------------- END CONTEXTADMIN MODULE ------------------*/
 
