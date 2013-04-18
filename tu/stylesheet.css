@@ -120,9 +120,6 @@ ul ul, ul ul ul, ul ul ul ul
         appearance: none;
         background: url(images/select.png) no-repeat right;
 }
-input[type='option']{
-        background: red;
-}
 .sexybutton span span span{
         border-radius: 0;
         background-image: none;
