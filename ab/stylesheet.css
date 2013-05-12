@@ -117,7 +117,7 @@ ul ul, ul ul ul, ul ul ul ul
 
 /* The header stuff */
 .Canvas_Content_Head {
-    background-image: url('images/banner3.jpg');
+    background-image: url('images/banner.jpg');
     height: 312px;
     width: 960px;
     margin: 0px;
@@ -139,13 +139,14 @@ h1#sitename:before {
 }
 h1#sitename {
     visibility: visible;
+    font-size: xx-large;
     margin-left: 10px;
     margin-top: 230px;
     padding-left: 4px;
     padding-top: 14px;
 }
 a.sitename_link {
-    color: #e9b96e;
+    color: white; /*#e9b96e;*/
 }
 .sitename_link:hover, .sitename_link:visited:hover {
     color: #0066cc;
@@ -518,6 +519,10 @@ ul#menuList  li  li.last a {
     padding-top: 5px;
     padding-bottom: 12px;
     margin: 0;
+}
+
+.featureboxcontent input, .featureboxcontent select {
+    max-width: 180px;
 }
 
 #Canvas_Content_Body_Region1 .featureboxheader, 
