@@ -23,9 +23,9 @@ body {
     margin: 0px;
     padding: 0px;
     overflow-x: hidden;
-    font-size: 14px;
+    font-size: 13px;
     line-height: 1.4em;
-    font-family:Ubuntu, "Helvetica Neue", Helvetica, Helvetica, Arial, sans-serif;
+    font-family:"Ubuntu light", "Helvetica Neue", Helvetica, Helvetica, Arial, sans-serif;
     background-image: url(images/body.png);;
     background-attachment: fixed;
     color: #323232;
@@ -154,8 +154,11 @@ div.loginbuttonwrap button{
     color: transparent;
     margin: 5px;
 }
+div#login #input_username, #input_password{
+    width: 200px;
+}
 div.loginbuttonwrap button:hover{
-    box-shadow: 0 0 5px 2px tomato;
+    box-shadow: 0 0 2px tomato;
 }
 div.loginbuttonwrap button:active{
     -moz-box-shadow: inset 0 0 2px 1px #000;
@@ -510,7 +513,7 @@ ul#menuList  li ul li {
     border-style: none;
     width: 100%;
     color: #000;
-/*    font-weight: normal;*/
+    /*    font-weight: normal;*/
     padding: 0;
     /*border-bottom: 1px solid #000;*/
     /*margin-bottom: 2%;*/
@@ -631,7 +634,9 @@ ul#menuList  li  li.last a{
     /*border-top: 3px solid #fff;*/
     /*box-shadow: 0 0 2px #000;*/
 }
-
+input[type='checkbox'], .transparentbgnb{
+    padding: 100px;
+}
 .featureboxheader, .contentfeaturebox h3, .newForumTopic  {
     line-height: 1.5 !important;
     border-radius: 2px !important;
@@ -657,7 +662,7 @@ ul#menuList  li  li.last a{
     border-bottom: 1px solid #afafaf;
 }
 .featureboxcontent, .newForumContent, .faq_main {
-    
+
 }
 
 #Canvas_Content_Body_Region1 .featureboxheader, 
@@ -687,7 +692,8 @@ ul#menuList  li  li.last a{
 
 #Canvas_Content_Body_Region2 h5.featureboxheader {
     font-size: 150%;
-
+    text-shadow: 0 -1px 0 #fff;
+    color: #3e3e3e !important;
 }
 
 
@@ -821,7 +827,7 @@ ul#nav-secondary li {
 
 /* ------------ BEGIN GENERAL TABLE SETTINGS ----------*/
 td.odd, tr.odd {
-        background: #ffffff; /* Old browsers */
+    background: #ffffff; /* Old browsers */
     /* IE9 SVG, needs conditional override of 'filter' to 'none' */
     background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2ZmZmZmZiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNlNWU1ZTUiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
     background: -moz-linear-gradient(top,  #ffffff 0%, #e5e5e5 100%); /* FF3.6+ */
@@ -1038,6 +1044,66 @@ option.by-sa_gnu-fdl {
 /* -------------- BEGIN FILEMANAGER MODULE ---------------*/
 .outerquota {
     width: 190px;
+    box-shadow: 0 0 2px #000;
+    margin-top: 5px;
+    border: none !important;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+}
+div.changeview{
+    display: table;
+    border-radius: 3px;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    box-shadow: 0 0 2px #000;
+}
+form#form_movedeletefiles table tbody tr{
+    border-bottom: 10px solid transparent;
+    line-height: 2;
+    font-size: 1.5em;
+}
+form#form_movedeletefiles table tbody tr:hover{
+    color: #fff;
+}
+a.listview{
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+    border-right: 1px solid rgb(183,183,183) !important;
+}
+a.thumbnailview{
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+    border-left: 1px solid rgb(255,255,255) !important;
+}
+
+#form_changeview a.sexybutton{
+    display: table-cell;
+    padding: 5px;
+    background: #ffffff; /* Old browsers */
+    /* IE9 SVG, needs conditional override of 'filter' to 'none' */
+    background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2ZmZmZmZiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNlNWU1ZTUiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+    background: -moz-linear-gradient(top,  #ffffff 0%, #e5e5e5 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(100%,#e5e5e5)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top,  #ffffff 0%,#e5e5e5 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top,  #ffffff 0%,#e5e5e5 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top,  #ffffff 0%,#e5e5e5 100%); /* IE10+ */
+    background: linear-gradient(to bottom,  #ffffff 0%,#e5e5e5 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#e5e5e5',GradientType=0 ); /* IE6-8 */
+}
+.innerquota{
+    background: red !important;
+    background: rgb(206,219,233); /* Old browsers */
+    /* IE9 SVG, needs conditional override of 'filter' to 'none' */
+    background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2NlZGJlOSIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjE3JSIgc3RvcC1jb2xvcj0iI2FhYzVkZSIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjUwJSIgc3RvcC1jb2xvcj0iIzYxOTljNyIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjUxJSIgc3RvcC1jb2xvcj0iIzNhODRjMyIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjU5JSIgc3RvcC1jb2xvcj0iIzQxOWFkNiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjcxJSIgc3RvcC1jb2xvcj0iIzRiYjhmMCIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9Ijg0JSIgc3RvcC1jb2xvcj0iIzNhOGJjMiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiMyNjU1OGIiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+) !important;
+    background: -moz-linear-gradient(top,  rgba(206,219,233,1) 0%, rgba(170,197,222,1) 17%, rgba(97,153,199,1) 50%, rgba(58,132,195,1) 51%, rgba(65,154,214,1) 59%, rgba(75,184,240,1) 71%, rgba(58,139,194,1) 84%, rgba(38,85,139,1) 100%) !important; /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(206,219,233,1)), color-stop(17%,rgba(170,197,222,1)), color-stop(50%,rgba(97,153,199,1)), color-stop(51%,rgba(58,132,195,1)), color-stop(59%,rgba(65,154,214,1)), color-stop(71%,rgba(75,184,240,1)), color-stop(84%,rgba(58,139,194,1)), color-stop(100%,rgba(38,85,139,1))) !important; /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top,  rgba(206,219,233,1) 0%,rgba(170,197,222,1) 17%,rgba(97,153,199,1) 50%,rgba(58,132,195,1) 51%,rgba(65,154,214,1) 59%,rgba(75,184,240,1) 71%,rgba(58,139,194,1) 84%,rgba(38,85,139,1) 100%) !important; /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top,  rgba(206,219,233,1) 0%,rgba(170,197,222,1) 17%,rgba(97,153,199,1) 50%,rgba(58,132,195,1) 51%,rgba(65,154,214,1) 59%,rgba(75,184,240,1) 71%,rgba(58,139,194,1) 84%,rgba(38,85,139,1) 100%) !important; /* Opera 11.10+ */
+    background: -ms-linear-gradient(top,  rgba(206,219,233,1) 0%,rgba(170,197,222,1) 17%,rgba(97,153,199,1) 50%,rgba(58,132,195,1) 51%,rgba(65,154,214,1) 59%,rgba(75,184,240,1) 71%,rgba(58,139,194,1) 84%,rgba(38,85,139,1) 100%) !important; /* IE10+ */
+    background: linear-gradient(to bottom,  rgba(206,219,233,1) 0%,rgba(170,197,222,1) 17%,rgba(97,153,199,1) 50%,rgba(58,132,195,1) 51%,rgba(65,154,214,1) 59%,rgba(75,184,240,1) 71%,rgba(58,139,194,1) 84%,rgba(38,85,139,1) 100%) !important; /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cedbe9', endColorstr='#26558b',GradientType=0 ) !important; /* IE6-8 */
+
 }
 .filemanager_main table {
     font-size: 90%;
@@ -1142,7 +1208,7 @@ option.by-sa_gnu-fdl {
 .simpleblog_view_wall, a.togglewall_link {
     background:#3b5998;
     color:#ffffff;
-/*    font-weight:bold;*/
+    /*    font-weight:bold;*/
     border:0;
     padding:4px;
     padding-left: 12px;
@@ -1168,7 +1234,7 @@ option.by-sa_gnu-fdl {
     width: 100%;
     float: left;
     background:transparent;
-/*    font-weight: bold;*/
+    /*    font-weight: bold;*/
     font-size: 140%;
     padding-bottom: 6px;
     border-bottom: 1px dashed #b65900;
@@ -1467,7 +1533,7 @@ div.simpleblog_post_tags a.tag_active:visited:hover {
     margin-bottom: 12px;
 }
 .fb_title {
-/*    font-weight: bold;*/
+    /*    font-weight: bold;*/
     margin-bottom: 6px;
 }
 .fb_description {
@@ -1731,7 +1797,7 @@ div.simpleblog_post_tags a.tag_active:visited:hover {
     margin-bottom: 8px;
 }
 .faq_blocklink strong {
-/*    font-weight: normal;*/
+    /*    font-weight: normal;*/
 }
 /* ----------------- END FAQ MODULE --------------------*/
 #tooliconslist{
@@ -1806,22 +1872,224 @@ div.simpleblog_post_tags a.tag_active:visited:hover {
     color: #000 !important;
 }
 div#forumlist{
-    
-}
-.forum_main table tbody tr{
-    border: 1px solid #fff;
-    border-collapse: separate !important;
-    border-spacing: 100px !important;
+
 }
 .newForumContent{
     border-top: 1px solid #e5e5e5;
-    /*background: #fff;*/
 }
 .newForumContainer{
     border: none;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    box-shadow: 0 0 2px #000;
+    -moz-box-shadow: 0 0 2px #000;
+    -webkit-box-shadow: 0 0 2px #000;
+    margin-left: 100px;
+    margin-top: 10px;
+    z-index: 0;
+    position: relative;
+}
+.newForumContainer p{
+    padding: 10px;
+}
+button.sexybutton{
+    margin: 5px;
+}
+.newForumContainer #input_selectfile_fileselect{
+    margin-top: 10px;
+    margin-right: 10px;
+    margin-left: 5px;
+    padding: 10px;
+}
+.forumUserPicture{
     box-shadow: 0 0 1px #000;
+    border: 3px solid #fff;
+    border-radius: 3px;
+}
+span.forumPointer1, span.forumPointer2, span.forumPointer3{
+    position: absolute;
+}
+div.replies{
+    background: red;
+    margin-left: 200px;
+    margin-right: 100px;
+    margin-top: -10px;
+}
+.newForumTopic.inner{
+    margin: 10px;
+}
+.replyContainer.inner{
+    box-shadow: 0 0 2px 0 #000;
+    border-radius: 3px;
+    margin: 9px;
+}
+span.forumPointer2{
+    display: none;
+}
+span.forumPointer3{
+    background: #fff;
+    -moz-transform: rotate(-50deg);
+    -webkit-box-shadow: -2px -2px 2px -3px rgba(0,0,0,0.75);
+    -moz-box-shadow: -2px -2px 2px -3px rgba(0,0,0,0.75);
+    box-shadow: -2px -2px 2px -3px rgba(0,0,0,0.75);
+    margin-left: 12px;
+    margin-top: 20px;
+    width: 35px;
+    height: 35px;
+    z-index: 0;
+    display: none;
+}
+textarea{
+    resize: none;
+    font-family: 'Ubuntu light';
+    border-radius: 3px;
+    border: 1px solid #bdbdbd;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    margin: 5px;
+}
+.miniwrapper{
+    margin-left: 95px;
+}
+.buttonLink{
+    color: #5C5C5C;
+    font-weight: 900;
+    box-shadow: 0 0 1px #000;
+    padding: 5px;
+    background: #ffffff; /* Old browsers */
+    /* IE9 SVG, needs conditional override of 'filter' to 'none' */
+    background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2ZmZmZmZiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNlNWU1ZTUiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+    background: -moz-linear-gradient(top,  #ffffff 0%, #e5e5e5 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(100%,#e5e5e5)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top,  #ffffff 0%,#e5e5e5 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top,  #ffffff 0%,#e5e5e5 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top,  #ffffff 0%,#e5e5e5 100%); /* IE10+ */
+    background: linear-gradient(to bottom,  #ffffff 0%,#e5e5e5 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#e5e5e5',GradientType=0 ); /* IE6-8 */
 }
 /*.forum_main table tbody*/
+div.forum_main table{
+    border-collapse: separate;
+    border-spacing: 1em;
+}
+table.forumtopics tbody tr td.sticky{
+    background: url(icons/stickybackground.png) no-repeat center;
+}
+div.forum_main table tr, table.forumtopics tbody tr{
+    background: #ffffff; /* Old browsers */
+    /* IE9 SVG, needs conditional override of 'filter' to 'none' */
+    background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2ZmZmZmZiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNlNWU1ZTUiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+    background: -moz-linear-gradient(top,  #ffffff 0%, #e5e5e5 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(100%,#e5e5e5)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top,  #ffffff 0%,#e5e5e5 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top,  #ffffff 0%,#e5e5e5 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top,  #ffffff 0%,#e5e5e5 100%); /* IE10+ */
+    background: linear-gradient(to bottom,  #ffffff 0%,#e5e5e5 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#e5e5e5',GradientType=0 ); /* IE6-8 */
+    border-radius: 3px;
+    box-shadow: 0 0 2px #000;
+}
+span.indicator{
+    margin-left: 10px;
+    background: red;
+    padding: 10px;
+    padding-top: 0;
+    padding-bottom: 0;
+    /*float: right;*/
+    color: #fff;
+    border: 1px solid #fff;
+    box-shadow: 0 0 2px #000;
+    /*border: 1px solid #fff;*/
+    border-radius: 3px;
+}
+table.forumtopics{
+    border-collapse: separate;
+    border-spacing: 10px;
+}
+.postReplyLink{
+    margin: 5px;
+}
+/*floating div for delete confirmation*/
+div.deleteconfirm{
+    background: url(icons/deleteconfirm.png) no-repeat center;
+    position: absolute;
+    right: 0;
+    width: 210px;
+    margin-top: -180px;
+    margin-right: -20px;
+    height: 185px;
+    border-radius: 3px;
+}
+div.deleteconfirm p{
+    padding: 15px;
+    padding-top: 0;
+    color: #fff;
+    text-align: center;
+    font-size: 1.2em;
+    font-weight: bolder;
+}
+/*Post delete confirm and decine*/
+a.postDeleteConfirm, a.postDeleteDecline{
+    color: #000;
+    background: #fff;
+    padding: 10px;
+    box-shadow: 0 0 2px #fff;
+    /*border: 2px solid #000;*/
+    border-radius: 3px;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+}
+table.forumtopics tbody tr td img.full_user_image{
+    /*line-height: 3;*/
+    padding: 10px;
+}
+table.forumtopics tbody tr{
+    border-bottom: 2px solid #e5e5e5;
+    border-radius: 3px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    box-shadow: 0 0 2px #6e6e6e;
+    -webkit-box-shadow: 0 0 2px #6e6e6e;
+    -moz-box-shadow: 0 0 2px #6e6e6e;
+}
+table.forumtopics tbody tr td{
+    border-left: 1px solid #e0e0e0;
+    border-right: 1px solid #e0e0e0;
+    margin-top: 10px;
+}
+span.forumname{
+    font-size: 2em;
+}
+span.numberindicator{
+    /*background: gray;*/
+    color: #3e3e3e;
+    font-size: 3em;
+    font-weight: 900;
+    text-shadow: -1px -1px 1px #fff;
+}
+a.indicator:hover{
+    background: #cdcdcd;
+}
+a.indicatorparent{
+    color: #000;
+    font-weight: bold;
+}
+span.floatingIndicator{
+    background: tomato;
+    position: absolute;
+    margin-top: -20px;
+    width:20px;
+    color: #fff;
+    border: 1px solid #fff;
+    box-shadow: 0 0 1px #000;
+    margin-left: -5px;
+    border-radius: 10px;
+}
+label.menu{
+    /*background: gray;*/
+    padding: 10px;
+}
 /* ------------------- END FORUM MODULE --------------------*/
 
 

@@ -48,4 +48,17 @@
 (Lawyer Icon)
 <a href="http://thenounproject.com/noun/lawyer/#icon-No10320" target="_blank">Lawyer</a> designed by <a href="http://thenounproject.com/SketchLex" target="_blank">Miroslav KURDOV</a> from The Noun Project
 
+(New message Icon)
+<a href="http://thenounproject.com/noun/add-comment/#icon-No14912" target="_blank">Add Comment</a> designed by <a href="http://thenounproject.com/jordan.delcros" target="_blank">Jordan Delcros</a> from The Noun Project
 
+(Debate Icon)
+<a href="http://thenounproject.com/noun/talking/#icon-No14887" target="_blank">Talking</a> designed by <a href="http://thenounproject.com/bravo" target="_blank">Juan Pablo Bravo</a> from The Noun Project
+
+(Note Icon)
+<a href="http://thenounproject.com/noun/note/#icon-No14842" target="_blank">Note</a> designed by <a href="http://thenounproject.com/Anisha Varghese" target="_blank">Anisha Varghese</a> from The Noun Project
+
+Reminder Icon)
+<a href="http://thenounproject.com/noun/reminder/#icon-No12688" target="_blank">Reminder</a> designed by <a href="http://thenounproject.com/andrewomerknapp" target="_blank">Andy Omer Knapp</a> from The Noun Project
+
+(Billboard Icon)
+<a href="http://thenounproject.com/noun/billboard/#icon-No1684" target="_blank">Billboard</a> designed by <a href="http://thenounproject.com/devochkina" target="_blank">Oxana Devochkina</a> from The Noun Project
