@@ -2330,13 +2330,6 @@ For the blog blocks displayed as a middle block
 }
 .simpleblog_post_wrapper {
     background: white;
-    /*background-image: #e3f4ff;
-    background-image: -webkit-linear-gradient(top, #daefff 0%, #ecf8ff 72%);
-    background-image: -moz-linear-gradient(top, #daefff 0%, #ecf8ff 72%);
-    background-image: -o-linear-gradient(top, #daefff 0%, #ecf8ff 72%);
-    background-image: -ms-linear-gradient(top, #daefff 0%, #ecf8ff 72%);
-    background-image: linear-gradient(top, #daefff 0%, #ecf8ff 72%);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#daefff", endColorstr="#ecf8ff",GradientType=0);*/
     margin-bottom: 20px;
     padding: 8px;
     border-top-right-radius: 8px;
