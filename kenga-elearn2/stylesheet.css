@@ -28,6 +28,7 @@ body {
     margin: 0;
     padding:0;
     border: 0;
+    font-size: 14px;
 }
 
 a {
@@ -224,7 +225,7 @@ ul .glossytabs {
 
 .glossytabs li a {
     color: #4a5ca8;
-    font-size: 150%;
+    font-size: 17px;
     font-weight: bold;
 
 }
@@ -1016,7 +1017,7 @@ fieldset {
 }
 #userdetails fieldset legend h1 {
     background: white;
-    height: 30px;
+    height: 40px;
     padding-top: 0px;
     padding-bottom: 0px;
     padding-left: 5px;
@@ -2560,3 +2561,50 @@ div.simpleblog_post_tags a.tag_active:visited:hover {
     margin-left: 8px;
 }
 /* -------------- END SIMPLE BLOG MODULE ---------------*/
+
+/* -------------- BEGIN MY NOTES MODULE ----------------*/
+.notes_view, .notelist {
+    margin-left: 8px;
+    margin-right: 8px;
+    padding-top: 6px;
+    padding-bottom: 3px;
+    padding-right: 22px;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    border-radius: 6px;
+}
+.notes_view {
+    background: url("images/light-blue-granular.jpg") top left repeat;
+}
+
+.notes_view ul {
+    list-style: none;
+}
+
+.notes_view li {
+    background-image: url(images/note-icon.png);
+    background-repeat: no-repeat;
+    font-size: large;
+    padding-left: 35px;
+    padding-top: 0px;
+    margin-bottom: 5px;
+}
+
+.notelist {
+    background: url("images/light-green-granular.jpg") top left repeat;
+    margin-top: 10px;
+}
+
+.notelist ul {
+    list-style: none;
+}
+
+.notelist li {
+    background-image: url(images/note-icon.png);
+    background-repeat: no-repeat;
+    font-size: large;
+    padding-left: 35px;
+    padding-top: 6px;
+    margin-bottom: 5px;
+}
+/* --------------- END MY NOTES MODULE -----------------*/
