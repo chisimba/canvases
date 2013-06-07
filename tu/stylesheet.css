@@ -26,7 +26,7 @@ body {
     font-size: 13px;
     line-height: 1.4em;
     font-family:"Ubuntu light", "Helvetica Neue", Helvetica, Helvetica, Arial, sans-serif;
-    background-image: url(images/body.png);;
+    background-image: url(images/bg.png);
     background-attachment: fixed;
     color: #323232;
 }
@@ -192,7 +192,7 @@ input[type='text'], input[type='password']{
 }
 
 #Canvas_Content {
-    background: #fff;
+    background-image: url(images/bg.png);
     padding:0;
     margin: 0px;
 }
@@ -243,7 +243,7 @@ h1#sitename {
 }
 .sitename_link, .sitename_link:visited {
     color: #fff;
-    font-family: Ubuntu, "Helvetica Neue", Helvetica, Helvetica, Arial, sans-serif;
+    font-family: "Ubunti light", "Helvetica Neue", Helvetica, Helvetica, Arial, sans-serif;
 }
 .sitename_link:hover, .sitename_link:visited:hover {
     color: #F15A29;
@@ -325,7 +325,7 @@ div.Canvas_Content_Head_Before div#search label {
     padding: 0px;
 }
 #container{
-    box-shadow: 0 0 5px 1px #000;
+        
 }
 
 .wrapperDarkBkg{
@@ -1871,8 +1871,8 @@ div.simpleblog_post_tags a.tag_active:visited:hover {
 .forum_main thead tr th{
     color: #000 !important;
 }
-div#forumlist{
-
+h3.popup{
+        color: #fff;
 }
 .newForumContent{
     border-top: 1px solid #e5e5e5;
@@ -1901,6 +1901,9 @@ button.sexybutton{
     margin-right: 10px;
     margin-left: 5px;
     padding: 10px;*/
+}
+.forumProfileImg{
+        background: #fff;
 }
 .forumUserPicture{
     box-shadow: 0 0 1px #000;
@@ -2040,6 +2043,9 @@ a.postDeleteConfirm, a.postDeleteDecline{
     -moz-border-radius: 3px;
     -webkit-border-radius: 3px;
 }
+a.ratings{
+        color: red;
+}
 table.forumtopics tbody tr td img.full_user_image{
     /*line-height: 3;*/
     padding: 10px;
@@ -2094,13 +2100,14 @@ div.hiddenOptions li{
         list-style: none;
 }
 div.hiddenOptions li a{
-        color: lightgrey;
+        color: #fff;
 }
 div.hiddenOptions{
         position: absolute;
         background: #000;
         width: 170px;
         opacity: .9;
+        color: #fff;
         /*height: 150px;*/
         z-index: 150;
         padding: 10px;
@@ -2109,6 +2116,25 @@ div.hiddenOptions{
         border-radius: 3px;
         -moz-border-radius: 3px;
         -webkit-border-radius: 3px;
+}
+div.attachmentwrapper{
+        position: absolute;
+        box-shadow: 0 0 2px #000;
+        background-color: #fff;
+        border-radius: 3px;
+        right: 0;
+}
+span.ratings{
+        left: 0;
+        top: 0;
+}
+.rating0, .rating1, .rating2, .rating3, .rating4{
+        padding: 7px;
+        margin: 5px;
+        background: url(icons/star.png) no-repeat center;
+}
+nav.ratingTitle{
+        position: absolute;
 }
 label.menu{
     /*background: gray;*/
