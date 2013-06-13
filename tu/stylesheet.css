@@ -1395,7 +1395,7 @@ a.thumbnailview{
 .simpleblog_view_wall, a.togglewall_link {
         background:#3b5998;
         color:#ffffff;
-        /*    font-weight:bold;*/
+        font-weight:bold;
         border:0;
         padding:4px;
         padding-left: 12px;
@@ -1421,7 +1421,6 @@ a.thumbnailview{
         width: 100%;
         float: left;
         background:transparent;
-        /*    font-weight: bold;*/
         font-size: 140%;
         padding-bottom: 6px;
         border-bottom: 1px dashed #b65900;
@@ -1441,7 +1440,7 @@ a.thumbnailview{
         margin-right: 10px;
 }
 .simpleblog_post_wrapper {
-        background: url("images/overlay50.png") top left repeat;
+        background: url("images/overlaygr.png") top left repeat;
         margin-bottom: 20px;
         padding: 8px;
         padding-bottom: 14px;
@@ -1506,9 +1505,6 @@ a.thumbnailview{
 .simpleblog_next {
         text-align: right;
 }
-
-
-
 #input_post_tags {
         width: 550px;
 }
@@ -2624,6 +2620,7 @@ table#tblLeaves tbody tr td{
         box-shadow: 0 0 2px #91e842;
 }
 /* ---------------- END Internals Module ----------------*/
+
 /*----------------------javascript message(I can't remember the actual name-------------------*/
 /*---------------Forum Module-----------------------------*/
 /*.newForumContainer{
