@@ -156,17 +156,14 @@ $footer1 = '
     commercial Chisimba development, installation, extension and support.
     ';
 $footer2= '
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut commodo,
-    dui eget blandit cursus, nunc ante ultrices orci, quis iaculis justo
-    justo sit amet elit. Morbi tempor eros in lectus blandit in tristique
-    sem condimentum. Ut odio elit, consectetur a faucibus vitae, hendrerit
-    sit amet dui.
+    Chisimba eLearn is an instance of the Chisimba framework running in  
+    a configuration that allows it to be used as a learning management system,
+    personal learning environment, eLearning platform, etc. Check it out and
+    see what you can do with it.
     ';
 $footer3= '
-    Aliquam vulputate luctus arcu, nec convallis purus mollis id.
-    Phasellus sed odio dui. Phasellus eu facilisis sapien. Vestibulum
-    arcu purus, sodales non gravida id, ultricies iaculis leo.
-    Suspendisse ac nisi odio. Phasellus quis dui nec dui euismod accumsan.
+    If you want to know more about Chisimba or Chisimba eLearn, please contact
+    derek[AT]dkeats.com.
     ';
 $footerTable = '
     <div class="footer_content">
