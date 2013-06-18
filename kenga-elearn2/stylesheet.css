@@ -2351,7 +2351,7 @@ For the blog blocks displayed as a middle block
     -khtml-border-radius-bottomleft: 6px;
 }
 .content_form_element {
-    width: 950px;
+    width: 99%;
 }
 #form_simpleblog_editor {
     padding: 20px;
@@ -2549,6 +2549,9 @@ div.simpleblog_post_tags a.tag_active:visited:hover {
     float: right;
     margin-left: 8px;
     margin-right: 8px;
+}
+.simpleblog_post_content p {
+    font-size: 14pt;
 }
 .simpleblog_post_content embed {
     /* For flickr shows and oembeds */
