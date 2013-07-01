@@ -956,7 +956,7 @@ input[type='checkbox'], .transparentbgnb{
                 rgba(88,93,155,1),
                 rgba(56,59,100,1)
                 );
-        position: relative;
+        /*position: relative;*/
         /*margin: 2px;*/
         /*border-bottom: 1px solid #ccc;*/
         /* Legacy browsers */
@@ -2214,6 +2214,7 @@ button.sexybutton{
 }
 .forumProfileImg{
         background: #fff;
+        float: left;
 }
 .forumUserPicture{
         -webkit-box-shadow: 0 0 3px rgba(0,0,0,0.75);
@@ -2337,7 +2338,7 @@ div.deleteconfirm p{
         font-weight: bolder;
 }
 /*Post delete confirm and decine*/
-a.postDeleteConfirm, a.postDeleteDecline{
+a.postDeleteConfirm, a.postDeleteCancel{
         color: #555;
         background: #fff;
         padding: 10px;
