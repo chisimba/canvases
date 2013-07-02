@@ -919,7 +919,7 @@ input[type='checkbox'], .transparentbgnb{
         padding: 100px;
 }
 .featureboxheader, .contentfeaturebox h3, .newForumTopic  {
-        line-height: 1.5 !important;
+        line-height: 2.5 !important;
         box-shadow: 0 -1px 2px #000;
         /*border-radius: px !important;*/
         color: #fff;
