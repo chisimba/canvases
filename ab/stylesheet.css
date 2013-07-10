@@ -1413,7 +1413,7 @@ div.simpleblog_post_tags a.tag_active:visited:hover {
 
 
 
-
+/*------- BEGIN the AdoraBell prelogin toolbar --------*/
 ul#ab_navmenu {
     margin: 35px 0;
     padding: 0;
@@ -1443,3 +1443,4 @@ ul#ab_navmenu a:hover {
 ul#ab_navmenu li.current a {
     border:1px solid #777;
 }
+/*------- /END the AdoraBell prelogin toolbar --------*/

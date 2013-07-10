@@ -79,15 +79,15 @@ if (!isset($og_content)) {
 
 $publicNav = '
     <ul id="ab_navmenu">
-        <li><a href="#">Home</a></li>
-        <li><a href="#">About us</a></li>
-        <li><a href="#">About hair</a></li>
-        <li><a href="#">Products</a></li>
-        <li><a href="#">Wedding packages</a></li>
-        <li><a href="#">Photo gallery</a></li>
-        <li><a href="#">Hair maintenance</a></li>
-        <li><a href="#">FAQ</a></li>
-        <li><a href="#">Contact</a></li>
+        <li><a href="index.php">Home</a></li>
+        <li><a href="index.php?module=slate&page=aboutus">About us</a></li>
+        <li><a href="index.php?module=slate&page=abouthair">About hair</a></li>
+        <li><a href="index.php?module=slate&page=products">Products</a></li>
+        <li><a href="index.php?module=slate&page=wedding">Wedding packages</a></li>
+        <li><a href="index.php?module=slate&page=photos">Photo gallery</a></li>
+        <li><a href="index.php?module=slate&page=maintain">Hair maintenance</a></li>
+        <li><a href="index.php?module=faq">FAQ</a></li>
+        <li><a href="index.php?module=slate&page=contact">Contact</a></li>
     </ul>
 '
 
@@ -259,8 +259,8 @@ echo '
 function getIcons($skinName, $canvas)
 {
     $available=array(
-        'facebook' => 'http://www.facebook.com/dkeats',
-        'twitter' => 'http://twitter.com/dkeats',
+        'facebook' => 'http://www.facebook.com/brazilianandindianhairweaves',
+        'twitter' => 'http://twitter.com/AdorabelleHair',
     );
 
     $ret ="";

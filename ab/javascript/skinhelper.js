@@ -8,9 +8,9 @@
  */
 jQuery(function() {
     jQuery(document).ready(function() {
-        toggleNavCol();
+        toggleSize();
         jQuery(window).resize(function(){
-            toggleNavCol();
+            toggleSize();
         });
         // Fix up some of the layout that gets broken because of the 2 column design.
         if (jQuery("#threecolumn").length > 0) {
@@ -34,7 +34,7 @@ jQuery(function() {
 });
 
 
-function toggleNavCol(){
+function toggleSize(){
     if ( jQuery(window).width() < 960) {
         jQuery("#Canvas_Content_Body_Region3").fadeOut("slow");
         jQuery('.footerinfo').css("font-size", '80%');
