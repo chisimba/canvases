@@ -12,24 +12,6 @@
 define("PAGETOP", '<a name="pagetop"></a>');
 define("GOTOTOP", '<a href="#pagetop">Top</a>'); // @todo change this to an icon
 
-// Get the four banner blocks
-$objModuleCatalogue = $this->getObject('modules', 'modulecatalogue');
-$isInstalled = $objModuleCatalogue->checkIfRegistered("bannerhelper");
-if ($isInstalled) {
-    $objBl = $this->getObject('fsbannerhelper', 'bannerhelper');
-    $banner0 = $objBl->readContents("banner0");
-    $banner1 = $objBl->readContents("banner1");
-    $banner2 = $objBl->readContents("banner2");
-    $banner3 = $objBl->readContents("banner3");
-    $plMenu = $objBl->readContents("plmenu");
-} else {
-    $banner0 = NULL;
-    $banner1 = NULL;
-    $banner2 = NULL;
-    $banner3 = NULL;
-    $plMenu = NULL;
-}
-
 // Initialise the variable holding preferred canvas
 $prefCanvas=FALSE;
 
@@ -93,6 +75,21 @@ if (!isset($og_content)) {
 } else {
     $og_content = strip_tags($og_content);
 }
+
+
+$publicNav = '
+    <ul id="ab_navmenu">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About us</a></li>
+        <li><a href="#">About hair</a></li>
+        <li><a href="#">Products</a></li>
+        <li><a href="#">Wedding packages</a></li>
+        <li><a href="#">Photo gallery</a></li>
+        <li><a href="#">Hair maintenance</a></li>
+        <li><a href="#">FAQ</a></li>
+        <li><a href="#">Contact</a></li>
+    </ul>
+'
 
 
 
@@ -171,16 +168,10 @@ if (!isset($pageSuppressBanner)) {
     ?>
     <div class="Canvas_Content_Head">
         <div class="Canvas_Content_Head_Header" id="header">
-            <?php echo '<a class="sitename_link" href="'.$objConfig->getSiteRoot().'">'; ?>
-            <h1 id="sitename">
-                <?php echo $objConfig->getsiteName(); ?>
-            </h1>
-            <?php echo '</a>'; ?>
+            <a href="<?php echo $objConfig->getSiteRoot(); ?>">
+                <img src='skins/<?php echo $skinName; ?>/images/banner.jpg' />
+            </a>
         </div>
-        <div class='floathead' id='floathead_content3'><?php echo $banner3; ?></div>
-        <div class='floathead' id='floathead_content2'><?php echo $banner2; ?></div>
-        <div class='floathead' id='floathead_content1'><?php echo $banner1; ?></div>
-        <div class='floathead' id='floathead_content0'><?php echo $banner0; ?></div>
         <?php
 }
 
@@ -197,7 +188,7 @@ if (!isset($pageSuppressBanner)) {
         }
         
     }
-    echo '<div class="Canvas_Content_Head_After"></div>';
+    echo '<div class="Canvas_Content_Head_After">' . $publicNav . '</div>';
 }
 
 

@@ -8,6 +8,10 @@
  */
 jQuery(function() {
     jQuery(document).ready(function() {
+        toggleNavCol();
+        jQuery(window).resize(function(){
+            toggleNavCol();
+        });
         // Fix up some of the layout that gets broken because of the 2 column design.
         if (jQuery("#threecolumn").length > 0) {
             var keepit = jQuery('#threecolumn').contents();
@@ -28,3 +32,18 @@ jQuery(function() {
         }
     });
 });
+
+
+function toggleNavCol(){
+    if ( jQuery(window).width() < 960) {
+        jQuery("#Canvas_Content_Body_Region3").fadeOut("slow");
+        jQuery('.footerinfo').css("font-size", '80%');
+        jQuery('.footerinfo').css("padding-left", '40px');
+        jQuery('.footerinfo').css("padding-right", '40px');
+    } else {
+        jQuery("#Canvas_Content_Body_Region3").fadeIn("slow");
+        jQuery('.footerinfo').css("font-size", '140%');
+        jQuery('.footerinfo').css("padding-left", '140px');
+        jQuery('.footerinfo').css("padding-right", '140px');
+    }
+}
