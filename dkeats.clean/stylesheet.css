@@ -216,6 +216,8 @@ div.Canvas_Content_Head_Before div#search label {
     margin-top: -45px;
     margin-right: 8px;
     background: transparent;
+    font-size: 80%;
+    line-height: 110%;
 }
 
 .bannerflickr a, .bannerflickr a:visited {
