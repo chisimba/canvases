@@ -1386,7 +1386,8 @@ div.simpleblog_post_tags a.tag_active:visited:hover {
     /* Fix images overflowing main content area */
     max-width: 100% !important;
 }
-/* image tweaks */
+
+/* ---- image tweaks ---- */
 .img-rounded {
   -webkit-border-radius: 6px;
      -moz-border-radius: 6px;
@@ -1406,6 +1407,8 @@ div.simpleblog_post_tags a.tag_active:visited:hover {
      -moz-border-radius: 500px;
           border-radius: 500px;
 }
+/* ---- /END image tweaks ---- */
+
 /* ----------------- END  MISC TWEAKS ------------------*/
 
 
@@ -1444,3 +1447,10 @@ ul#ab_navmenu li.current a {
     border:1px solid #777;
 }
 /*------- /END the AdoraBell prelogin toolbar --------*/
+
+
+/* ------- Image gallery fixups --------------*/
+#imagegallerymain h1 {
+    font-size: 110%;
+}
+/* ----- /END Image gallery fixups -----------*/

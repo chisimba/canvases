@@ -179,11 +179,7 @@ if (!isset($pageSuppressBanner)) {
     echo "</div>";
     if (!isset($pageSuppressToolbar)) {
         $simulate = $this->getParam('simulate', NULL);
-        if (!$this->objUser->isLoggedIn() || ($simulate == 'prelogintoolbar')) {
-            if ($isInstalled) {
-                //echo "\n\n<div id='prelogin_nav'>$plMenu</div>\n\n";
-            }
-        } else {
+        if ($this->objUser->isLoggedIn()) {
             echo "\n\n<div id='navigation'>\n\n" . $toolbar . "\n</div>\n\n";
         }
         
