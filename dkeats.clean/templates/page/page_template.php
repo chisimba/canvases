@@ -117,6 +117,7 @@ if (!isset($og_content)) {
         echo '
 
         <link rel="stylesheet" type="text/css" href="skins/_common2/css/basecss.php">
+        <link href="http://fonts.googleapis.com/css?family=Libre+Baskerville" rel="stylesheet" type="text/css">
         <link rel="icon" type="image/png" href="skins/' . $skinName . '/favicon.png" />
             
         ';
