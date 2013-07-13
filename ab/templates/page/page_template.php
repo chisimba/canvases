@@ -117,6 +117,18 @@ $publicNav = '
     // Render the javascript unless it is suppressed.
     if (!isset($pageSuppressJavascript)) {
         echo $objSkin->putJavaScript($mime, $headerParams);
+        // Easing ..... move this to use the included one.....
+        //$bbJs = 'skins/' . $skinName . '/javascript/vendor/jquery.easing.1.3.js';
+       //echo "\n<script type='text/javascript' src='" . $bbJs . "'></script>\n\n";
+        // Easing ..... move this to use the included one.....
+        //$bbJs = 'skins/' . $skinName . '/javascript/vendor/jquery.mobile.customized.min.js';
+        //echo "\n<script type='text/javascript' src='" . $bbJs . "'></script>\n\n";
+        // Load camera image slider
+        $bbJs = 'skins/' . $skinName . '/javascript/vendor/camera.min.js';
+        echo "\n<script type='text/javascript' src='" . $bbJs . "'></script>\n\n";
+
+        
+        
         // Load the helper JS from the current skin
         $helperJs = 'skins/' . $skinName . '/javascript/skinhelper.js';
         echo "\n<script type='text/javascript' src='" . $helperJs . "'></script>\n\n";
@@ -125,9 +137,9 @@ $publicNav = '
     // Render the CSS for the current skin unless it is suppressed.
     if (!isset($pageSuppressSkin)) {
        echo '
-
        <link rel="stylesheet" type="text/css" href="skins/' . $skinName . '/stylesheet.css">
        <link rel="stylesheet" type="text/css" href="' . $canvas . '/stylesheet.css">
+       <link rel="stylesheet" type="text/css" href="skins/' . $skinName . '/javascript/vendor/camera.css">
 
         ';
     }
@@ -235,12 +247,6 @@ if (!isset($pageSuppressContainer)) {
 
 // Render any messages available.
 $this->putMessages();
-
-// Close up the body and HTML and finish up.
-echo '
-<script type="text/javascript" src="' . $canvas . '/js/jquery.imageScale.js"></script>
-<script type="text/javascript" src="' . $canvas . '/js/helper.js"></script>
-';
 
 /**
  *

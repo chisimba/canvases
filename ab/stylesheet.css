@@ -1386,6 +1386,11 @@ div.simpleblog_post_tags a.tag_active:visited:hover {
     /* Fix images overflowing main content area */
     max-width: 100% !important;
 }
+#input_username,#input_password {
+    max-width: 130px !important;
+    margin-left: 8px;
+}
+
 
 /* ---- image tweaks ---- */
 .img-rounded {
@@ -1454,3 +1459,8 @@ ul#ab_navmenu li.current a {
     font-size: 110%;
 }
 /* ----- /END Image gallery fixups -----------*/
+
+
+.blueberry .slides {
+   width: 100%;
+}

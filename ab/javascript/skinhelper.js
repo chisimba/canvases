@@ -7,7 +7,19 @@
  *
  */
 jQuery(function() {
+    
     jQuery(document).ready(function() {
+        
+        jQuery(function(){
+            jQuery("#camera_wrap_1").each(function(){
+                var t = jQuery(this);
+                t.camera({
+                });
+            });
+        }); 
+        
+        
+        // Toggle the narrow column on off
         toggleSize();
         jQuery(window).resize(function(){
             toggleSize();
@@ -30,6 +42,7 @@ jQuery(function() {
                 jQuery('#modeswitch_wrapper').detach().prependTo('#Canvas_Content_Body_Region3');
             }
         }
+
     });
 });
 
