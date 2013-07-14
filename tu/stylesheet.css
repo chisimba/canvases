@@ -922,18 +922,13 @@ input[type='checkbox'], .transparentbgnb{
 }
 .featureboxheader, .contentfeaturebox h3, .newForumTopic  {
     line-height: 2.5 !important;
-    border-bottom: 3px solid tomato;
-    /*border-radius: px !important;*/
-    color: #fff;
-    /*margin-top: -10px !important;*/
-    /*text-shadow:  0 -1px 0 #000 !important;*/
-    /*font-weight: 700 !important;*/
+    border-bottom: 5px solid tomato;
+    background: url(images/pattern-cll8.png);
+    -webkit-box-shadow: -1px 2px 2px -1px rgba(0,0,0,0.75);
+    -moz-box-shadow: -1px 2px 2px -1px rgba(0,0,0,0.75);
+    box-shadow: -1px 2px 2px -1px rgba(0,0,0,0.75);
+    color: #000;
     left: 0 !important;
-    /*position: relative;*/
-    /*margin: 2px;*/
-    /*border-bottom: 1px solid #ccc;*/
-    /* Legacy browsers */
-    /*background: url(images/pattern.png);*/
 }
 
 .featureboxcontent, .faq_main {
@@ -953,8 +948,8 @@ input[type='checkbox'], .transparentbgnb{
 #Canvas_Content_Body_Region3 .featureboxheader, 
 #Canvas_Content_Body_Region2 .featureboxheader,
 .contentfeaturebox h3 {
-    /*color: #555;*/
-    border: none;
+    color: #000 !important;
+    border-bottom: 5px solid tomato;
     border-top-right-radius: 8px;
     -moz-border-radius-topright: 8px;
     -webkit-border-top-right-radius: 8px;
