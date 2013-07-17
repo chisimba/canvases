@@ -2175,7 +2175,7 @@ button.sexybutton{
     margin: 5px;
 }
 a.forumDownload, a.forumViewAttachment{
-    padding: 10px 10px 10px 35px;
+    padding: 7px 8px 5px 35px;
     color: #FFF;
     text-align: right;
     -webkit-box-shadow: 0 0 3px rgba(0,0,0,0.75);
@@ -2186,7 +2186,7 @@ a.forumDownload{
     background: url(icons/download.png) no-repeat left, tomato;
 }
 a.forumViewAttachment{
-    background: url(icons/download.png) no-repeat left, tomato;
+    background: url(icons/view.png) no-repeat left, tomato;
 }
 div.file-preview{
     margin: 15px 5px 5px 5px;
