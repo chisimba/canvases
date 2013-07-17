@@ -1460,7 +1460,32 @@ ul#ab_navmenu li.current a {
 }
 /* ----- /END Image gallery fixups -----------*/
 
-
-.blueberry .slides {
-   width: 100%;
+/* ------- Unicode Icon Tricks --------------*/
+.phone:before { 
+    content: "\260E";
+    font-size: 160%;
+    margin-right: 8px;
+    vertical-align: middle;
 }
+.email:before { 
+    content: "\2709"; 
+    font-size: 160%;
+    margin-right: 8px;
+    vertical-align: middle;
+}
+
+.im:before { 
+    content: "\2299"; 
+    font-size: 160%;
+    margin-right: 8px;
+    vertical-align: middle;
+}
+
+.short-message:before { 
+    content: "\2724"; 
+    font-size: 160%;
+    margin-right: 8px;
+    vertical-align: middle;
+}
+
+/* ----- /END Unicode Icon Tricks -----------*/
