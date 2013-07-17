@@ -247,12 +247,12 @@ input[type='text']:focus, input[type='password']:focus{
     color: #333C63;
     margin-left: 10px;
     margin-top:0px;
+}
+/* ------------ END GENERAL RESETS ---------------*/
 
-    /* ------------ END GENERAL RESETS ---------------*/
 
-
-    /* Fixed width canvas */
-    .ChisimbaCanvas {
+/* Fixed width canvas */
+.ChisimbaCanvas {
     background: transparent;
     width: 1000px;
     margin-left: auto;
@@ -2679,11 +2679,7 @@ table#tblLeaves tbody tr td{
     box-shadow: 0 0 2px #91e842;
 }
 /* ---------------- END Internals Module ----------------*/
-.image-caption {
-    color: #333C63;
-    margin-left: 10px;
-    margin-top:0px;
-}
+
 /*----------------------javascript message(I can't remember the actual name-------------------*/
 /*---------------Forum Module-----------------------------*/
 /*.newForumContainer{
