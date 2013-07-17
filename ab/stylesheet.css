@@ -1460,7 +1460,7 @@ ul#ab_navmenu li.current a {
 }
 /* ----- /END Image gallery fixups -----------*/
 
-/* ------- Unicode Icon Tricks --------------*/
+/* ------- Unicode glyph Tricks --------------*/
 .phone:before { 
     content: "\260E";
     font-size: 160%;
@@ -1488,4 +1488,4 @@ ul#ab_navmenu li.current a {
     vertical-align: middle;
 }
 
-/* ----- /END Unicode Icon Tricks -----------*/
+/* ----- /END Unicode glyph Tricks -----------*/

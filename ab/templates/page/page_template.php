@@ -190,9 +190,11 @@ if (!isset($pageSuppressBanner)) {
 if (!isset($pageSuppressBanner)) {
     echo "</div>";
     if (!isset($pageSuppressToolbar)) {
-        $simulate = $this->getParam('simulate', NULL);
+        ///$simulate = $this->getParam('simulate', NULL);
         if ($this->objUser->isLoggedIn()) {
-            echo "\n\n<div id='navigation'>\n\n" . $toolbar . "\n</div>\n\n";
+            if ($this->objUser->isAdmin()) {
+                echo "\n\n<div id='navigation'>\n\n" . $toolbar . "\n</div>\n\n";
+            }
         }
         
     }
