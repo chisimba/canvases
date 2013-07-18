@@ -77,110 +77,9 @@ ul ul, ul ul ul, ul ul ul ul
 .sexybutton span{
     border-radius: 0;
     border-radius: 0;
-    /* Legacy browsers */
-    background: lightgrey url("images/gradient-bg01.png") repeat-x top;
-    -o-background-size: 100% 100%;
-    -moz-background-size: 100% 100%;
-    -webkit-background-size: 100% 100%;
-    background-size: 100% 100%;
-    /* Recent browsers */
-    background: -webkit-gradient(
-        linear,
-        left top, left bottom,
-        from(white),
-        to(lightgrey)
-        );
-    background: -webkit-linear-gradient(
-        top,
-        white,
-        lightgrey
-        );
-    background: -moz-linear-gradient(
-        top,
-        white,
-        lightgrey
-        );
-    background: -o-linear-gradient(
-        top,
-        white,
-        lightgrey
-        );
-    background: linear-gradient(
-        top,
-        white,
-        lightgrey
-        );
-    /*background: #ffffff;  Old browsers */
-    /* IE9 SVG, needs conditional override of 'filter' to 'none' */
-    /*        background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2ZmZmZmZiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjQ3JSIgc3RvcC1jb2xvcj0iI2Y2ZjZmNiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNlZGVkZWQiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
-            background: -moz-linear-gradient(top,  #ffffff 0%, #f6f6f6 47%, #ededed 100%);  FF3.6+ 
-            background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(47%,#f6f6f6), color-stop(100%,#ededed));  Chrome,Safari4+ 
-            background: -webkit-linear-gradient(top,  #ffffff 0%,#f6f6f6 47%,#ededed 100%);  Chrome10+,Safari5.1+ 
-            background: -o-linear-gradient(top,  #ffffff 0%,#f6f6f6 47%,#ededed 100%);  Opera 11.10+ 
-            background: -ms-linear-gradient(top,  #ffffff 0%,#f6f6f6 47%,#ededed 100%);  IE10+ 
-            background: linear-gradient(to bottom,  #ffffff 0%,#f6f6f6 47%,#ededed 100%);  W3C 
-            filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ededed',GradientType=0 );  IE6-8 */
-    /*padding: 13px;*/
-    /*margin: 20px;*/
-    /*box-shadow: 0 0 2px #000, 0 0 20px 2px #fff inset;*/
-    /*-moz-box-shadow: 0 0 2px #000, 0 0 20px 2px #fff inset;*/
-    /*-webkit-box-shadow: 0 0 2px #000, 0 0 20px 2px #fff inset;*/
-    /*border-radius: 3px;*/
-    /*border: 2px solid transparent;*/
 }
 .sexybutton span span{
     border-radius: 0;
-
-    /* Legacy browsers */
-    background: lightgrey url("images/gradient-bg01.png") repeat-x top;
-    -o-background-size: 100% 100%;
-    -moz-background-size: 100% 100%;
-    -webkit-background-size: 100% 100%;
-    background-size: 100% 100%;
-    /* Recent browsers */
-    background: -webkit-gradient(
-        linear,
-        left top, left bottom,
-        from(white),
-        to(lightgrey)
-        );
-    background: -webkit-linear-gradient(
-        top,
-        white,
-        lightgrey
-        );
-    background: -moz-linear-gradient(
-        top,
-        white,
-        lightgrey
-        );
-    background: -o-linear-gradient(
-        top,
-        white,
-        lightgrey
-        );
-    background: linear-gradient(
-        top,
-        white,
-        lightgrey
-        );
-    /*background: #ffffff;  Old browsers */
-    /* IE9 SVG, needs conditional override of 'filter' to 'none' */
-    /*        background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2ZmZmZmZiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjQ3JSIgc3RvcC1jb2xvcj0iI2Y2ZjZmNiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNlZGVkZWQiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
-            background: -moz-linear-gradient(top,  #ffffff 0%, #f6f6f6 47%, #ededed 100%);  FF3.6+ 
-            background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(47%,#f6f6f6), color-stop(100%,#ededed));  Chrome,Safari4+ 
-            background: -webkit-linear-gradient(top,  #ffffff 0%,#f6f6f6 47%,#ededed 100%);  Chrome10+,Safari5.1+ 
-            background: -o-linear-gradient(top,  #ffffff 0%,#f6f6f6 47%,#ededed 100%);  Opera 11.10+ 
-            background: -ms-linear-gradient(top,  #ffffff 0%,#f6f6f6 47%,#ededed 100%);  IE10+ 
-            background: linear-gradient(to bottom,  #ffffff 0%,#f6f6f6 47%,#ededed 100%);  W3C 
-            filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ededed',GradientType=0 );  IE6-8 */
-    /*padding: 13px;*/
-    /*margin: 20px;*/
-    /*box-shadow: 0 0 2px #000, 0 0 20px 2px #fff inset;*/
-    /*-moz-box-shadow: 0 0 2px #000, 0 0 20px 2px #fff inset;*/
-    /*-webkit-box-shadow: 0 0 2px #000, 0 0 20px 2px #fff inset;*/
-    /*border-radius: 3px;*/
-    /*border: 2px solid transparent;*/
 }
 .WCHhider{
     overflow: hidden;
@@ -201,47 +100,77 @@ form#form_loginform{
 div.loginbuttonwrap{
 
 }
-div.loginbuttonwrap button span{
-    background: none;
-    background-image: none !important;
+div.loginbuttonwrap button>span{
+    /*background: #eaeaea;*/
+    height: 85px;
+    width: 75%;
+    margin: auto;
+    border-radius: 100%;
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #fff;
+    background: url(icons/login_icon.png) no-repeat center #FFF;
     color: #000;
     text-shadow: none;
+    -webkit-box-shadow: 0px 0px 5px 0px rgba(255,255,255,0.75);
+    -moz-box-shadow: 0px 0px 5px 0px rgba(255,255,255,0.75);
+    box-shadow: 0px 0px 5px 0px rgba(255,255,255,0.75);
+}
+div.loginbuttonwrap button>span>span{
+    background: green;
+    display: none;
 }
 div.loginbuttonwrap button{
-    background-color: #fff;
+    background-color: #f4f4f4;
     /*padding-top: 20px;*/
     /*border-radius: 50px;*/
     /*border: 1px solid #000;*/
     -webkit-border-radius: 50px;
     -moz-border-radius: 50px;
     width: 100px;
+    height: 100px;
+    border-radius: 100%;
     /*        border-top: 1px solid #fff;
             border-left: 1px solid #fff;
             border-right: 1px solid transparent;*/
-    border-bottom: 1px solid #ccc;
+    border-bottom: 2px solid #ccc;
+    border-top: 2px solid #FFF;
     color: #000 !important;
     margin-top: 15px;
 }
 div#login #input_username, #input_password{
-    width: 200px;
+    width: 250px;
+    border-bottom: 1px solid #ccc;
+    border-right: none;
+    border-left: none;
+    border-top: none;
+    height: 50px;
+    font-size: 2em;
+    text-align: center;
+    background: none;
+}
+div.openidlogin{
+    text-align: center;
+}
+div.openidlogin>fieldset{
+    width: 100%;
+}
+div.oid_explain{
+    text-align: left;
 }
 #input_password{
     background: url('icons/password.png') no-repeat left;
 }
 div.loginbuttonwrap button:hover{
-    border-bottom: 1px solid #666;
+/*    box-shadow: 0 0 5px tomato;
+    border: 2px solid transparent;*/
 }
 div.loginbuttonwrap button:active{
-    border: none;
+    -webkit-box-shadow: inset 0px 0px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: inset 0px 0px 5px 0px rgba(0,0,0,0.75);
+    box-shadow: inset 0px 0px 5px 0px rgba(0,0,0,0.75);
 }
 input[type='text'], input[type='password']{
     background: #ffffff;
-}
-input[type='text']:focus, input[type='password']:focus{
-    box-shadow: 0 0 5px tomato;
-    -moz-box-shadow: 0 0 5px tomato;
-    -webkit-box-shadow: 0 0 5ppx tomato;
-    border: 1px solid transparent;
 }
 .image-caption {
     color: #333C63;
@@ -305,12 +234,8 @@ input[type='text']:focus, input[type='password']:focus{
     /*border-bottom: 4px solid #C7C7C7;*/
 }
 .Canvas_Content_Head_Header {
-    background: url("images/banner-logo3.png")  no-repeat center;
-    /*        background-repeat: no-repeat;
-            position: relative;*/
-    left: 10px;
-    height: 120px;
-    width: 988px;
+    display: none;
+    opacity: 0;
 }
 h1#sitename {
     float: right;
@@ -380,19 +305,28 @@ div.Canvas_Content_Head_Before div#search label {
 
 /* The navigation bar */
 #navigation {
-    background: url(images/t-section.png) no-repeat center bottom;
-    width: 990px;
-    height: 80px;
-    padding-left: 10px;
+    position: fixed;
+    display: block;
+    text-align: left;
     margin: 0px;
     margin-top: 0px;
+    left: 0;
+    right: 0;
+    background: #FFF;
+    border-bottom: 5px solid tomato;
+    /*z-index: 100;*/
+    box-shadow: 0 0 5px #000;
     /*border-bottom: 2px solid #C7C7C7;*/
 }
+ul#navigation-list{
+    display: block;
+}
+ul#navigation-list>li{
+    list-style: none;
+    display: inline-block;
+}
 #breadcrumbs{
-    padding: 10px;
-    /*background: red;*/
-    margin-bottom: 10px;
-    /*display: none;*/
+    clear: none;
 }
 .Canvas_Content_Head_Breadcrumbs>a{        
 }
@@ -408,8 +342,8 @@ div.Canvas_Content_Head_Before div#search label {
     margin: 0px;
     padding: 0px;
 }
-#container{
-
+#Canvas_Content_Body{
+    margin-top: 70px;
 }
 
 .wrapperDarkBkg{
@@ -468,12 +402,12 @@ div.Canvas_Content_Head_Before div#search label {
 
 /** Menu settings **/
 #menu {
-    margin: 110px;
-    margin-top: 0;
+    width:700px;
+    margin:0px auto;
+    float: none;
     -webkit-box-shadow: -2px 90px 300px -43px rgba(0,0,0,1);
     -moz-box-shadow: -2px 90px 300px -43px rgba(0,0,0,1);
     box-shadow: -2px 90px 300px -43px rgba(0,0,0,1);
-    margin-bottom: 0;
     /*padding-bottom: 15px;*/
 }
 ul#menuList{
@@ -904,10 +838,8 @@ ul#menuList  li  li.last a{
 
 /* All the content blocks */
 .featurebox, .contentfeaturebox {
-    border: none;
     -webkit-border-radius: 3px;
     -moz-border-radius: 3px;
-    margin-bottom: 0px !important;
     border-radius: 3px;
 }
 .contentfeaturebox{
@@ -920,19 +852,21 @@ input[type='checkbox'], .transparentbgnb{
 }
 .featureboxheader, .contentfeaturebox h3, .newForumTopic  {
     line-height: 2.5 !important;
-    border-bottom: 5px solid tomato;
     background: #f0f0f0;
-    -webkit-box-shadow: -1px 1px 1px -1px rgba(0,0,0,0.75);
-    -moz-box-shadow: -1px 1px 1px -1px rgba(0,0,0,0.75);
-    box-shadow: -1px 1px 1px -1px rgba(0,0,0,0.75);
+    /*    -webkit-box-shadow: -1px 1px 1px -1px rgba(0,0,0,0.75);
+        -moz-box-shadow: -1px 1px 1px -1px rgba(0,0,0,0.75);
+        box-shadow: -1px 1px 1px -1px rgba(0,0,0,0.75);*/
     color: #000;
     left: 0 !important;
 }
 
 div.featurebox, .faq_main {
+    background: #FCFCFC;
+    border-bottom: 1px solid #ddd;
     -moz-box-shadow: 0 25px 30px -29px #000;
     -webkit-box-shadow: 0 25px 30px -29px #000;
     box-shadow: 0 25px 30px -29px #000;
+    margin-bottom: 20px !important;
 }
 
 #Canvas_Content_Body_Region1 .featureboxheader, 
@@ -940,10 +874,10 @@ div.featurebox, .faq_main {
 #Canvas_Content_Body_Region2 .featureboxheader,
 .contentfeaturebox h3 {
     color: #000 !important;
-    border-bottom: 5px solid tomato;
-    -webkit-box-shadow: -1px 1px 1px -1px rgba(0,0,0,0.75);
-    -moz-box-shadow: -1px 1px 1px -1px rgba(0,0,0,0.75);
-    box-shadow: -1px 1px 1px -1px rgba(0,0,0,0.75);
+    border-bottom: 1px solid #ddd;
+    /*    -webkit-box-shadow: -1px 1px 1px -1px rgba(0,0,0,0.75);
+        -moz-box-shadow: -1px 1px 1px -1px rgba(0,0,0,0.75);
+        box-shadow: -1px 1px 1px -1px rgba(0,0,0,0.75);*/
 }
 
 #Canvas_Content_Body_Region1 .featureboxheader,
@@ -2160,6 +2094,20 @@ h3.popup{
 button.sexybutton{
     margin: 5px;
 }
+button.sexybutton span.user{
+    /*background: #ccc;*/
+}
+button.sexybutton>span{
+    background: #f4f4f4;
+    border-bottom: 4px solid #c0c0c0;
+    box-shadow: 0 0 2px #000;
+}
+button.sexybutton>span:active{
+    border-bottom: none;
+}
+button.sexybutton span{
+    background: #f4f4f4;
+}
 a.forumDownload, a.forumViewAttachment{
     padding: 7px 8px 5px 35px;
     color: #FFF;
@@ -2273,7 +2221,7 @@ span.indicator{
 }
 table.forumtopics, .forum_main table, #forumadmin table{
     border-collapse: separate;
-    border-spacing: 0 10px;
+    border-spacing: 0 20px;
 }
 table.forumtopics tr td, .forum_main table tr td, #forumadmin table tr td{
     padding: 15px;
@@ -2330,6 +2278,7 @@ table.forumtopics tr, table#flatview tr, .forum_main table tbody tr, #forumadmin
     -moz-box-shadow: 0 25px 30px -29px #000;
     -webkit-box-shadow: 0 25px 30px -29px #000;
     box-shadow: 0 25px 30px -29px #000;
+    /*border: 1px solid #ddd !important;*/
     /*        -webkit-box-shadow: 0 1px 2px rgba(0,0,0,0.75);
             -moz-box-shadow: 0 1px 2px rgba(0,0,0,0.75);
             box-shadow: 0 1px 2px rgba(0,0,0,0.75);

@@ -172,25 +172,19 @@ if (!isset($pageSuppressBanner)) {
     if (!isset($suppressFooter)) {
         echo PAGETOP;
     }
-    echo "\n\n<div class='Canvas_Content_Head_Before'>" 
-      . getIcons($skinName, $canvas);
-    if (!isset($pageSuppressSearch)) {
-        echo $objSkin->siteSearchBox();
-    }
-    echo "</div>\n\n"
     ?>
-    <div class="Canvas_Content_Head">
+    <!--<div class="Canvas_Content_Head">-->
         <div class="Canvas_Content_Head_Header" id="header">
-            <?php echo '<a class="sitename_link" href="'.$objConfig->getSiteRoot().'">'; ?>
+            <?php // echo '<a class="sitename_link" href="'.$objConfig->getSiteRoot().'">'; ?>
             <h1 id="sitename">
-                <?php echo $objConfig->getsiteName(); ?>
+                <?php // echo $objConfig->getsiteName(); ?>
             </h1>
-            <?php echo '</a>'; ?>
-        </div>
-        <div class='floathead' id='floathead_content3'><?php echo $banner3; ?></div>
-        <div class='floathead' id='floathead_content2'><?php echo $banner2; ?></div>
-        <div class='floathead' id='floathead_content1'><?php echo $banner1; ?></div>
-        <div class='floathead' id='floathead_content0'><?php echo $banner0; ?></div>
+            <?php // echo '</a>'; ?>
+        </div>    
+        <div class='floathead' id='floathead_content3'><?php // echo $banner3; ?></div>
+        <div class='floathead' id='floathead_content2'><?php // echo $banner2; ?></div>
+        <div class='floathead' id='floathead_content1'><?php // echo $banner1; ?></div>
+        <div class='floathead' id='floathead_content0'><?php // echo $banner0; ?></div>
         <?php
 }
 
@@ -203,7 +197,14 @@ if (!isset($pageSuppressBanner)) {
                 echo "\n\n<div id='prelogin_nav'>$plMenu</div>\n\n";
             }
         } else {
-            echo "\n\n<div id='navigation'>\n\n" . $toolbar . "\n</div>\n\n";
+            echo "\n\n<div class='navigation-wrapper' ><div id='navigation'>\n\n" . "
+                <ul id='navigation-list' >
+                <li><a href='#' >Link</a>
+                <li><a href='#' >Link</a>
+                <li><a href='#' >Link</a>
+                <li><a href='#' >Link</a>
+                </ul>
+                ".$toolbar. "\n</div></div>\n\n";
         }
     }
     echo '<div class="Canvas_Content_Head_After"></div>';
