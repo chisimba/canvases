@@ -84,7 +84,7 @@ $publicNav = '
         <li><a href="index.php?module=slate&page=abouthair">About hair</a></li>
         <li><a href="index.php?module=slate&page=products">Products</a></li>
         <li><a href="index.php?module=slate&page=wedding">Wedding packages</a></li>
-        <li><a href="index.php?module=slate&page=photos">Photo gallery</a></li>
+        <li><a href="index.php?module=gallery">Photo gallery</a></li>
         <li><a href="index.php?module=slate&page=maintain">Hair maintenance</a></li>
         <li><a href="index.php?module=faq">FAQ</a></li>
         <li><a href="index.php?module=slate&page=contact">Contact</a></li>
