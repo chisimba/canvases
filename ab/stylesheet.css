@@ -19,13 +19,7 @@ html {
     min-height: 100%;
 }
 body {
-    background-image: #7f5783;
-    background-image: -webkit-linear-gradient(bottom, #ad7fa8 0%, #75507b 50%, #5c3566 100%);
-    background-image: -moz-linear-gradient(bottom, #ad7fa8 0%, #75507b 50%, #5c3566 100%);
-    background-image: -o-linear-gradient(bottom, #ad7fa8 0%, #75507b 50%, #5c3566 100%);
-    background-image: -ms-linear-gradient(bottom, #ad7fa8 0%, #75507b 50%, #5c3566 100%);
-    background-image: linear-gradient(bottom, #ad7fa8 0%, #75507b 50%, #5c3566 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#5c3566", endColorstr="#ad7fa8",GradientType=0);
+    background-image: url('images/gray.gif');
     background-attachment: fixed;
     color: #111;
     margin: 0px; 
@@ -431,8 +425,14 @@ ul#menuList  li  li.last a {
     height: 0px;
 }
 .Canvas_Content_Footer {
-    background: whitesmoke;
-    background-image: url('images/gray.gif');
+    background: #7f5783;
+    background-image: #7f5783;
+    background-image: -webkit-linear-gradient(bottom, #ad7fa8 0%, #75507b 50%, #5c3566 100%);
+    background-image: -moz-linear-gradient(bottom, #ad7fa8 0%, #75507b 50%, #5c3566 100%);
+    background-image: -o-linear-gradient(bottom, #ad7fa8 0%, #75507b 50%, #5c3566 100%);
+    background-image: -ms-linear-gradient(bottom, #ad7fa8 0%, #75507b 50%, #5c3566 100%);
+    background-image: linear-gradient(bottom, #ad7fa8 0%, #75507b 50%, #5c3566 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#5c3566", endColorstr="#ad7fa8",GradientType=0);
     width: 960px;
     height: auto;
     border-top: 1px solid #C7C7C7;
@@ -463,7 +463,7 @@ ul#menuList  li  li.last a {
     height: 0px;
 }
 #footer a:link, #footer a:visited {
-    color: skyblue;
+    color: yellow;
     text-decoration: none;
 }
 #footer a:hover, #footer a.visited:hover {
@@ -474,7 +474,8 @@ ul#menuList  li  li.last a {
     font-size: 140%;
     padding-left: 140px;
     padding-right: 140px;
-    color: #babdb6;
+    color: #ffffff;
+    margin-bottom: 8px;
 }
 .Canvas_Content_Footer_After {
     height: 0px;
