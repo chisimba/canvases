@@ -117,7 +117,6 @@ if (!isset($og_content)) {
         echo '
 
         <link rel="stylesheet" type="text/css" href="skins/_common2/css/basecss.php">
-        <link href="http://fonts.googleapis.com/css?family=Libre+Baskerville" rel="stylesheet" type="text/css">
         <link rel="icon" type="image/png" href="skins/' . $skinName . '/favicon.png" />
             
         ';
@@ -140,7 +139,6 @@ if (!isset($og_content)) {
 
        <link rel="stylesheet" type="text/css" href="skins/' . $skinName . '/stylesheet.css">
        <link rel="stylesheet" type="text/css" href="' . $canvas . '/stylesheet.css">
-
         ';
        //<script type="text/javascript" src="skins/' . $skinName . '/js/jquery.equalHeightColumns.js" />
     }
