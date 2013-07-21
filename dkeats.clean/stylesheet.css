@@ -1348,6 +1348,13 @@ div.simpleblog_post_tags a.tag_active:visited:hover {
     /* Fix images overflowing main content area */
     max-width: 100%;
 }
+
+/* Login box tweaks */
+#input_username,#input_password {
+    max-width: 130px !important;
+    margin-left: 8px;
+}
+
 /* ---- image tweaks ---- */
 .img-rounded {
   -webkit-border-radius: 6px;
