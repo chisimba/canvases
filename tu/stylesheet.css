@@ -59,6 +59,18 @@ ul ul, ul ul ul, ul ul ul ul
     padding:0 10px;
     z-index: -3;
 }
+/**
+*===Navigation list===
+*/
+ul#navigation-list{
+        display: block;
+        width: 700px;
+        margin: 0px auto;
+        text-align: center;
+}
+ul#navigation-list>li{
+        margin: 15px;
+}
 .blog_content iframe {
     max-width: 99%;
     overflow: scroll;
@@ -71,8 +83,6 @@ ul ul, ul ul ul, ul ul ul ul
     -webkit-border-radius: 2px;
     -moz-border-radius: 2px;
     /*color: #555;*/
-}
-.sexybutton:hover{
 }
 .sexybutton span{
     border-radius: 0;
@@ -2154,13 +2164,13 @@ div.replies{
     margin-right: 100px;
     margin-top: -10px;
 }
+.newForumTopic{
+    background: url('images/bg.jpg') repeat-y left #f0f0f0;
+}
 .newForumTopic.inner{
     color: #fff;
     padding: 5px;
     border-bottom: 1px solid #fff;
-}
-.newForumTopic{
-    background: url('images/bg.jpg') repeat-y left #f0f0f0;
 }
 .replyContainer.inner{
     -webkit-box-shadow: 0 0 3px rgba(0,0,0,0.75);
@@ -2198,13 +2208,12 @@ textarea{
     margin-left: 95px;
 }
 .buttonLink{
-    color: #555;
+    color: #FFF !important;
     font-weight: 900;
-    -webkit-box-shadow: 0 0 5px rgba(0,0,0,0.75);
-    -moz-box-shadow: 0 0 5px rgba(0,0,0,0.75);
-    box-shadow: 0 0 5px rgba(0,0,0,0.75);
     padding: 5px;
-    background: #ffffff;
+    background: tomato;
+    border-bottom: 3px solid #c0c0c0;
+    border-radius: 3px;
 }
 /*.forum_main table tbody*/
 div.forum_main table{
@@ -2241,7 +2250,6 @@ table.forumtopics tr td, .forum_main table tr td, #forumadmin table tr td{
 .postReplyLink{
     margin: 5px;
     color: #000;
-    border: 1px solid #fff;
 }
 /*floating div for delete confirmation*/
 div.deleteconfirm{
@@ -2281,7 +2289,7 @@ a.ratings{
 table.forumtopics tbody tr td img.full_user_image{
     padding: 10px;
 }
-table.forumtopics tr, table#flatview tr, .forum_main table tbody tr, #forumadmin tr{
+table.forumtopics tbody tr, table#flatview tbody tr, .forum_main table tbody tr, #forumadmin tbody tr{
     border-radius: 3px;
     display: block;
     -moz-border-radius: 3px;

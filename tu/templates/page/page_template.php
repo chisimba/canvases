@@ -197,14 +197,56 @@ if (!isset($pageSuppressBanner)) {
                 echo "\n\n<div id='prelogin_nav'>$plMenu</div>\n\n";
             }
         } else {
+                $this->loadClass('geticon','htmlelements');
+                $this->loadClass('link','htmlelements');
+                $this->loadClass('language','language');
+                $objIcon = $this->getObject('geticon','htmlelements');
+                /**
+                 * ==home link==
+                 */
+                $homeLink = new link($this->uri(array('module','postlogin')));
+                $objIcon->setIcon('home');
+                $homeLink->link = $objIcon->show().'<br/> Home';
+                $homeLink->cssClass = "sexybutton";
+                /**
+                 * ==file manager link
+                 */
+                $fileManLink = new link('index.php?module=filemanager');
+                $objIcon->setIcon('filemanager');
+                $fileManLink->link = $objIcon->show().'<br/>File manager';
+                $fileManLink->cssClass = "sexybutton";
+                /**
+                 * ==profile link
+                 */
+                $profileLink = new link();
+                $objIcon->setIcon('user_settings');
+                $profileLink->link = $objIcon->show().'<br/>My Profile';
+                $profileLink->cssClass = 'sexybutton';
+                /**
+                 * ==forum link
+                 */
+                $forumLink = new link('index.php?module=forum');
+                $objIcon->setIcon('forum');
+                $forumLink->link = $objIcon->show().'<br/>Forum';
+                $forumLink->cssClass = "sexybutton";
+                /**
+                 * ==lgout
+                 */
+                $logoutLink = new link('index.php?module=security&action=logoff');
+                $objIcon->setIcon('logout');
+                $logoutLink->link = $objIcon->show().'<br/>Logout';
+                $logoutLink->cssClass = 'sexybutton';
             echo "\n\n<div class='navigation-wrapper' ><div id='navigation'>\n\n" . "
+                <div class='navigation-list-wrapper' >
                 <ul id='navigation-list' >
-                <li><a href='#' >Link</a>
-                <li><a href='#' >Link</a>
-                <li><a href='#' >Link</a>
-                <li><a href='#' >Link</a>
+                <li><a href='index.php?module=postlogin' >{$homeLink->show()}</a>
+                <li><a href='index.php?module=filemanager' >{$fileManLink->show()}</a>
+                <li><a href='index.php?module=userdetails' >{$profileLink->show()}</a>
+                <li><a href='index.php?module=forum' >{$forumLink->show()}</a>
+                <li><a href='index.php?module=security&action=logoff' >{$logoutLink->show()}</a>
                 </ul>
-                ".$toolbar. "\n</div></div>\n\n";
+                </div>
+                \n</div></div>\n\n";
         }
     }
     echo '<div class="Canvas_Content_Head_After"></div>';
