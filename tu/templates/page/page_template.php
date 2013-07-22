@@ -204,7 +204,7 @@ if (!isset($pageSuppressBanner)) {
                 /**
                  * ==home link==
                  */
-                $homeLink = new link($this->uri(array('module','postlogin')));
+                $homeLink = new link('index.php?module=postlogin');
                 $objIcon->setIcon('home');
                 $homeLink->link = $objIcon->show().'<br/> Home';
                 $homeLink->cssClass = "sexybutton";
@@ -218,7 +218,7 @@ if (!isset($pageSuppressBanner)) {
                 /**
                  * ==profile link
                  */
-                $profileLink = new link();
+                $profileLink = new link('index.php?module=userdetails');
                 $objIcon->setIcon('user_settings');
                 $profileLink->link = $objIcon->show().'<br/>My Profile';
                 $profileLink->cssClass = 'sexybutton';
@@ -289,7 +289,7 @@ if (!isset($suppressFooter)) {
     }
 
     // Do the rendering here.
-    echo "<div class='Canvas_Content_Footer_Before'></div>"
+    echo "<div class='Canvas_Content_Footer_Before'></div></div></div>"
       . "<div class='Canvas_Content_Footer'><div id='footer'>"
       . $footerStr;
     // Put in the link to the top of the page
