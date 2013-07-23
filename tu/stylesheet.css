@@ -894,6 +894,8 @@ div.featurebox, .faq_main {
         font-size: 150%;
         color: #fff;
         box-shadow: none;
+        white-space: nowrap;
+        text-align: left;
 }
 
 
