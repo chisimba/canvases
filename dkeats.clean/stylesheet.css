@@ -993,27 +993,13 @@ background-image: linear-gradient(bottom, #eeeeec 0%, #d3d7cf 50%, #babdb6 100%)
     border-top: 1px dashed #b65900;
     margin-bottom: 10px;
 }
-.simpleblog_post_title {
-    width: 100%;
-    float: left;
-    background:transparent;
-    font-weight: bold;
-    font-size: 140%;
-    padding-bottom: 6px;
-    border-bottom: 1px dashed #b65900;
-    height: auto;
-    clear: both;
-    margin-bottom: 10px;
-}
+
 .simpleblog_edel {
     position: relative;
     float: right;
 }
-.simpleblog_post_title .titletxt {
-    max-width: 500px;
-    float: left;
-    line-height: 120%;
-}
+
+
 .simpleblog_post_wrapper {
     background-image: #e3f4ff;
     background-image: -webkit-linear-gradient(top, #daefff 0%, #ecf8ff 72%);
@@ -1490,3 +1476,49 @@ div.simpleblog_post_tags a.tag_active:visited:hover {
     float: left;
 }
 /* ----------------- END TUAPI MODULE -------------------*/
+
+
+
+
+
+
+.sbpost_title_wrapper {
+    width: 100% !important;
+    display: inline-block;
+    padding: 0px;
+    background: white;
+    margin: 0px;
+}
+
+.simpleblog_post_title {
+    max-width: 100%;
+    float: left;
+    background:transparent;
+    font-weight: bold;
+    font-size: 140%;
+    padding-bottom: 6px;
+    padding-left: 8px;    
+    height: auto;
+    margin-bottom: 0px;
+}
+
+.simpleblog_post_title .titletxt {
+    width: 340px;
+    max-width: 100% !important;
+    float: left;
+    line-height: 120%;
+}
+.date-wrapper, .date-wrapper-inner{
+    float: left;
+    text-align: center;
+    height: 90px;
+    width: 90px;
+    background: #2473A2;
+    color: white;
+}
+.date-day, .date-year {
+    font-size: 100%;
+}
+.date-month {
+    font-size: 130%;
+}
