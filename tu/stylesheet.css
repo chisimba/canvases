@@ -69,9 +69,8 @@ ul#navigation-list{
     text-align: center;
 }
 ul#navigation-list>li{
-    margin: 10px 20px;
+    margin: -10px 25px;
     padding: 10px;
-    /*background: red;*/
     border-radius: 100%;
 }
 a.sexybutton{
@@ -1693,6 +1692,26 @@ div.simpleblog_post_tags a.tag_active:visited:hover {
     float: left;
     width: 360px;
     margin-left: 8px;
+}
+.sbpost_title_wrapper {
+
+}
+
+.simpleblog_post_title {
+
+}
+
+.simpleblog_post_title .titletxt {
+
+}
+.date-wrapper, .date-wrapper-inner{
+
+}
+.date-day, .date-year {
+
+}
+.date-month {
+
 }
 /* -------------- END SIMPLE BLOG MODULE ---------------*/
 
