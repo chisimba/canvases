@@ -336,7 +336,7 @@ div.Canvas_Content_Head_Before div#search label {
 }
 .navigation-list-wrapper{
         margin-left: 5px;
-        background: url(images/banner-logo2.png) no-repeat left #FFF;
+        background:  #FFF;
 }
 ul#navigation-list{
         display: block;
@@ -2643,7 +2643,7 @@ table#tblLeaves tbody tr td{
         padding-left: 10px;
 }
 span#confirm, span.confirm{
-        background: rgba(51,60,99,.8);
+        background: rgba(51,60,99,.9);
         color: #e6e6e6;
         opacity: .8;
         padding: 5px;
@@ -2651,6 +2651,25 @@ span#confirm, span.confirm{
         border: 1px solid #828282;
         box-shadow: 0 0 2px #000;
         margin: 0 auto;
+}
+a.floatingClose{
+        position: absolute;
+        padding: 10px;
+/*        width: 20px;
+        height: 18px;*/
+        /*height: 15px;*/
+        text-align: center;
+        border-radius: 50%;
+        border: 1px solid #828282;
+        box-shadow: 0 0 2px #000;
+        background:url(../_common/icons/close.png)no-repeat center rgba(51,60,99,.9);
+        color: #FFF;
+        top: 0;
+        margin-left: -5px;
+        margin-top: -10px;
+}
+a.floatingClose:active span#confirm, span.confirm{
+        display: none;
 }
 /* ---------------- END Internals Module ----------------*/
 
