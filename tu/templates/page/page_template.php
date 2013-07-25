@@ -108,6 +108,13 @@ if (!isset($og_content)) {
         <meta property="og:title" content="<?php echo $og_title; ?>" />
         <meta property="og:image" content="<?php echo $og_image; ?>" />
         <meta property="og:description" content="<?php echo $og_content; ?>" />
+        <!--[if gte IE 9]>
+  <style type="text/css">
+    .gradient {
+       filter: none;
+    }
+  </style>
+<![endif]-->
         <title>
                 <?php echo $pageTitle; ?>
         </title>
@@ -181,10 +188,10 @@ if (!isset($pageSuppressContainer)) {
                                                 </h1>
                                                 <?php // echo '</a>'; ?>
                                         </div>    
-                                        <div class='floathead' id='floathead_content3'><?php // echo $banner3;  ?></div>
-                                        <div class='floathead' id='floathead_content2'><?php // echo $banner2;  ?></div>
-                                        <div class='floathead' id='floathead_content1'><?php // echo $banner1;  ?></div>
-                                        <div class='floathead' id='floathead_content0'><?php // echo $banner0;  ?></div>
+                                        <div class='floathead' id='floathead_content3'><?php // echo $banner3;   ?></div>
+                                        <div class='floathead' id='floathead_content2'><?php // echo $banner2;   ?></div>
+                                        <div class='floathead' id='floathead_content1'><?php // echo $banner1;   ?></div>
+                                        <div class='floathead' id='floathead_content0'><?php // echo $banner0;   ?></div>
                                         <?php
                                 }
 

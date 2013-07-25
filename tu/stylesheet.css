@@ -30,6 +30,7 @@ body {
         font-family: "Helvetica",  Arial, sans-serif;
         background-attachment: fixed;
         color: #323232;
+        background: #f2f2f2;
 }
 
 
@@ -843,38 +844,45 @@ ul#menuList  li  li.last a{
 
 /* All the content blocks */
 .featurebox, .contentfeaturebox {
-        -webkit-border-radius: 3px;
-        -moz-border-radius: 3px;
-        border-radius: 3px;
+        background: #FFF;
+        /*        -webkit-border-radius: 3px;
+                -moz-border-radius: 3px;
+                border-radius: 3px;*/
 }
 .contentfeaturebox{
-        -moz-box-shadow: 0 25px 30px -29px #000;
-        -webkit-box-shadow: 0 25px 30px -29px #000;
-        box-shadow: 0 25px 30px -29px #000;
+        background: #FFF;
+        /*        -moz-box-shadow: 0 25px 30px -29px #000;
+                -webkit-box-shadow: 0 25px 30px -29px #000;
+                box-shadow: 0 25px 30px -29px #000;*/
 }
 input[type='checkbox'], .transparentbgnb{
         padding: 100px;
 }
 .featureboxheader, .contentfeaturebox h3, .newForumTopic  {
         /*line-height: 2.5 !important;*/
-        color: #000;
         left: 0 !important;
+        color: #000;
+        background-color: #FFF;
 }
 
 div.featurebox, .faq_main {
-        background: #FCFCFC;
-        border-bottom: 1px solid #ddd;
-        -moz-box-shadow: 0 25px 30px -29px #000;
-        -webkit-box-shadow: 0 25px 30px -29px #000;
-        box-shadow: 0 25px 30px -29px #000;
+        background-color: #FFF;
+        /*border-bottom: 1px solid #ddd;*/
+        /*        -moz-box-shadow: 0 25px 30px -29px #000;
+                -webkit-box-shadow: 0 25px 30px -29px #000;
+                box-shadow: 0 25px 30px -29px #000;*/
         margin-bottom: 20px !important;
+        box-shadow: 0 1px 3px -1px #6d6d6d;
+        -webkit-box-shadow: 0 1px 3px -1px #6d6d6d;
+        -moz-box-shadow: 0 1px 3px -1px #6d6d6d;
+        border-radius: 5px;
 }
 
 #Canvas_Content_Body_Region1 .featureboxheader, 
 #Canvas_Content_Body_Region3 .featureboxheader, 
 #Canvas_Content_Body_Region2 .featureboxheader,
 .contentfeaturebox h3 {
-        color: #000 !important;
+        color: #000;
         border-bottom: 1px solid #ddd;
         /*    -webkit-box-shadow: -1px 1px 1px -1px rgba(0,0,0,0.75);
             -moz-box-shadow: -1px 1px 1px -1px rgba(0,0,0,0.75);
@@ -887,13 +895,31 @@ div.featurebox, .faq_main {
 #Canvas_Content_Body_Region3 .featureboxheader a,
 #Canvas_Content_Body_Region2 .featureboxheader,
 #Canvas_Content_Body_Region2 .featureboxheader a {
-        color: #fff;
+        /*color: #fff;*/
+/* IE9 SVG, needs conditional override of 'filter' to 'none' */
+background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2ZmZmZmZiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjQ3JSIgc3RvcC1jb2xvcj0iI2Y2ZjZmNiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNlZGVkZWQiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+background: -moz-linear-gradient(top,  #ffffff 0%, #f6f6f6 47%, #ededed 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(47%,#f6f6f6), color-stop(100%,#ededed)); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top,  #ffffff 0%,#f6f6f6 47%,#ededed 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top,  #ffffff 0%,#f6f6f6 47%,#ededed 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top,  #ffffff 0%,#f6f6f6 47%,#ededed 100%); /* IE10+ */
+background: linear-gradient(to bottom,  #ffffff 0%,#f6f6f6 47%,#ededed 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ededed',GradientType=0 ); /* IE6-8 */
 }
 
 #Canvas_Content_Body_Region2 h5.featureboxheader {
         font-size: 150%;
-        color: #fff;
+        color: #000;
         box-shadow: none;
+        /* IE9 SVG, needs conditional override of 'filter' to 'none' */
+        background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2ZmZmZmZiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjQ3JSIgc3RvcC1jb2xvcj0iI2Y2ZjZmNiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNlZGVkZWQiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+        background: -moz-linear-gradient(top,  #ffffff 0%, #f6f6f6 47%, #ededed 100%); /* FF3.6+ */
+        background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(47%,#f6f6f6), color-stop(100%,#ededed)); /* Chrome,Safari4+ */
+        background: -webkit-linear-gradient(top,  #ffffff 0%,#f6f6f6 47%,#ededed 100%); /* Chrome10+,Safari5.1+ */
+        background: -o-linear-gradient(top,  #ffffff 0%,#f6f6f6 47%,#ededed 100%); /* Opera 11.10+ */
+        background: -ms-linear-gradient(top,  #ffffff 0%,#f6f6f6 47%,#ededed 100%); /* IE10+ */
+        background: linear-gradient(to bottom,  #ffffff 0%,#f6f6f6 47%,#ededed 100%); /* W3C */
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ededed',GradientType=0 ); /* IE6-8 */
         white-space: nowrap;
         text-align: left;
 }
@@ -2102,14 +2128,28 @@ div.simpleblog_post_tags a.tag_active:visited:hover {
 .forum_main thead{
         color: #555;
 }
+label.checked{
+        background-color: #FFF;
+        border: none;
+        color: green;
+}
+label.checked span{
+        color: #000;
+}
 thead{
         background: #f0f0f0;
-        -webkit-box-shadow: 0px 13px 5px -10px rgba(0,0,0,0.75);
-        -moz-box-shadow: 0px 13px 5px -10px rgba(0,0,0,0.75);
-        box-shadow: 0px 13px 5px -10px rgba(0,0,0,0.75);
+        box-shadow: 0 1px 3px -1px #6d6d6d;
+        background: #ffffff; /* Old browsers */
+        background: -moz-linear-gradient(top,  #ffffff 0%, #f6f6f6 47%, #ededed 100%); /* FF3.6+ */
+        background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(47%,#f6f6f6), color-stop(100%,#ededed)); /* Chrome,Safari4+ */
+        background: -webkit-linear-gradient(top,  #ffffff 0%,#f6f6f6 47%,#ededed 100%); /* Chrome10+,Safari5.1+ */
+        background: -o-linear-gradient(top,  #ffffff 0%,#f6f6f6 47%,#ededed 100%); /* Opera 11.10+ */
+        background: -ms-linear-gradient(top,  #ffffff 0%,#f6f6f6 47%,#ededed 100%); /* IE10+ */
+        background: linear-gradient(to bottom,  #ffffff 0%,#f6f6f6 47%,#ededed 100%); /* W3C */
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ededed',GradientType=0 ); /* IE6-9 */
 }
 .forum_main thead tr th{
-        color: #555 !important;
+        color: #555;
 }
 .forum_main tbody tr td{
         padding: 10px;
@@ -2186,7 +2226,17 @@ div.replies{
         margin-top: -10px;
 }
 .newForumTopic{
-        background: url('images/bg.jpg') repeat-y left #f0f0f0;
+        background: #fcfcfc; /* Old browsers */
+        /* IE9 SVG, needs conditional override of 'filter' to 'none' */
+        background:url('images/bg.jpg') repeat-y left, url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2ZmZmZmZiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjQ3JSIgc3RvcC1jb2xvcj0iI2Y2ZjZmNiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNlZGVkZWQiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+        background: url('images/bg.jpg') repeat-y left, -moz-linear-gradient(top,  #ffffff 0%, #f6f6f6 47%, #ededed 100%); /* FF3.6+ */
+        background:url('images/bg.jpg') repeat-y left,  -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(47%,#f6f6f6), color-stop(100%,#ededed)); /* Chrome,Safari4+ */
+        background:url('images/bg.jpg') repeat-y left, -webkit-linear-gradient(top,  #ffffff 0%,#f6f6f6 47%,#ededed 100%); /* Chrome10+,Safari5.1+ */
+        backgrounde:url('images/bg.jpg') repeat-y left, -o-linear-gradient(top,  #ffffff 0%,#f6f6f6 47%,#ededed 100%); /* Opera 11.10+ */
+        background:url('images/bg.jpg') repeat-y left, -ms-linear-gradient(top,  #ffffff 0%,#f6f6f6 47%,#ededed 100%); /* IE10+ */
+        background:url('images/bg.jpg') repeat-y left, linear-gradient(to bottom,  #ffffff 0%,#f6f6f6 47%,#ededed 100%); /* W3C */
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ededed',GradientType=0 ); /* IE6-8 */
+        /*background: url('images/bg.jpg') repeat-y left #f0f0f0;*/
         border-bottom: 1px solid #ccc;
 }
 .newForumTopic.inner{
@@ -2275,28 +2325,39 @@ table.forumtopics tr td, .forum_main table tr td, #forumadmin table tr td{
 }
 /*floating div for delete confirmation*/
 div.deleteconfirm{
-        background: url(icons/deleteconfirm.png) no-repeat center;
         position: absolute;
-        right: 0;
-        width: 210px;
-        margin-top: -180px;
-        margin-right: -20px;
-        height: 185px;  
+        background: rgba(51,60,99,.9);
+        right: 10px;
+        width: 210px;  
         border-radius: 3px;
+        margin-top: -135px;
+        box-shadow: 0 0 2px #000;
+}
+div.deleteconfirm::after{
+        content: " ";
+        display: block;
+        position: absolute;
+        width: 0px;
+        height: 0px;
+        border: 12px solid transparent;
+        border-top-color: rgba(51,60,99,.9);
+        right:14px;
+        margin-top: -0.5px;
+}
+div.deleteconfirm::before{
 }
 div.deleteconfirm p{
-        padding: 15px;
+        padding: 5px;
         padding-top: 0;
         color: #fff;
         text-align: center;
-        font-size: 1.2em;
         font-weight: bolder;
 }
 /*Post delete confirm and decine*/
 a.postDeleteConfirm, a.postDeleteCancel{
         color: #555;
         background: #fff;
-        padding: 10px;
+        padding: 5px;
         -webkit-box-shadow: 0 0 3px rgba(0,0,0,0.75);
         -moz-box-shadow: 0 0 3px rgba(0,0,0,0.75);
         box-shadow: 0 0 3px rgba(0,0,0,0.75);
@@ -2316,9 +2377,10 @@ table.forumtopics tbody tr, table#flatview tbody tr, .forum_main table tbody tr,
         display: block;
         -moz-border-radius: 3px;
         -webkit-border-radius: 3px;
-        -moz-box-shadow: 0 25px 30px -29px #000;
-        -webkit-box-shadow: 0 25px 30px -29px #000;
-        box-shadow: 0 25px 30px -29px #000;
+        margin-top: 10px;
+        box-shadow: 0 1px 3px -1px #6d6d6d;
+        -webkit-box-shadow: 0px 1px 3px -1px #6d6d6d;
+        -moz-box-shadow: 0px 1px 3px -1px #6d6d6d;
 }
 span.forumname{
         font-size: 2em;
@@ -2396,9 +2458,11 @@ div.attachmentwrapper{
         -webkit-box-shadow: 0 0 3px rgba(0,0,0,0.75);
         -moz-box-shadow: 0 0 3px rgba(0,0,0,0.75);
         box-shadow: 0 0 3px rgba(0,0,0,0.75);
-        background-color: #fff;
+        background: #FFF;
         border-radius: 3px;
-        right: 0;
+        left: 150px;
+        margin-top: -7px;
+        z-index: 1000;
 }
 span.ratings{
         left: 0;
@@ -2651,22 +2715,19 @@ span#confirm, span.confirm{
         border: 1px solid #828282;
         box-shadow: 0 0 2px #000;
         margin: 0 auto;
+        top: 100px;
 }
 a.floatingClose{
         position: absolute;
         padding: 10px;
-/*        width: 20px;
-        height: 18px;*/
-        /*height: 15px;*/
         text-align: center;
         border-radius: 50%;
         border: 1px solid #828282;
         box-shadow: 0 0 2px #000;
         background:url(../_common/icons/close.png)no-repeat center rgba(51,60,99,.9);
         color: #FFF;
-        top: 0;
-        margin-left: -5px;
-        margin-top: -10px;
+        top: -12px;
+        right: -12px;
 }
 a.floatingClose:active span#confirm, span.confirm{
         display: none;
