@@ -128,8 +128,9 @@ if (!isset($og_content)) {
             
         ';
         }
-
-
+        //breadcrumbs
+        $this->objBreadCrumbs = $this->getObject('tools','toolbar');
+        $crumbs = $this->objBreadCrumbs->navigation();
         // Render the javascript unless it is suppressed.
         if (!isset($pageSuppressJavascript)) {
                 echo $objSkin->putJavaScript($mime, $headerParams);
@@ -259,6 +260,7 @@ if (!isset($pageSuppressContainer)) {
                 <li><a href='index.php?module=forum' >{$forumLink->show()}</a>
                 <li><a href='index.php?module=security&action=logoff' >{$logoutLink->show()}</a>
                 </ul>
+                {$crumbs}
                 </div>
                 \n</div></div>\n\n";
                                                         }
