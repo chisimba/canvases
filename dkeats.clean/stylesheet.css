@@ -994,6 +994,18 @@ background-image: linear-gradient(bottom, #eeeeec 0%, #d3d7cf 50%, #babdb6 100%)
     margin-bottom: 10px;
 }
 
+.simpleblog_post_footer img {
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    opacity: 1;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    margin-right: 8px;
+}
+
 .simpleblog_edel {
     position: relative;
     float: right;
@@ -1229,6 +1241,7 @@ div.simpleblog_post_tags a.tag_active:visited:hover {
     float: right;
     margin-left: 8px;
     margin-right: 8px;
+    margin-top: 10px;
 }
 .simpleblog_post_content embed {
     /* For flickr shows and oembeds */

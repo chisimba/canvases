@@ -218,7 +218,7 @@ echo '
 function getIcons($skinName, $canvas)
 {
     $available=array(
-        'delicious' => 'http://www.delicious.com/dkeats',
+        'delicious' => 'http://www.delicious.com/derekkeats',
         'facebook' => 'http://www.facebook.com/dkeats',
         'flkr' => 'http://www.flickr.com/photos/dkeats/',
         'friendfeed' => 'http://friendfeed.com/dkeats',

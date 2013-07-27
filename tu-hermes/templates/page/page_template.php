@@ -12,6 +12,9 @@
 define("PAGETOP", '<a name="pagetop"></a>');
 define("GOTOTOP", '<a href="#pagetop">Top</a>'); // @todo change this to an icon
 
+// Testing banner suppression
+//$pageSuppressBanner = TRUE;
+
 // Get the four banner blocks
 $objModuleCatalogue = $this->getObject('modules', 'modulecatalogue');
 $isInstalled = $objModuleCatalogue->checkIfRegistered("bannerhelper");
@@ -196,18 +199,21 @@ if (!isset($pageSuppressBanner)) {
 
 if (!isset($pageSuppressBanner)) {
     echo "</div>";
-    if (!isset($pageSuppressToolbar)) {
-        $simulate = $this->getParam('simulate', NULL);
-        if (!$this->objUser->isLoggedIn() || ($simulate == 'prelogintoolbar')) {
-            if ($isInstalled) {
-                echo "\n\n<div id='prelogin_nav'>$plMenu</div>\n\n";
-            }
-        } else {
-            echo "\n\n<div id='navigation'>\n\n" . $toolbar . "\n</div>\n\n";
+}
+if (!isset($pageSuppressToolbar)) {
+    $simulate = $this->getParam('simulate', NULL);
+    if (!$this->objUser->isLoggedIn() || ($simulate == 'prelogintoolbar')) {
+        if ($isInstalled) {
+            echo "\n\n<div id='prelogin_nav'>$plMenu</div>\n\n";
         }
+    } else {
+        echo "\n\n<div id='navigation'>\n\n" . $toolbar . "\n</div>\n\n";
     }
+}
+if (!isset($pageSuppressBanner)) {
     echo '<div class="Canvas_Content_Head_After"></div>';
 }
+
 
 $license = '
 <div class="small"><br /><a rel="license" href="http://creativecommons.org/licenses/by-nd/3.0/deed.en_GB">

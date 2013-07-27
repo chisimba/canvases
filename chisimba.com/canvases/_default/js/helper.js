@@ -58,7 +58,7 @@ jQuery(window).load(function() {
  *
  */
 jQuery(function() {
-    jQuery("#toggle_left").live("click", function(){
+    jQuery(document).on("click", "#toggle_left", function(){
 
     });
     return false;
