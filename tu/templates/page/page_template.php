@@ -38,6 +38,10 @@ $setCanvas = FALSE;
 // Define the name of this skin.
 $skinName = "tu";
 
+// Cache the CSS files
+$objCssCache = $this->getObject('csscache', 'skin');
+$objCssCache->cacheCommon();
+
 // Define the valid canvases for this skin as an array.
 $validCanvases = array_map('basename', glob('skins/' . $skinName . '/canvases/*', GLOB_ONLYDIR));
 
@@ -123,7 +127,7 @@ if (!isset($og_content)) {
         if (!isset($pageSuppressSkin)) {
                 echo '
 
-        <link rel="stylesheet" type="text/css" href="skins/_common2/css/basecss.php">
+        <link rel="stylesheet" type="text/css" href="cache.css">
         <link rel="icon" type="image/png" href="skins/' . $skinName . '/favicon.png" />
             
         ';
