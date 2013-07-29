@@ -1950,7 +1950,7 @@ h3.popup{
         color: #fff;
 }
 button.sexybutton{
-        /*margin: 5px;*/
+        margin: 5px;
 }
 button.sexybutton>span{
         background: #f4f4f4;
@@ -2231,7 +2231,7 @@ table.forumtopics tbody tr, table#flatview tbody tr, .forum_main table tbody tr,
         filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ededed',GradientType=0 ); /* IE6-9 */
 }
 span.forumname{
-        /*font-size: 2em;*/
+        font-size: 1.1em;
 }
 span.numberindicator{
         /*background: gray;*/
