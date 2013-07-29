@@ -30,7 +30,7 @@ body {
         font-family: "Helvetica",  Arial, sans-serif;
         background-attachment: fixed;
         color: #323232;
-        background: #f2f2f2;
+        background: rgba(252,252,252,1);
 }
 
 
@@ -339,11 +339,10 @@ div.Canvas_Content_Head_Before div#search label {
         border-bottom: 5px solid tomato;
         z-index: 100;
         box-shadow: 0 0 5px #000;
-        background: #FFF;
+        background: rgba(252,252,252,1);
 }
 .navigation-list-wrapper{
         margin-left: 5px;
-        background:  #FFF;
 }
 ul#navigation-list{
         display: block;
@@ -356,7 +355,7 @@ ul#navigation-list>li{
         clear: none;
 }
 .Canvas_Content_Head_Breadcrumbs{
-        margin: 0 5px 5px;
+        /*margin: 0 5px 5px;*/
 }
 /* End of navigation bar */
 #Canvas_BeforeContainer {
@@ -434,11 +433,9 @@ ul#navigation-list>li{
 }
 ul#menuList  li {
         display:block;
-        padding: 10px 10px 10px 10px;
         text-align: center;
         color: #555;
         text-decoration:none;
-        width: 100px;
 }
 
 /*TEST*/
@@ -487,7 +484,7 @@ ul#menuList li ul {
         filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ededed',GradientType=0 ); /* IE6-8 */
 }
 div.navigation-icon{
-        padding: 20px 2px;
+        padding: 15px 2px;
 }
 div.navigation-icon#home{
         background: url(icons/home.png) no-repeat center;
@@ -540,6 +537,9 @@ ul#menuList  li ul li {
         padding: 0;
         border-bottom: 1.5px solid #e5e5e5;
         border-top: 1.5px solid #ffffff;
+}
+ul#menuList  li ul li img{
+        display: none;
 }
 ul#menuList li li:last-child{
         border-bottom: none;
@@ -1950,7 +1950,7 @@ h3.popup{
         color: #fff;
 }
 button.sexybutton{
-        margin: 5px;
+        /*margin: 5px;*/
 }
 button.sexybutton>span{
         background: #f4f4f4;
@@ -2183,7 +2183,7 @@ ul.inner-menu::before{
         height: 0px;
         border: 12px solid transparent;
         border-bottom-color: #FFF;
-        right: 140px;
+        right: 120px;
         margin-top: -23px;
 }
 div.deleteconfirm p{
