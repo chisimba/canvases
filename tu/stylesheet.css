@@ -36,10 +36,10 @@ body {
 
 /* ----------- BEGIN GENERAL RESETS --------------*/
 a, a:visited, a:active {
-        /*color: #0fb4e7;*/
+        color: #333c65;
 }
 a:hover, a:visited:hover {
-        color: #000000;
+        color: #f15928;
         text-decoration: none;
 }
 li {
@@ -658,10 +658,10 @@ input[type='checkbox'], .transparentbgnb{
 
 div.featurebox, .faq_main {
         background-color: #FFF;
-        margin-bottom: 20px !important;
-        box-shadow: 0 1px 3px -1px #6d6d6d;
-        -webkit-box-shadow: 0 1px 3px -1px #6d6d6d;
-        -moz-box-shadow: 0 1px 3px -1px #6d6d6d;
+        margin-bottom: 25px !important;
+        -moz-box-shadow: 0 25px 30px -29px #000;
+        -webkit-box-shadow: 0 25px 30px -29px #000;
+        box-shadow: 0 25px 30px -29px #000;
         border-radius: 5px;
 }
 
@@ -1929,6 +1929,8 @@ label.checked span{
 thead{
         background: #f0f0f0;
         box-shadow: 0 1px 3px -1px #6d6d6d;
+        -moz-box-shadow: 0 1px 3px #6d6d6d;
+        -webkit-box-shadow: 0 1px 3px #6d6d6d;
         background: #ffffff; /* Old browsers */
         background: -moz-linear-gradient(top,  #ffffff 0%, #f6f6f6 47%, #ededed 100%); /* FF3.6+ */
         background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(47%,#f6f6f6), color-stop(100%,#ededed)); /* Chrome,Safari4+ */
@@ -1963,22 +1965,50 @@ button.sexybutton span{
 }
 a.forumDownload, a.forumViewAttachment{
         padding: 7px 8px 5px 35px;
-        color: #FFF;
+        color: #000;
         text-align: right;
         -webkit-box-shadow: 0 0 1px #000;
         -moz-box-shadow: 0 0 1px #000;
         box-shadow: 0 0 1px #000 ;
-        border-bottom: 3px solid #666;
+        /*border-bottom: 3px solid #666;*/
         border-radius: 2px;
 }
+a.forumDownload:hover, a.forumViewAttachment:hover{
+        box-shadow: none;
+        -webkit-box-shadow: none;
+        -moz-box-shadow: none;
+}
 a.forumDownload:active, a.forumViewAttachment:active{
-        border: none;
+        box-shadow: inset 0 0 4px #000;
+        -moz-box-shadow: inset 0 0 4px #000;
+        -webkit-box-shadow: inset 0 0 4px #000;
 }
 a.forumDownload{
-        background: url(icons/download.png) no-repeat left, tomato;
+        background: #f0f0f0;
+        box-shadow: 0 1px 3px -1px #6d6d6d;
+        -moz-box-shadow: 0 1px 3px #6d6d6d;
+        -webkit-box-shadow: 0 1px 3px #6d6d6d;
+        background: #ffffff; /* Old browsers */
+        background: url(icons/download.png) no-repeat left, -moz-linear-gradient(top,  #ffffff 0%, #f6f6f6 47%, #ededed 100%); /* FF3.6+ */
+        background: url(icons/download.png) no-repeat left, -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(47%,#f6f6f6), color-stop(100%,#ededed)); /* Chrome,Safari4+ */
+        background: url(icons/download.png) no-repeat left, -webkit-linear-gradient(top,  #ffffff 0%,#f6f6f6 47%,#ededed 100%); /* Chrome10+,Safari5.1+ */
+        background: url(icons/download.png) no-repeat left, -o-linear-gradient(top,  #ffffff 0%,#f6f6f6 47%,#ededed 100%); /* Opera 11.10+ */
+        background: url(icons/download.png) no-repeat left, -ms-linear-gradient(top,  #ffffff 0%,#f6f6f6 47%,#ededed 100%); /* IE10+ */
+        background: url(icons/download.png) no-repeat left, linear-gradient(to bottom,  #ffffff 0%,#f6f6f6 47%,#ededed 100%); /* W3C */
+        filter: url(icons/download.png) no-repeat left, progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ededed',GradientType=0 ); /* IE6-9 */
 }
 a.forumViewAttachment{
-        background: url(icons/view.png) no-repeat left, tomato;
+        box-shadow: 0 1px 3px -1px #6d6d6d;
+        -moz-box-shadow: 0 1px 3px #6d6d6d;
+        -webkit-box-shadow: 0 1px 3px #6d6d6d;
+        background: url(icons/view.png) no-repeat left, #ffffff; /* Old browsers */
+        background: url(icons/view.png) no-repeat left, -moz-linear-gradient(top,  #ffffff 0%, #f6f6f6 47%, #ededed 100%); /* FF3.6+ */
+        background: url(icons/view.png) no-repeat left, -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(47%,#f6f6f6), color-stop(100%,#ededed)); /* Chrome,Safari4+ */
+        background: url(icons/view.png) no-repeat left, -webkit-linear-gradient(top,  #ffffff 0%,#f6f6f6 47%,#ededed 100%); /* Chrome10+,Safari5.1+ */
+        background: url(icons/view.png) no-repeat left, -o-linear-gradient(top,  #ffffff 0%,#f6f6f6 47%,#ededed 100%); /* Opera 11.10+ */
+        background: url(icons/view.png) no-repeat left, -ms-linear-gradient(top,  #ffffff 0%,#f6f6f6 47%,#ededed 100%); /* IE10+ */
+        background: url(icons/view.png) no-repeat left, linear-gradient(to bottom,  #ffffff 0%,#f6f6f6 47%,#ededed 100%); /* W3C */
+        filter: url(icons/view.png) no-repeat left, progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ededed',GradientType=0 ); /* IE6-9 */
 }
 div.file-preview{
         margin: 15px 5px 5px 5px;
@@ -2075,11 +2105,17 @@ textarea{
         margin-left: 95px;
 }
 .buttonLink{
-        color: #FFF !important;
-        font-weight: 900;
+        color: #000 !important;
         padding: 5px;
-        background: tomato;
-        border-bottom: 3px solid #c0c0c0;
+        background: #ffffff; /* Old browsers */
+        background: -moz-linear-gradient(top,  #ffffff 0%, #f6f6f6 47%, #ededed 100%); /* FF3.6+ */
+        background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(47%,#f6f6f6), color-stop(100%,#ededed)); /* Chrome,Safari4+ */
+        background: -webkit-linear-gradient(top,  #ffffff 0%,#f6f6f6 47%,#ededed 100%); /* Chrome10+,Safari5.1+ */
+        background: -o-linear-gradient(top,  #ffffff 0%,#f6f6f6 47%,#ededed 100%); /* Opera 11.10+ */
+        background: -ms-linear-gradient(top,  #ffffff 0%,#f6f6f6 47%,#ededed 100%); /* IE10+ */
+        background: linear-gradient(to bottom,  #ffffff 0%,#f6f6f6 47%,#ededed 100%); /* W3C */
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ededed',GradientType=0 ); /* IE6-9 */
+        box-shadow: 0 0 2px;
         border-radius: 3px;
 }
 /*.forum_main table tbody*/
@@ -2139,7 +2175,16 @@ div.deleteconfirm::after{
         right:14px;
         margin-top: -0.5px;
 }
-div.deleteconfirm::before{
+ul.inner-menu::before{
+        content: " ";
+        display: block;
+        position: absolute;
+        width: 0px;
+        height: 0px;
+        border: 12px solid transparent;
+        border-bottom-color: #FFF;
+        right: 140px;
+        margin-top: -23px;
 }
 div.deleteconfirm p{
         padding: 5px;
@@ -2176,9 +2221,17 @@ table.forumtopics tbody tr, table#flatview tbody tr, .forum_main table tbody tr,
         box-shadow: 0 1px 3px -1px #6d6d6d;
         -webkit-box-shadow: 0px 1px 3px -1px #6d6d6d;
         -moz-box-shadow: 0px 1px 3px -1px #6d6d6d;
+        background: #ffffff; /* Old browsers */
+        background: -moz-linear-gradient(top,  #ffffff 0%, #f6f6f6 47%, #ededed 100%); /* FF3.6+ */
+        background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(47%,#f6f6f6), color-stop(100%,#ededed)); /* Chrome,Safari4+ */
+        background: -webkit-linear-gradient(top,  #ffffff 0%,#f6f6f6 47%,#ededed 100%); /* Chrome10+,Safari5.1+ */
+        background: -o-linear-gradient(top,  #ffffff 0%,#f6f6f6 47%,#ededed 100%); /* Opera 11.10+ */
+        background: -ms-linear-gradient(top,  #ffffff 0%,#f6f6f6 47%,#ededed 100%); /* IE10+ */
+        background: linear-gradient(to bottom,  #ffffff 0%,#f6f6f6 47%,#ededed 100%); /* W3C */
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ededed',GradientType=0 ); /* IE6-9 */
 }
 span.forumname{
-        font-size: 2em;
+        /*font-size: 2em;*/
 }
 span.numberindicator{
         /*background: gray;*/
@@ -2276,9 +2329,13 @@ label.menu{
         padding: 10px;
 }
 .popUpWrapper{
-        background: #a6a6a6;
+        background: #F6F6F6;
         position: fixed;
+        box-shadow: 0 0 10px;
         top: 0;
+        padding: 10px 20px 10px 10px;
+        margin: 10% 35%;
+        border-radius: 5px;
 }
 /* ------------------- END FORUM MODULE --------------------*/
 
