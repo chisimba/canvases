@@ -133,7 +133,7 @@ if (!isset($og_content)) {
         ';
         }
         //breadcrumbs
-        $this->objBreadCrumbs = $this->getObject('tools','toolbar');
+        $this->objBreadCrumbs = $this->getObject('tools', 'toolbar');
         $crumbs = $this->objBreadCrumbs->navigation();
         // Render the javascript unless it is suppressed.
         if (!isset($pageSuppressJavascript)) {
@@ -193,69 +193,70 @@ if (!isset($pageSuppressContainer)) {
                                                 </h1>
                                                 <?php // echo '</a>'; ?>
                                         </div>    
-                                        <div class='floathead' id='floathead_content3'><?php // echo $banner3;   ?></div>
-                                        <div class='floathead' id='floathead_content2'><?php // echo $banner2;   ?></div>
-                                        <div class='floathead' id='floathead_content1'><?php // echo $banner1;   ?></div>
-                                        <div class='floathead' id='floathead_content0'><?php // echo $banner0;   ?></div>
+                                        <div class='floathead' id='floathead_content3'><?php // echo $banner3;     ?></div>
+                                        <div class='floathead' id='floathead_content2'><?php // echo $banner2;     ?></div>
+                                        <div class='floathead' id='floathead_content1'><?php // echo $banner1;     ?></div>
+                                        <div class='floathead' id='floathead_content0'><?php // echo $banner0;     ?></div>
                                         <?php
                                 }
 
                                 if (!isset($pageSuppressBanner)) {
                                         echo "</div>";
-                                        if (!isset($pageSuppressToolbar)) {
-                                                $simulate = $this->getParam('simulate', NULL);
-                                                if (!$this->objUser->isLoggedIn() || ($simulate == 'prelogintoolbar')) {
-                                                        if ($isInstalled) {
-                                                                echo "\n\n<div id='prelogin_nav'>$plMenu</div>\n\n";
-                                                        }
-                                                } else {
-                                                        $this->loadClass('geticon', 'htmlelements');
-                                                        $this->loadClass('link', 'htmlelements');
-                                                        $this->loadClass('language', 'language');
-                                                        $objIcon = $this->getObject('geticon', 'htmlelements');
-                                                        /**
-                                                         * ==home link==
-                                                         */
-                                                        $homeLink = new link('index.php?module=postlogin');
-                                                        $objIcon->setIcon('home');
-                                                        $homeLink->link = $objIcon->show() . '<br/> Home';
-                                                        $homeLink->cssClass = "sexybutton";
-                                                        /**
-                                                         * ==file manager link
-                                                         */
-                                                        $fileManLink = new link('index.php?module=filemanager');
-                                                        $objIcon->setIcon('filemanager');
-                                                        $fileManLink->link = $objIcon->show() . '<br/>File manager';
-                                                        $fileManLink->cssClass = "sexybutton";
-                                                        /**
-                                                         * ==profile link
-                                                         */
-                                                        $profileLink = new link('index.php?module=userdetails');
-                                                        $objIcon->setIcon('user_settings');
-                                                        $profileLink->link = $objIcon->show() . '<br/>My Profile';
-                                                        $profileLink->cssClass = 'sexybutton';
-                                                        /**
-                                                         * ==forum link
-                                                         */
-                                                        $forumLink = new link('index.php?module=forum');
-                                                        $objIcon->setIcon('forum');
-                                                        $forumLink->link = $objIcon->show() . '<br/>Forum';
-                                                        $forumLink->cssClass = "sexybutton";
-                                                        /**
-                                                         * ==lgout
-                                                         */
-                                                        $logoutLink = new link('index.php?module=security&action=logoff');
-                                                        $objIcon->setIcon('logout');
-                                                        $logoutLink->link = $objIcon->show() . '<br/>Logout';
-                                                        $logoutLink->cssClass = 'sexybutton';
-                                                        if ($this->objUser->isAdmin()) {
-                                                                echo "\n\n<div class='navigation-wrapper' ><div id='navigation'>\n\n" . "
+//                                        if (!isset($pageSuppressToolbar)) {
+                                        $simulate = $this->getParam('simulate', NULL);
+//                                                if (!$this->objUser->isLoggedIn() || ($simulate == 'prelogintoolbar')) {
+//                                                        if ($isInstalled) {
+//                                                                echo "\n\n<div id='prelogin_nav'>$plMenu</div>\n\n";
+//                                                        }
+//                                                } else {
+                                        $this->loadClass('geticon', 'htmlelements');
+                                        $this->loadClass('link', 'htmlelements');
+                                        $this->loadClass('language', 'language');
+                                        $objIcon = $this->getObject('geticon', 'htmlelements');
+                                        /**
+                                         * ==home link==
+                                         */
+                                        $homeLink = new link('index.php?module=postlogin');
+                                        $objIcon->setIcon('home');
+                                        $homeLink->link = $objIcon->show() . '<br/> Home';
+                                        $homeLink->cssClass = "sexybutton";
+                                        /**
+                                         * ==file manager link
+                                         */
+                                        $fileManLink = new link('index.php?module=filemanager');
+                                        $objIcon->setIcon('filemanager');
+                                        $fileManLink->link = $objIcon->show() . '<br/>File manager';
+                                        $fileManLink->cssClass = "sexybutton";
+                                        /**
+                                         * ==profile link
+                                         */
+                                        $profileLink = new link('index.php?module=userdetails');
+                                        $objIcon->setIcon('user_settings');
+                                        $profileLink->link = $objIcon->show() . '<br/>My Profile';
+                                        $profileLink->cssClass = 'sexybutton';
+                                        /**
+                                         * ==forum link
+                                         */
+                                        $forumLink = new link('index.php?module=forum');
+                                        $objIcon->setIcon('forum');
+                                        $forumLink->link = $objIcon->show() . '<br/>Forum';
+                                        $forumLink->cssClass = "sexybutton";
+                                        /**
+                                         * ==lgout
+                                         */
+                                        $logoutLink = new link('index.php?module=security&action=logoff');
+                                        $objIcon->setIcon('logout');
+                                        $logoutLink->link = $objIcon->show() . '<br/>Logout';
+                                        $logoutLink->cssClass = 'sexybutton';
+                                        if ($this->objUser->isLoggedin()) {
+                                                if ($this->objUser->isAdmin()) {
+                                                        echo "\n\n<div class='navigation-wrapper' ><div id='navigation'>\n\n" . "
                 <div class='navigation-list-wrapper' >
                 {$toolbar}
                 </div>
                 \n</div></div>";
-                                                        } else {
-                                                                echo "\n\n<div class='navigation-wrapper' ><div id='navigation'>\n\n" . "
+                                                } else {
+                                                        echo "\n\n<div class='navigation-wrapper' ><div id='navigation'>\n\n" . "
                 <div class='navigation-list-wrapper' >
                 <ul id='navigation-list' >
                 <li><a href='index.php?module=postlogin' >{$homeLink->show()}</a>
@@ -267,8 +268,33 @@ if (!isset($pageSuppressContainer)) {
                 {$crumbs}
                 </div>
                 \n</div></div>\n\n";
-                                                        }
                                                 }
+//                                                }
+//                                        }
+                                        } else {
+                                                $homeLink->href = "index.php?module=prelogin";
+                                                /**
+                                                 * ===FAQ Icon===
+                                                 */
+                                                $faq = new link('index.php?module=faq');
+                                                $objIcon->setIcon('faq');
+                                                $faq->link = $objIcon->show().'<br/>FAQ';
+                                                /**
+                                                 * ===Blog icon====
+                                                 */
+                                                $blogLink = new link('index.php?module=blog');
+                                                $objIcon->setIcon('blog');
+                                                $blogLink->link = $objIcon->show().'<br/>Blog';
+                                                echo "\n\n<div class='navigation-wrapper' ><div id='navigation'>\n\n" . "
+                <div class='navigation-list-wrapper' >
+                <ul id='navigation-list' >
+                <li><a href='index.php?module=prelogin' >{$homeLink->show()}</a>
+                <li><a href='index.php?module=faq' >{$faq->show()}</a>
+                <li><a href='index.php?module=blog' >{$blogLink->show()}</a>
+                </ul>
+                {$crumbs}
+                </div>
+                \n</div></div>\n\n";
                                         }
                                         echo '<div class="Canvas_Content_Head_After"></div>';
                                 }
