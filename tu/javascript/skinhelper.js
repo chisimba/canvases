@@ -26,5 +26,7 @@ jQuery(function() {
                 jQuery('#modeswitch_wrapper').detach().prependTo('#Canvas_Content_Body_Region3');
             }
         }
+        //Remove text from the curcled navigation links
+        jQuery('ul#menuList>li.navigation-list>a').html('');
     });
 });

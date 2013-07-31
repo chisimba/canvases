@@ -193,10 +193,10 @@ if (!isset($pageSuppressContainer)) {
                                                 </h1>
                                                 <?php // echo '</a>'; ?>
                                         </div>    
-                                        <div class='floathead' id='floathead_content3'><?php // echo $banner3;     ?></div>
-                                        <div class='floathead' id='floathead_content2'><?php // echo $banner2;     ?></div>
-                                        <div class='floathead' id='floathead_content1'><?php // echo $banner1;     ?></div>
-                                        <div class='floathead' id='floathead_content0'><?php // echo $banner0;     ?></div>
+                                        <div class='floathead' id='floathead_content3'><?php // echo $banner3;      ?></div>
+                                        <div class='floathead' id='floathead_content2'><?php // echo $banner2;      ?></div>
+                                        <div class='floathead' id='floathead_content1'><?php // echo $banner1;      ?></div>
+                                        <div class='floathead' id='floathead_content0'><?php // echo $banner0;      ?></div>
                                         <?php
                                 }
 
@@ -218,35 +218,36 @@ if (!isset($pageSuppressContainer)) {
                                          */
                                         $homeLink = new link('index.php?module=postlogin');
                                         $objIcon->setIcon('home');
-                                        $homeLink->link = $objIcon->show() . '<br/> Home';
+//                                        $homeLink->link = $objIcon->show();
                                         $homeLink->cssClass = "sexybutton";
                                         /**
                                          * ==file manager link
                                          */
                                         $fileManLink = new link('index.php?module=filemanager');
                                         $objIcon->setIcon('filemanager');
-                                        $fileManLink->link = $objIcon->show() . '<br/>File manager';
+//                                        $fileManLink->link = $objIcon->show();
                                         $fileManLink->cssClass = "sexybutton";
                                         /**
                                          * ==profile link
                                          */
                                         $profileLink = new link('index.php?module=userdetails');
                                         $objIcon->setIcon('user_settings');
-                                        $profileLink->link = $objIcon->show() . '<br/>My Profile';
+//                                        $profileLink->link = $objIcon->show();
                                         $profileLink->cssClass = 'sexybutton';
                                         /**
                                          * ==forum link
                                          */
                                         $forumLink = new link('index.php?module=forum');
                                         $objIcon->setIcon('forum');
-                                        $forumLink->link = $objIcon->show() . '<br/>Forum';
+//                                        $forumLink->link = $objIcon->show();
                                         $forumLink->cssClass = "sexybutton";
                                         /**
                                          * ==lgout
                                          */
                                         $logoutLink = new link('index.php?module=security&action=logoff');
                                         $objIcon->setIcon('logout');
-                                        $logoutLink->link = $objIcon->show() . '<br/>Logout';
+//                                        $logoutLink->link = $objIcon->show();
+//                                        $logoutLink->link = "<br/><br/>Text";
                                         $logoutLink->cssClass = 'sexybutton';
                                         if ($this->objUser->isLoggedin()) {
                                                 if ($this->objUser->isAdmin()) {
@@ -258,12 +259,12 @@ if (!isset($pageSuppressContainer)) {
                                                 } else {
                                                         echo "\n\n<div class='navigation-wrapper' ><div id='navigation'>\n\n" . "
                 <div class='navigation-list-wrapper' >
-                <ul id='navigation-list' >
-                <li><a href='index.php?module=postlogin' >{$homeLink->show()}</a>
-                <li><a href='index.php?module=filemanager' >{$fileManLink->show()}</a>
-                <li><a href='index.php?module=userdetails' >{$profileLink->show()}</a>
-                <li><a href='index.php?module=forum' >{$forumLink->show()}</a>
-                <li><a href='index.php?module=security&action=logoff' >{$logoutLink->show()}</a>
+                <ul id='navigation-list' class='navigation-list-wrapper' >
+                <li id='home' class='navigation-list-wrapper' >{$homeLink->show()}</li>
+                <li id='filemanager' class='navigation-list-wrapper' >{$fileManLink->show()}</li>
+                <li id='profile' class='navigation-list-wrapper' >{$profileLink->show()}</li>
+                <li id='forum' class='navigation-list-wrapper' >{$forumLink->show()}</li>
+                <li id='logout' class='navigation-list-wrapper' >{$logoutLink->show()}</li>
                 </ul>
                 {$crumbs}
                 </div>
@@ -272,25 +273,25 @@ if (!isset($pageSuppressContainer)) {
 //                                                }
 //                                        }
                                         } else {
-                                                $homeLink->href = "index.php?module=prelogin";
+                                                $homeLink = new link("index.php?module=prelogin");
                                                 /**
                                                  * ===FAQ Icon===
                                                  */
                                                 $faq = new link('index.php?module=faq');
                                                 $objIcon->setIcon('faq');
-                                                $faq->link = $objIcon->show().'<br/>FAQ';
+//                                                $faq->link = $objIcon->show().'<br/>FAQ';
                                                 /**
                                                  * ===Blog icon====
                                                  */
-                                                $blogLink = new link('index.php?module=blog');
+                                                $blogLink = new link('index.php?module=simpleblog');
                                                 $objIcon->setIcon('blog');
-                                                $blogLink->link = $objIcon->show().'<br/>Blog';
+//                                                $blogLink->link = $objIcon->show().'<br/>Blog';
                                                 echo "\n\n<div class='navigation-wrapper' ><div id='navigation'>\n\n" . "
                 <div class='navigation-list-wrapper' >
-                <ul id='navigation-list' >
-                <li><a href='index.php?module=prelogin' >{$homeLink->show()}</a>
-                <li><a href='index.php?module=faq' >{$faq->show()}</a>
-                <li><a href='index.php?module=blog' >{$blogLink->show()}</a>
+                <ul id='navigation-list' class='navigation-list-wrapper' >
+                <li id='home' class='navigation-list-wrapper' >{$homeLink->show()}</li>
+                <li id='faq' class='navigation-list-wrapper' >{$faq->show()}</li>
+                <li id='blog' class='navigation-list-wrapper' >{$blogLink->show()}</li>
                 </ul>
                 {$crumbs}
                 </div>
