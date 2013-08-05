@@ -450,6 +450,7 @@ ul#navigation-list>li{
 }
 #breadcrumbs{
         clear: none;
+        margin-top: 16px;
 }
 .Canvas_Content_Head_Breadcrumbs{
         margin: 5px 0 0 0;
@@ -543,7 +544,11 @@ ul#menuList>li.navigation-list {
 li.navigation-list#home{
         background: url(icons/favicon.png) no-repeat center;
         border: 1px solid #FFF;
-        box-shadow: 0 0 2px -1px #000;        
+        box-shadow: 0 0 2px -1px #000;
+        transition: background 2s;
+}
+li.navigation-list#home:hover{
+        background: red;
 }
 li.navigation-list#home:after{
         content: 'Home';
