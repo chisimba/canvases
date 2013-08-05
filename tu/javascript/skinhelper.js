@@ -8,6 +8,8 @@
  */
 jQuery(function() {
     jQuery(document).ready(function() {
+        //Remove text from the curcled navigation links
+        jQuery('ul#menuList>li.navigation-list>a').html('');
         // Fix up some of the layout that gets broken because of the 2 column design.
         if (jQuery("#threecolumn").length > 0) {
             var keepit = jQuery('#threecolumn').contents();
@@ -26,7 +28,5 @@ jQuery(function() {
                 jQuery('#modeswitch_wrapper').detach().prependTo('#Canvas_Content_Body_Region3');
             }
         }
-        //Remove text from the curcled navigation links
-        jQuery('ul#menuList>li.navigation-list>a').html('');
     });
 });
