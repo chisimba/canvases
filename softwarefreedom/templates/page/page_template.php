@@ -12,23 +12,9 @@
 define("PAGETOP", '<a name="pagetop"></a>');
 define("GOTOTOP", '<a href="#pagetop">Top</a>'); // @todo change this to an icon
 
-// Get the four banner blocks
-$objModuleCatalogue = $this->getObject('modules', 'modulecatalogue');
-$isInstalled = $objModuleCatalogue->checkIfRegistered("bannerhelper");
-if ($isInstalled) {
-    $objBl = $this->getObject('fsbannerhelper', 'bannerhelper');
-    $banner0 = $objBl->readContents("banner0");
-    $banner1 = $objBl->readContents("banner1");
-    $banner2 = $objBl->readContents("banner2");
-    $banner3 = $objBl->readContents("banner3");
-    $plMenu = $objBl->readContents("plmenu");
-} else {
-    $banner0 = NULL;
-    $banner1 = NULL;
-    $banner2 = NULL;
-    $banner3 = NULL;
-    $plMenu = NULL;
-}
+// Cache the CSS files
+$objCssCache = $this->getObject('csscache', 'skin');
+$objCssCache->cacheCommon();
 
 // Initialise the variable holding preferred canvas
 $prefCanvas=FALSE;
@@ -117,7 +103,7 @@ if (!isset($og_content)) {
     if (!isset($pageSuppressSkin)) {
         echo '
 
-        <link rel="stylesheet" type="text/css" href="skins/_common2/css/basecss.php">
+        <link rel="stylesheet" type="text/css" href="cache.css">
         <link rel="icon" type="image/png" href="skins/' . $skinName . '/favicon.png" />
         ';
      }
@@ -186,10 +172,6 @@ if (!isset($pageSuppressBanner)) {
             </h1>
             <?php echo '</a>'; ?>
         </div>
-        <div class='floathead' id='floathead_content3'><?php echo $banner3; ?></div>
-        <div class='floathead' id='floathead_content2'><?php echo $banner2; ?></div>
-        <div class='floathead' id='floathead_content1'><?php echo $banner1; ?></div>
-        <div class='floathead' id='floathead_content0'><?php echo $banner0; ?></div>
         <?php
 }
 
@@ -197,11 +179,7 @@ if (!isset($pageSuppressBanner)) {
     echo "</div>";
     if (!isset($pageSuppressToolbar)) {
         $simulate = $this->getParam('simulate', NULL);
-        if (!$this->objUser->isLoggedIn() || ($simulate == 'prelogintoolbar')) {
-            if ($isInstalled) {
-                echo "\n\n<div id='prelogin_nav'>$plMenu</div>\n\n";
-            }
-        } else {
+        if ($this->objUser->isLoggedIn() || ($simulate == 'prelogintoolbar')) {
             echo "\n\n<div id='navigation'>\n\n" . $toolbar . "\n</div>\n\n";
         }
     }
