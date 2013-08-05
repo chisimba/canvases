@@ -83,7 +83,7 @@ ul#navigation-list>li{
         height: 50px;
 }
 li.navigation-list-wrapper#home{
-        background: url(icons/home.png) no-repeat center;
+        background: url(icons/favicon.png) no-repeat center;
         border: 1px solid #FFF;
         box-shadow: 0 0 2px -1px #000;
 }
@@ -541,7 +541,7 @@ ul#menuList>li.navigation-list {
         box-shadow: 0 0 2px -1px #000;
 }
 li.navigation-list#home{
-        background: url(icons/home.png) no-repeat center;
+        background: url(icons/favicon.png) no-repeat center;
         border: 1px solid #FFF;
         box-shadow: 0 0 2px -1px #000;        
 }
@@ -2462,18 +2462,13 @@ span.forumname{
         font-size: 1.1em;
 }
 span.numberindicator{
-        /*background: gray;*/
-        /*background-color: transparent;*/
-        /*color: #555;*/
-        /*text-shadow: 0px 2px 5px rgba(255,255,255,0.5);*/
         color: #575757;
         text-shadow:#fff 0px 1px 0, #000 0 -1px 0;
-        /*        -webkit-background-clip: text;
-                -moz-background-clip: text;
-                background-clip: text;*/
         font-size: 3em;
         font-weight: 900;
         text-align: center;
+        /*margin-left: 5px;*/
+        /*padding: 10px;*/
 }
 a.indicator:hover{
         background: #cdcdcd;
@@ -2483,12 +2478,15 @@ a.indicatorparent{
         font-weight: bold;
 }
 a.ratings.up, a.ratings.down{
-        width: 100px;
+        /*padding: 5px;*/
 }
 a.ratings.up{
+        padding: 2px 12px;
         background: url(icons/arrow_up.png) no-repeat left;
 }
 a.ratings.down{
+        /*margin-left: 5px;*/
+        padding: 2px 12px;
         background: url(icons/down_arrow.png) no-repeat left;
 }
 span.floatingIndicator{
