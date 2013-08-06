@@ -2334,7 +2334,7 @@ textarea{
 .miniwrapper{
         margin-left: 95px;
 }
-.buttonLink{
+.buttonLink, .ok{
         color: #000 !important;
         padding: 5px;
         background: #ffffff; /* Old browsers */
@@ -2345,7 +2345,9 @@ textarea{
         background: -ms-linear-gradient(top,  #ffffff 0%,#f6f6f6 47%,#ededed 100%); /* IE10+ */
         background: linear-gradient(to bottom,  #ffffff 0%,#f6f6f6 47%,#ededed 100%); /* W3C */
         filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ededed',GradientType=0 ); /* IE6-9 */
-        box-shadow: 0 0 2px;
+        box-shadow: 0 0 2px #000;
+        -webkit-box-shadow: 0 0 2px #000;
+        -moz-box-shadow: 0 0 2px #000;
         border-radius: 3px;
 }
 /*.forum_main table tbody*/
