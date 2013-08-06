@@ -1064,12 +1064,13 @@ div#sb_title_wrapper{
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ededed',GradientType=0 ); /* IE6-8 */
     border-bottom: 1px solid #C7C7C7;
     padding: 5px;
+    padding-left: 55px;
     margin-left: -1px;
-    min-height: 40px;
+    min-height: 60px;
 }
 div#sb_title_wrapper a {
     color: #000;
-    padding-left: 8px;
+    
 }
 div#sb_date_wrapper{
     background: tomato;
@@ -1305,7 +1306,12 @@ div.simpleblog_post_tags a.tag_active:visited:hover {
 .fblikebutton {
     float: left;
     width: 360px;
-    margin-left: 8px;
+    margin-left: 6px;
+}
+.simpleblog_post_footer img.full_user_image {
+    vertical-align: middle;
+    margin-left: 4px;
+    margin-right: 8px;
 }
 /* -------------- END SIMPLE BLOG MODULE ---------------*/
 
