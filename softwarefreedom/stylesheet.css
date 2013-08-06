@@ -1023,6 +1023,9 @@ background-image: linear-gradient(bottom, #eeeeec 0%, #d3d7cf 50%, #babdb6 100%)
     margin-bottom: 6px;
     margin-right: 10px;
 }
+
+
+
 .simpleblog_post_wrapper {
     background-image: #e3f4ff;
     background-image: -webkit-linear-gradient(top, #daefff 0%, #ecf8ff 72%);
@@ -1050,9 +1053,53 @@ background-image: linear-gradient(bottom, #eeeeec 0%, #d3d7cf 50%, #babdb6 100%)
     -webkit-border-bottom-left-radius: 6px;
     -khtml-border-radius-bottomleft: 6px;
 }
-.content_form_element {
-    width: 950px;
+div#sb_title_wrapper{
+    background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2ZmZmZmZiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjQ3JSIgc3RvcC1jb2xvcj0iI2Y2ZjZmNiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNlZGVkZWQiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+    background: -moz-linear-gradient(top,  #ffffff 0%, #f6f6f6 47%, #ededed 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(47%,#f6f6f6), color-stop(100%,#ededed)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top,  #ffffff 0%,#f6f6f6 47%,#ededed 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top,  #ffffff 0%,#f6f6f6 47%,#ededed 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top,  #ffffff 0%,#f6f6f6 47%,#ededed 100%); /* IE10+ */
+    background: linear-gradient(to bottom,  #ffffff 0%,#f6f6f6 47%,#ededed 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ededed',GradientType=0 ); /* IE6-8 */
+    border-bottom: 1px solid #C7C7C7;
+    padding: 5px;
+    margin-left: -1px;
+    min-height: 40px;
 }
+div#sb_title_wrapper a {
+    color: #000;
+    padding-left: 8px;
+}
+div#sb_date_wrapper{
+    background: tomato;
+    padding: 10px;
+    color: #FFF;
+    display: inline-block;
+    padding-bottom: 15px;
+    float: left;
+}
+div#sb-date-year{
+    font-size: 1.2em;
+    text-align: center;
+}
+div#sb-date-month{
+    font-size: 1.5em;
+    font-weight: bold;
+    text-align: center;
+    line-height: 1;
+}
+div#sb-date-day{
+    text-align: center;
+    font-size: 1.2em;
+}
+
+
+
+
+
+
+
 #form_simpleblog_editor {
     padding: 20px;
 }
@@ -1368,3 +1415,45 @@ div.simpleblog_post_tags a.tag_active:visited:hover {
 .species_list_table {
     width: 550px;
 }
+
+/* ---------------- BEGIN SIMPLETALK ------------------*/
+#form_simpletalk {
+    background: none;
+    padding-left: 4px;
+    padding-right: 10px;
+    padding-top: 10px;
+}
+
+#form_simpletalk input.text {
+    width: 100%;
+}
+#form_simpletalk select {
+    width: 100%;
+}
+#form_simpletalk textarea {
+    width: 100%;
+}
+#form_simpletalk textarea:focus {
+    border: 1px dotted red;
+}
+#form_simpletalk #input_abstract {
+    height: 250px;
+}
+#form_simpletalk input.text:focus {
+    border: 1px dotted red;
+}
+.simpletalk_wrap table {
+    border-collapse: collapse;
+}
+.simpletalk_wrap .odd {
+    background: #EBEBEB;
+}
+.simpletalk_wrap td {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.simpletalk_wrap .even {
+    background: #f1f1f1;
+}
+
+/* ----------------- END SIMPLETALK -------------------*/
