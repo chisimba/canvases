@@ -83,7 +83,7 @@ ul#navigation-list>li{
         height: 50px;
 }
 li.navigation-list-wrapper#home{
-        background: url(icons/favicon.png) no-repeat center;
+        background: url(icons/home.png) no-repeat center;
         border: 1px solid #FFF;
         box-shadow: 0 0 2px -1px #000;
 }
@@ -542,7 +542,7 @@ ul#menuList>li.navigation-list {
         box-shadow: 0 0 2px -1px #000;
 }
 li.navigation-list#home{
-        background: url(icons/favicon.png) no-repeat center;
+        background: url(icons/home.png) no-repeat center;
         border: 1px solid #FFF;
         box-shadow: 0 0 2px -1px #000;
         transition: background 2s;
