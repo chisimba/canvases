@@ -1289,9 +1289,15 @@ div.simpleblog_post_tags a.tag_active:visited:hover {
     padding: 5px;
 }
 .social_buttons_wrapper {
-    background: red;
+    background: none;
     width: 100%;
+    max-width: 100%;
     height: auto;
+    margin-bottom: 8px;
+}
+td.gplusbutton, td.tweetbutton {
+    width: 60px;
+    backgoround: red;
 }
 .social_buttons {
     /** Social buttons from the socialweb module **/
