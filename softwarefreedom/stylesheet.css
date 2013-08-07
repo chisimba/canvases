@@ -1290,7 +1290,6 @@ div.simpleblog_post_tags a.tag_active:visited:hover {
 }
 .social_buttons_wrapper {
     background: red;
-    display: box;
     width: 100%;
     height: auto;
 }
