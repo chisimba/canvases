@@ -999,6 +999,7 @@ background-image: linear-gradient(bottom, #eeeeec 0%, #d3d7cf 50%, #babdb6 100%)
     padding-top: 6px;
     border-top: 1px dashed #b65900;
     margin-bottom: 10px;
+    width: 100%;
 }
 .simpleblog_post_title {
     width: 100%;
@@ -1286,6 +1287,12 @@ div.simpleblog_post_tags a.tag_active:visited:hover {
     border: 1px dotted silver;
     margin-bottom: 5px;
     padding: 5px;
+}
+.social_buttons_wrapper {
+    background: red;
+    display: box;
+    width: 100%;
+    height: auto;
 }
 .social_buttons {
     /** Social buttons from the socialweb module **/
