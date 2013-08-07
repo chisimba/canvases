@@ -12,6 +12,10 @@
 define("PAGETOP", '<a name="pagetop"></a>');
 define("GOTOTOP", '<a href="#pagetop">Top</a>'); // @todo change this to an icon
 
+// Cache the CSS files
+$objCssCache = $this->getObject('csscache', 'skin');
+$objCssCache->cacheCommon();
+
 // Initialise the variable holding preferred canvas
 $prefCanvas=FALSE;
 
@@ -108,7 +112,7 @@ $publicNav = '
     if (!isset($pageSuppressSkin)) {
         echo '
 
-        <link rel="stylesheet" type="text/css" href="skins/_common2/css/basecss.php">
+        <link rel="stylesheet" type="text/css" href="cache.css">
         <link rel="icon" type="image/png" href="skins/' . $skinName . '/favicon.png" />
         ';
      }
