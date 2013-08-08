@@ -1400,6 +1400,12 @@ td.gplusbutton, td.tweetbutton {
 .openidlogin fieldset {
     width: 254px;
 }
+#input_username,#input_password {
+    width: 190px !important;
+}
+#input_username:focus,#input_password:focus {
+    border: 1px dotted red;
+}
 #modeswitch_wrapper {
     margin-top: 10px;
     margin-bottom: 8px;
