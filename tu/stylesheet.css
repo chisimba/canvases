@@ -432,11 +432,11 @@ div.Canvas_Content_Head_Before div#search label {
         left: 0;
         top: 0;
         right: 0;
-        border-bottom: 5px solid tomato;
+        /*border-bottom: 5px solid #363e63;*/
         z-index: 100;
         box-shadow: 0 0 5px #000;
         /*background: url(images/logo.png) no-repeat left #fff;*/
-        background: rgba(252,252,252,1);
+        background: url(images/navigation.png) rgba(252,252,252,1);
 }
 .navigation-list-wrapper{
         margin-left: 5px;
@@ -529,6 +529,15 @@ ul#navigation-list>li{
         margin:0px auto;
         float: none;
 }
+nav#logo{
+        float: left;
+        display: block;
+        margin-top: 20px;
+}
+nav#logo>a{
+        padding: 30px 100px;
+        background: url(images/logo.png) no-repeat center;
+}
 ul#menuList>li.navigation-list {
         display:block;
         text-align: center;
@@ -565,7 +574,7 @@ li.navigation-list#developer:after{
         left: 5px;
 }
 li.navigation-list#user{
-        background: url(icons/user_.png) no-repeat center;
+        background: url(icons/user_.png) no-repeat center #FFF;
         border: 1px solid #FFF;
         box-shadow: 0 0 2px -1px #000;
 }
@@ -1287,10 +1296,16 @@ div.changeview{
 form#form_movedeletefiles table tbody tr{
         border-bottom: 10px solid transparent;
         line-height: 2;
-        font-size: 1.5em;
+}
+div.tabbertab.tabbertabdefault>form#form_movedeletefiles>table{
+        /*background: red;*/
+        overflow-y: scroll;
+        overflow-x: hidden;
+        display: block;
+        height: 400px;
 }
 form#form_movedeletefiles table tbody tr:hover{
-        color: #fff;
+        /*color: #fff;*/
 }
 a.listview{
         border-top-left-radius: 3px;
@@ -1822,24 +1837,22 @@ div.simpleblog_post_tags a.tag_active:visited:hover {
         width: 254px;
 }
 #modeswitch_wrapper{
+        border-radius: 3px;
+        background: #333c65;
+        box-shadow: 0 2px 10px -5px #000;
+        -webkit-box-shadow: 0 2px 10px -5px #000;
+        -moz-box-shadow: 0 2px 10px -5px #000;
         margin-top: 10px;
         margin-bottom: 8px;
         margin-left: 15px;
         width: 90%;
         text-align: center;
-        background: rgb(243,197,189); /* Old browsers */
-        /* IE9 SVG, needs conditional override of 'filter' to 'none' */
-        background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2YzYzViZCIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjUwJSIgc3RvcC1jb2xvcj0iI2U4NmM1NyIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjUxJSIgc3RvcC1jb2xvcj0iI2VhMjgwMyIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9Ijc1JSIgc3RvcC1jb2xvcj0iI2ZmNjYwMCIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNjNzIyMDAiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
-        background: -moz-linear-gradient(top,  rgba(243,197,189,1) 0%, rgba(232,108,87,1) 50%, rgba(234,40,3,1) 51%, rgba(255,102,0,1) 75%, rgba(199,34,0,1) 100%); /* FF3.6+ */
-        background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(243,197,189,1)), color-stop(50%,rgba(232,108,87,1)), color-stop(51%,rgba(234,40,3,1)), color-stop(75%,rgba(255,102,0,1)), color-stop(100%,rgba(199,34,0,1))); /* Chrome,Safari4+ */
-        background: -webkit-linear-gradient(top,  rgba(243,197,189,1) 0%,rgba(232,108,87,1) 50%,rgba(234,40,3,1) 51%,rgba(255,102,0,1) 75%,rgba(199,34,0,1) 100%); /* Chrome10+,Safari5.1+ */
-        background: -o-linear-gradient(top,  rgba(243,197,189,1) 0%,rgba(232,108,87,1) 50%,rgba(234,40,3,1) 51%,rgba(255,102,0,1) 75%,rgba(199,34,0,1) 100%); /* Opera 11.10+ */
-        background: -ms-linear-gradient(top,  rgba(243,197,189,1) 0%,rgba(232,108,87,1) 50%,rgba(234,40,3,1) 51%,rgba(255,102,0,1) 75%,rgba(199,34,0,1) 100%); /* IE10+ */
-        background: linear-gradient(to bottom,  rgba(243,197,189,1) 0%,rgba(232,108,87,1) 50%,rgba(234,40,3,1) 51%,rgba(255,102,0,1) 75%,rgba(199,34,0,1) 100%); /* W3C */
-        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f3c5bd', endColorstr='#c72200',GradientType=0 ); /* IE6-8 */
-        box-shadow: 0 0 5px -1px #000;
-        -webkit-box-shadow: 0 0 5px -1px #000;
-        -moz-box-shadow: 0 0 5px -1px #000;
+}
+#modeswitch_wrapper.editing_on{
+        background: tomato;
+        box-shadow: inset 0 2px 10px -5px #000;
+        -webkit-box-shadow: inset 0 2px 10px -5px #000;
+        -moz-box-shadow: inset 0 2px 10px -5px #000;
 }
 #modeswitch_wrapper a{
         color: #FFF;
@@ -2460,22 +2473,20 @@ table.forumtopics tbody tr td img.full_user_image{
         padding: 10px;
 }
 table.forumtopics tbody tr, table#flatview tbody tr, .forum_main table tbody tr, #forumadmin tbody tr{
-        border-radius: 3px;
+        border-radius: 1px;
+        -moz-border-radius: 1px;
+        -webkit-border-radius: 1px;
         display: block;
         -moz-border-radius: 3px;
         -webkit-border-radius: 3px;
         margin-top: 10px;
-        box-shadow: 0 1px 3px -1px #6d6d6d;
-        -webkit-box-shadow: 0px 1px 3px -1px #6d6d6d;
-        -moz-box-shadow: 0px 1px 3px -1px #6d6d6d;
-        background: #ffffff; /* Old browsers */
-        background: -moz-linear-gradient(top,  #ffffff 0%, #f6f6f6 47%, #ededed 100%); /* FF3.6+ */
-        background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(47%,#f6f6f6), color-stop(100%,#ededed)); /* Chrome,Safari4+ */
-        background: -webkit-linear-gradient(top,  #ffffff 0%,#f6f6f6 47%,#ededed 100%); /* Chrome10+,Safari5.1+ */
-        background: -o-linear-gradient(top,  #ffffff 0%,#f6f6f6 47%,#ededed 100%); /* Opera 11.10+ */
-        background: -ms-linear-gradient(top,  #ffffff 0%,#f6f6f6 47%,#ededed 100%); /* IE10+ */
-        background: linear-gradient(to bottom,  #ffffff 0%,#f6f6f6 47%,#ededed 100%); /* W3C */
-        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ededed',GradientType=0 ); /* IE6-9 */
+        -moz-box-shadow: 0 25px 30px -29px #000;
+        -webkit-box-shadow: 0 25px 30px -29px #000;
+        box-shadow: 0 25px 30px -29px #000;
+        /*min-height: 150px;*/
+}
+table.forumtopics tbody tr:last-child, table#flatview tbody tr:last-child, .forum_main table tbody tr:last-child, #forumadmin tbody tr:last-child{
+        margin-bottom: 100px;
 }
 span.forumname{
         font-size: 1.1em;

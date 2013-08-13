@@ -259,12 +259,14 @@ if (!isset($pageSuppressContainer)) {
                                                 } else {
                                                         echo "\n\n<div class='navigation-wrapper' ><div id='navigation'>\n\n" . "
                 <div class='navigation-list-wrapper' >
+                <nav id='logo' ><a href='index.php' id='logo-link' class='logo' ></a></nav>
                 <ul id='navigation-list' class='navigation-list-wrapper' >
                 <li id='home' class='navigation-list-wrapper' >{$homeLink->show()}</li>
                 <li id='filemanager' class='navigation-list-wrapper' >{$fileManLink->show()}</li>
                 <li id='profile' class='navigation-list-wrapper' >{$profileLink->show()}</li>
                 <li id='forum' class='navigation-list-wrapper' >{$forumLink->show()}</li>
                 <li id='logout' class='navigation-list-wrapper' >{$logoutLink->show()}</li>
+                <li id='home' class='navigation-list-wrapper' >{$homeLink->show()}</li>
                 </ul>
                 {$crumbs}
                 </div>
