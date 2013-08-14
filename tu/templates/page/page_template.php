@@ -295,6 +295,7 @@ if (!isset($pageSuppressContainer)) {
 //                                                $blogLink->link = $objIcon->show().'<br/>Blog';
                                                 echo "\n\n<div class='navigation-wrapper' ><div id='navigation'>\n\n" . "
                 <div class='navigation-list-wrapper' >
+                <nav id='logo' ><a href='index.php' id='logo-link' class='logo' ></a></nav>
                 <ul id='navigation-list' class='navigation-list-wrapper' >
                 <li id='home' class='navigation-list-wrapper' >{$homeLink->show()}</li>
                 <li id='faq' class='navigation-list-wrapper' >{$faq->show()}</li>
