@@ -115,16 +115,16 @@ li.navigation-list-wrapper#profile:after{
         bottom: 0;
         margin-left: -21px;
 }
-li.navigation-list-wrapper#blog{
+li.navigation-list-wrapper#simpleblog{
         background: url(icons/modules/simpleblog.png) no-repeat center;
         border: 1px solid #FFF;
         box-shadow: 0 0 2px -1px #000;
 }
-li.navigation-list-wrapper#blog:after{
-        content: 'Blog';
+li.navigation-list-wrapper#simpleblog:after{
+        content: 'Simple Blog';
         position: absolute;
         bottom: 0;
-        margin-left: -17px;
+        margin-left: -40px;
 }
 li.navigation-list-wrapper#faq{
         background: url(icons/modules/faq.png) no-repeat center;

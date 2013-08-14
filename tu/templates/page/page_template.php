@@ -242,6 +242,10 @@ if (!isset($pageSuppressContainer)) {
 //                                        $forumLink->link = $objIcon->show();
                                         $forumLink->cssClass = "sexybutton";
                                         /**
+                                         * Simple blog link
+                                         */
+                                        $blogLink = new link('index.php?module=simpleblog');
+                                        /**
                                          * ==lgout
                                          */
                                         $logoutLink = new link('index.php?module=security&action=logoff');
@@ -253,6 +257,7 @@ if (!isset($pageSuppressContainer)) {
                                                 if ($this->objUser->isAdmin()) {
                                                         echo "\n\n<div class='navigation-wrapper' ><div id='navigation'>\n\n" . "
                 <div class='navigation-list-wrapper' >
+                <nav id='logo' ><a href='index.php' id='logo-link' class='logo' ></a></nav>
                 {$toolbar}
                 </div>
                 \n</div></div>";
@@ -266,7 +271,7 @@ if (!isset($pageSuppressContainer)) {
                 <li id='profile' class='navigation-list-wrapper' >{$profileLink->show()}</li>
                 <li id='forum' class='navigation-list-wrapper' >{$forumLink->show()}</li>
                 <li id='logout' class='navigation-list-wrapper' >{$logoutLink->show()}</li>
-                <li id='home' class='navigation-list-wrapper' >{$homeLink->show()}</li>
+                <li id='simpleblog' class='navigation-list-wrapper' >{$blogLink->show()}</li>
                 </ul>
                 {$crumbs}
                 </div>
@@ -293,7 +298,7 @@ if (!isset($pageSuppressContainer)) {
                 <ul id='navigation-list' class='navigation-list-wrapper' >
                 <li id='home' class='navigation-list-wrapper' >{$homeLink->show()}</li>
                 <li id='faq' class='navigation-list-wrapper' >{$faq->show()}</li>
-                <li id='blog' class='navigation-list-wrapper' >{$blogLink->show()}</li>
+                <li id='simpleblog' class='navigation-list-wrapper' >{$blogLink->show()}</li>
                 </ul>
                 {$crumbs}
                 </div>
