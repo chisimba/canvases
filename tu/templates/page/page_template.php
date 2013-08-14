@@ -270,8 +270,8 @@ if (!isset($pageSuppressContainer)) {
                 <li id='filemanager' class='navigation-list-wrapper' >{$fileManLink->show()}</li>
                 <li id='profile' class='navigation-list-wrapper' >{$profileLink->show()}</li>
                 <li id='forum' class='navigation-list-wrapper' >{$forumLink->show()}</li>
-                <li id='logout' class='navigation-list-wrapper' >{$logoutLink->show()}</li>
                 <li id='simpleblog' class='navigation-list-wrapper' >{$blogLink->show()}</li>
+                <li id='logout' class='navigation-list-wrapper' >{$logoutLink->show()}</li>
                 </ul>
                 {$crumbs}
                 </div>
