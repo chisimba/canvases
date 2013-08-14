@@ -83,7 +83,7 @@ ul#navigation-list>li{
         height: 50px;
 }
 li.navigation-list-wrapper#home{
-        background: url(icons/home.png) no-repeat center;
+        background: url(icons/home.png) no-repeat center #FFF;
         border: 1px solid #FFF;
         box-shadow: 0 0 2px -1px #000;
 }
@@ -94,7 +94,7 @@ li.navigation-list-wrapper#home:after{
         margin-left: -21px;
 }
 li.navigation-list-wrapper#filemanager{
-        background: url(icons/modules/filemanager.png) no-repeat center;
+        background: url(icons/modules/filemanager.png) no-repeat center #FFF;
         border: 1px solid #FFF;
         box-shadow: 0 0 2px -1px #000;
 }
@@ -105,7 +105,7 @@ li.navigation-list-wrapper#filemanager:after{
         margin-left: -43px;
 }
 li.navigation-list-wrapper#profile{
-        background: url(icons/user_.png) no-repeat center;
+        background: url(icons/user_.png) no-repeat center #FFF;
         border: 1px solid #FFF;
         box-shadow: 0 0 2px -1px #000;
 }
@@ -116,7 +116,7 @@ li.navigation-list-wrapper#profile:after{
         margin-left: -21px;
 }
 li.navigation-list-wrapper#simpleblog{
-        background: url(icons/modules/simpleblog.png) no-repeat center;
+        background: url(icons/modules/simpleblog.png) no-repeat center #FFF;
         border: 1px solid #FFF;
         box-shadow: 0 0 2px -1px #000;
 }
@@ -127,7 +127,7 @@ li.navigation-list-wrapper#simpleblog:after{
         margin-left: -40px;
 }
 li.navigation-list-wrapper#faq{
-        background: url(icons/modules/faq.png) no-repeat center;
+        background: url(icons/modules/faq.png) no-repeat center #FFF;
         border: 1px solid #FFF;
         box-shadow: 0 0 2px -1px #000;
 }
@@ -138,7 +138,7 @@ li.navigation-list-wrapper#faq:after{
         margin-left: -17px;
 }
 li.navigation-list-wrapper#forum{
-        background: url(icons/modules/forum.png) no-repeat center;
+        background: url(icons/modules/forum.png) no-repeat center #FFF;
         border: 1px solid #FFF;
         box-shadow: 0 0 2px -1px #000;
 }
@@ -149,7 +149,7 @@ li.navigation-list-wrapper#forum:after{
         margin-left: -21px;
 }
 li.navigation-list-wrapper#logout{
-        background: url(icons/logout.png) no-repeat center;
+        background: url(icons/logout.png) no-repeat center #FFF;
         border: 2px solid #FFF;
         box-shadow: 0 0 2px -1px #000;
 }
@@ -166,9 +166,19 @@ li.navigation-list-wrapper>a{
         text-align: center;
         margin-left: -30px;
         margin-top: -5px;
-        -webkit-box-shadow: inset 0px 0px 10px -5px rgba(0,0,0,0.75);
-        -moz-box-shadow: inset 0px 0px 10px -5px rgba(0,0,0,0.75);
-        box-shadow: inset 0px 0px 10px -5px rgba(0,0,0,0.75);
+        -webkit-box-shadow: 0px 0px 2px -1.5px rgba(0,0,0,0.75);
+        -moz-box-shadow: 0px 0px 2px -1.5px rgba(0,0,0,0.75);
+        box-shadow: 0px 0px 2px -1.5px rgba(0,0,0,0.75);
+}
+li.navigation-list-wrapper>a:hover{
+        -webkit-box-shadow: 0px 0px 2px -1px tomato;
+        -moz-box-shadow: 0px 0px 2px -1px tomato;
+        box-shadow: 0px 0px 2px -1px tomato;
+}
+li.navigation-list-wrapper>a:active{
+        -webkit-box-shadow: inset 0px 0px 2px -1px rgba(0,0,0,0.75);
+        -moz-box-shadow: inset 0px 0px 2px -1px rgba(0,0,0,0.75);
+        box-shadow: inset 0px 0px 2px -1px rgba(0,0,0,0.75);
 }
 a.sexybutton{
         font-weight: normal !important;
@@ -548,13 +558,10 @@ ul#menuList>li.navigation-list {
         width: 50px;
         margin: 0 25px;
         padding: 10px;
-        box-shadow: 0 0 2px -1px #000;
+        box-shadow: 0 0 5px -3px #000;
 }
 li.navigation-list#home{
-        background: url(icons/home.png) no-repeat center;
-        border: 1px solid #FFF;
-        box-shadow: 0 0 2px -1px #000;
-        transition: background 2s;
+        background: url(icons/home.png) no-repeat center #FFF;
 }
 li.navigation-list#home:after{
         content: 'Home';
@@ -563,9 +570,7 @@ li.navigation-list#home:after{
         left: 14px;
 }
 li.navigation-list#developer{
-        background: url(icons/developer.png) no-repeat center;
-        border: 1px solid #FFF;
-        box-shadow: 0 0 2px -1px #000;
+        background: url(icons/developer.png) no-repeat center #FFF;
 }
 li.navigation-list#developer:after{
         content: 'Developer';
@@ -575,8 +580,6 @@ li.navigation-list#developer:after{
 }
 li.navigation-list#user{
         background: url(icons/user_.png) no-repeat center #FFF;
-        border: 1px solid #FFF;
-        box-shadow: 0 0 2px -1px #000;
 }
 li.navigation-list#user:after{
         content: 'User';
@@ -585,9 +588,7 @@ li.navigation-list#user:after{
         left: 20px;
 }
 li.navigation-list#admin{
-        background: url(icons/wrench.png) no-repeat center;
-        border: 1px solid #FFF;
-        box-shadow: 0 0 2px -1px #000;
+        background: url(icons/wrench.png) no-repeat center #FFF;
 }
 li.navigation-list#admin:after{
         content: 'Administrator';
@@ -596,9 +597,7 @@ li.navigation-list#admin:after{
         left: -10px;
 }
 li.navigation-list#logout{
-        background: url(icons/logout.png) no-repeat center;
-        border: 1px solid #FFF;
-        box-shadow: 0 0 2px -1px #000;
+        background: url(icons/logout.png) no-repeat center #FFF;
 }
 li.navigation-list#logout:after{
         content: 'Loggout';
@@ -607,9 +606,7 @@ li.navigation-list#logout:after{
         left: 7px;
 }
 li.navigation-list#resources{
-        background: url(icons/filemanager.png) no-repeat center;
-        border: 1px solid #FFF;
-        box-shadow: 0 0 2px -1px #000;
+        background: url(icons/filemanager.png) no-repeat center #FFF;
 }
 li.navigation-list#resources:after{
         content: 'Resources';
@@ -624,9 +621,19 @@ ul#menuList>li.navigation-list>a{
         text-align: center;
         margin-left: -5px;
         margin-top: -5px;
-        -webkit-box-shadow: inset 0px 0px 10px -5px rgba(0,0,0,0.75);
-        -moz-box-shadow: inset 0px 0px 10px -5px rgba(0,0,0,0.75);
-        box-shadow: inset 0px 0px 10px -5px rgba(0,0,0,0.75);
+        -webkit-box-shadow: 0px 0px 2px -1.5px rgba(0,0,0,0.75);
+        -moz-box-shadow: 0px 0px 2px -1.5px rgba(0,0,0,0.75);
+        box-shadow: 0px 0px 2px -1.5px rgba(0,0,0,0.75);
+}
+ul#menuList>li.navigation-list>a:hover{
+        -webkit-box-shadow: 0px 0px 3px -1px tomato;
+        -moz-box-shadow: 0px 0px 3px -1px tomato;
+        box-shadow: 0px 0px 3px -1px tomato;
+}
+ul#menuList>li.navigation-list>a:active{
+        -webkit-box-shadow: inset 0px 0px 2px -1.5px rgba(0,0,0,0.75);
+        -moz-box-shadow: inset 0px 0px 2px -1.5px rgba(0,0,0,0.75);
+        box-shadow: inset 0px 0px 2px -1.5px rgba(0,0,0,0.75);
 }
 
 /*TEST*/
@@ -853,14 +860,10 @@ div.featurebox, .faq_main {
 #Canvas_Content_Body_Region2 .featureboxheader a {
         /*color: #fff;*/
         /* IE9 SVG, needs conditional override of 'filter' to 'none' */
-        background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2ZmZmZmZiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjQ3JSIgc3RvcC1jb2xvcj0iI2Y2ZjZmNiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNlZGVkZWQiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
-        background: -moz-linear-gradient(top,  #ffffff 0%, #f6f6f6 47%, #ededed 100%); /* FF3.6+ */
-        background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(47%,#f6f6f6), color-stop(100%,#ededed)); /* Chrome,Safari4+ */
-        background: -webkit-linear-gradient(top,  #ffffff 0%,#f6f6f6 47%,#ededed 100%); /* Chrome10+,Safari5.1+ */
-        background: -o-linear-gradient(top,  #ffffff 0%,#f6f6f6 47%,#ededed 100%); /* Opera 11.10+ */
-        background: -ms-linear-gradient(top,  #ffffff 0%,#f6f6f6 47%,#ededed 100%); /* IE10+ */
-        background: linear-gradient(to bottom,  #ffffff 0%,#f6f6f6 47%,#ededed 100%); /* W3C */
-        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ededed',GradientType=0 ); /* IE6-8 */
+        background: #FCFCFC;
+        -webkit-box-shadow: 0 2px 5px -4px #777;
+        -moz-box-shadow: 0 2px 5px -4px #777;
+        box-shadow: 0 2px 5px -4px #777;
 }
 
 #Canvas_Content_Body_Region2 h5.featureboxheader {
@@ -2275,7 +2278,7 @@ div.file-preview{
 }
 .date-wrapper, .date-wrapper-inner{
         float: left;
-        margin-right: 25px;
+        margin-right: 10px;
         text-align: center;
 }
 .forumProfileImg{
@@ -2299,18 +2302,11 @@ div.replies{
         margin-top: -10px;
 }
 .newForumTopic {
-        background: #fcfcfc; /* Old browsers */
-        /* IE9 SVG, needs conditional override of 'filter' to 'none' */
-        background:url('images/bg.jpg') repeat-y left, url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2ZmZmZmZiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjQ3JSIgc3RvcC1jb2xvcj0iI2Y2ZjZmNiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNlZGVkZWQiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
-        background: url('images/bg.jpg') repeat-y left, -moz-linear-gradient(top,  #ffffff 0%, #f6f6f6 47%, #ededed 100%); /* FF3.6+ */
-        background:url('images/bg.jpg') repeat-y left,  -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(47%,#f6f6f6), color-stop(100%,#ededed)); /* Chrome,Safari4+ */
-        background:url('images/bg.jpg') repeat-y left, -webkit-linear-gradient(top,  #ffffff 0%,#f6f6f6 47%,#ededed 100%); /* Chrome10+,Safari5.1+ */
-        backgrounde:url('images/bg.jpg') repeat-y left, -o-linear-gradient(top,  #ffffff 0%,#f6f6f6 47%,#ededed 100%); /* Opera 11.10+ */
-        background:url('images/bg.jpg') repeat-y left, -ms-linear-gradient(top,  #ffffff 0%,#f6f6f6 47%,#ededed 100%); /* IE10+ */
-        background:url('images/bg.jpg') repeat-y left, linear-gradient(to bottom,  #ffffff 0%,#f6f6f6 47%,#ededed 100%); /* W3C */
-        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ededed',GradientType=0 ); /* IE6-8 */
-        /*background: url('images/bg.jpg') repeat-y left #f0f0f0;*/
-        border-bottom: 1px solid #ccc;
+        background:url('images/bg.jpg') repeat-y left, #FCFCFC; /* W3C */
+        -webkit-box-shadow: 0 2px 5px -4px #777;
+        -moz-box-shadow: 0 2px 5px -4px #777;
+        box-shadow: 0 2px 5px -4px #777;
+        padding: 5px;
 }
 div.newForumTopic a>img, div.newForumTopic.inner a>img{
         margin: 12px;
