@@ -103,7 +103,17 @@ if (!isset($og_content)) {
 } else {
         $og_content = strip_tags($og_content);
 }
-
+if ($this->objUser->isLoggedIn()) {
+        $module = $this->getParam('module', NULL);
+        if (empty($module)) {
+                header('location:index.php?module=postlogin');
+        }
+} else {
+        $module = $this->getParam('module', NULL);
+        if (empty($module)) {
+                header('location:index.php?module=prelogin');
+        }
+}
 // Render the head section of the page. Note that there can be no space or
 // blank lines between the PHP closing tag and the HTML head tag. It must be
 // exactly as below.
@@ -129,6 +139,7 @@ if (!isset($og_content)) {
 
         <link rel="stylesheet" type="text/css" href="cache.css">
         <link rel="icon" type="image/png" href="skins/' . $skinName . '/favicon.png" />
+                <link href="http://fonts.googleapis.com/css?family=Pontano+Sans" rel="stylesheet" type="text/css">
             
         ';
         }
@@ -193,10 +204,10 @@ if (!isset($pageSuppressContainer)) {
                                                 </h1>
                                                 <?php // echo '</a>'; ?>
                                         </div>    
-                                        <div class='floathead' id='floathead_content3'><?php // echo $banner3;      ?></div>
-                                        <div class='floathead' id='floathead_content2'><?php // echo $banner2;      ?></div>
-                                        <div class='floathead' id='floathead_content1'><?php // echo $banner1;      ?></div>
-                                        <div class='floathead' id='floathead_content0'><?php // echo $banner0;      ?></div>
+                                        <div class='floathead' id='floathead_content3'><?php // echo $banner3;        ?></div>
+                                        <div class='floathead' id='floathead_content2'><?php // echo $banner2;        ?></div>
+                                        <div class='floathead' id='floathead_content1'><?php // echo $banner1;        ?></div>
+                                        <div class='floathead' id='floathead_content0'><?php // echo $banner0;        ?></div>
                                         <?php
                                 }
 

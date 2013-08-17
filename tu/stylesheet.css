@@ -27,9 +27,9 @@ body {
         font-weight: lighter;
         letter-spacing: 1px;
         line-height: 1.4em;
-        font-family: "Lucida sans",  Arial, sans-serif;
+        font-family: "Pontano Sans", "Lucida sans",  Arial, sans-serif;
         background-attachment: fixed;
-        color: #323232;
+        color: #595959;
         background: rgba(252,252,252,1);
 }
 
@@ -86,6 +86,8 @@ li.navigation-list-wrapper#home{
         background: url(icons/home.png) no-repeat center #FFF;
         border: 1px solid #FFF;
         box-shadow: 0 0 2px -1px #000;
+        -webkit-box-shadow: 0 0 2px -1px #000;
+        -moz-box-shadow: 0 0 2px -1px #000;
 }
 li.navigation-list-wrapper#home:after{
         content: 'Home';
@@ -97,6 +99,8 @@ li.navigation-list-wrapper#filemanager{
         background: url(icons/modules/filemanager.png) no-repeat center #FFF;
         border: 1px solid #FFF;
         box-shadow: 0 0 2px -1px #000;
+        -webkit-box-shadow: 0 0 2px -1px #000;
+        -moz-box-shadow: 0 0 2px -1px #000;
 }
 li.navigation-list-wrapper#filemanager:after{
         content: 'File manager';
@@ -108,6 +112,8 @@ li.navigation-list-wrapper#profile{
         background: url(icons/user_.png) no-repeat center #FFF;
         border: 1px solid #FFF;
         box-shadow: 0 0 2px -1px #000;
+        -webkit-box-shadow: 0 0 2px -1px #000;
+        -moz-box-shadow: 0 0 2px -1px #000;
 }
 li.navigation-list-wrapper#profile:after{
         content: 'Profile';
@@ -119,6 +125,8 @@ li.navigation-list-wrapper#simpleblog{
         background: url(icons/modules/simpleblog.png) no-repeat center #FFF;
         border: 1px solid #FFF;
         box-shadow: 0 0 2px -1px #000;
+        -webkit-box-shadow: 0 0 2px -1px #000;
+        -moz-box-shadow: 0 0 2px -1px #000;
 }
 li.navigation-list-wrapper#simpleblog:after{
         content: 'Simple Blog';
@@ -130,6 +138,8 @@ li.navigation-list-wrapper#faq{
         background: url(icons/modules/faq.png) no-repeat center #FFF;
         border: 1px solid #FFF;
         box-shadow: 0 0 2px -1px #000;
+        -webkit-box-shadow: 0 0 2px -1px #000;
+        -moz-box-shadow: 0 0 2px -1px #000;
 }
 li.navigation-list-wrapper#faq:after{
         content: 'FAQ';
@@ -141,6 +151,8 @@ li.navigation-list-wrapper#forum{
         background: url(icons/modules/forum.png) no-repeat center #FFF;
         border: 1px solid #FFF;
         box-shadow: 0 0 2px -1px #000;
+        -webkit-box-shadow: 0 0 2px -1px #000;
+        -moz-box-shadow: 0 0 2px -1px #000;
 }
 li.navigation-list-wrapper#forum:after{
         content: 'Forum';
@@ -152,6 +164,8 @@ li.navigation-list-wrapper#logout{
         background: url(icons/logout.png) no-repeat center #FFF;
         border: 2px solid #FFF;
         box-shadow: 0 0 2px -1px #000;
+        -webkit-box-shadow: 0 0 2px -1px #000;
+        -moz-box-shadow: 0 0 2px -1px #000;
 }
 li.navigation-list-wrapper#logout:after{
         content: 'Logout';
@@ -277,14 +291,30 @@ div.loginbuttonwrap button:active{
 }
 div#login #input_username, div#login #input_password{
         width: 250px;
-        border-bottom: 1px solid #ccc;
-        border-right: none;
+        /*border: 1px solid #ccc;*/
+/*        border-right: none;
         border-left: none;
-        border-top: none;
+        */border: 1px solid #FFF;
         height: 50px;
         font-size: 2em;
         text-align: center;
         background: none;
+        box-shadow: inset 0 1px 3px -1px #595959, 0 4px 5px -4px #595959;
+        -moz-box-shadow: inset 0 1px 3px -1px #595959, 0 4px 5px -4px #595959;
+        -webkit-box-shadow: inset 0 1px 3px -1px #595959, 0 4px 5px -4px #595959;
+}
+div#login #input_username:focus, div#login #input_password:focus{
+        box-shadow: 0 4px 5px -4px #fe6347;
+        -moz-box-shadow: 0 4px 5px -4px #fe6347;
+        -webkit-box-shadow: 0 4px 5px -4px #fe6347;
+}
+div#login #input_password:focus
+div#login #input_username:after{
+        content: '';
+        position: absolute;
+        padding: 50px;
+        border: 50px solid red;
+        width: 10px;
 }
 div.openidlogin{
         text-align: center;
@@ -444,7 +474,7 @@ div.Canvas_Content_Head_Before div#search label {
         right: 0;
         /*border-bottom: 5px solid #363e63;*/
         z-index: 100;
-        box-shadow: 0 0 5px #000;
+        box-shadow: 0 0 10px -1px #000;
         /*background: url(images/logo.png) no-repeat left #fff;*/
         background: url(images/navigation.png) rgba(252,252,252,1);
 }
@@ -671,15 +701,7 @@ ul#menuList li ul {
         -webkit-box-shadow: 0 0 2px -1px;
         -moz-box-shadow: 0 0 2px -1px;
         box-shadow: 0 0 2px -1px;
-        /* IE9 SVG, needs conditional override of 'filter' to 'none' */
-        background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2ZmZmZmZiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjQ3JSIgc3RvcC1jb2xvcj0iI2Y2ZjZmNiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNlZGVkZWQiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
-        background: -moz-linear-gradient(top,  #ffffff 0%, #f6f6f6 47%, #ededed 100%); /* FF3.6+ */
-        background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(47%,#f6f6f6), color-stop(100%,#ededed)); /* Chrome,Safari4+ */
-        background: -webkit-linear-gradient(top,  #ffffff 0%,#f6f6f6 47%,#ededed 100%); /* Chrome10+,Safari5.1+ */
-        background: -o-linear-gradient(top,  #ffffff 0%,#f6f6f6 47%,#ededed 100%); /* Opera 11.10+ */
-        background: -ms-linear-gradient(top,  #ffffff 0%,#f6f6f6 47%,#ededed 100%); /* IE10+ */
-        background: linear-gradient(to bottom,  #ffffff 0%,#f6f6f6 47%,#ededed 100%); /* W3C */
-        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ededed',GradientType=0 ); /* IE6-8 */
+        background: #FFF;
         z-index: 90;
 }
 ul#menuList li ul li a {
@@ -745,34 +767,8 @@ ul#menuList  li  ul li:hover a{
         color: #FFF;
 }
 ul#menuList  li  ul li:hover {
-        background:  -webkit-gradient(
-                linear,
-                left top, left bottom,
-                from(#ff7849),
-                to(#e94c15)
-                );
-        background: -webkit-linear-gradient(
-                top,
-                #ff7849,
-                #e94c15
-                );
-        background:  -moz-linear-gradient(
-                top,
-                #ff7849,
-                #e94c15
-                );
-        background:  -o-linear-gradient(
-                top,
-                #ff7849,
-                #e94c15
-                );
-        background: linear-gradient(
-                top,
-                #ff7849,
-                #e94c15
-                );
+        background: #595959;
         text-align: left;
-        /*width: 250px;*/
 }
 /* Increase padding on the last right item*/
 ul#menuList  li  li.last a{
@@ -831,7 +827,6 @@ input[type='checkbox'], .transparentbgnb{
 }
 .featureboxheader, .contentfeaturebox h3, .newForumTopic  {
         left: 0 !important;
-        color: #000;
         background-color: #FFF;
 }
 
@@ -2269,7 +2264,7 @@ div.file-preview{
         font-weight: 600;
 }
 .date-year, .date-year-inner{
-        margin-top: 1px;
+        margin-top: 3px;
 }
 .date-month, .date-month-inner{
         color: #FFF;
@@ -2279,6 +2274,7 @@ div.file-preview{
 .date-wrapper, .date-wrapper-inner{
         float: left;
         margin-right: 10px;
+        margin-left: -3px;
         text-align: center;
 }
 .forumProfileImg{
@@ -2301,12 +2297,21 @@ div.replies{
         margin-right: 100px;
         margin-top: -10px;
 }
-.newForumTopic {
+.newForumTopic{
         background:url('images/bg.jpg') repeat-y left, #FCFCFC; /* W3C */
         -webkit-box-shadow: 0 2px 5px -4px #777;
         -moz-box-shadow: 0 2px 5px -4px #777;
         box-shadow: 0 2px 5px -4px #777;
         padding: 5px;
+}
+.newForumTopic:before{
+        content: '';
+        border-right: 20px solid #595959;
+        border-left: 20px solid transparent;
+        border-top: 20px solid transparent;
+        border-bottom: 20px solid transparent;
+        position: absolute;
+        left: -40px;
 }
 div.newForumTopic a>img, div.newForumTopic.inner a>img{
         margin: 12px;
@@ -2352,20 +2357,18 @@ textarea{
         margin-left: 95px;
 }
 .buttonLink, .ok{
-        color: #000 !important;
+        color: #FFF !important;
         padding: 5px;
-        background: #ffffff; /* Old browsers */
-        background: -moz-linear-gradient(top,  #ffffff 0%, #f6f6f6 47%, #ededed 100%); /* FF3.6+ */
-        background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(47%,#f6f6f6), color-stop(100%,#ededed)); /* Chrome,Safari4+ */
-        background: -webkit-linear-gradient(top,  #ffffff 0%,#f6f6f6 47%,#ededed 100%); /* Chrome10+,Safari5.1+ */
-        background: -o-linear-gradient(top,  #ffffff 0%,#f6f6f6 47%,#ededed 100%); /* Opera 11.10+ */
-        background: -ms-linear-gradient(top,  #ffffff 0%,#f6f6f6 47%,#ededed 100%); /* IE10+ */
-        background: linear-gradient(to bottom,  #ffffff 0%,#f6f6f6 47%,#ededed 100%); /* W3C */
-        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ededed',GradientType=0 ); /* IE6-9 */
+        background: #595959; /* Old browsers */
         box-shadow: 0 0 2px #000;
         -webkit-box-shadow: 0 0 2px #000;
         -moz-box-shadow: 0 0 2px #000;
-        border-radius: 3px;
+        border-radius: 1px;
+}
+.buttonLink:active , .ok:active{
+        box-shadow: inset 0 0 2px #000;
+        -webkit-box-shadow: inset 0 0 2px #000;
+        -moz-box-shadow: inset 0 0 2px #000;
 }
 /*.forum_main table tbody*/
 div.forum_main table{
@@ -2486,8 +2489,6 @@ span.numberindicator{
         font-size: 3em;
         font-weight: 900;
         text-align: center;
-        /*margin-left: 5px;*/
-        /*padding: 10px;*/
 }
 a.indicator:hover{
         background: #cdcdcd;
@@ -2537,10 +2538,9 @@ div.hiddenOptions{
         width: 170px;
         opacity: .9;
         color: #fff;
-        /*height: 150px;*/
         z-index: 150;
         padding: 10px;
-        margin: 2px;
+        margin: 2px 0 0 80px;
         box-shadow: 0 2px 2px #000;
         border-radius: 3px;
         -moz-border-radius: 3px;
