@@ -493,7 +493,7 @@ ul#navigation-list>li{
         margin-top: 16px;
 }
 .Canvas_Content_Head_Breadcrumbs{
-        margin: 5px 0 0 0;
+        margin: 25px 0 0 0;
 }
 /* End of navigation bar */
 #Canvas_BeforeContainer {
@@ -738,7 +738,6 @@ ul#menuList  li ul li {
         color: #555;
         padding: 0;
         border-bottom: 1.5px solid #e5e5e5;
-        border-top: 1.5px solid #ffffff;
 }
 ul#menuList  li ul li img{
         display: none;
@@ -821,6 +820,9 @@ ul#menuList  li  li.last a{
 }
 .contentfeaturebox{
         background: #FFF;
+        -moz-box-shadow: 0 25px 30px -29px #000;
+        -webkit-box-shadow: 0 25px 30px -29px #000;
+        box-shadow: 0 25px 30px -29px #000;
 }
 input[type='checkbox'], .transparentbgnb{
         padding: 100px;
@@ -2274,7 +2276,7 @@ div.file-preview{
 .date-wrapper, .date-wrapper-inner{
         float: left;
         margin-right: 10px;
-        margin-left: -3px;
+        margin-left: 1px;
         text-align: center;
 }
 .forumProfileImg{
@@ -2287,9 +2289,6 @@ div.file-preview{
         box-shadow: 0 0 3px rgba(0,0,0,0.75);
         border: 3px solid #fff;
         border-radius: 3px;
-}
-span.forumPointer1, span.forumPointer2, span.forumPointer3{
-        position: absolute;
 }
 div.replies{
         background: red;
@@ -2312,6 +2311,7 @@ div.replies{
         border-bottom: 20px solid transparent;
         position: absolute;
         left: -40px;
+        top: 12px;
 }
 div.newForumTopic a>img, div.newForumTopic.inner a>img{
         margin: 12px;
@@ -2343,15 +2343,6 @@ span.forumPointer3{
         height: 35px;
         z-index: 0;
         display: none;
-}
-textarea{
-        resize: none;
-        font-family: 'Ubuntu light';
-        border-radius: 3px;
-        border: 1px solid #bdbdbd;
-        -webkit-border-radius: 3px;
-        -moz-border-radius: 3px;
-        margin: 5px;
 }
 .miniwrapper{
         margin-left: 95px;
