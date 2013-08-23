@@ -204,10 +204,10 @@ if (!isset($pageSuppressContainer)) {
                                                 </h1>
                                                 <?php // echo '</a>'; ?>
                                         </div>    
-                                        <div class='floathead' id='floathead_content3'><?php // echo $banner3;        ?></div>
-                                        <div class='floathead' id='floathead_content2'><?php // echo $banner2;        ?></div>
-                                        <div class='floathead' id='floathead_content1'><?php // echo $banner1;        ?></div>
-                                        <div class='floathead' id='floathead_content0'><?php // echo $banner0;        ?></div>
+                                        <div class='floathead' id='floathead_content3'><?php // echo $banner3;         ?></div>
+                                        <div class='floathead' id='floathead_content2'><?php // echo $banner2;         ?></div>
+                                        <div class='floathead' id='floathead_content1'><?php // echo $banner1;         ?></div>
+                                        <div class='floathead' id='floathead_content0'><?php // echo $banner0;         ?></div>
                                         <?php
                                 }
 
@@ -229,39 +229,40 @@ if (!isset($pageSuppressContainer)) {
                                          */
                                         $homeLink = new link('index.php?module=postlogin');
                                         $objIcon->setIcon('home');
-//                                        $homeLink->link = $objIcon->show();
+                                        $homeLink->link = 'Home';
                                         $homeLink->cssClass = "sexybutton";
                                         /**
                                          * ==file manager link
                                          */
                                         $fileManLink = new link('index.php?module=filemanager');
                                         $objIcon->setIcon('filemanager');
-//                                        $fileManLink->link = $objIcon->show();
+                                        $fileManLink->link = 'File Manager';
                                         $fileManLink->cssClass = "sexybutton";
                                         /**
                                          * ==profile link
                                          */
                                         $profileLink = new link('index.php?module=userdetails');
                                         $objIcon->setIcon('user_settings');
-//                                        $profileLink->link = $objIcon->show();
+                                        $profileLink->link = 'My Profile';
                                         $profileLink->cssClass = 'sexybutton';
                                         /**
                                          * ==forum link
                                          */
                                         $forumLink = new link('index.php?module=forum');
                                         $objIcon->setIcon('forum');
-//                                        $forumLink->link = $objIcon->show();
+                                        $forumLink->link = 'Forum';
                                         $forumLink->cssClass = "sexybutton";
                                         /**
                                          * Simple blog link
                                          */
                                         $blogLink = new link('index.php?module=simpleblog');
+                                        $blogLink->link = "Simple Blog";
                                         /**
                                          * ==lgout
                                          */
                                         $logoutLink = new link('index.php?module=security&action=logoff');
                                         $objIcon->setIcon('logout');
-//                                        $logoutLink->link = $objIcon->show();
+                                        $logoutLink->link = 'Logout';
 //                                        $logoutLink->link = "<br/><br/>Text";
                                         $logoutLink->cssClass = 'sexybutton';
                                         if ($this->objUser->isLoggedin()) {
@@ -273,6 +274,13 @@ if (!isset($pageSuppressContainer)) {
                 </div>
                 \n</div></div>";
                                                 } else {
+                                                        //Generate correct breadcrumbs
+                                                        $action = $this->getParam('action');
+                                                        if ($action == 'flatview' || $action == 'forum') {
+                                                                $crumbsValue = $this->getVar('breadcrumbs');
+                                                                $this->objBreadCrumbs->addToBreadCrumbs($crumbsValue);
+                                                                $crumbs = $this->objBreadCrumbs->navigation();
+                                                        }
                                                         echo "\n\n<div class='navigation-wrapper' ><div id='navigation'>\n\n" . "
                 <div class='navigation-list-wrapper' >
                 <nav id='logo' ><a href='index.php' id='logo-link' class='logo' ></a></nav>
@@ -292,18 +300,19 @@ if (!isset($pageSuppressContainer)) {
 //                                        }
                                         } else {
                                                 $homeLink = new link("index.php?module=prelogin");
+                                                $homeLink->link = "Home";
                                                 /**
                                                  * ===FAQ Icon===
                                                  */
                                                 $faq = new link('index.php?module=faq');
                                                 $objIcon->setIcon('faq');
-//                                                $faq->link = $objIcon->show().'<br/>FAQ';
+                                                $faq->link = 'FAQ';
                                                 /**
                                                  * ===Blog icon====
                                                  */
                                                 $blogLink = new link('index.php?module=simpleblog');
                                                 $objIcon->setIcon('blog');
-//                                                $blogLink->link = $objIcon->show().'<br/>Blog';
+                                                $blogLink->link = 'Simple Blog';
                                                 echo "\n\n<div class='navigation-wrapper' ><div id='navigation'>\n\n" . "
                 <div class='navigation-list-wrapper' >
                 <nav id='logo' ><a href='index.php' id='logo-link' class='logo' ></a></nav>

@@ -89,12 +89,15 @@ li.navigation-list-wrapper#home{
         -webkit-box-shadow: 0 0 2px -1px #000;
         -moz-box-shadow: 0 0 2px -1px #000;
 }
-li.navigation-list-wrapper#home:after{
+li.navigation-list-wrapper#home label{
+        margin-left: -19px;
+}
+/*li.navigation-list-wrapper#home:after{
         content: 'Home';
         position: absolute;
         bottom: 0;
         margin-left: -21px;
-}
+}*/
 li.navigation-list-wrapper#filemanager{
         background: url(icons/modules/filemanager.png) no-repeat center #FFF;
         border: 1px solid #FFF;
@@ -102,12 +105,15 @@ li.navigation-list-wrapper#filemanager{
         -webkit-box-shadow: 0 0 2px -1px #000;
         -moz-box-shadow: 0 0 2px -1px #000;
 }
-li.navigation-list-wrapper#filemanager:after{
+li.navigation-list-wrapper#filemanager label{
+        margin-left: -40px;
+}
+/*li.navigation-list-wrapper#filemanager:after{
         content: 'File manager';
         position: absolute;
         bottom: 0;
         margin-left: -43px;
-}
+}*/
 li.navigation-list-wrapper#profile{
         background: url(icons/user_.png) no-repeat center #FFF;
         border: 1px solid #FFF;
@@ -115,12 +121,15 @@ li.navigation-list-wrapper#profile{
         -webkit-box-shadow: 0 0 2px -1px #000;
         -moz-box-shadow: 0 0 2px -1px #000;
 }
-li.navigation-list-wrapper#profile:after{
+li.navigation-list-wrapper#profile label{
+        margin-left: -30px;
+}
+/*li.navigation-list-wrapper#profile:after{
         content: 'Profile';
         position: absolute;
         bottom: 0;
         margin-left: -21px;
-}
+}*/
 li.navigation-list-wrapper#simpleblog{
         background: url(icons/modules/simpleblog.png) no-repeat center #FFF;
         border: 1px solid #FFF;
@@ -128,12 +137,15 @@ li.navigation-list-wrapper#simpleblog{
         -webkit-box-shadow: 0 0 2px -1px #000;
         -moz-box-shadow: 0 0 2px -1px #000;
 }
-li.navigation-list-wrapper#simpleblog:after{
+li.navigation-list-wrapper#simpleblog label{
+        margin-left: -35px;
+}
+/*li.navigation-list-wrapper#simpleblog:after{
         content: 'Simple Blog';
         position: absolute;
         bottom: 0;
         margin-left: -40px;
-}
+}*/
 li.navigation-list-wrapper#faq{
         background: url(icons/modules/faq.png) no-repeat center #FFF;
         border: 1px solid #FFF;
@@ -141,12 +153,18 @@ li.navigation-list-wrapper#faq{
         -webkit-box-shadow: 0 0 2px -1px #000;
         -moz-box-shadow: 0 0 2px -1px #000;
 }
-li.navigation-list-wrapper#faq:after{
+li.navigation-list-wrapper#faq label{
+        margin-left: -12px;
+}
+li.navigation-list-wrapper#simpleblog label{
+        margin-left: -37px;
+}
+/*li.navigation-list-wrapper#faq:after{
         content: 'FAQ';
         position: absolute;
         bottom: 0;
         margin-left: -17px;
-}
+}*/
 li.navigation-list-wrapper#forum{
         background: url(icons/modules/forum.png) no-repeat center #FFF;
         border: 1px solid #FFF;
@@ -154,12 +172,15 @@ li.navigation-list-wrapper#forum{
         -webkit-box-shadow: 0 0 2px -1px #000;
         -moz-box-shadow: 0 0 2px -1px #000;
 }
-li.navigation-list-wrapper#forum:after{
-        content: 'Forum';
-        position: absolute;
-        bottom: 0;
-        margin-left: -21px;
+li.navigation-list-wrapper#forum label{
+        margin-left: -18px;
 }
+/*li.navigation-list-wrapper#forum:after{
+        content: 'Forum';
+                position: absolute;
+                bottom: 0;
+                margin-left: -21px;
+}*/
 li.navigation-list-wrapper#logout{
         background: url(icons/logout.png) no-repeat center #FFF;
         border: 2px solid #FFF;
@@ -167,12 +188,15 @@ li.navigation-list-wrapper#logout{
         -webkit-box-shadow: 0 0 2px -1px #000;
         -moz-box-shadow: 0 0 2px -1px #000;
 }
-li.navigation-list-wrapper#logout:after{
+li.navigation-list-wrapper#logout label{
+        margin-left: -20px;
+}
+/*li.navigation-list-wrapper#logout:after{
         content: 'Logout';
         position: absolute;
         bottom: 0;
         margin-left: -24px;
-}
+}*/
 li.navigation-list-wrapper>a{
         position: absolute;
         border-radius: 100%;
@@ -189,7 +213,7 @@ li.navigation-list-wrapper>a:hover{
         -moz-box-shadow: 0px 0px 2px -1px tomato;
         box-shadow: 0px 0px 2px -1px tomato;
 }
-li.navigation-list-wrapper>a:active{
+li.navigation-list-wrapper>a:active li.navigation-list-wrapper{
         -webkit-box-shadow: inset 0px 0px 2px -1px rgba(0,0,0,0.75);
         -moz-box-shadow: inset 0px 0px 2px -1px rgba(0,0,0,0.75);
         box-shadow: inset 0px 0px 2px -1px rgba(0,0,0,0.75);
@@ -292,8 +316,8 @@ div.loginbuttonwrap button:active{
 div#login #input_username, div#login #input_password{
         width: 250px;
         /*border: 1px solid #ccc;*/
-/*        border-right: none;
-        border-left: none;
+        /*        border-right: none;
+                border-left: none;
         */border: 1px solid #FFF;
         height: 50px;
         font-size: 2em;
@@ -593,57 +617,75 @@ ul#menuList>li.navigation-list {
 li.navigation-list#home{
         background: url(icons/home.png) no-repeat center #FFF;
 }
-li.navigation-list#home:after{
+li.navigation-list#home label{
+        margin-left: -20px;
+}
+/*li.navigation-list#home:after{
         content: 'Home';
         position: absolute;
         bottom: -18px;
         left: 14px;
-}
+}*/
 li.navigation-list#developer{
         background: url(icons/developer.png) no-repeat center #FFF;
 }
-li.navigation-list#developer:after{
+li.navigation-list#developer label{
+        margin-left: -35px;
+}
+/*li.navigation-list#developer:after{
         content: 'Developer';
         position: absolute;
         bottom: -18px;
         left: 5px;
-}
+}*/
 li.navigation-list#user{
         background: url(icons/user_.png) no-repeat center #FFF;
 }
-li.navigation-list#user:after{
+li.navigation-list#user label{
+        margin-left: -17px;
+}
+/*li.navigation-list#user:after{
         content: 'User';
         position: absolute;
         bottom: -18px;
         left: 20px;
-}
+}*/
 li.navigation-list#admin{
         background: url(icons/wrench.png) no-repeat center #FFF;
 }
-li.navigation-list#admin:after{
+li.navigation-list#admin label{
+        margin-left: -20px;
+}
+/*li.navigation-list#admin:after{
         content: 'Administrator';
         position: absolute;
         bottom: -18px;
         left: -10px;
-}
+}*/
 li.navigation-list#logout{
         background: url(icons/logout.png) no-repeat center #FFF;
 }
-li.navigation-list#logout:after{
+li.navigation-list#logout label{
+        margin-left: -25px;
+}
+/*li.navigation-list#logout:after{
         content: 'Loggout';
         position: absolute;
         bottom: -18px;
         left: 7px;
-}
+}*/
 li.navigation-list#resources{
         background: url(icons/filemanager.png) no-repeat center #FFF;
 }
-li.navigation-list#resources:after{
+li.navigation-list#resources label{
+        margin-left: -33px;
+}
+/*li.navigation-list#resources:after{
         content: 'Resources';
         bottom: -18px;
         position: absolute;
         left: -2px;
-}
+}*/
 ul#menuList>li.navigation-list>a{
         position: absolute;
         border-radius: 100%;
@@ -666,21 +708,13 @@ ul#menuList>li.navigation-list>a:active{
         box-shadow: inset 0px 0px 2px -1.5px rgba(0,0,0,0.75);
 }
 
-/*TEST*/
-ul.adxm>li:last-child {
+/*Navigation labels*/
+label.navigation-label{
+        position: absolute;
+        margin-top: 60px;
+        font-weight:  normal;
 }
-@media all and (min-width: 0px) {
-}
-ul.adxm>li:last-child:hover {
-}
-@media all and (min-width: 0px) {
-}
-ul.adxm>li:first-child {
-}
-@media all and (min-width: 0px) {
-
-}
-/*TEST*/
+/*end*/
 ul.adxm>li:first-child:hover{
 
 }
@@ -833,7 +867,7 @@ input[type='checkbox'], .transparentbgnb{
 }
 
 div.featurebox, .faq_main {
-        background-color: #FFF;
+        /*background-color: #FFF;*/
         margin-bottom: 25px !important;
         -moz-box-shadow: 0 25px 30px -29px #000;
         -webkit-box-shadow: 0 25px 30px -29px #000;
@@ -974,7 +1008,6 @@ div#blog-title-text{
 }
 /** Fix latest 10 blog block */
 #lastten p {
-        font-family:Ubuntu, Arial, serif;
         font-size: 90%;
         margin-top: -7px;
 }
@@ -983,7 +1016,6 @@ div#blog-title-text{
         margin-right: 3px;
 }
 #lastten p .minute {
-        font-family: Ubuntu, Arial, serif;
         font-size: 70%;
         margin-left:10px;
 }
@@ -1141,7 +1173,6 @@ option.by-sa_gnu-fdl {
         float:left;
         width:960px;
         height: 46px;
-        font-family:Ubuntu, verdana, arial, sans-serif;
         font-size:11px;
         padding-top: 10px;
         padding-bottom: 0px;
@@ -1164,7 +1195,7 @@ option.by-sa_gnu-fdl {
         display:block;
         padding:5px;
         color:#fff;
-        border:1px solid #26759e; -webkit-border-radius: 3px; -moz-border-radius: 3px;border-radius: 3px;font-family: Ubuntu, arial, helvetica, sans-serif; padding: 10px 10px 10px 10px; text-shadow: -1px -1px 0 rgba(0,0,0,0.3);text-align: center; color: #FFFFFF; background-color: #3093c7;
+        border:1px solid #26759e; -webkit-border-radius: 3px; -moz-border-radius: 3px;border-radius: 3px; padding: 10px 10px 10px 10px; text-shadow: -1px -1px 0 rgba(0,0,0,0.3);text-align: center; color: #FFFFFF; background-color: #3093c7;
         background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #3093c7), color-stop(100%, #1c5a85));
         background-image: -webkit-linear-gradient(top, #3093c7, #1c5a85);
         background-image: -moz-linear-gradient(top, #3093c7, #1c5a85);
@@ -1193,7 +1224,7 @@ option.by-sa_gnu-fdl {
 }
 /* Persistent all menu item hovers */
 .plmenu li:hover a{
-        border:1px solid #4b546a; -webkit-border-radius: 3px; -moz-border-radius: 3px;border-radius: 3px;font-family: Ubuntu, arial, helvetica, sans-serif; padding: 10px 10px 10px 10px; text-shadow: -1px -1px 0 rgba(0,0,0,0.3); text-align: center; color: #FFFFFF; background-color: #606c88;
+        border:1px solid #4b546a; -webkit-border-radius: 3px; -moz-border-radius: 3px;border-radius: 3px; padding: 10px 10px 10px 10px; text-shadow: -1px -1px 0 rgba(0,0,0,0.3); text-align: center; color: #FFFFFF; background-color: #606c88;
         background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #606c88), color-stop(100%, #3f4c6b));
         background-image: -webkit-linear-gradient(top, #606c88, #3f4c6b);
         background-image: -moz-linear-gradient(top, #606c88, #3f4c6b);
@@ -1216,7 +1247,7 @@ option.by-sa_gnu-fdl {
 
 /* menu item hovers */
 .plmenu li:hover ul li a:hover{
-        border:1px solid #77021d; -webkit-border-radius: 3px; -moz-border-radius: 3px;border-radius: 3px;font-family:Ubuntu,arial, helvetica, sans-serif; padding: 10px 10px 10px 10px; text-shadow: -1px -1px 0 rgba(0,0,0,0.3); text-align: center; color: #FFFFFF; background-color: #a90329;
+        border:1px solid #77021d; -webkit-border-radius: 3px; -moz-border-radius: 3px;border-radius: 3px; padding: 10px 10px 10px 10px; text-shadow: -1px -1px 0 rgba(0,0,0,0.3); text-align: center; color: #FFFFFF; background-color: #a90329;
         background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #a90329), color-stop(100%, #6d0019));
         background-image: -webkit-linear-gradient(top, #a90329, #6d0019);
         background-image: -moz-linear-gradient(top, #a90329, #6d0019);
@@ -1470,6 +1501,23 @@ a.thumbnailview{
 /* --------------- END TURN EDITING ON -----------------*/
 
 /* ------------- BEGIN SIMPLE BLOG MODULE --------------*/
+#sb_date_wrapper{
+        display: block;
+        float: left;
+        padding: 5px;
+        color: #FFF;
+        text-align: center;
+        font-size: 120%;
+        font-weight: bold;
+        background: #595959;
+}
+#sb_title_wrapper{
+        padding: 5px;
+        background: #595959;
+}
+#sb_title_wrapper a{
+        color: #FFF;
+}
 .simpleblog_view_wall, a.togglewall_link {
         background:#3b5998;
         color:#ffffff;
@@ -1519,15 +1567,17 @@ a.thumbnailview{
         margin-right: 10px;
 }
 div.simpleblog_post_content{
-        padding: 10px;
+        padding-left: 5px;
 }
 .simpleblog_post_wrapper {
         /*background: url("images/overlaygr.png") top left repeat;*/
         margin-bottom: 20px;
-        margin-left: 64px;
+        margin-left: 50px;
         /*padding: 8px;*/
         padding-bottom: 14px;
-        border-top-right-radius: 8px;
+        background: #fafafa;
+        border-bottom: 1px solid #c0c0c0;
+/*        border-top-right-radius: 8px;
         -moz-border-radius-topright: 8px;
         -webkit-border-top-right-radius: 8px;
         -khtml-border-radius-topright: 8px;
@@ -1542,7 +1592,11 @@ div.simpleblog_post_content{
         border-bottom-left-radius: 6px;
         -moz-border-radius-bottomleft: 6px;
         -webkit-border-bottom-left-radius: 6px;
-        -khtml-border-radius-bottomleft: 6px;
+        -khtml-border-radius-bottomleft: 6px;*/
+}
+.simpleblog_post_wrapper a{
+        /*color: #595959;*/
+        font-size: 110%;
 }
 .content_form_element {
         width: 950px;
@@ -1765,7 +1819,6 @@ div.simpleblog_post_tags a.tag_active:visited:hover {
 
 /* ------------ BEGIN TWITTER MODULE BLOCKS ------------*/
 .query {
-        font-family: Ubuntu, Arial, serif;
         font-size: 80%;
         color: #085258;
         margin-left: 0px;
@@ -1808,7 +1861,6 @@ div.simpleblog_post_tags a.tag_active:visited:hover {
         vertical-align: middle;
 }
 #myLastTweet {
-        font-family:Ubuntu, Arial, serif;
         font-size: 80%;
         color: #085258;
 }
@@ -2041,7 +2093,6 @@ div.simpleblog_post_tags a.tag_active:visited:hover {
 .faq_main h1{
         margin: 0;
         margin-bottom: 15px;
-        font-family: "Ubuntu light";
 }
 .faq_main ol>li{
         /*margin-top: 10px;*/
@@ -2230,6 +2281,25 @@ a.forumDownload:active, a.forumViewAttachment:active{
         box-shadow: inset 0 0 4px #000;
         -moz-box-shadow: inset 0 0 4px #000;
         -webkit-box-shadow: inset 0 0 4px #000;
+}
+a.floatingSideNavigation{
+        position: fixed;
+        bottom: 50%;
+        right: 0;
+        display: inline-block;
+}
+a.floatingSideNavigation#top{
+        margin: 0 7px 20px;
+        background: #595959;
+        color: #FFF;
+        padding: 5px;
+        border-bottom: 7px solid #FFF;
+}
+a.floatingSideNavigation#bottom{
+        background: #595959;
+        color: #FFF;
+        padding: 5px;
+        border-top: 2px solid #FFF;
 }
 a.forumDownload{
         background: #f0f0f0;
