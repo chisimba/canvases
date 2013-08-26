@@ -2224,7 +2224,7 @@ label.checked{
 label.checked span{
         color: #000;
 }
-.forum_main thead, .forumtopics thead, table#flatview thead{
+.forum_main thead, .forumtopics thead, table#flatview thead, div.forumview thead{
         z-index: 2;
         background: #fcfcfc;
         -webkit-box-shadow: 0 10px 6px -6px #777;

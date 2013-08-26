@@ -37,5 +37,7 @@ jQuery(function() {
                 jQuery('#modeswitch_wrapper').detach().prependTo('#Canvas_Content_Body_Region3');
             }
         }
+//        alert(jQuery('div.newforumTopic.parent').height());
+//        alert(jQuery('.date-wrapper').height());
     });
 });
