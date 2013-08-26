@@ -289,9 +289,15 @@ div.loginbuttonwrap button>span{
         -moz-box-shadow: 0px 0px 5px 0px rgba(255,255,255,0.75);
         box-shadow: 0px 0px 5px 0px rgba(255,255,255,0.75);
 }
+.sexybutton:hover span{
+        background-position: center;
+}
+div.loginbuttonwrap button>span:hover{
+        
+}
 div.loginbuttonwrap button>span>span{
-        opacity: 0;
-        display: none;
+/*        opacity: 0;
+        display: none;*/
 }
 div.loginbuttonwrap button{
         background-color: #f4f4f4;
@@ -322,7 +328,7 @@ div#login #input_username, div#login #input_password{
         height: 50px;
         font-size: 2em;
         text-align: center;
-        background: none;
+        /*background: none;*/
         box-shadow: inset 0 1px 3px -1px #595959, 0 4px 5px -4px #595959;
         -moz-box-shadow: inset 0 1px 3px -1px #595959, 0 4px 5px -4px #595959;
         -webkit-box-shadow: inset 0 1px 3px -1px #595959, 0 4px 5px -4px #595959;
@@ -2252,7 +2258,7 @@ button.sexybutton:active span{
         border-bottom: 3px solid transparent;
 }
 button.sexybutton span{
-        background: #f4f4f4;
+        color: transparent;
 }
 a.forumDownload, a.forumViewAttachment{
         padding: 7px 8px 5px 35px;
