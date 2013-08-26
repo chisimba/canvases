@@ -2529,6 +2529,9 @@ table.forumtopics tbody tr, table#flatview tbody tr, .forum_main table tbody tr,
         -webkit-box-shadow: 0 25px 30px -29px #000;
         box-shadow: 0 25px 30px -29px #000;
 }
+table.forumtopics tbody tr:first-child, table#flatview tbody tr:first-child, .forum_main table tbody tr:first-child, #forumadmin tbody tr:first-child{
+        
+}
 table.forumtopics tbody tr:last-child, table#flatview tbody tr:last-child, .forum_main table tbody tr:last-child, #forumadmin tbody tr:last-child{
         margin-bottom: 100px;
 }
@@ -2586,11 +2589,11 @@ div.hiddenOptions li a{
 }
 div.hiddenOptions{
         position: absolute;
-        background: #000;
+        background: rgba(51,60,99,.9);
         width: 170px;
         opacity: .9;
         color: #fff;
-        z-index: 150;
+        z-index: 10;
         padding: 10px;
         margin: 2px 0 0 80px;
         box-shadow: 0 2px 2px #000;
