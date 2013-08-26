@@ -30,7 +30,7 @@ body {
         font-family: "Pontano Sans", "Lucida sans",  Arial, sans-serif;
         background-attachment: fixed;
         color: #595959;
-        background: rgba(252,252,252,1);
+        background:url(images/body.png);
 }
 
 
@@ -496,11 +496,11 @@ div.Canvas_Content_Head_Before div#search label {
         left: 0;
         top: 0;
         right: 0;
-        /*border-bottom: 5px solid #363e63;*/
+        /*border-bottom: 5px solid #f1592a;*/
         z-index: 100;
         box-shadow: 0 0 10px -1px #000;
         /*background: url(images/logo.png) no-repeat left #fff;*/
-        background: url(images/navigation.png) rgba(252,252,252,1);
+        background: #FFF;
 }
 .navigation-list-wrapper{
         margin-left: 5px;
@@ -787,6 +787,9 @@ ul#menuList  li  ul li {
         text-align: left;
         color: #FFFFFF;
         text-decoration:none;
+        transition: background .5s;
+        -webkit-transition: background .5s;
+        -moz-transition: background .5s;
 }
 ul#menuList  li  ul li:first-child{
         border-top-left-radius: 3px;
@@ -868,7 +871,7 @@ input[type='checkbox'], .transparentbgnb{
 
 div.featurebox, .faq_main {
         /*background-color: #FFF;*/
-        margin-bottom: 25px !important;
+        margin-bottom: 30px !important;
         -moz-box-shadow: 0 25px 30px -29px #000;
         -webkit-box-shadow: 0 25px 30px -29px #000;
         box-shadow: 0 25px 30px -29px #000;
@@ -900,16 +903,6 @@ div.featurebox, .faq_main {
 #Canvas_Content_Body_Region2 h5.featureboxheader {
         font-size: 150%;
         color: #000;
-        box-shadow: none;
-        /* IE9 SVG, needs conditional override of 'filter' to 'none' */
-        background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2ZmZmZmZiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjQ3JSIgc3RvcC1jb2xvcj0iI2Y2ZjZmNiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNlZGVkZWQiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
-        background: -moz-linear-gradient(top,  #ffffff 0%, #f6f6f6 47%, #ededed 100%); /* FF3.6+ */
-        background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(47%,#f6f6f6), color-stop(100%,#ededed)); /* Chrome,Safari4+ */
-        background: -webkit-linear-gradient(top,  #ffffff 0%,#f6f6f6 47%,#ededed 100%); /* Chrome10+,Safari5.1+ */
-        background: -o-linear-gradient(top,  #ffffff 0%,#f6f6f6 47%,#ededed 100%); /* Opera 11.10+ */
-        background: -ms-linear-gradient(top,  #ffffff 0%,#f6f6f6 47%,#ededed 100%); /* IE10+ */
-        background: linear-gradient(to bottom,  #ffffff 0%,#f6f6f6 47%,#ededed 100%); /* W3C */
-        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ededed',GradientType=0 ); /* IE6-8 */
         white-space: nowrap;
         text-align: left;
 }
@@ -921,17 +914,17 @@ div.featurebox, .faq_main {
 
 }
 
+/**
+Context
+*/
+#facebox .body{
+        background: rgba(51,60,99,.9) !important;
+        color: #FFF !important;
+        z-index: 1;
+}
 
 /** ----------------- BEGIN BLOG SETTINGS ---------------*/
 div#blog_title_wrapper{
-        background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2ZmZmZmZiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjQ3JSIgc3RvcC1jb2xvcj0iI2Y2ZjZmNiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNlZGVkZWQiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
-        background: -moz-linear-gradient(top,  #ffffff 0%, #f6f6f6 47%, #ededed 100%); /* FF3.6+ */
-        background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(47%,#f6f6f6), color-stop(100%,#ededed)); /* Chrome,Safari4+ */
-        background: -webkit-linear-gradient(top,  #ffffff 0%,#f6f6f6 47%,#ededed 100%); /* Chrome10+,Safari5.1+ */
-        background: -o-linear-gradient(top,  #ffffff 0%,#f6f6f6 47%,#ededed 100%); /* Opera 11.10+ */
-        background: -ms-linear-gradient(top,  #ffffff 0%,#f6f6f6 47%,#ededed 100%); /* IE10+ */
-        background: linear-gradient(to bottom,  #ffffff 0%,#f6f6f6 47%,#ededed 100%); /* W3C */
-        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ededed',GradientType=0 ); /* IE6-8 */
         border-bottom: 1px solid #C7C7C7;
         padding: 5px;
         margin-left: -1px;
@@ -1351,8 +1344,7 @@ a.thumbnailview{
 
 #form_changeview a.sexybutton{
         display: table-cell;
-        padding: 5px;
-
+        float: right;
         /* Legacy browsers */
         background: lightgrey url("images/gradient-bg.png") repeat-x top;
         -o-background-size: 100% 100%;
@@ -2232,7 +2224,7 @@ label.checked{
 label.checked span{
         color: #000;
 }
-thead{
+.forum_main thead, .forumtopics thead, table#flatview thead{
         z-index: 2;
         background: #fcfcfc;
         -webkit-box-shadow: 0 10px 6px -6px #777;
@@ -2536,7 +2528,6 @@ table.forumtopics tbody tr, table#flatview tbody tr, .forum_main table tbody tr,
         -moz-box-shadow: 0 25px 30px -29px #000;
         -webkit-box-shadow: 0 25px 30px -29px #000;
         box-shadow: 0 25px 30px -29px #000;
-        /*min-height: 150px;*/
 }
 table.forumtopics tbody tr:last-child, table#flatview tbody tr:last-child, .forum_main table tbody tr:last-child, #forumadmin tbody tr:last-child{
         margin-bottom: 100px;
