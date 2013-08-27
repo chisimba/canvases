@@ -293,11 +293,11 @@ div.loginbuttonwrap button>span{
         background-position: center;
 }
 div.loginbuttonwrap button>span:hover{
-        
+
 }
 div.loginbuttonwrap button>span>span{
-/*        opacity: 0;
-        display: none;*/
+        /*        opacity: 0;
+                display: none;*/
 }
 div.loginbuttonwrap button{
         background-color: #f4f4f4;
@@ -1575,22 +1575,22 @@ div.simpleblog_post_content{
         padding-bottom: 14px;
         background: #fafafa;
         border-bottom: 1px solid #c0c0c0;
-/*        border-top-right-radius: 8px;
-        -moz-border-radius-topright: 8px;
-        -webkit-border-top-right-radius: 8px;
-        -khtml-border-radius-topright: 8px;
-        border-top-left-radius: 8px;
-        -moz-border-radius-topleft: 8px;
-        -webkit-border-top-left-radius: 8px;
-        -khtml-border-radius-topleft: 8px;
-        border-bottom-right-radius: 6px;
-        -moz-border-radius-bottomright: 6px;
-        -webkit-border-bottom-right-radius: 6px;
-        -khtml-border-radius-bottomright: 6px;
-        border-bottom-left-radius: 6px;
-        -moz-border-radius-bottomleft: 6px;
-        -webkit-border-bottom-left-radius: 6px;
-        -khtml-border-radius-bottomleft: 6px;*/
+        /*        border-top-right-radius: 8px;
+                -moz-border-radius-topright: 8px;
+                -webkit-border-top-right-radius: 8px;
+                -khtml-border-radius-topright: 8px;
+                border-top-left-radius: 8px;
+                -moz-border-radius-topleft: 8px;
+                -webkit-border-top-left-radius: 8px;
+                -khtml-border-radius-topleft: 8px;
+                border-bottom-right-radius: 6px;
+                -moz-border-radius-bottomright: 6px;
+                -webkit-border-bottom-right-radius: 6px;
+                -khtml-border-radius-bottomright: 6px;
+                border-bottom-left-radius: 6px;
+                -moz-border-radius-bottomleft: 6px;
+                -webkit-border-bottom-left-radius: 6px;
+                -khtml-border-radius-bottomleft: 6px;*/
 }
 .simpleblog_post_wrapper a{
         /*color: #595959;*/
@@ -2233,9 +2233,9 @@ label.checked span{
 .forum_main thead, .forumtopics thead, table#flatview thead, div#forumview thead{
         z-index: 2;
         background: #fcfcfc;
-        -webkit-box-shadow: 0 10px 6px -6px #777;
-        -moz-box-shadow: 0 10px 6px -6px #777;
-        box-shadow: 0 10px 6px -6px #777;
+        -webkit-box-shadow: 0px 12px 5px -12px rgba(0,0,0,0.75);
+        -moz-box-shadow: 0px 12px 5px -12px rgba(0,0,0,0.75);
+        box-shadow: 0px 12px 5px -12px rgba(0,0,0,0.75);
 }
 .forum_main thead tr th{
         color: #555;
@@ -2257,7 +2257,7 @@ button.sexybutton>span{
 button.sexybutton:active span{
         border-bottom: 3px solid transparent;
 }
-button.sexybutton span{
+div.loginbuttonwrap button.sexybutton span{
         color: transparent;
 }
 a.forumDownload, a.forumViewAttachment{
@@ -2536,7 +2536,7 @@ table.forumtopics tbody tr, table#flatview tbody tr, .forum_main table tbody tr,
         box-shadow: 0 25px 30px -29px #000;
 }
 table.forumtopics tbody tr:first-child, table#flatview tbody tr:first-child, .forum_main table tbody tr:first-child, #forumadmin tbody tr:first-child{
-        
+
 }
 table.forumtopics tbody tr:last-child, table#flatview tbody tr:last-child, .forum_main table tbody tr:last-child, #forumadmin tbody tr:last-child{
         margin-bottom: 100px;
