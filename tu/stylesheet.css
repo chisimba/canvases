@@ -2287,17 +2287,20 @@ a.floatingSideNavigation{
         display: inline-block;
 }
 a.floatingSideNavigation#top{
-        margin: 0 7px 20px;
-        background: #595959;
-        color: #FFF;
-        padding: 5px;
-        border-bottom: 7px solid #FFF;
+        margin: 0 7px 35px 0px;
+        background: url(icons/up.png) no-repeat center #FFF;
+        color: transparent;
+        height: 34px;
+        width:34px;
+        border-radius: 100%;
 }
 a.floatingSideNavigation#bottom{
-        background: #595959;
+        background: url(icons/down.png) no-repeat center #FFF;
         color: #FFF;
-        padding: 5px;
-        border-top: 2px solid #FFF;
+        height: 34px;
+        width:34px;
+        border-radius: 100%;
+        margin: 10px 7px 0px 0px;
 }
 a.forumDownload{
         background: #f0f0f0;
@@ -2872,7 +2875,6 @@ span#confirm, span.confirm{
         border-radius: 3px;
         border: 1px solid #828282;
         box-shadow: 0 0 2px #000;
-        margin: 0 auto;
         top: 100px;
 }
 a.floatingClose{
