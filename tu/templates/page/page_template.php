@@ -269,7 +269,7 @@ if (!isset($pageSuppressContainer)) {
                                                 if ($this->objUser->isAdmin()) {
                                                         echo "\n\n<div class='navigation-wrapper' ><div id='navigation'>\n\n" . "
                 <div class='navigation-list-wrapper' >
-                <nav id='logo' ><a href='index.php' id='logo-link' class='logo' ></a></nav>
+                <nav id='logo' ></nav>
                 {$toolbar}
                 </div>
                 \n</div></div>";

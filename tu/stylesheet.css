@@ -30,7 +30,7 @@ body {
         font-family: "Pontano Sans", "Lucida sans",  Arial, sans-serif;
         background-attachment: fixed;
         color: #595959;
-        background:url(images/body.png);
+        background: url(images/top.png);
 }
 
 
@@ -82,9 +82,11 @@ ul#navigation-list>li{
         width:50px;
         height: 50px;
 }
+li.navigation-list-wrapper{
+        border-bottom: 3px solid #e8e8e8;
+}
 li.navigation-list-wrapper#home{
         background: url(icons/home.png) no-repeat center #FFF;
-        border: 1px solid #FFF;
         box-shadow: 0 0 2px -1px #000;
         -webkit-box-shadow: 0 0 2px -1px #000;
         -moz-box-shadow: 0 0 2px -1px #000;
@@ -100,7 +102,7 @@ li.navigation-list-wrapper#home label{
 }*/
 li.navigation-list-wrapper#filemanager{
         background: url(icons/modules/filemanager.png) no-repeat center #FFF;
-        border: 1px solid #FFF;
+        /*border: 1px solid #FFF;*/
         box-shadow: 0 0 2px -1px #000;
         -webkit-box-shadow: 0 0 2px -1px #000;
         -moz-box-shadow: 0 0 2px -1px #000;
@@ -116,7 +118,7 @@ li.navigation-list-wrapper#filemanager label{
 }*/
 li.navigation-list-wrapper#profile{
         background: url(icons/user_.png) no-repeat center #FFF;
-        border: 1px solid #FFF;
+        /*border: 1px solid #FFF;*/
         box-shadow: 0 0 2px -1px #000;
         -webkit-box-shadow: 0 0 2px -1px #000;
         -moz-box-shadow: 0 0 2px -1px #000;
@@ -132,7 +134,7 @@ li.navigation-list-wrapper#profile label{
 }*/
 li.navigation-list-wrapper#simpleblog{
         background: url(icons/modules/simpleblog.png) no-repeat center #FFF;
-        border: 1px solid #FFF;
+        /*border: 1px solid #FFF;*/
         box-shadow: 0 0 2px -1px #000;
         -webkit-box-shadow: 0 0 2px -1px #000;
         -moz-box-shadow: 0 0 2px -1px #000;
@@ -148,7 +150,7 @@ li.navigation-list-wrapper#simpleblog label{
 }*/
 li.navigation-list-wrapper#faq{
         background: url(icons/modules/faq.png) no-repeat center #FFF;
-        border: 1px solid #FFF;
+        /*border: 1px solid #FFF;*/
         box-shadow: 0 0 2px -1px #000;
         -webkit-box-shadow: 0 0 2px -1px #000;
         -moz-box-shadow: 0 0 2px -1px #000;
@@ -167,7 +169,7 @@ li.navigation-list-wrapper#simpleblog label{
 }*/
 li.navigation-list-wrapper#forum{
         background: url(icons/modules/forum.png) no-repeat center #FFF;
-        border: 1px solid #FFF;
+        /*border: 1px solid #FFF;*/
         box-shadow: 0 0 2px -1px #000;
         -webkit-box-shadow: 0 0 2px -1px #000;
         -moz-box-shadow: 0 0 2px -1px #000;
@@ -183,7 +185,7 @@ li.navigation-list-wrapper#forum label{
 }*/
 li.navigation-list-wrapper#logout{
         background: url(icons/logout.png) no-repeat center #FFF;
-        border: 2px solid #FFF;
+        /*border: 2px solid #FFF;*/
         box-shadow: 0 0 2px -1px #000;
         -webkit-box-shadow: 0 0 2px -1px #000;
         -moz-box-shadow: 0 0 2px -1px #000;
@@ -614,11 +616,14 @@ ul#menuList>li.navigation-list {
         color: #555;
         text-decoration:none;
         border-radius: 100%;
+        border-bottom: 3px solid #e8e8e8;
         height: 50px;
         width: 50px;
         margin: 0 25px;
         padding: 10px;
-        box-shadow: 0 0 5px -3px #000;
+        box-shadow: 0 0 2px -1px #000;
+        -webkit-box-shadow: 0 0 2px -1px #000;
+        -moz-box-shadow: 0 0 2px -1px #000;
 }
 li.navigation-list#home{
         background: url(icons/home.png) no-repeat center #FFF;
@@ -717,7 +722,7 @@ ul#menuList>li.navigation-list>a:active{
 /*Navigation labels*/
 label.navigation-label{
         position: absolute;
-        margin-top: 60px;
+        margin-top: 63px;
         font-weight:  normal;
 }
 /*end*/
@@ -1098,11 +1103,6 @@ td.odd, tr.odd {
         background: #FFF;
 }
 
-td.even, tr.even {
-}
-tr.even{
-        box-shadow: 0 0 2px -1px #000;
-}
 tr{
 
 }
@@ -2233,9 +2233,10 @@ label.checked span{
 .forum_main thead, .forumtopics thead, table#flatview thead, div#forumview thead{
         z-index: 2;
         background: #fcfcfc;
-        -webkit-box-shadow: 0px 12px 5px -12px rgba(0,0,0,0.75);
-        -moz-box-shadow: 0px 12px 5px -12px rgba(0,0,0,0.75);
-        box-shadow: 0px 12px 5px -12px rgba(0,0,0,0.75);
+        box-shadow: 0 1px 2px -2px #000;
+        -moz-box-shadow: 0 1px 3px -2px #000;
+        -webkit-box-shadow: 0 1px 3px -2px #000;
+        border-bottom: 3px solid #e8e8e8;
 }
 .forum_main thead tr th{
         color: #555;
@@ -2332,6 +2333,10 @@ a.forumViewAttachment{
 div.file-preview{
         margin: 15px 5px 5px 5px;
 }
+div.code-file-preview{
+        background: #FFF;
+        font-family: 'Ubuntu';
+}
 .date-day, .date-year, .date-year-inner, .date-day-inner{
         color: #FFF;
         font-weight: 600;
@@ -2419,18 +2424,17 @@ span.forumPointer3{
         margin-left: 95px;
 }
 .buttonLink, .ok{
-        color: #FFF !important;
+        color: #595959 !important;
         padding: 5px;
-        background: #595959; /* Old browsers */
-        box-shadow: 0 0 2px #000;
-        -webkit-box-shadow: 0 0 2px #000;
-        -moz-box-shadow: 0 0 2px #000;
+        background: #FFF; /* Old browsers */
+        box-shadow: 0 0 2px -1px #000;
+        -webkit-box-shadow: 0 0 2px -1px #000;
+        -moz-box-shadow: 0 0 2px -1px #000;
         border-radius: 1px;
+        border-bottom: 3px solid #e8e8e8;
 }
 .buttonLink:active , .ok:active{
-        box-shadow: inset 0 0 2px #000;
-        -webkit-box-shadow: inset 0 0 2px #000;
-        -moz-box-shadow: inset 0 0 2px #000;
+        border-bottom: 0px solid #e8e8e8;
 }
 /*.forum_main table tbody*/
 div.forum_main table{
@@ -2460,6 +2464,18 @@ span.indicator{
 table.forumtopics, .forum_main table, #forumadmin table{
         border-collapse: separate;
         border-spacing: 0 20px;
+}
+div#forumadmin table thead tr{
+        box-shadow: 0 1px 2px -2px #000;
+        -moz-box-shadow: 0 1px 3px -2px #000;
+        -webkit-box-shadow: 0 1px 3px -2px #000;
+        border-bottom: 3px solid #e8e8e8;
+        display: block;
+        text-align: center;
+}
+div#forumadmin table thead tr td, div#forumadmin table thead tr th{
+        display: inline-block;
+        margin: 2px 10px;
 }
 table.forumtopics tr td, .forum_main table tr td, #forumadmin table tr td{
         padding: 15px;
@@ -2534,9 +2550,8 @@ table.forumtopics tbody tr, table#flatview tbody tr, .forum_main table tbody tr,
         -moz-border-radius: 3px;
         -webkit-border-radius: 3px;
         margin-top: 10px;
-        -moz-box-shadow: 0 25px 30px -29px #000;
-        -webkit-box-shadow: 0 25px 30px -29px #000;
-        box-shadow: 0 25px 30px -29px #000;
+        box-shadow: 0 0 2px -1px #000;
+        border-bottom: 3px solid #e8e8e8;
 }
 table.forumtopics tbody tr:first-child, table#flatview tbody tr:first-child, .forum_main table tbody tr:first-child, #forumadmin tbody tr:first-child{
 
@@ -2876,6 +2891,7 @@ span#confirm, span.confirm{
         border: 1px solid #828282;
         box-shadow: 0 0 2px #000;
         top: 100px;
+        margin: 0 auto;
 }
 a.floatingClose{
         position: absolute;
