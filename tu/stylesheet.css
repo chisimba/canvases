@@ -1315,13 +1315,8 @@ option.by-sa_gnu-fdl {
         -moz-border-radius: 3px;
 }
 div.changeview{
-        display: table;
-        border-radius: 3px;
-        -moz-border-radius: 3px;
-        -webkit-border-radius: 3px;
-        -webkit-box-shadow: 0 0 3px rgba(0,0,0,0.75);
-        -moz-box-shadow: 0 0 3px rgba(0,0,0,0.75);
-        box-shadow: 0 0 3px rgba(0,0,0,0.75);
+        display: table-row;
+        background: #FFF;
 }
 form#form_movedeletefiles table tbody tr{
         border-bottom: 10px solid transparent;
@@ -1350,40 +1345,9 @@ a.thumbnailview{
 
 #form_changeview a.sexybutton{
         display: table-cell;
-        float: right;
-        /* Legacy browsers */
-        background: lightgrey url("images/gradient-bg.png") repeat-x top;
-        -o-background-size: 100% 100%;
-        -moz-background-size: 100% 100%;
-        -webkit-background-size: 100% 100%;
-        background-size: 100% 100%;
-        /* Recent browsers */
-        background: -webkit-gradient(
-                linear,
-                left top, left bottom,
-                from(white),
-                to(lightgrey)
-                );
-        background: -webkit-linear-gradient(
-                top,
-                white,
-                lightgrey
-                );
-        background: -moz-linear-gradient(
-                top,
-                white,
-                lightgrey
-                );
-        background: -o-linear-gradient(
-                top,
-                white,
-                lightgrey
-                );
-        background: linear-gradient(
-                top,
-                white,
-                lightgrey
-                );
+        background: #FFF;
+        padding: 10px;
+        /*margin: 5px;*/
 }
 .innerquota{
         background: red !important;
