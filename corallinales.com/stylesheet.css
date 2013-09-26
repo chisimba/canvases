@@ -227,7 +227,7 @@ div.Canvas_Content_Head_Before div#search label {
 /* The navigation bar */
 #navigation {
     background: transparent;
-    width: 990px;
+    width: 1000px;
     height: 80px;
     padding-left: 10px;
     margin: 0px;
@@ -453,9 +453,9 @@ ul#menuList  li  li.last a{
 }
 #footer {
     background: whitesmoke;
-    width: 990px;
+    width: 1012px;
     color: slategray;
-    height: 170px;
+    height: 70px;
     margin-left: 0px;
     margin-right: 0px;
     margin-top: 32px;

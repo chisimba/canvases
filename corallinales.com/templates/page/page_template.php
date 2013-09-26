@@ -197,21 +197,26 @@ echo "<div class='Canvas_Content_Body_Before'></div>\n"
    . "</div>\n<div class='Canvas_Content_Body_After'></div>\n"
    .'<br id="footerbr" />';
 
+$footerStr2 = '<br />Authored by <a href="mailto:gmaneveldt@uwc.ac.za">Gavin W. Maneveldt</a>, <a href="mailto:derek@dkeats.com">Derek W. Keats</a> and <a href="mailto:W.Woelkerling@latrobe.edu.au">William J. Woelkerling</a>';
+$footerStr3 = '<br />' . $objLanguage->languageText("mod_security_poweredby", 'security', 'Powered by ') . ' Chisimba';
 
 // If the footer is not suppressed, render it out.
 if (!isset($suppressFooter)) {
     // Add the footer string if it is set
     if (isset($footerStr)) {
        $footerStr = $footerStr;
+       $footerStr .= $footerStr2;
     } else if ($objUser->isLoggedIn()) {
         $this->loadClass('link', 'htmlelements');
         $link = new link ($this->URI(array('action'=>'logoff'),'security'));
         $link->link=$objLanguage->languageText("word_logout");
         $str=$objLanguage->languageText("mod_context_loggedinas", 'context').' <strong>'.$objUser->fullname().'</strong>  ('.$link->show().')';
         $footerStr= $str;
+        $footerStr .= $footerStr2;
     } else {
         $footerStr = $objLanguage->languageText("mod_security_poweredby", 'security', 'Powered by ') . ' Chisimba';
     }
+    $footerStr .= $footerStr3;
     // Do the rendering here.
     echo "<div class='Canvas_Content_Footer_Before'></div>"
       . "<div class='Canvas_Content_Footer'><div id='footer'>"
