@@ -214,7 +214,7 @@ if (!isset($suppressFooter)) {
         $footerStr= $str;
         $footerStr .= $footerStr2;
     } else {
-        $footerStr = $objLanguage->languageText("mod_security_poweredby", 'security', 'Powered by ') . ' Chisimba';
+        $footerStr = $footerStr2;
     }
     $footerStr .= $footerStr3;
     // Do the rendering here.
