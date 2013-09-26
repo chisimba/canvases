@@ -256,16 +256,7 @@ $this->putMessages();
 function getIcons($skinName, $canvas)
 {
     $available=array(
-        'delicious' => 'http://www.delicious.com/dkeats',
-        'facebook' => 'http://www.facebook.com/dkeats',
-        'flkr' => 'http://www.flickr.com/photos/dkeats/',
-        'friendfeed' => 'http://friendfeed.com/dkeats',
-        'google' => 'https://profiles.google.com/derekkeats',
-        'lastfm' => 'http://www.last.fm/user/dkeats',
-        'linkedin' => 'http://www.linkedin.com/in/dkeats',
-        'picasa' => 'http://picasaweb.google.com/derekkeats',
-        'twitter' => 'http://twitter.com/dkeats',
-        'youtube' => 'http://www.youtube.com/user/derekkeats'
+        'flkr' => 'http://www.flickr.com/photos/dkeats/sets/72157610262558941/'
     );
 
     $ret ="";
