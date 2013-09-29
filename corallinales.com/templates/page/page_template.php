@@ -165,10 +165,8 @@ if (!isset($pageSuppressBanner)) {
     ?>
     <div class="Canvas_Content_Head">
         <div class="Canvas_Content_Head_Header" id="header">
-            <?php echo '<a class="sitename_link" href="'.$objConfig->getSiteRoot().'">'; ?>
-            <h1 id="sitename">
-                <?php echo $objConfig->getsiteName(); ?>
-            </h1>
+            <?php echo '<a id="sitehead_link" href="'.$objConfig->getSiteRoot().'">'; ?>
+            <div id="sitename"> </div>
             <?php echo '</a>'; ?>
         </div>
         <?php

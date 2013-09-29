@@ -148,33 +148,27 @@ sub {
 
 /* The header stuff */
 .Canvas_Content_Head {
-    background-image: #cbcbcb;
-    background-image: -webkit-linear-gradient(top, #d2d2d2 0%, #adadad 23%, #e1e1e1 100%);
-    background-image: -moz-linear-gradient(top, #d2d2d2 0%, #adadad 23%, #e1e1e1 100%);
-    background-image: -o-linear-gradient(top, #d2d2d2 0%, #adadad 23%, #e1e1e1 100%);
-    background-image: -ms-linear-gradient(top, #d2d2d2 0%, #adadad 23%, #e1e1e1 100%);
-    background-image: linear-gradient(top, #d2d2d2 0%, #adadad 23%, #e1e1e1 100%);
     height: 130px;
-    margin: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
     margin-top: 0px;
     padding-top: 0px;
     border-bottom: 4px solid #C7C7C7;
 }
 .Canvas_Content_Head_Header {
     background: transparent;
-    position: relative;
-    padding: 20px;
-    height: 40px;
-    width: 500px;
 }
-h1#sitename {
-    content: url("img/banner.jpg");
+#sitename {
+    background: white url('img/banner.jpg');
     margin: 0px;
     padding-left: 0px;
     padding-top: 0px;
+    width: 1024px;
+    height: 130px;
 }
-.sitename_link {
-    color: #577F9B;
+#sitehead_link {
+    width: 1024px;
+    height: 130px;
 }
 .sitename_link:hover, .sitename_link:visited:hover {
     color: #0066cc;
@@ -205,24 +199,6 @@ div.Canvas_Content_Head_Before div#search label {
 /* End of search box */
 
 /* Floating header boxes */
-.floathead {
-    margin: 0px;
-    padding: 0px;
-}
-
-#floathead_content0, #floathead_content1, 
-#floathead_content2, #floathead_content3 {
-    width: 180px;
-    height: 60px;
-    position: relative;
-    float: right;
-    margin-top: -45px;
-    margin-right: 8px;
-    background: transparent;
-    font-size: 80%;
-    line-height: 110%;
-}
-
 .bannerflickr a, .bannerflickr a:visited {
     color: #77021d;
 }
@@ -273,21 +249,21 @@ div.Canvas_Content_Head_Before div#search label {
 }
 #Canvas_Content_Body_Region1 {
     background: transparent;
-    width:300px;
-    float:right;
+    width:250px;
+    float:left;
 }
 #Canvas_Content_Body_Region3 {
     background: transparent;
-    width:300px;
+    width:250px;
     margin-left: 0px;
     padding-left: 8px;
     padding-right: 8px;
-    float:right;
+    float:left;
 }
 
 #threecolumn #Canvas_Content_Body_Region3,
 #threecolumn #Canvas_Content_Body_Region1 {
-    float: right;
+    float: left;
 }
 
 #threecolumn #Canvas_Content_Body_Region2 {
@@ -1537,3 +1513,108 @@ div.simpleblog_post_tags a.tag_active:visited:hover {
 .date-month {
     font-size: 130%;
 }
+
+
+/*
+Get the CMS stuff sorted here
+*/
+
+#cmsnavigation {
+    border: none;
+    background: transparent;
+    padding-top: 4px;
+    padding-bottom: 0px;
+    padding-left: 10px;
+    padding-right: 10px;
+    width: 250px;
+}
+#superfishmenu {
+    border: none;
+    padding: 0px;
+}
+#superfishmenu a, #superfishmenu a:visited {
+    background-image: none;
+    padding: 4px;
+    line-height: normal;
+    border: none;
+    background-color: #D3E7F5;
+    border-bottom: 1px solid silver;
+    width: 222px;
+}
+#superfishmenu a:hover, #superfishmenu a:visited:hover {
+    background-color:  #FFCC66;
+}
+#superfishmenu a:active, #superfishmenu a:visited:active {
+    background-color:  #F6921E;
+}
+.sf-with-ul {
+    background-image: none;
+    position: static;
+    z-index:99;
+    padding: 0px;
+}
+.sf-sub-indicator {
+    border: none;
+}
+#leftmenu{
+    float:left;
+}
+.CMS-frontpage-item {
+    background: #ffffff;
+    margin: 0px;
+    border: none;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 12px;
+    padding-bottom: 10px;
+    line-height: 120%;
+    border-radius: 10px;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -khtml-border-radius: 10px;
+}
+
+#cmscontent {
+    background: transparent;
+    z-index:-99;
+    position: static;
+}
+
+#cmscontent h3 {
+    background: transparent;
+    color: #003165;
+}
+#cmscontent h3 img {
+    vertical-align: middle;
+    margin-left: 20px;
+}
+#cmscontent div.cms_author  {
+    background:transparent;
+    margin-top: 8px;
+    color: #67768c;
+}
+#cmscontent div.cms_date {
+    font-style:normal;
+    font-size: 80%;
+    margin-bottom: 20px;
+}
+.cmssummary {
+    background: #ebe7e4;
+    font-size: 90%;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    border-radius: 10px;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -khtml-border-radius: 10px;
+}
+.cmssummary p {
+    background: transparent;
+}
+
