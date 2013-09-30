@@ -28,6 +28,12 @@ $skinName = "corallinales.com";
 // Define the valid canvases for this skin as an array.
 $validCanvases = array_map('basename', glob('skins/' . $skinName . '/canvases/*', GLOB_ONLYDIR));
 
+// Get mobile device detection going.
+$objDetector = $this->newObject('detectmobile', 'utilities');
+if  ($objDetector->device->isMobile()) {
+    //die("Sorry, I am testing iPad detection. Will be back up in 1 minute");
+}
+
 // Settings that are needed so that canvase-aware code can function.
 $this->setSession('skinName', $skinName);
 $_SESSION['skinName'] = $skinName;
@@ -73,7 +79,7 @@ if (!isset($og_image)) {
     $og_image = 'skins/' . $skinName . '/default.png';
 }
 if (!isset($og_content)) {
-    $og_content = 'An introduction to the Coralline red algae.';
+    $og_content = 'An introduction to the Coralline red algae';
 } else {
     $og_content = strip_tags($og_content);
 }
@@ -93,7 +99,7 @@ if (!isset($og_content)) {
     if (!isset($pageSuppressSkin)) {
         echo '
 
-        <link rel="stylesheet" type="text/css" href="skins/_common2/css/basecss.php">
+        <link rel="stylesheet" type="text/css" href="cache.css">
         <link rel="icon" type="image/png" href="skins/' . $skinName . '/favicon.png" />
             
         ';
@@ -114,9 +120,7 @@ if (!isset($og_content)) {
 
        <link rel="stylesheet" type="text/css" href="skins/' . $skinName . '/stylesheet.css">
        <link rel="stylesheet" type="text/css" href="' . $canvas . '/stylesheet.css">
-
         ';
-       //<script type="text/javascript" src="skins/' . $skinName . '/js/jquery.equalHeightColumns.js" />
     }
     ?>
 </head>
@@ -139,7 +143,6 @@ if (!isset($pageSuppressContainer)) { ?>
 <?php
 }
 
-// Render the banner area unless it is suppressed
 // Render the banner area unless it is suppressed
 if (!isset($pageSuppressBanner)) {
     // Because the link to page top is in the footer, put the top here
@@ -175,8 +178,6 @@ if (!isset($pageSuppressBanner)) {
     }
     echo '<div class="Canvas_Content_Head_After"></div>';
 }
-
-
 
 
 // Render the layout content as supplied from the layout template
