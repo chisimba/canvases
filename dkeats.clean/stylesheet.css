@@ -1474,6 +1474,18 @@ div.simpleblog_post_tags a.tag_active:visited:hover {
 /* ---------------- END SPECIES MODULE ------------------*/
 
 
+/* ---------------- BEGIN WIKI MODULE -------------------*/
+
+.markItUpContainer {
+    width: 635px;
+    max-width: 635px;
+}
+
+#input_wikiContent {
+    width: 630px!important;
+    max-width: 630px;
+}
+
 
 
 /* ---------------- BEGIN TUAPI MODULE ------------------*/
