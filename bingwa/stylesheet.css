@@ -2226,3 +2226,8 @@ img, object, embed {
 .groupadmin_main {
     background:  transparent url("images/overlay25.png") top left repeat;
 }
+
+#Canvas_Content_Body_Region2 img {
+    /* Fix images overflowing main content area */
+    max-width: 100%;
+}
