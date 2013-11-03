@@ -15,6 +15,7 @@ html {
     font-size: 10pt;
     line-height: 190%;
     margin: auto;
+    background: black;
 }
 #banner_overlay {
     background: url("images/oer_logo_anim.gif") top left repeat;
@@ -35,6 +36,29 @@ html {
     -moz-box-shadow: 0px 0px 7px 2px #b3b3b3;
     box-shadow: 0px 0px 7px 2px #b3b3b3;
 }
+
+
+#_default {
+    margin-left: 0px;
+    margin-right: 0px;
+    padding: 0px;
+    width: 100%;
+}
+#Canvas_Content {
+    /*background: yellow;*/
+    padding:0px;
+    margin:0px;
+    margin-top: 25px;
+}
+
+
+
+
+
+
+
+
+
 
 /* RESET */
 th,td {
@@ -1388,9 +1412,6 @@ body {
 	padding-bottom:15px;
 }
 #Canvas_Content {
-    padding:0px;
-	margin:0px;
-    margin-top: 25px;
 	*margin-top:0px;/* ie7 only hack fix header alignment */
 	margin-left:15px;
 	margin-right:15px;

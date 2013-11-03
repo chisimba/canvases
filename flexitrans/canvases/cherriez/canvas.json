@@ -1,0 +1,14 @@
+{
+    "name": "cherriez",
+    "description": "A skin created for running a canvas tutorial",
+    "downloadfrom":"http://www.chisimba.com/canvases/cherriez.zip",
+    "preview": {
+        "thumb": "cherriez_th.png",
+        "fullview":"cherriez.png"
+    },
+    "author": {
+        "authorname":"Derek Keats",
+        "email":"derek@dkeats.com",
+        "url":"http://www.dkeats.com"
+    }
+}

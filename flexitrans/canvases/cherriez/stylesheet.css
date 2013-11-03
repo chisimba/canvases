@@ -1,0 +1,55 @@
+/*
+    Document   : stylesheet.css
+    Created on : 30 May 2010, 1:11:21 PM
+    Author     : dkeats
+    Description:
+        Leave this blank for consistency to implement the underlying skin as a canvas to enable selecting.
+*/
+html, body {
+    background: url('images/bg.jpg');
+    background-repeat: repeat;
+    background-attachment: fixed;
+}
+
+#container {
+    border: solid 5px #350711;
+}
+
+/*
+All the things that have a white border in the metallic
+skin are listed here
+*/
+.contentfeaturebox h3,.blog-item-base, #menu>ul>li,
+.currentstory, .forumBlock legend, .newForumContainer,
+.middleblock, .outerwrapper, .canvasthumb {
+    border: solid #350711 1px;
+}
+
+.storytitle h3, .allforums th {
+    border-bottom: solid #350711 1px;
+}
+
+.newForumContent {
+    border-top: 1px solid #350711;
+}
+
+/*
+Give the background a little darker whiteness by styling
+*/
+#container
+{
+    background: url("images/overlay.png") top left repeat;
+}
+
+#header a, a.visited {
+    color: #350711;
+}
+
+#header a:hover, a.visited:hover {
+    color: #414054;
+}
+
+/* Dropdown with the mouse over it */
+#menu li ul li:hover a:hover{
+    background: #ffd4db;
+}

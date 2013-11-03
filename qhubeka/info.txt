@@ -1,0 +1,8 @@
+Site is 1024 px wide
+
+Background is full black
+Inside uses my effect.jpg
+
+
+
+Banner is 1024 X 100 px high

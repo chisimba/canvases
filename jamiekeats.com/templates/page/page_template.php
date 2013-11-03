@@ -84,7 +84,7 @@ if (!isset($og_title)) {
     $og_title = $pageTitle;
 }
 if (!isset($og_image)) {
-    $og_image = $helperJs = 'skins/' . $skinName . '/default.png';
+    $og_image = 'skins/' . $skinName . '/default.png';
 }
 if (!isset($og_content)) {
     $og_content = 'The blog site for Jamie Keats.';

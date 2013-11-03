@@ -1,0 +1,14 @@
+{
+    "name": "squarz",
+    "description": "A skin created for running a canvas tutorial",
+    "downloadfrom":"http://www.chisimba.com/canvases/_default.zip",
+    "preview": {
+        "thumb": "squarz_th.png",
+        "fullview":"squarz.png"
+    },
+    "author": {
+        "authorname":"Derek Keats",
+        "email":"derek@dkeats.com",
+        "url":"http://www.dkeats.com"
+    }
+}

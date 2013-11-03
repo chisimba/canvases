@@ -1,0 +1,66 @@
+/*
+    Document   : stylesheet.css
+    Created on : 30 May 2010, 1:11:21 PM
+    Author     : dkeats
+    Description:
+        Leave this blank for consistency to implement the underlying skin as a canvas to enable selecting.
+*/
+
+html {
+    background: url('images/squarez.jpg');
+    background-repeat: repeat;
+    background-attachment: fixed;
+}
+
+body {
+    background: transparent;
+}
+
+#container
+{
+    background: url("images/overlay.png") top left repeat;
+    border: solid 5px black;
+}
+
+/*
+Reset the rounded corners. This resets all except the canvas
+thumbnails, irrespective of the level of curve.
+*/
+#container, #header, .contentfeaturebox, .contentfeaturebox h3,
+.featureboxheader, .blog-item-base, .featurebox,  body.help-popup,
+.toolbar_menuuser, .toolbar_menuuser h2, #nav-secondary, fieldset,
+.tabcontentstyle, fieldset .tabbox, #footer, #menu>ul>li, #menu>ul>li a:hover,
+#menu li ul, form.inplaceeditor-form, .storytitle h3, .storyauthor,
+.currentstory, #modernbricksmenu #current a, .forumBlock legend,
+.newForumContainer, .allforums, .query .tweet_list .tweet_even,
+.query .tweet_list .tweet_odd, .middleblock, #albums .album, .imagethumb a,
+#main2, .x-panel-body, .blogpreview, #homepagestats, .standard_form,
+form#form_createfolder, .moduleupdate, #form_createcontext,
+#form_updateplugins table, #paginationresults_pagenavigation_context,
+#paginationresults_pagenavigation_all, .chapterlisting, .addchapterform,
+.wrappedsegment, .innerwrapper, .outerwrapper, .colorbox h3
+{
+    -moz-border-radius: 0px;
+    border-radius: 0px;
+    -webkit-border-radius: 0px;
+    -khtml-border-radius: 0px;
+}
+
+
+/*
+All the things that have a white border in the metallic
+skin are listed here
+*/
+.contentfeaturebox h3,.blog-item-base, #menu>ul>li,
+.currentstory, .forumBlock legend, .newForumContainer,
+.middleblock, .outerwrapper, .canvasthumb {
+    border: solid #350711 1px;
+}
+
+.storytitle h3, .allforums th {
+    border-bottom: solid #350711 1px;
+}
+
+.newForumContent {
+    border-top: 1px solid #350711;
+}
