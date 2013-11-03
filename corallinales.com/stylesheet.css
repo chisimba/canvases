@@ -1618,3 +1618,10 @@ Get the CMS stuff sorted here
     background: transparent;
 }
 
+/* ---------- Replacement for jquery rounded corners -------*/
+.roundcorners {
+    border-radius: 10px;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -khtml-border-radius: 10px;
+}
