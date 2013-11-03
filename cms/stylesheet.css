@@ -1,0 +1,252 @@
+/*
+    An CMS enhanced skin for use in a content management system demo
+
+    It uses the skin engine version 2 for Chisimba.
+
+    Author: Derek Keats
+    License: GPL V2
+
+    Body background colour: #e9f2f7
+    Text colour: #8195b5
+    Darker text colour: #67768c
+    Heading colour: #003165
+
+    Darker area background: #dfeaf8
+
+*/
+@import "../canvas/canvasbase.css";
+@import "reset.css";
+
+/* The body & background */
+body {
+    width: 100%;
+    background: #e9f2f7 url('images/bg0.png');
+    background-repeat: repeat-x repeat-y;
+    background-attachment: fixed;
+    color: #8195b5;
+    margin: 0;
+    padding:0;
+    border: 0;
+}
+
+/* Default anchor styles */
+a {
+    color: #182536;
+}
+a:visited {
+    color: slateblue;
+}
+a:hover, a:visited:hover {
+    color: brown;
+    text-decoration: none;
+}
+a:active, a:visited:active {
+    color: #CCCCCC;
+}
+
+/*
+Get the CMS stuff sorted here
+*/
+#cmscontent {
+        z-index:-99;
+        position: static;
+}
+#cmsnavigation {
+    border: none;
+    background: transparent;
+    padding: 0px;
+}
+#superfishmenu {
+    border: none;
+    padding: 0px;
+
+}
+#superfishmenu a, #superfishmenu a:visited {
+    background-image: none;
+    padding: 4px;
+    line-height: normal;
+    border: none;
+    background-color: #D3E7F5;
+    border-bottom: 1px solid silver;
+}
+#superfishmenu a:hover, #superfishmenu a:visited:hover {
+    background-color:  #FFCC66;
+}
+#superfishmenu a:active, #superfishmenu a:visited:active {
+    background-color:  #F6921E;
+}
+.sf-with-ul {
+    background-image: none;
+    position: static;
+    z-index:99;
+    padding: 0px;
+}
+.sf-sub-indicator {
+    border: none;
+}
+#leftmenu{
+	float:left;
+}
+.CMS-frontpage-item {
+    background: transparent url("images/overlay25.png") top left repeat;
+    margin: 0px;
+    border: none;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 12px;
+    padding-bottom: 10px;
+    line-height: 120%;
+    border-radius: 10px;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -khtml-border-radius: 10px;
+}
+
+div#cmscontent {
+    background: transparent;
+}
+
+#cmscontent h3 {
+    background: transparent;
+    color: #003165;
+}
+#cmscontent h3 img {
+    vertical-align: middle;
+    margin-left: 20px;
+}
+#cmscontent div.cms_author  {
+    background:transparent;
+    margin-top: 8px;
+    color: #67768c;
+}
+#cmscontent div.cms_date {
+    font-style:normal;
+    font-size: 80%;
+    margin-bottom: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/** Creative commons license dropdowns **/
+
+option.copyright {
+    padding-left:90px;
+    background-image: url('../_common/icons/creativecommons_v3/copyright.gif');
+    background-repeat: no-repeat; 
+}
+option.by {
+    padding-left:90px;
+    background-image: url('../_common/icons/creativecommons_v3/by.gif');
+    background-repeat: no-repeat;
+}
+option.by-sa {
+    padding-left:90px;
+    background-image: url('../_common/icons/creativecommons_v3/by-sa.gif');
+    background-repeat: no-repeat;
+}
+option.by-nd {
+    padding-left:90px;
+    background-image: url('../_common/icons/creativecommons_v3/by-nd.gif');
+    background-repeat: no-repeat;
+}
+option.by-nc {
+    padding-left:90px;
+    background-image: url('../_common/icons/creativecommons_v3/by-nc.gif');
+    background-repeat: no-repeat;
+}
+option.by-nc-sa {
+    padding-left:90px;
+    background-image: url('../_common/icons/creativecommons_v3/by-nc-sa.gif');
+    background-repeat: no-repeat;
+}
+option.by-nc-nd {
+    padding-left:90px;
+    background-image: url('../_common/icons/creativecommons_v3/by-nc-nd.gif');
+    background-repeat: no-repeat;
+}
+option.gnu-fdl {
+    padding-left:90px;
+    background-image: url('../_common/icons/creativecommons_v3/gnu-fdl.gif');
+    background-repeat: no-repeat;
+}
+option.by-sa_gnu-fdl {
+    padding-left:90px;
+    background-image: url('../_common/icons/creativecommons_v3/by-sa_gnu-fdl.gif');
+    background-repeat: no-repeat;
+}
+/** End of CC License styles **/
+
+
+/* Speech bubble */
+
+.speechbubble {
+    background: -moz-linear-gradient(#E2ECF9, #D8E5F7) repeat scroll 0 0 transparent;
+    border: 1px solid #798EAE;
+    border-radius: 4px 4px 4px 4px;
+    box-shadow: 0 1px 0 rgba(255, 255, 255, 0.898) inset, 0 1px 3px rgba(0, 38, 97, 0.4);
+    color: #7690B3;
+    font-family: chaparral-pro-1,chaparral-pro-2,Georgia,Times,serif;
+    font-size: 18px;
+    font-style: italic;
+    line-height: 24px;
+    margin: 0 0 15px;
+    padding: 6px 10px 5px;
+    position: relative;
+}
+
+.arrow {
+    background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAICAYAAADN5B7xAAAApElEQVQYV2Oo7Fv3f8GmM%2F9vPP2OF6%2Fcdfl%2F07St%2FxmAGkB43bLtF3Aq3nr0zn%2BgmidALAHTwA%2FEV9fvv%2F7%2FxpPvKPj41VcgxT%2BB2BKkFqYBhNWB%2BMO%2Bs49RNCzYeAakIROmDlkDCAdOX3n0%2F6X7n8GKF285D1I8H1kNugYQbl%2B46ez%2F1XuughSfB2JOQhqYgXgXEL8CYjl0eWwaQFgIiG2wyQEAK%2B7vf9reBsIAAAAASUVORK5CYII%3D") no-repeat scroll 0 0 transparent;
+    bottom: -8px;
+    display: block;
+    height: 8px;
+    left: 22px;
+    position: absolute;
+    width: 12px;
+}
+
+/*** New CMS STYLES ---- must move to common***/
+.cmssummary {
+    font-size: 80%;
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color: #F6921E; /*#666;*/
+}
+
+/* ---------------- BEGIN MISC TWEAKS ------------------*/
+.openidlogin fieldset {
+    width: 254px;
+}
+#modeswitch_wrapper {
+    margin-top: 10px;
+    margin-bottom: 8px;
+    margin-left: 15px;
+    width: 90%;
+    text-align: center;
+}
+.flickr_img_wrapper {
+    width: 640px!important;
+    height: 480px!important;
+    background-size: contain;
+}
+#ddmiddleblocks {
+    /* Dropdown for selecting middle blocks */
+    width: 500px;
+}
+#Canvas_Content_Body_Region2 img {
+    /* Fix images overflowing main content area */
+    max-width: 100%;
+}
+/* ----------------- END  MISC TWEAKS ------------------*/
