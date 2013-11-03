@@ -467,3 +467,9 @@ option.by-sa_gnu-fdl {
 #switchboardlinks tr > td {
     padding-bottom: 20px;
 }
+
+
+#Canvas_Content_Body_Region2 img {
+    /* Fix images overflowing main content area */
+    max-width: 100%;
+}
