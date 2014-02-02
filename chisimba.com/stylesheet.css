@@ -979,6 +979,24 @@ background-image: linear-gradient(bottom, #eeeeec 0%, #d3d7cf 50%, #babdb6 100%)
 /* --------------- END TURN EDITING ON -----------------*/
 
 /* ------------- BEGIN SIMPLE BLOG MODULE --------------*/
+#sb_date_wrapper{
+        display: block;
+        float: left;
+        padding: 5px;
+        color: #FFF;
+        text-align: center;
+        font-size: 120%;
+        font-weight: bold;
+        background: #595959;
+}
+#sb_title_wrapper{
+        padding: 5px;
+        background: #595959;
+}
+#sb_title_wrapper a{
+        color: #FFF;
+}
+
 .simpleblog_view_wall, a.togglewall_link {
     background:#5a3f1e;
     color:#ffffff;
